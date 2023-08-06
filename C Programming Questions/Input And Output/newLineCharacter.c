@@ -1,4 +1,4 @@
-// C Program to Print WebWithAman On Screen
+// C Program to Print Hello in First Line And Aman in Second Line
 
 
 //Header files
@@ -9,7 +9,7 @@
 // Main Function Start
 int main(){
 
-    printf("WebWithAman");  // printf() Function is Used to Print Output On Screen
+    printf("Hello\nAman");  // '\n' is used to Add New Line
 
     getch(); 
     return 0;
