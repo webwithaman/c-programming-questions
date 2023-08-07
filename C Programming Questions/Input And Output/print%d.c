@@ -13,8 +13,8 @@ int main(){
     printf(" %%d "); 
 
     // 2nd Approach
-    char ch = '%';
-    printf("%c",ch);
+    // char ch = '%';
+    // printf("%cd",ch);
 
     getch(); 
     return 0;
