@@ -9,7 +9,12 @@
 // Main Function Start
 int main(){
 
+    // 1st Approach
     printf(" %%d "); 
+
+    // 2nd Approach
+    char ch = '%';
+    printf("%c",ch);
 
     getch(); 
     return 0;
