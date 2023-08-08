@@ -1,4 +1,4 @@
-// C Program to Swap Values of Two int Variables
+// C Program to Swap Values of Two int Variables Using XOR Operator
 
 
 // Header files
@@ -19,10 +19,12 @@ int main()
     printf("\n\n>>>>>>>>>>>> Values Before Swapping <<<<<<<<<<<<<\n");
     printf("a => %d ,b => %d", a, b);
 
-    // Swapping Using Third Variable
-    int temp = a;
-    a = b;
-    b = temp;
+
+    // Swapping Using XOR Operator
+    a = a^b;
+    b = a^b;
+    a = a^b;
+
 
     printf("\n\n>>>>>>>>>>>> Values After Swapping <<<<<<<<<<<<<\n");
     printf("a => %d ,b => %d\n", a, b);

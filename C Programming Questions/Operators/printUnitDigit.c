@@ -14,7 +14,7 @@ int main()
     printf("\nEnter An Integer => ");
     scanf("%d", &num);
 
-    printf("Unit Digit of %d => %d", num, num % 10);
+    printf("Unit Digit of %d => %d ", num, num % 10);
 
     getch();
     return 0;

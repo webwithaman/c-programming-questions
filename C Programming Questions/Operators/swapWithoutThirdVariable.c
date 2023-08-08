@@ -19,9 +19,9 @@ int main()
     printf("\n\n>>>>>>>>>>>> Values Before Swapping <<<<<<<<<<<<<\n");
     printf("a => %d ,b => %d", a, b);
 
-    // 1st Approach
-    b = (a+b) - (a=b);
 
+    // 1st Approach
+    b = (a + b) - (a = b);
 
     // 2nd Approach
     // a = a+b;
@@ -34,8 +34,9 @@ int main()
     // b = a^b;
     // a = a^b;
 
+
     printf("\n\n>>>>>>>>>>>> Values After Swapping <<<<<<<<<<<<<\n");
-    printf("a => %d ,b => %d", a, b);
+    printf("a => %d ,b => %d\n", a, b);
 
 
     getch();

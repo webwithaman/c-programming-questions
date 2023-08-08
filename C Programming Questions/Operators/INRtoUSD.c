@@ -16,7 +16,7 @@ int main()
 
     USD = INR / 80.33;
 
-    printf("\n%.2lf INR => %.2lf USD", INR, USD);
+    printf("\n%.2lf INR => %.2lf USD ", INR, USD);
 
     getch();
     return 0;

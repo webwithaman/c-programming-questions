@@ -22,10 +22,10 @@ int main()
             num >>= 1;
         }
 
-        printf("\nPosition of First 1 In Binary of %d => %d", num, position);
+        printf("\nPosition of First 1 In Binary of %d => %d ", num, position);
     }
     else
-        printf("\nThere is No 1 in the Binary of %d", num);
+        printf("\nThere is No 1 in the Binary of %d ", num);
 
 
     getch();

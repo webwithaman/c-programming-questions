@@ -23,7 +23,7 @@ int main()
         resultNum = num * 10 + digit;
 
 
-    printf("\nAfter Appending %d In %d => %d", digit, num, resultNum);
+    printf("\nAfter Appending %d In %d => %d\n", digit, num, resultNum);
 
     getch();
     return 0;

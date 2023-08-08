@@ -14,7 +14,7 @@ int main()
     printf("\nEnter An Integer => ");
     scanf("%d", &num);
 
-    printf("%d Without Last Digit => %d", num, num / 10);
+    printf("%d Without Last Digit => %d ", num, num / 10);
 
     getch();
     return 0;

@@ -29,7 +29,7 @@ int main()
         num /= 10;
     }
 
-    printf("Sum of Digits => %d", sumOfDigits);
+    printf("Sum of Digits => %d\n", sumOfDigits);
 
     getch();
     return 0;

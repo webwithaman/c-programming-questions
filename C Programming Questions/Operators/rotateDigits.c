@@ -19,7 +19,7 @@ int main()
     // If Entered Number Have Three Digits
     int resultNum;
     resultNum = num % 10 * 100 + num / 10;
-    printf("\nAfter Rotating the Digits of %d By One Position Towards Right => %d", num, resultNum);
+    printf("\nAfter Rotating the Digits of %d By One Position Towards Right => %d\n", num, resultNum);
 
 
     // Using Loop If Entered Number have Any Number of Digits
@@ -31,7 +31,7 @@ int main()
     //     copyOfNum /= 10;
     // }
     // resultNum = num % 10 * pow(10, numOfDigits - 1) + num / 10;
-    // printf("\nAfter Rotating the Digits of %d By One Position Towards Right => %.0lf", num, resultNum);
+    // printf("\nAfter Rotating the Digits of %d By One Position Towards Right => %.0lf\n", num, resultNum);
 
 
     getch();

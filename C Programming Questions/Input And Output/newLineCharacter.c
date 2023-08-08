@@ -9,7 +9,7 @@
 // Main Function Start
 int main(){
 
-    printf("Hello\nAman");  // '\n' is used to Add New Line
+    printf("Hello\nAman\n");  // '\n' is used to Add New Line
 
     getch(); 
     return 0;
