@@ -9,7 +9,7 @@
 // Main Function Start
 int main(){
 
-    printf("WebWithAman");  // printf() Function is Used to Print Output On Screen
+    printf("WebWithAman\n");  // printf() Function is Used to Print Output On Screen
 
     getch(); 
     return 0;

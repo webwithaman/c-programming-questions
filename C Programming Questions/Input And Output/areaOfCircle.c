@@ -15,7 +15,7 @@ int main()
 
     area = 22.0 / 7 * radius * radius;
 
-    printf("\nArea of Circle having %.2f => %.2f", radius, area);
+    printf("\nArea of Circle having %.2f => %.2f\n", radius, area);
 
     getch();
     return 0;

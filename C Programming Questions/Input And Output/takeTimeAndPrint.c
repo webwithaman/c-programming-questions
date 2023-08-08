@@ -22,7 +22,7 @@ int main()
     printf("\nEnter Time in this Format => HH:MM:SS => ");
     scanf("%d:%d:%d", &hour, &minute, &second);
 
-    printf("%d Hour %d Minute And %d Second", hour,minute,second);
+    printf("%d Hour %d Minute And %d Second\n", hour,minute,second);
 
     getch();
     return 0;
