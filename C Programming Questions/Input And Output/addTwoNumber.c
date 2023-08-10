@@ -10,11 +10,13 @@
 int main()
 {
 
-    float num1, num2;
+    float num1, num2,result;
     printf("\nEnter Two Numbers to Add => ");
     scanf("%f%f", &num1, &num2);
 
-    printf("\nSum of %f and %f => %f\n", num1, num2, num1 + num2);
+    result = num1 + num2;
+
+    printf("\nSum of %f and %f => %f\n", num1, num2, result);
 
     getch();
     return 0;
