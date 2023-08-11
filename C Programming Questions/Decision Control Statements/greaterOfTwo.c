@@ -1,4 +1,4 @@
-// C Program to Find Greater Between Two Numbers. Print Any of Both If Both Same
+// C Program to Find Greater Between Two Numbers. Print Any Same If Both Are Same
 
 
 // Header files
