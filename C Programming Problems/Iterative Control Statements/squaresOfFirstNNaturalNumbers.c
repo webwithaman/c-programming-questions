@@ -1,13 +1,19 @@
-// C Program to Print Squares of First 10 Natural Numbers
+// C Program to Print Squares of First N Natural Numbers
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
+#include <limits.h>
 
 // Main Function Start
 int main()
 {
-    int n = 10; // Squares of First n Natural Numbers
+    int n;
+    printf("\nHow Many Number's Squares You Want to Print => ");
+    scanf("%d", &n);
+
+    // Handling Wrong or Invalid Input
+    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
 
     printf("\n>>>>>>>>>>> Squares of First %d Natural Numbers <<<<<<<<<<<<<\n", n);
 

@@ -1,14 +1,19 @@
-// C Program to Print Table of 8
+// C Program to Print Table of N
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
+#include <limits.h>
 
 // Main Function Start
 int main()
 {
-    int n = 8;    // Table of n
-    int end = 10; // Till end
+    int n,end=10;
+    printf("\nWhich Number's Table You Want to Print => ");
+    scanf("%d", &n);
+
+    // Handling Wrong or Invalid Input
+    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
 
     printf("\n>>>>>>>>>>> Table of %d <<<<<<<<<<<<<\n", n);
 

@@ -1,13 +1,19 @@
-// C Program to Print First 10 Odd Natural Numbers In Reverse Order
+// C Program to Print First N Odd Natural Numbers In Reverse Order
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
+#include <limits.h>
 
 // Main Function Start
 int main()
 {
-    int n = 10; // First n Odd Natural Numbers
+    int n;
+    printf("\nHow Many First Odd Natural Numbers You Want to Print In Reverse  => ");
+    scanf("%d", &n);
+
+    // Handling Wrong or Invalid Input
+    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
 
     printf("\n>>>>>>>>>>> First %d Odd Natural Numbers In Reverse Order <<<<<<<<<<<<<\n", n);
 

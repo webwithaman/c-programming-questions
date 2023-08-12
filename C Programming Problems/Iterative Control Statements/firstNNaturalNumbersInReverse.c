@@ -1,15 +1,21 @@
-// C Program to Print First 10 Natural Numbers In Reverse Order
+// C Program to Print First N Natural Numbers In Reverse
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
+#include <limits.h>
 
 // Main Function Start
 int main()
 {
-    int n = 10; // First n Natural Numbers in Reverse
+    int n;
+    printf("\nHow Many First Natural Numbers You Want to Print In Reverse Order  => ");
+    scanf("%d", &n);
 
-    printf("\n>>>>>>>>>>> First %d Natural Numbers In Reverse Order <<<<<<<<<<<<<\n", n);
+    // Handling Wrong or Invalid Input
+    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
+
+    printf("\n>>>>>>>>>>> First %d Natural Numbers In Reverse <<<<<<<<<<<<<\n", n);
 
     // 1st Approach (while loop)
     int i = 1;
@@ -41,6 +47,7 @@ int main()
     // 5th Approach (for loop)
     // for (int i = 1; i <= n; i++)
     //     printf("\n%d",n+1- i);
+
 
     // 6th Approach (for loop)
     // for (int i = n; i ; i--)
