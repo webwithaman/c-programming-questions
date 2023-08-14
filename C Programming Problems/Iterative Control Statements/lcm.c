@@ -15,13 +15,13 @@ int main()
     // Handing Wrong or Invalid Inputs
     if (num1 * num2 <= 0)
     {
-        printf("\nLCM of the Entered Number Are Not Possible !!! Both Numbers Must be Positive Integers...");
+        printf("\nLCM of the Entered Number Are Not Possible !!! Both Numbers Must be Positive Integers...\n");
         exit(0);
     }
 
     // 1st Approach
     int max = num1 > num2 ? num1 : num2;
-    
+
     for (int i = max; i <= num1 * num2; i += max)
     {
         if (i % num1 == 0 && i % num2 == 0) // We can also write if( !(i % num1) && !(i % num2) )
