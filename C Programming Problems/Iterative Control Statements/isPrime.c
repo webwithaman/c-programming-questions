@@ -11,7 +11,7 @@
 int main()
 {
     int num;
-    printf("\nEnter A Number to Check Whether is Prime or Not => ");
+    printf("\nEnter A Number to Check Whether It is Prime or Not => ");
     scanf("%d", &num);
 
 
