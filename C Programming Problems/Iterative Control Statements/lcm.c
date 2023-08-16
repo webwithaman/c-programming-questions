@@ -12,12 +12,20 @@ int main()
     printf("\nEnter Two Numbers to Find LCM => ");
     scanf("%d%d", &num1, &num2);
 
+
     // Handing Wrong or Invalid Inputs
-    if (num1 * num2 <= 0)
+    if (num1 * num2 == 0)
     {
-        printf("\nLCM of the Entered Number Are Not Possible !!! Both Numbers Must be Positive Integers...\n");
+        printf("\nLCM of the Entered Number Are Not Possible !!! Plesae Don't Input Zero...\n");
         exit(0);
     }
+    else if (num1 < 0 || num2 < 0)
+    {
+        num1 = num1 < 0 ? -num1 : num1;
+        num2 = num2 < 0 ? -num2 : num2;
+    }
+
+
 
     // 1st Approach
     int max = num1 > num2 ? num1 : num2;
@@ -30,6 +38,8 @@ int main()
             break;
         }
     }
+
+
 
     // 2nd Approach (Using Prime Factorisation Method)
     // int lcm = 1;
@@ -45,6 +55,21 @@ int main()
     // }
 
     // printf("\nLCM => %d", lcm);
+
+
+
+
+    // 3rd Approach (Using HCF)
+    // int min = num1 < num2 ? num1 : num2;
+
+    // for (int i = min; i > 0; i -= i == min ? min / 2 : 1)
+    // {
+    //     if (num1 % i == 0 && num2 % i == 0) // We can also write if( !(num1 % i) && !(num2 $ i) )
+    //     {
+    //         printf("\nLCM of %d and %d => %d", num1, num2, num1*num2/i);
+    //         break;
+    //     }
+    // }
 
     getch();
     return 0;
