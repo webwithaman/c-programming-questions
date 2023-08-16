@@ -15,7 +15,7 @@ int main()
     scanf("%d", &num);
 
 
-    int isPrime = num < 2 ? 0 : 1; // if isPrime = 1 then It is Assumed that the Number is Prime else Not Prime
+    int isPrime = num < 2 ? 0 : 1; // if isPrime == 1 then, It is Assumed that the Number is Prime else Not Prime
 
     // 1st Approach
     for (int i = 2; i <= sqrt(num); i++)

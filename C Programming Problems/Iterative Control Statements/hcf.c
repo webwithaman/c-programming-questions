@@ -21,7 +21,6 @@ int main()
 
     int min = num1 < num2 ? num1 : num2;
 
-
     // 1st Approach
     for (int i = min; i > 0; i -= i == min ? min / 2 : 1)
     {
@@ -44,7 +43,6 @@ int main()
 
     // printf("\nHCF of %d and %d => %d\n", num1, num2, divisor);
 
-
     // 3rd Approach (Using LCM)
     // int max = num1 > num2 ? num1 : num2;
 
@@ -56,6 +54,22 @@ int main()
     //         break;
     //     }
     // }
+
+    // 4th Approach (Using Prime Factorization)
+    // int hcf = 1;
+
+    // for (int i = 2; num1 * num2 != 1; i++)
+    // {
+    //     while (num1 % i == 0 || num2 % i == 0)
+    //     {
+    //        if(num1%i == 0 && num2%i==0)
+    //          hcf*=i;
+    //         num1 = num1 % i == 0 ? num1 / i : num1;
+    //         num2 = num2 % i == 0 ? num2 / i : num2;
+    //     }
+    // }
+
+    // printf("\nHCF => %d", hcf);
 
     getch();
     return 0;

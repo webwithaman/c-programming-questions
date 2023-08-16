@@ -41,7 +41,7 @@ int main()
 
 
 
-    // 2nd Approach (Using Prime Factorisation Method)
+    // 2nd Approach (Using Prime Factorization Method)
     // int lcm = 1;
 
     // for (int i = 2; num1 * num2 != 1; i++)
