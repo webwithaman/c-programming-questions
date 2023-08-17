@@ -1,4 +1,4 @@
-// C Program to Print Newline Charcter => '\n'
+// C Program to Print Newline Character => '\n'
 
 
 //Header files
