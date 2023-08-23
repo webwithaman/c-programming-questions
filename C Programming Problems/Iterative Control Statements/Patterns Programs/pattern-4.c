@@ -2,17 +2,19 @@
 
 /*
 
-   *
-   **
-   ***
-   ****
    *****
+    ****
+     ***
+      **
+       *
 
 */
+
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
+
 
 // Main Function Start
 int main()
@@ -32,12 +34,15 @@ int main()
     // 1st Approach
     for (int i = 1; i <= rows; i++)
     {
+        for(int space = 1; space <= i-1;space++)
+          printf(" ");
 
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= rows + 1 - i; j++)
             printf("*");
 
         printf("\n");
     }
+
 
 
     // 2nd Approach
@@ -45,7 +50,7 @@ int main()
     // {
     //     for (int j = 1; j <= rows; j++)
     //     {
-    //         if (j <= i)
+    //         if (j >= i)
     //             printf("*");
     //         else
     //             printf(" ");
@@ -54,11 +59,14 @@ int main()
     // }
 
 
+
     // 3rd Approach
     // for (int i = rows; i; i--)
     // {
-        
-    //     for (int j = rows + 1 - i; j; j--)
+    //     for(int space=rows-i;space;space--)
+    //     printf(" ");
+
+    //     for (int j = i; j; j--)
     //         printf("*");
 
     //     printf("\n");

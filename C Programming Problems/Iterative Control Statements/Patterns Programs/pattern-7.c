@@ -2,11 +2,11 @@
 
 /*
 
-   *
-   **
-   ***
-   ****
-   *****
+    **********
+    ****  ****
+    ***    ***
+    **      **
+    *        *
 
 */
 
@@ -18,7 +18,7 @@
 int main()
 {
 
-    int rows;
+    int rows, cols;
     printf("\nHow Many Rows => ");
     scanf("%d", &rows);
 
@@ -26,14 +26,22 @@ int main()
     if (rows < 0)
         rows = -rows;
 
-    puts("\n----------------------------------------------------------------------\n");
+    // Set Columns According to Rows
+    cols = rows * 2;
 
+    puts("\n----------------------------------------------------------------------\n");
 
     // 1st Approach
     for (int i = 1; i <= rows; i++)
     {
 
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= rows + 1 - i; j++)
+            printf("*");
+
+        for (int space = 1; space <= (i-1) * 2; space++)
+            printf(" ");
+        
+        for (int k = 1; k <= rows + 1 - i; k++)
             printf("*");
 
         printf("\n");
@@ -43,24 +51,13 @@ int main()
     // 2nd Approach
     // for (int i = 1; i <= rows; i++)
     // {
-    //     for (int j = 1; j <= rows; j++)
+    //     for (int j = 1; j <= cols; j++)
     //     {
-    //         if (j <= i)
+    //         if (j <= rows+1-i || j >= rows + i)
     //             printf("*");
     //         else
     //             printf(" ");
     //     }
-    //     printf("\n");
-    // }
-
-
-    // 3rd Approach
-    // for (int i = rows; i; i--)
-    // {
-        
-    //     for (int j = rows + 1 - i; j; j--)
-    //         printf("*");
-
     //     printf("\n");
     // }
 
