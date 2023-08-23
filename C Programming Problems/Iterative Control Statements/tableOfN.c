@@ -8,15 +8,15 @@
 // Main Function Start
 int main()
 {
-    int n,end=10;
+    int n, end = 10;
     printf("\nWhich Number's Table You Want to Print => ");
     scanf("%d", &n);
 
-    // Handling Wrong or Invalid Input
-    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
+    // Handling Invalid Input
+    if (n < 0)
+        n = -n;
 
     printf("\n>>>>>>>>>>> Table of %d <<<<<<<<<<<<<\n", n);
-
 
     // Using while loop
     int i = 1;
@@ -26,7 +26,6 @@ int main()
         i++;
     }
 
-
     // Using do-while loop
     // int i = 1;
     // do
@@ -35,11 +34,9 @@ int main()
     //     i++;
     // } while (i <= end);
 
-
     // Using for loop
     // for (int i = 1; i <= end; i++)
     //     printf("\n%d x %2d => %d", n, i, n * i);
-
 
     getch();
     return 0;

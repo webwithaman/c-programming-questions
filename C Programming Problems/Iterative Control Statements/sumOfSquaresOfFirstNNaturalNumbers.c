@@ -12,9 +12,9 @@ int main()
     printf("\nEnter N to Calculate Sum of Squares of First N Natural Numbers => ");
     scanf("%d", &n);
 
-    // Handling Wrong or Invalid Input
-    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
-
+    // Handling Invalid Input
+    if (n < 0)
+        n = -n;
 
     // Using while loop
     int i = 1;

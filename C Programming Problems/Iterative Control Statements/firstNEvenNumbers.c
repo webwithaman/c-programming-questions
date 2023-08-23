@@ -12,8 +12,9 @@ int main()
     printf("\nHow Many First Even Natural Numbers You Want to Print => ");
     scanf("%d", &n);
 
-    // Handling Wrong or Invalid Input
-    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
+    // Handling Invalid Input
+    if (n < 0)
+        n = -n;
 
     printf("\n>>>>>>>>>>> First %d Even Natural Numbers <<<<<<<<<<<<<\n", n);
 

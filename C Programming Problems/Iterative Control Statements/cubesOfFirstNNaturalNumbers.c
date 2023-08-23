@@ -12,8 +12,9 @@ int main()
     printf("\nHow Many Number's Cubes You Want to Print => ");
     scanf("%d", &n);
 
-    // Handling Wrong or Invalid Input
-    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
+    // Handling Invalid Input
+    if (n < 0)
+        n = -n;
 
     printf("\n>>>>>>>>>>> Cubes of First %d Natural Numbers <<<<<<<<<<<<<\n", n);
 

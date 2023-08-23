@@ -14,19 +14,18 @@ int main()
     printf("\nEnter N to Calculate Sum of First N Natural Numbers => ");
     scanf("%d", &n);
 
-    // Handling Wrong or Invalid Input
-    n = n < 0 ? -n % INT_MAX : n % INT_MAX;
+    // Handling Invalid Input
+    if (n < 0)
+        n = -n;
 
 
     // Without loop Using Formula
     // sum = n * (n+1)/2;
 
-
     // Using while loop
     int i = 1;
     while (i <= n)
-        sum+=i++;
-
+        sum += i++;
 
     // Using do while loop
     // int i=1;
@@ -35,11 +34,9 @@ int main()
     //     sum+=i++;
     // } while (i <= n);
 
-
     // Using for loop
     // for (int i = 1; i <= n; i++)
     //     sum += i;
-
 
     printf("\nSum of First %d Natural Numbers => %d\n", n, sum);
 

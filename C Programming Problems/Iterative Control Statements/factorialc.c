@@ -13,8 +13,9 @@ int main()
     printf("\nEnter A Number to Find Factorial => ");
     scanf("%d", &num);
 
-    // Handling Wrong or Invalid Input
-    num = num < 0 ? -num % INT_MAX : num % INT_MAX;
+    // Handling Invalid Input
+    if (num < 0)
+        num = -num;
 
 
     // Using while loop
