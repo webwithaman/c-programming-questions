@@ -18,30 +18,30 @@
 int main()
 {
 
-    int rows, cols;
+    int maxRows, maxCols;
     printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
+    scanf("%d", &maxRows);
 
     // Handling Invalid Input
-    if (rows < 0)
-        rows = -rows;
+    if (maxRows < 0)
+        maxRows = -maxRows;
 
     // Set Columns According to Rows
-    cols = rows * 2;
+    maxCols = maxRows * 2;
 
     puts("\n----------------------------------------------------------------------\n");
 
     // 1st Approach
-    for (int i = 1; i <= rows; i++)
+    for (int i = 1; i <= maxRows; i++)
     {
 
-        for (int j = 1; j <= rows + 1 - i; j++)
+        for (int j = 1; j <= maxRows + 1 - i; j++)
             printf("*");
 
         for (int space = 1; space <= (i-1) * 2; space++)
             printf(" ");
         
-        for (int k = 1; k <= rows + 1 - i; k++)
+        for (int k = 1; k <= maxRows + 1 - i; k++)
             printf("*");
 
         printf("\n");
@@ -49,15 +49,16 @@ int main()
 
 
     // 2nd Approach
-    // for (int i = 1; i <= rows; i++)
+    // for (int i = 1; i <= maxRows; i++)
     // {
-    //     for (int j = 1; j <= cols; j++)
+    //     for (int j = 1; j <= maxCols; j++)
     //     {
-    //         if (j <= rows+1-i || j >= rows + i)
+    //         if (j <= maxRows+1-i || j >= maxRows + i)
     //             printf("*");
     //         else
     //             printf(" ");
     //     }
+
     //     printf("\n");
     // }
 

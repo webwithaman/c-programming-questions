@@ -1,12 +1,12 @@
 // C Program to Print Following Pattern
 
 /*
-
-          1
-        1 2 1
-      1 2 3 2 1
-    1 2 3 4 3 2 1
-  1 2 3 4 5 4 3 2 1
+      
+   1 2 3 4 5 4 3 2 1
+     1 2 3 4 3 2 1
+       1 2 3 2 1
+         1 2 1
+           1
 
 */
 
@@ -35,27 +35,28 @@ int main()
     for (int i = 1; i <= maxRows; i++)
     {
 
-        for (int space = 1; space <= maxRows - i; space++)
+        for (int space = 1; space <=  i-1; space++)
             printf("   ");
 
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= maxRows+1-i; j++)
             printf("%-3d", j);
 
-        for (int k = i - 1; k; k--)
+        for (int k = maxRows-i; k; k--)
             printf("%-3d", k);
 
         printf("\n");
     }
-    
 
     // 2nd Approach
     // int numToPrint = 1;
+
     // for (int i = 1; i <= maxRows; i++)
     // {
+
     //     for (int j = 1; j <= maxCols; j++)
     //     {
-    //         if (j >= maxRows + 1 - i && j <= maxRows - 1 + i)
-    //             printf("%-3d",   j < maxRows ? numToPrint++ : numToPrint--);
+    //         if (j >=  i && j <= maxCols+ 1 - i)
+    //             printf("%-3d",  j < maxRows ? numToPrint++ : numToPrint--);
     //         else
     //             printf("   ");
     //     }
