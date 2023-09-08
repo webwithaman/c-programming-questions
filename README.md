@@ -5,9 +5,9 @@ This repository contains various programming problems, assignments and projects 
 ## Table of Contents
 
 - [installation](#installation)
-- (#usage)
-- (#contributing)
-- (#license)
+- [usage](#usage)
+- [contributing](#contributing)
+- [license](#license)
 
 ## Installation
 
