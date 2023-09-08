@@ -4,7 +4,7 @@ This repository contains various programming problems, assignments and projects 
 
 ## Table of Contents
 
-- (#installation)
+- [installation](#installation)
 - (#usage)
 - (#contributing)
 - (#license)
