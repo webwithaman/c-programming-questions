@@ -1,2 +1,2 @@
-# C-Programming
-This Repository Contains Programming Problems ,Questions And Projects In  C language..
+# c-programming
+This repository contains programming problems, questions and projects in C language.
