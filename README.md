@@ -24,7 +24,7 @@ You can also use an online compiler and editor, such as [Repl.it](^4^), to run t
 To use the code in this repo, you can either clone it or download it as a ZIP file. To clone it, run the following command in your terminal:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/webwithaman/c-programming.git
 ```
 
 To download it as a ZIP file, click on the green **Code** button on the top right corner of this page, and then click on **Download ZIP**.
