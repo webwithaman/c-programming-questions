@@ -1,4 +1,4 @@
-// C Program to Check Create Simple Calculator That Perform Four Operations Add,Subtract,Mulltipy And Division on Two Numbers
+// C Program to Create Simple Calculator That Perform Four Operations Add,Subtract,Mulltipy And Division on Two Numbers
 
 
 // Header files
