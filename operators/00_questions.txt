@@ -4,7 +4,7 @@
 🟢 Topic ➡ Operators
 
 
-01. WAP to Convert Celcius to Fahrenheit.
+01. WAP to convert Celcius to Fahrenheit.
 
 02. WAP to Convert Fahrenheit to Celcius.
 
