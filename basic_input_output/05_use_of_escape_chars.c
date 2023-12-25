@@ -1,5 +1,5 @@
 // C program to print following String :-
-// ⭕ Output => " Hello, this is forward slash (/) , this is back slash (\) , this is single quote (') and this is double quotes (") "
+// 👉 Output => " Hello, this is forward slash (/) , this is back slash (\) , this is single quote (') and this is double quotes (") "
 
 // Header files
 #include <stdio.h>

@@ -1,5 +1,5 @@
 // C program to print New line character '\n' on screen.
-// ⭕ Output => \n
+// 👉 Output => \n
 
 // Header files
 #include <stdio.h>

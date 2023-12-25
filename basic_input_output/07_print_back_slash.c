@@ -1,5 +1,5 @@
 // C program to print single Back Slash (\) on screen
-// ⭕ Output => \
+// 👉 Output => \
 
 // Header files
 #include <stdio.h>

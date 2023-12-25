@@ -1,5 +1,5 @@
 // C program to print (%d) on screen
-// ⭕ Output => %d
+// 👉 Output => %d
 
 // Header files
 #include <stdio.h>

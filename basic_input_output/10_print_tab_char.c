@@ -1,5 +1,5 @@
 // C program to print Tab character '\t' on screen.
-// ⭕ Output => \t
+// 👉 Output => \t
 
 // Header files
 #include <stdio.h>

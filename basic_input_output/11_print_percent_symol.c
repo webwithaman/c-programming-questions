@@ -1,5 +1,5 @@
 // C program to print Percent symbol (%) on screen
-// ⭕ Output => %
+// 👉 Output => %
 
 // Header files
 #include <stdio.h>
