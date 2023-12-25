@@ -8,7 +8,7 @@
 int main()
 {
 
-    printf("C\nProgramming\n"); // '\n' is used to add New line.
+    printf("C\nProgramming"); // '\n' is used to add New line.
 
     getch();
     return 0;

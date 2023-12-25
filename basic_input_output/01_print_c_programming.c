@@ -8,7 +8,7 @@
 int main()
 {
 
-    printf("C Programming\n"); // printf() function is used to print Output on screen
+    printf("C Programming"); // printf() function is used to print Output on screen
 
     getch();
     return 0;
