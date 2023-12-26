@@ -10,7 +10,6 @@
 // Main Function Start
 int main()
 {
-
     float ft, mtr;
     printf("\nEnter value in Meters to convert in Feets => ");
     scanf("%f", &mtr);

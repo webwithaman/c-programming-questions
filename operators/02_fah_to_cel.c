@@ -7,7 +7,6 @@
 // Main Function Start
 int main()
 {
-
     float cel, fah;
     printf("\nEnter value in Fahrenheit to convert in Celcius => ");
     scanf("%f", &fah);
