@@ -20,7 +20,7 @@
 
 08. WAP to Convert Millimeters to Inches.
 
-09. WAP to Print Size of a Variables of Every Data Type.
+09. WAP to Demonstrate the use of sizeof() Operator.
 
 10. WAP to Find Area And Perimeter of A Rectangle.
 
