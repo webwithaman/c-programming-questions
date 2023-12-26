@@ -36,9 +36,9 @@
 15. WAP to Check Whether A Number is Even or Odd Using Bitwise Operator.
 
 16. WAP to Convert Last Digit of a Number into Zero => Digit = 245 Make it => 240.
-    👉 Output => Result Converting Last Digit of 245 into 0 => 245
+    👉 Output => Result After Converting Last Digit of 245 into 0 => 245
 
-17. WAP to Multiply Two Floating Point Numbers.
+17. WAP to Find Product of Two Real Numbers.
 
 18. WAP to Find Position of First 1 When Searching From LSB to MSB.
 

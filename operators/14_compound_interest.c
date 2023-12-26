@@ -18,9 +18,10 @@ int main()
     printf("\nCompounded After Every N Months => ");
     scanf("%f", &compoundedAfterMonths);
 
-    float n = 12 / compoundedAfterMonths;
+    float n = 12 / compoundedAfterMonths; // Get Compounded Interval (such as Monthly, Quarterly,Half-yearly,Yearly etc.)
 
     compoundInterest = principal * pow((1 + rateOfInterest / (100 * n)), n * time) - principal;
+
     printf("\nCompound Interest => %.2f", compoundInterest);
 
     getch();
