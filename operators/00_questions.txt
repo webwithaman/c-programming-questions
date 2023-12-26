@@ -55,9 +55,9 @@
 
 24. WAP to Store -8 in a Variable using Bitwise operator. You cannot Directly Assign -8 to a Variable.
 
-25. WAP to Input Three Digit Number And Calculate Sum of It's Digit.
+25. WAP to Input Three Digit Number And Calculate Sum of It's Digits.
 
-26. WAP to Swap Values of Two int Variables. Use Two or Three Variables.
+26. WAP to Swap Values of Two int Variables. You can Use Two or Three Variables.
 
 27. WAP to Swap Values of Two int Variables Without Third Variable.
 

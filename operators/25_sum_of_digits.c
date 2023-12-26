@@ -1,5 +1,4 @@
-// WAP to Take A Three Digit Number And Rotate Its Digit By One Position Towards Right => Ex. 638 Convert it into 863.
-// 👉 Output => 638 After Rotating One Digit Towards Right => 863
+// C program to input Three Digit Number and calculate Sum of it's Digits
 
 // Header Files
 #include <stdio.h>
@@ -9,7 +8,7 @@
 // Main Function Start
 int main()
 {
-    int num, result;
+    int num, sumOfDigits;
     printf("\nEnter A Three Digits Positive Integer => ");
     scanf("%3d", &num);
 
@@ -19,9 +18,9 @@ int main()
         exit(0);
     }
 
-    result = num % 10 * 100 + num / 10;
+    sumOfDigits = num / 100 + num / 10 % 10 + num % 10;
 
-    printf("\n%d After Rotating One Digit Towards Right => %d\n", num, result);
+    printf("\nSum of Digits of %d => %d\n", num, sumOfDigits);
 
     getch();
     return 0;
