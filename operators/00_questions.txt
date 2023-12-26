@@ -51,9 +51,9 @@
 22. WAP to Take A Three Digit Number And Rotate Its Digit By One Position Towards Right => Ex. 638 Convert it into 863.
     👉 Output => 638 After Rotating One Digit Towards Right => 863
 
-23. WAP to Take A Amount in INR and Convert it into USD. Where 1 USD = 83.16 .
+23. WAP to Take Amount in INR and Convert it into USD, Where 1 USD = 83.19 .
 
-24. WAP to Store a -8 in a Variable using Bitwise operator. You cannot Directly Assign -8 to a Variable.
+24. WAP to Store -8 in a Variable using Bitwise operator. You cannot Directly Assign -8 to a Variable.
 
 25. WAP to Input Three Digit Number And Calculate Sum of It's Digit.
 
