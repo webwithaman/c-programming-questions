@@ -1,4 +1,4 @@
-// C program to print Unit digit of a number
+// C program to print a Number without its Last Digit
 
 // Header Files
 #include <stdio.h>
@@ -11,7 +11,7 @@ int main()
     printf("\nEnter An Integer => ");
     scanf("%d", &num);
 
-    printf("\nUnit Digit of %d => %d\n", num, num < 0 ? -num % 10 : num % 10);
+    printf("\n%d Without last Digit => %d\n", num, num / 10);
 
     getch();
     return 0;
