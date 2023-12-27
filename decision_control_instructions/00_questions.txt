@@ -29,7 +29,7 @@
 
 11. WAP to take marks of 5 subjects from the user. Assume marks are given out of 100 and passing marks is 33. Now display whether the candidate passed the examination or failed.
 
-12. WAP to an alphabet from user and check whether the given alphabet is a vowel or a consonant.
+12. WAP to take an alphabet from user and check whether the given alphabet is a vowel or a consonant.
 
 13. WAP to check whether a given number is divisible by 3 and divisible by 2.
 
