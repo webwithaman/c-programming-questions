@@ -17,7 +17,7 @@ int main()
         else
             printf("\n%c is a consonant", ch);
     else
-        printf("\nEntered Character is not an Alphabet");
+        printf("\n%c Entered Character is not an Alphabet", ch);
 
     printf("\n");
     getch();
