@@ -88,3 +88,7 @@
 40. WAP to print all Armstrong numbers under 1000.
 
 41. WAP to find all Prime Factors of a given Number.
+
+42. WAP to check whether a given number is a Perfect Number or Not.
+
+43. WAP to input base and exponent then calculate power.
