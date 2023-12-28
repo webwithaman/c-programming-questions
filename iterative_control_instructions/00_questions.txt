@@ -62,7 +62,7 @@
 
 29. WAP to calculate LCM of two numbers.
 
-20. WAP to reverse a given number.
+30. WAP to reverse a given number.
 
 31. WAP to find the Nth term of the Fibonacci series.
 
