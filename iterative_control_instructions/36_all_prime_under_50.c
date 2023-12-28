@@ -13,11 +13,11 @@ int main()
 
     int i;
     printf("2 ");
-    for (int num = 2; num <= 50; num++)
+    for (int num = 3; num <= 50; num++)
     {
         if (num & 1)
         {
-            for (i = 2; i < sqrt(num); i++)
+            for (i = 2; i <= sqrt(num); i++)
             {
                 if (num % i == 0)
                     break;

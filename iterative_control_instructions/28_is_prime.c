@@ -29,7 +29,7 @@ int main()
 
     if (num & 1)
     {
-        for (i = 2; i < sqrt(num); i++)
+        for (i = 2; i <= sqrt(num); i++)
         {
             if (!(num % i))
                 break;
