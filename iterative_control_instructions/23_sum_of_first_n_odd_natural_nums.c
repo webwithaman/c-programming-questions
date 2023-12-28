@@ -13,6 +13,7 @@ int main()
     printf("\nEnter N to Calculate Sum of First N Odd Natural Numbers => ");
     scanf("%d", &n);
 
+    // Handling Invalid Input
     if (n < 0)
     {
         printf("!!! Invalid Input .....");

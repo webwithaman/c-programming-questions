@@ -13,6 +13,7 @@ int main()
     printf("\nEnter N to Print First N Odd Natural Numbers => ");
     scanf("%d", &n);
 
+    // Handling Invalid Input
     if (n < 0)
     {
         printf("!!! Invalid Input .....");
