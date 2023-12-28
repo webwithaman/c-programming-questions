@@ -1,75 +1,85 @@
-// C program to print the first 10 odd natural numbers in reverse order
+// C program to print the first 10 odd natural numbers
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    printf("\n>>>>>>>>> First 10 Odd Natural Numbers In Reverse Order <<<<<<<<<\n");
+    int n;
+    printf("\nEnter N to Print First N Odd Natural Numbers => ");
+    scanf("%d", &n);
+
+    if (n < 0)
+    {
+        printf("!!! Invalid Input .....");
+        exit(0);
+    }
+
+    printf("\n>>>>>>>> First %d Odd Natural Numbers <<<<<<<<\n", n);
 
     // //  1st Approach (using while loop)
-    int i = 10;
-    while (i)
+    int i = 1;
+    while (i <= n)
     {
         printf("\n%d", i * 2 - 1);
-        i--;
+        i++;
     }
 
     // // 2nd Approach (using while loop)
-    // int i = 19;
-    // while (i > 0)
+    // int i = 1;
+    // while (i <= n*2)
     // {
     //     printf("\n%d", i);
-    //     i -= 2;
+    //     i += 2;
     // }
 
     // // 3rd Approach (using while loop)
-    // int i = 19;
-    // while (i)
+    // int i = 1;
+    // while (i <= n*2)
     // {
     //     if (i % 2)
     //         printf("\n%d", i);
-    //     i--;
+    //     i++;
     // }
 
     // // 4th Approach (using do-while loop)
-    // int i = 10;
+    // int i = 1;
     // do
     // {
     //     printf("\n%d", i * 2 - 1);
-    //     i--;
-    // } while (i);
+    // } while (++i <= n);
 
     // // 5th Approach (using do-while loop)
-    // int i = 19;
+    // int i = 1;
     // do
     // {
     //     printf("\n%d", i);
-    //     i -= 2;
-    // } while (i > 0);
+    //     i += 2;
+    // } while (i <= n*2);
 
     // // 6th Approach (using do-while loop)
-    // int i = 19;
+    // int i = 1;
     // do
     // {
     //     if (i % 2)
     //         printf("\n%d", i);
-    //     i--;
-    // } while (i);
+    //     i++;
+    // } while (i <= n*2);
 
     // // 7th Approach (using for loop)
-    // for (int i = 10; i; i--)
+    // for (int i = 1; i <= n; i++)
     //     printf("\n%d", i * 2 - 1);
 
     // // 8th Approach (using for loop)
-    // for (int i = 19; i > 0; i -= 2)
+    // for (int i = 1; i <= n*2; i += 2)
     //     printf("\n%d", i);
 
     // // 9th Approach (using for loop)
-    // for (int i = 19; i; i--)
+    // for (int i = 1; i <= n*2; i++)
     // {
     //     if (i % 2)
     //         printf("\n%d", i);
