@@ -1,0 +1,69 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ Operators
+
+
+01. WAP to convert Celcius to Fahrenheit.
+
+02. WAP to Convert Fahrenheit to Celcius.
+
+03. WAP to Convert Feets to Meters.
+
+04. WAP to Convert Meters to Feets.
+
+05. WAP to Convert Miles to Kilometers.
+
+06. WAP to Convert Kilometers to Meters.
+
+07. WAP to Convert Inches to Centimeters.
+
+08. WAP to Convert Millimeters to Inches.
+
+09. WAP to Demonstrate the use of sizeof() Operator.
+
+10. WAP to Find Area And Perimeter of A Rectangle.
+
+11. WAP to Take A Number And A Digit From User And Then Append The Digit in the Number - Number = 635 and Digit = 8 Then Make it => 6358
+    👉 Output => Number => 635 and Digit => 8. Result After Appending 7 to 635 => 6358
+
+12. WAP to Add Two Complex Numbers. 
+
+13. WAP to Calculate Simple Interest.
+
+14. WAP to Calculate Compound Interest.
+
+15. WAP to Check Whether A Number is Even or Odd Using Bitwise Operator.
+
+16. WAP to Convert Last Digit of a Number into Zero => Digit = 245 Make it => 240.
+    👉 Output => Result After Converting Last Digit of 245 into 0 => 245
+
+17. WAP to Find Product of Two Real Numbers.
+
+18. WAP to Find Position of First 1 When Searching From LSB to MSB.
+
+19. WAP to Take A Character As an Input And Print Its ASCII Code.
+
+20. WAP to Print Unit Digit of A Given Number.
+
+21. WAP to Print A Number Without its Last Digit.
+
+22. WAP to Take A Three Digit Number And Rotate Its Digit By One Position Towards Right => Ex. 638 Convert it into 863.
+    👉 Output => 638 After Rotating One Digit Towards Right => 863
+
+23. WAP to Take Amount in INR and Convert it into USD, Where 1 USD = 83.19 .
+
+24. WAP to Store -8 in a Variable using Bitwise operator. You cannot Directly Assign -8 to a Variable.
+
+25. WAP to Input Three Digit Number And Calculate Sum of It's Digits.
+
+26. WAP to Swap Values of Two int Variables. You can Use Two or Three Variables.
+
+27. WAP to Swap Values of Two int Variables Without Third Variable.
+
+28. WAP to Swap Values of Two int Variables Using XOR.
+
+29. WAP to Demonstrate the use of Comma Operator (,).
+
+30. WAP to Demonstrate the use of Conditional Operator ( ? : ).
+
