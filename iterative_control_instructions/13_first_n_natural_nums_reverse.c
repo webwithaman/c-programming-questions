@@ -3,15 +3,26 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
 
-    printf("\n>>>>>>>>> First 10 Natural Numbers In Reverse Order <<<<<<<<<\n");
+    int n;
+    printf("\nEnter N to Print First N Natural Numbers In Reverse Order => ");
+    scanf("%d", &n);
+
+    if (n < 0)
+    {
+        printf("!!! Invalid Input .....");
+        exit(0);
+    }
+
+    printf("\n>>>>>>>> First %d Natural Numbers In Reverse Order <<<<<<<<\n", n);
 
     // //  1st Approach (using while loop)
-    int i = 10;
+    int i = n;
     while (i)
     {
         printf("\n%d", i);
@@ -19,17 +30,17 @@ int main()
     }
 
     // // 2nd Approach (using while loop)
-    // int i = 10;
+    // int i = n;
     // while (i)
     //     printf("\n%d", i--);
 
     // 3rd Approach (using while loop)
     // int i = 1;
-    // while (i <= 10)
-    //     printf("\n%d", 11 - i++);
+    // while (i <= n)
+    //     printf("\n%d", n + 1 - i++);
 
     // // 4th Approach (using do-while loop)
-    // int i = 10;
+    // int i = n;
     // do
     // {
     //     printf("\n%d", i);
@@ -37,7 +48,7 @@ int main()
     // } while (i > 0);
 
     // // 5th Approach (using do-while loop)
-    // int i = 10;
+    // int i = n;
     // do
     // {
     //     printf("\n%d", i--);
@@ -47,16 +58,16 @@ int main()
     // int i = 1;
     // do
     // {
-    //     printf("\n%d", 11 - i++);
+    //     printf("\n%d", n + 1 - i++);
     // } while (i <= 10);
 
     // // 7th Approach (using for loop)
-    // for (int i = 10; i; i--)
+    // for (int i = n; i; i--)
     //     printf("\n%d", i);
 
     // // 8th Approach (using for loop)
-    // for (int i = 1; i <= 10; i++)
-    //     printf("\n%d", 11 - i);
+    // for (int i = 1; i <= n; i++)
+    //     printf("\n%d", n + 1 - i);
 
     printf("\n");
     getch();
