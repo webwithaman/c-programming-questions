@@ -56,7 +56,7 @@
 
 26. WAP to calculate factorial of a number.
 
-27. WAP to count digits in a given number.
+27. WAP to count digits of a given number.
 
 28. WAP to check whether a given number is a Prime number or not.
 
