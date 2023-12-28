@@ -35,6 +35,7 @@ int main()
     // for (int i = 1; i <= 10; i++)
     //     printf("\n%d x %2d = %d", 8, i, 8 * i);
 
+    printf("\n");
     getch();
     return 0;
 }
