@@ -86,3 +86,5 @@
     or not.
 
 40. WAP to print all Armstrong numbers under 1000.
+
+41. WAP to find all Prime Factors of a given Number.
