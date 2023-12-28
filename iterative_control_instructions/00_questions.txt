@@ -91,4 +91,4 @@
 
 42. WAP to check whether a given number is a Perfect Number or Not.
 
-43. WAP to input base and exponent then calculate power.
+43. WAP to input base and exponent from user then calculate power.
