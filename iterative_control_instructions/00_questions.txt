@@ -68,7 +68,7 @@
 
 32. WAP to print first N terms of Fibonacci series.
 
-33. WAP to check whether a given number is there in the Fibonacci
+33. WAP to check whether a given number is in the Fibonacci
     series or not.
 
 34. WAP to calculate HCF of two numbers.

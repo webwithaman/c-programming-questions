@@ -30,7 +30,7 @@ int main()
     }
     printf("\n%dth term of Fibonacci Series => %d", n, result);
 
-    // 2nd Approach (If Series Starting From 1,1,2,3,5,8.......)
+    // // 2nd Approach (If Series Starting From 1,1,2,3,5,8.......)
     // int prev = 0, next = 1, result, count = 1;
     // for (int count = 1; count <= n; count++)
     // {
