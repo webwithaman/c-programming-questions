@@ -1,4 +1,4 @@
-// C program to calculate LCM of two numbers
+// C program to calculate HCF of two numbers
 
 // Header Files
 #include <stdio.h>
@@ -19,31 +19,19 @@ int main()
     int min = num1 < num2 ? num1 : num2;
 
     // // 1st Approach
-    int lcm;
-    for (int i = max; i <= num1 * num2; i += max)
+    int remainder, hcf;
+    do
     {
-        if (i % min == 0)
-        {
-            lcm = i;
-            break;
-        }
-    }
-    printf("\nLCM => %d", lcm);
+        remainder = num1 % num2;
+        num1 = num2;
+        num2 = remainder;
+    } while (remainder);
+
+    hcf = num1;
+    printf("\nHCF => %d", hcf);
 
     // // 2nd Approach
-    // int lcm;
-    // for (int j = max; j <= num1 * num2; j += max)
-    // {
-    //     if (j % num1 == 0 && j % num2 == 0)
-    //     {
-    //         lcm=j;
-    //         break;
-    //     }
-    // }
-    // printf("\nLCM => %d", lcm);
-
-    // // 3rd Approach
-    // int hcf, lcm;
+    // int hcf;
     // if (max % min)
     // {
     //     if (max == min + 1 || max == min + 2)
@@ -61,21 +49,33 @@ int main()
     // else
     //     hcf = min;
 
-    // lcm = num1 * num2 / hcf;
-    // printf("\nLCM => %d", lcm);
+    // printf("\nHCF => %d", hcf);
+
+    // // 3rd Approach
+    // int lcm;
+    // for (int j = max; j <= num1 * num2; j += max)
+    // {
+    //     if (j % num1 == 0 && j % num2 == 0)
+    //     {
+    //         lcm = j;
+    //         break;
+    //     }
+    // }
+    // hcf = num1 * num2 / lcm;
+    // printf("\nHCF => %d", hcf);
 
     // // 4th Approach
-    // int remainder, hcf, lcm;
-    // do
+    // int lcm, hcf;
+    // for (int i = max; i <= num1 * num2; i += max)
     // {
-    //     remainder = num1 % num2;
-    //     num1 = num2;
-    //     num2 = remainder;
-    // } while (remainder);
-
-    // hcf = num1;
-    // lcm = max * min / hcf;
-    // printf("\nLCM => %d", lcm);
+    //     if (i % min == 0)
+    //     {
+    //         lcm = i;
+    //         break;
+    //     }
+    // }
+    // hcf = num1 * num2 / lcm;
+    // printf("\nHCF => %d", hcf);
 
     printf("\n");
     getch();
