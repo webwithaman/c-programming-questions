@@ -10,7 +10,7 @@
 int main()
 {
 
-    int beg, end, i = -1;
+    int beg, end, i, flag = 1;
     printf("\nEnter Two Numbers to Print All Prime Numbers Between Them => ");
     scanf("%d%d", &beg, &end);
 
@@ -20,9 +20,10 @@ int main()
         printf("!!! Invalid Input .....");
         exit(0);
     }
-
     if (beg > end)
         beg = (beg + end) - (end = beg);
+
+    printf("\n>>>>>>>>> Prime Numbers Between %d and %d <<<<<<<<<<<<<<<\n", beg, end);
 
     for (int num = beg; num <= end; num++)
     {
@@ -34,12 +35,15 @@ int main()
                     break;
             }
             if (i > sqrt(num))
-                printf("\n%d ", num);
+            {
+                printf("%d ", num);
+                flag = 0;
+            }
         }
     }
 
-    if (i == -1)
-        printf("\nThere Are No Prime Numbers Between Entered Numbers");
+    if (flag)
+        printf("\nThere Are No Prime Numbers Between %d and %d", beg, end);
 
     printf("\n");
     getch();
