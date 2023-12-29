@@ -2,12 +2,12 @@
 
 /*
 
-Pattern 08.
+Pattern 10.
 
-        1
-       121
-      12321
-     1234321
+    1 2 3 4 3 2 1
+    1 2 3   3 2 1
+    1 2       2 1
+    1           1
 
 */
 
@@ -41,15 +41,15 @@ int main()
 
     for (int row = 1; row <= maxRows; row++)
     {
-        spacesInCurrentRow = (maxRows - row) * 2;
+        spacesInCurrentRow = (row - 1) * 2 - 1;
 
-        for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-            printf("  ");
-
-        for (int col = 1; col <= row; col++)
+        for (int col = 1; col <= maxRows + 1 - row; col++)
             printf("%2d", col);
 
-        for (int col = row - 1; col; col--)
+        for (int space = 1; space <= spacesInCurrentRow; space++)
+            printf("  ");
+
+        for (int col = row == 1 ? maxRows - 1 : maxRows + 1 - row; col; col--)
             printf("%2d", col);
 
         printf("\n");
@@ -64,10 +64,12 @@ int main()
 
     //     for (int col = 1; col <= maxCols; col++)
     //     {
-    //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-    //             printf("%2d", col < maxRows ? numAtCol++ : numAtCol--);
+    //         if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
+    //             printf("%2d", numAtCol);
     //         else
     //             printf("  ");
+
+    //         col < maxRows ? numAtCol++ : numAtCol--;
     //     }
 
     //     printf("\n");

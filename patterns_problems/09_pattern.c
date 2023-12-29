@@ -44,13 +44,13 @@ int main()
         spacesInCurrentRow = (row - 1) * 2;
 
         for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-            printf(" ");
+            printf("  ");
 
         for (int col = 1; col <= maxRows + 1 - row; col++)
-            printf("%d", col);
+            printf("%2d", col);
 
         for (int col = maxRows - row; col > 0; col--)
-            printf("%d", col);
+            printf("%2d", col);
 
         printf("\n");
     }
@@ -65,9 +65,9 @@ int main()
     //     for (int col = 1; col <= maxCols; col++)
     //     {
     //         if (col >= row && col <= maxCols + 1 - row)
-    //             printf("%d", col < maxRows ? numAtCol++ : numAtCol--);
+    //             printf("%2d", col < maxRows ? numAtCol++ : numAtCol--);
     //         else
-    //             printf(" ");
+    //             printf("  ");
     //     }
 
     //     printf("\n");
