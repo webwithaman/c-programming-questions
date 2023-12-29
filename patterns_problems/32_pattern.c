@@ -36,12 +36,33 @@ int main()
     }
 
     // Determine Number of Columns According to maxRows
-    maxCols = maxRows;
+    maxCols = (maxRows + 1) / 2;
 
     // // Print Pattern
     puts("\n--------------------------------------------\n");
 
-       printf("\n");
+    // // 1st Approach
+    int vary = 1;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= maxCols; col++)
+        {
+            if (col <= vary)
+                printf("*");
+            else
+                printf(" ");
+        }
+        row < maxCols ? vary++ : vary--;
+
+        // If user wants even number of rows
+        if (row == maxCols && maxRows % 2 == 0)
+            vary++;
+
+        printf("\n");
+    }
+
+    printf("\n");
     getch();
     return 0;
 }
