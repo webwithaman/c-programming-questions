@@ -20,55 +20,63 @@ Pattern 05.
 // Main Function Start
 int main()
 {
-    int rows, cols;
-    printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
+    int maxRows, maxCols;
+    printf("\nHow Many maxRowss => ");
+    scanf("%d", &maxRows);
 
     // Handling Invalid Input
-    if (rows < 1)
+    if (maxRows < 1)
     {
         printf("\n!!! Invalid Input,Plz Enter Positive Number....");
         exit(0);
     }
 
-    // Determine Number of Columns According to Rows
-    cols = rows * 2 - 1;
+    // Determine Number of Columns According to maxRowss
+    maxCols = maxRows * 2 - 1;
     puts("\n--------------------------------------------\n");
 
     // // Print Pattern
 
-    // // 1st Approach
-    // for (int i = 1; i <= rows; i++)
+    // // 2nd Approach
+    // int colsInCurrentRow, spacesInCurrentRow;
+    // for (int row = 1; row <= maxRows; row++)
     // {
-    //     for (int space = 1; space <= rows + 1 - i; space++)
+    //     spacesInCurrentRow = (maxRows - row) * 2;
+    //     colsInCurrentRow = maxCols - spacesInCurrentRow;
+    //     // colsInCurrentRow = row * 2 - 1;
+
+    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
     //         printf(" ");
 
-    //     for (int j = 1; j <= 2 * i - 1; j++)
+    //     for (int col = 1; col <= colsInCurrentRow; col++)
     //         printf("*");
 
     //     printf("\n");
     // }
 
     // // 2nd Approach
-    int spacesInEachRows;
-    for (int i = 1; i <= rows; i++)
-    {
-        spacesInEachRows = (rows - i) * 2;
-        for (int space = 1; space <= spacesInEachRows / 2; space++)
-            printf(" ");
-
-        for (int j = 1; j <= cols - spacesInEachRows; j++)
-            printf("*");
-
-        printf("\n");
-    }
-
-    // // 4th Approach
-    // for (int i = 1; i <= rows; i++)
+    // int spacesInCurrentRow, colsInCurrentRow = -1;
+    // for (int row = 1; row <= maxRows; row++)
     // {
-    //     for (int j = 1; j <= cols; j++)
+    //     spacesInCurrentRow = (maxRows - row) * 2;
+
+    //     colsInCurrentRow += 2;
+
+    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= colsInCurrentRow; col++)
+    //         printf("*");
+
+    //     printf("\n");
+    // }
+
+    // // 3rd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
     //     {
-    //         if (j >= rows + 1 - i && j <= rows - 1 + i)
+    //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
     //             printf("*");
     //         else
     //             printf(" ");
