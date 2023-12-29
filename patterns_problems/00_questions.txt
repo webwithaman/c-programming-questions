@@ -34,7 +34,7 @@ Pattern 03.
 
 
 
- Pattern 04.
+Pattern 04.
 
     * * * * *
       * * * *
