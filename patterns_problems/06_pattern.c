@@ -20,41 +20,64 @@ Pattern 06.
 // Main Function Start
 int main()
 {
-    int rows, cols;
+    int maxRows, maxCols;
     printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
+    scanf("%d", &maxRows);
 
     // Handling Invalid Input
-    if (rows < 1)
+    if (maxRows < 1)
     {
         printf("\n!!! Invalid Input,Plz Enter Positive Number....");
         exit(0);
     }
 
-    // Determine Number of Columns According to Rows
-    cols = rows * 2 - 1;
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows * 2 - 1;
     puts("\n--------------------------------------------\n");
 
     // // Print Pattern
 
     // // 1st Approach
-    for (int i = 1; i <= rows; i++)
+    int colsInCurrentRow, spacesInCurrentRow;
+    for (int row = 1; row <= maxRows; row++)
     {
-        for (int space = 1; space <= i - 1; space++)
+        spacesInCurrentRow = (row - 1) * 2;
+
+        colsInCurrentRow = maxCols - (row - 1) * 2;
+        // colsInCurrentRow = maxCols - spacesInCurrentRow;
+
+        for (int space = 1; space <= spacesInCurrentRow / 2; space++)
             printf(" ");
 
-        for (int j = 1; j <= cols - (i - 1) * 2; j++)
+        for (int col = 1; col <= colsInCurrentRow; col++)
             printf("*");
 
         printf("\n");
     }
 
     // // 2nd Approach
-    // for (int i = 1; i <= rows; i++)
+    // int colsInCurrentRow = maxCols + 2, spacesInCurrentRow;
+    // for (int row = 1; row <= maxRows; row++)
     // {
-    //     for (int j = 1; j <= cols; j++)
+    //     spacesInCurrentRow = (row - 1) * 2;
+
+    //     colsInCurrentRow -= 2;
+
+    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= colsInCurrentRow; col++)
+    //         printf("*");
+
+    //     printf("\n");
+    // }
+
+    // // 3rd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
     //     {
-    //         if (j >= i && j <= cols + 1 - i)
+    //         if (col >= row && col <= maxCols + 1 - row)
     //             printf("*");
     //         else
     //             printf(" ");

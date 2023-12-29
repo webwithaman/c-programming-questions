@@ -21,7 +21,7 @@ Pattern 05.
 int main()
 {
     int maxRows, maxCols;
-    printf("\nHow Many maxRowss => ");
+    printf("\nHow Many Rows => ");
     scanf("%d", &maxRows);
 
     // Handling Invalid Input
