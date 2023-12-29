@@ -2,12 +2,12 @@
 
 /*
 
-Pattern 20.
+Pattern 21.
 
     1
     2 3
-    4 5 6
-    7 8 9 10
+    3 4 5
+    4 5 6 7
 
 */
 
@@ -37,10 +37,11 @@ int main()
     puts("\n--------------------------------------------\n");
 
     // // 1st Approach
-    int numAtCol = 1;
+    int numAtCol;
 
     for (int row = 1; row <= maxRows; row++)
     {
+        numAtCol = row;
 
         for (int col = 1; col <= row; col++)
             printf("%3d", numAtCol++);
@@ -49,23 +50,20 @@ int main()
     }
 
     // // 2nd Approach
-    // int numAtCol = 1, vary = 1;
-
     // for (int row = 1; row <= maxRows; row++)
     // {
-    //     vary += row - 1;
-
-    //     for (int col = vary; col <= vary + row - 1; col++)
+    //     for (int col = row; col <= row * 2 - 1; col++)
     //         printf("%3d", col);
 
     //     printf("\n");
     // }
 
     // // 3rd Approach
-    // int numAtCol = 1;
+    // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
     // {
+    //     numAtCol = row;
 
     //     for (int col = 1; col <= maxCols; col++)
     //     {
