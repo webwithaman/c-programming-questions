@@ -163,7 +163,7 @@ Pattern 16.
 
 
 
-  Pattern 17.
+Pattern 17.
 
     *********
      *     *
@@ -173,7 +173,7 @@ Pattern 16.
 
     
 
-  Pattern 18.
+Pattern 18.
 
           *
          ***
@@ -205,7 +205,7 @@ Pattern 19.
 
 
 
- Pattern 20.
+Pattern 20.
 
     1
     2 3
@@ -214,7 +214,7 @@ Pattern 19.
 
 
 
- Pattern 21.
+Pattern 21.
 
     1
     2 3
@@ -223,7 +223,7 @@ Pattern 19.
 
 
   
- Pattern 22.
+Pattern 22.
 
     A B C D
     A B C D
