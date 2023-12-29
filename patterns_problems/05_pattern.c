@@ -38,18 +38,32 @@ int main()
     // // Print Pattern
 
     // // 1st Approach
+    // for (int i = 1; i <= rows; i++)
+    // {
+    //     for (int space = 1; space <= rows + 1 - i; space++)
+    //         printf(" ");
+
+    //     for (int j = 1; j <= 2 * i - 1; j++)
+    //         printf("*");
+
+    //     printf("\n");
+    // }
+
+    // // 2nd Approach
+    int spacesInEachRows;
     for (int i = 1; i <= rows; i++)
     {
-        for (int space = 1; space <= rows + 1 - i; space++)
+        spacesInEachRows = (rows - i) * 2;
+        for (int space = 1; space <= spacesInEachRows / 2; space++)
             printf(" ");
 
-        for (int j = 1; j <= 2 * i - 1; j++)
+        for (int j = 1; j <= cols - spacesInEachRows; j++)
             printf("*");
 
         printf("\n");
     }
 
-    // // 2nd Approach
+    // // 4th Approach
     // for (int i = 1; i <= rows; i++)
     // {
     //     for (int j = 1; j <= cols; j++)

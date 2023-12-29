@@ -20,41 +20,46 @@ Pattern 02.
 // Main Function Start
 int main()
 {
-    int rows, cols;
-    printf("\nHow Many Rows => ");
-    scanf("%d", &rows);
+    int maxRows, maxCols;
+    printf("\nHow Many maxRows => ");
+    scanf("%d", &maxRows);
 
     // Handling Invalid Input
-    if (rows < 1)
+    if (maxRows < 1)
     {
         printf("\n!!! Invalid Input,Plz Enter Positive Number....");
         exit(0);
     }
 
-    // Determine Number of Columns According to Rows
-    cols = rows;
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
     puts("\n--------------------------------------------\n");
 
     // // Print Pattern
 
     // // 1st Approach
-    for (int i = 1; i <= rows; i++)
+    int colsInCurrentRow, spacesInCurrentRow;
+    for (int row = 1; row <= maxRows; row++)
     {
-        for (int space = 1; space <= rows - i; space++)
+        spacesInCurrentRow = maxCols - row;
+
+        colsInCurrentRow = row;
+
+        for (int space = 1; space <= spacesInCurrentRow; space++)
             printf("  ");
 
-        for (int j = 1; j <= i; j++)
+        for (int col = 1; col <= colsInCurrentRow; col++)
             printf("* ");
 
         printf("\n");
     }
 
     // // 2nd Approach
-    // for (int i = 1; i <= rows; i++)
+    // for (int row = 1; row <= maxRows; row++)
     // {
-    //     for (int j = 1; j <= cols; j++)
+    //     for (int col = 1; col <= maxCols; col++)
     //     {
-    //         if (j >= rows + 1 - i)
+    //         if (col >= maxCols + 1 - row)
     //             printf("* ");
     //         else
     //             printf("  ");
