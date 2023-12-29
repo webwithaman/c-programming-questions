@@ -41,33 +41,7 @@ int main()
     // // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
-    int colsInCurrentRow;
-
-    for (int row = 1; row <= maxRows; row++)
-    {
-        colsInCurrentRow = row;
-
-        for (int col = 1; col <= colsInCurrentRow; col++)
-            printf("%d ", col);
-
-        printf("\n");
-    }
-
-    // // 2nd Approach
-    // for (int row = 1; row <= maxRows; row++)
-    // {
-    //     for (int col = 1; col <= maxCols; col++)
-    //     {
-    //         if (col <= row)
-    //             printf("%d ", col);
-    //         else
-    //             printf("  ");
-    //     }
-    //     printf("\n");
-    // }
-
-    printf("\n");
+       printf("\n");
     getch();
     return 0;
 }
