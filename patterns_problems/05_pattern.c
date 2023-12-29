@@ -31,14 +31,15 @@ int main()
         exit(0);
     }
 
-    // Determine Number of Columns According to maxRowss
+    // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
-    puts("\n--------------------------------------------\n");
 
     // // Print Pattern
+    puts("\n--------------------------------------------\n");
 
-    // // 2nd Approach
+    // // 1st Approach
     // int colsInCurrentRow, spacesInCurrentRow;
+
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     spacesInCurrentRow = (maxRows - row) * 2;
@@ -56,6 +57,7 @@ int main()
 
     // // 2nd Approach
     // int spacesInCurrentRow, colsInCurrentRow = -1;
+
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     spacesInCurrentRow = (maxRows - row) * 2;

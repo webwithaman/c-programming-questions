@@ -33,12 +33,13 @@ int main()
 
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
-    puts("\n--------------------------------------------\n");
 
     // // Print Pattern
+    puts("\n--------------------------------------------\n");
 
     // // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
+
     for (int row = 1; row <= maxRows; row++)
     {
         spacesInCurrentRow = row - 1;
