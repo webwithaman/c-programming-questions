@@ -59,7 +59,8 @@ int main()
     }
 
     // // 2nd Approach
-    // int spacesInCurrentRow, charAtCol;
+    // int spacesInCurrentRow;
+    // char charAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
     // {
@@ -80,7 +81,7 @@ int main()
     // }
 
     // // 3rd Approach
-    // int charAtCol;
+    // char charAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
     // {
