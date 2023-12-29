@@ -2,13 +2,17 @@
 
 /*
 
-Pattern 05.
+Pattern 18.
 
-        *
-       ***
-      *****
-     *******
-    *********
+          *
+         ***
+        *****
+       *******
+      *********
+       *******
+        *****
+         ***
+          *
 
 */
 
@@ -32,19 +36,23 @@ int main()
     }
 
     // Determine Number of Columns According to maxRows
-    maxCols = maxRows * 2 - 1;
+    maxCols = maxRows;
 
     // // Print Pattern
     puts("\n--------------------------------------------\n");
 
     // // 1st Approach
-    int colsInCurrentRow, spacesInCurrentRow;
+    int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2;
 
     for (int row = 1; row <= maxRows; row++)
     {
-        spacesInCurrentRow = (maxRows - row) * 2;
-        colsInCurrentRow = maxCols - spacesInCurrentRow;
-        // colsInCurrentRow = row * 2 - 1;
+        colsInCurrentRow += row <= halfOfCols ? 2 : -2;
+
+        // If user wants even number of rows
+        if (row == halfOfCols + 1 && maxRows % 2 == 0)
+            colsInCurrentRow += 2;
+
+        spacesInCurrentRow = maxCols - colsInCurrentRow;
 
         for (int space = 1; space <= spacesInCurrentRow / 2; space++)
             printf(" ");
@@ -56,33 +64,24 @@ int main()
     }
 
     // // 2nd Approach
-    // int spacesInCurrentRow, colsInCurrentRow = -1;
+    // int halfOfCols = (maxCols + 1) / 2, vary = 1;
 
     // for (int row = 1; row <= maxRows; row++)
     // {
-    //     spacesInCurrentRow = (maxRows - row) * 2;
 
-    //     colsInCurrentRow += 2;
-
-    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    //         printf(" ");
-
-    //     for (int col = 1; col <= colsInCurrentRow; col++)
-    //         printf("*");
-
-    //     printf("\n");
-    // }
-
-    // // 3rd Approach
-    // for (int row = 1; row <= maxRows; row++)
-    // {
     //     for (int col = 1; col <= maxCols; col++)
     //     {
-    //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
     //             printf("*");
     //         else
     //             printf(" ");
     //     }
+
+    //     row < halfOfCols ? vary++ : vary--;
+
+    //     // If user wants even number of rows
+    //     if (row == halfOfCols && maxRows % 2 == 0)
+    //         vary++;
 
     //     printf("\n");
     // }
