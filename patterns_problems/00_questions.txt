@@ -4,7 +4,7 @@
 🟢 Topic ➡ Iterative Control Instructions (Patterns Problems)
 
 
-Pattern 1.
+Pattern 01.
 
      *
      * *
@@ -14,7 +14,7 @@ Pattern 1.
 
 
 
-Pattern 2.
+Pattern 02.
 
              *
            * *
@@ -24,7 +24,7 @@ Pattern 2.
 
 
 
-Pattern 3.
+Pattern 03.
 
     * * * * *
     * * * *
@@ -34,7 +34,7 @@ Pattern 3.
 
 
 
- Pattern 4.
+ Pattern 04.
 
     * * * * *
       * * * *
@@ -44,7 +44,7 @@ Pattern 3.
 
 
 
-Pattern 5.
+Pattern 05.
     
         *
        ***
@@ -54,7 +54,7 @@ Pattern 5.
 
 
 
-Pattern 6.
+Pattern 06.
 
     *********
      *******
@@ -64,7 +64,7 @@ Pattern 6.
 
 
 
-Pattern 7.
+Pattern 07.
 
     **********
     ****  ****
@@ -74,7 +74,7 @@ Pattern 7.
 
 
 
-Pattern 8.
+Pattern 08.
 
         1
        121
@@ -83,7 +83,7 @@ Pattern 8.
 
     
 
-Pattern 9.
+Pattern 09.
 
      1234321
       12321
