@@ -13,6 +13,7 @@ Pattern 1.
      * * * * *
 
 
+
 Pattern 2.
 
              *
@@ -40,6 +41,7 @@ Pattern 3.
         * * *
           * *
             *
+
 
 
 Pattern 5.
@@ -89,6 +91,7 @@ Pattern 9.
         1
 
 
+
 Pattern  10.
 
     1 2 3 4 3 2 1
@@ -117,6 +120,7 @@ Pattern 12.
         A
 
 
+
 Pattern 13.
 
     ABCDEFGFEDCBA
@@ -136,6 +140,7 @@ Pattern 14.
      *   *
      *     *
      * * * * *
+
 
 
 Pattern 15.
@@ -167,7 +172,6 @@ Pattern 16.
         *
 
     
-  
 
   Pattern 18.
 
@@ -200,6 +204,7 @@ Pattern 19.
          *
 
 
+
  Pattern 20.
 
     1
@@ -216,6 +221,7 @@ Pattern 19.
     3 4 5
     4 5 6 7
 
+
   
  Pattern 22.
 
@@ -223,6 +229,7 @@ Pattern 19.
     A B C D
     A B C D
     A B C D
+
 
 
 Pattern 23.
@@ -286,11 +293,13 @@ Pattern 28.
     4 3 2 1
 
   
+
 Pattern 30.
 
     1 2 3
     4 5 6
     7 8 9
+
 
 
 Pattern 31.
@@ -300,6 +309,7 @@ Pattern 31.
     1 2 3
     1 2 3 4
     1 2 3 4 5
+
 
   
 Pattern 32.
@@ -315,6 +325,7 @@ Pattern 32.
     *
 
 
+
 Pattern 33.
 
          *
@@ -324,6 +335,7 @@ Pattern 33.
      * * * * *
 
 
+
 Pattern 34.
 
      * * * * *
@@ -331,6 +343,7 @@ Pattern 34.
        * * *
         * *
          *
+
 
 
 Pattern 35.
@@ -361,6 +374,7 @@ Pattern 36.
          *
 
 
+
 Pattern 37.
 
               1
@@ -380,6 +394,7 @@ Pattern 38.
        32123
         212
          1
+
 
   
 Pattern 39.
@@ -408,6 +423,7 @@ Pattern 40.
        ***    ***
        **      **
        *        *
+
 
 
 Pattern 41.
@@ -440,7 +456,6 @@ Pattern 43.
 
 
 
-
 Pattern 44.
 
        *        *
@@ -454,8 +469,21 @@ Pattern 44.
        **      **
        *        *
 
-    
+
+
 Pattern 45.
+
+      *           *
+        *       *     
+          *   *    
+            *    
+          *   *
+        *       *
+      *           *
+        
+
+
+Pattern 46.
 
           *****
          *   *
@@ -465,7 +493,7 @@ Pattern 45.
 
 
 
-Pattern 46.
+Pattern 47.
 
       1  2  3  4   17  18  19  20
          5  6  7   14  15  16
@@ -473,7 +501,8 @@ Pattern 46.
                10  11
 
 
-Pattern 47.
+
+Pattern 48.
 
          *
         * *
@@ -486,7 +515,20 @@ Pattern 47.
          *
 
 
-Pattern 48.
+
+Pattern 49.
+
+         *
+         *
+         *
+   * * * * * * * 
+         *
+         *
+         *
+
+
+
+Pattern 50.
 
             1
           2 1 2
@@ -496,7 +538,7 @@ Pattern 48.
 
   
 
-Pattern 49.
+Pattern 51.
 
     1                 1
     1 2             2 1
@@ -506,7 +548,7 @@ Pattern 49.
 
 
 
-Pattern 50.
+Pattern 52.
 
          4 4 4 4 4 4 4
          4 3 3 3 3 3 4
@@ -518,7 +560,7 @@ Pattern 50.
 
 
 
-Pattern 51.
+Pattern 53.
 
        E
        D E
@@ -526,8 +568,9 @@ Pattern 51.
        B C D E
        A B C D E
 
+
     
-Pattern 52.
+Pattern 54.
 
        E D C B A
        D C B A
@@ -536,7 +579,8 @@ Pattern 52.
        A
 
 
-Pattern 53.
+
+Pattern 55.
 
        a
        B c
