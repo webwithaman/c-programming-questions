@@ -38,9 +38,10 @@ int main()
 
         if (sum == num)
             printf("%d ", num);
-        }
+    }
 
     printf("\n");
     getch();
     return 0;
 }
+// Main Function End
