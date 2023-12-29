@@ -2,13 +2,13 @@
 
 /*
 
-Pattern 05.
+Pattern 06.
 
-        *
-       ***
-      *****
-     *******
     *********
+     *******
+      *****
+       ***
+        *
 
 */
 
@@ -40,10 +40,10 @@ int main()
     // // 1st Approach
     for (int i = 1; i <= rows; i++)
     {
-        for (int space = 1; space <= rows + 1 - i; space++)
+        for (int space = 1; space <= i - 1; space++)
             printf(" ");
 
-        for (int j = 1; j <= 2 * i - 1; j++)
+        for (int j = 1; j <= cols - (i - 1) * 2; j++)
             printf("*");
 
         printf("\n");
@@ -54,7 +54,7 @@ int main()
     // {
     //     for (int j = 1; j <= cols; j++)
     //     {
-    //         if (j >= rows + 1 - i && j <= rows - 1 + i)
+    //         if (j >= i && j <= cols + 1 - i)
     //             printf("*");
     //         else
     //             printf(" ");
