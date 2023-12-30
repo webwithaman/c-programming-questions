@@ -26,7 +26,7 @@ Pattern 35.
 int main()
 {
     int maxRowsInOne, maxRows, maxCols;
-    printf("\nHow Many Rows => ");
+    printf("\nHow Many Rows For One Triangle => ");
     scanf("%d", &maxRowsInOne);
 
     // Handling Invalid Input
