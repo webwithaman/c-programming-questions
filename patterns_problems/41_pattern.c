@@ -37,37 +37,7 @@ int main()
     // // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
-    int colsInCurrentRow, spacesInCurrentRow;
-
-    for (int row = 1; row <= maxRows; row++)
-    {
-        spacesInCurrentRow = row - 1;
-
-        colsInCurrentRow = maxCols - spacesInCurrentRow;
-
-        for (int space = 1; space <= spacesInCurrentRow; space++)
-            printf("  ");
-
-        for (int col = 1; col <= colsInCurrentRow; col++)
-            printf("* ");
-
-        printf("\n");
-    }
-
-    // // 2nd Approach
-    // for (int row = 1; row <= maxRows; row++)
-    // {
-    //     for (int col = 1; col <= maxCols; col++)
-    //     {
-    //         if (col >= row)
-    //             printf("* ");
-    //         else
-    //             printf("  ");
-    //     }
-
-    //     printf("\n");
-    // }
+    
 
     printf("\n");
     getch();
