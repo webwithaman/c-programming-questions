@@ -38,25 +38,25 @@ int main()
     puts("\n--------------------------------------------\n");
 
     // // 1st Approach
-    // int colsInCurrentRow = -1, spacesInCurrentRow, numAtCol = 0;
+    int colsInCurrentRow = -1, spacesInCurrentRow, numAtCol = 0;
 
-    // for (int row = 1; row <= maxRows; row++)
-    // {
+    for (int row = 1; row <= maxRows; row++)
+    {
 
-    //     colsInCurrentRow += 2;
-    //     numAtCol = row;
-    //     spacesInCurrentRow = maxCols - colsInCurrentRow;
+        colsInCurrentRow += 2;
+        numAtCol = row;
+        spacesInCurrentRow = maxCols - colsInCurrentRow;
 
-    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    //         printf("   ");
+        for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+            printf("   ");
 
-    //     for (int col = 1; col <= colsInCurrentRow; col++)
-    //     {
-    //         printf("%2d ", col < (colsInCurrentRow + 1) / 2 ? numAtCol-- : numAtCol++);
-    //     }
+        for (int col = 1; col <= colsInCurrentRow; col++)
+        {
+            printf("%2d ", col < (colsInCurrentRow + 1) / 2 ? numAtCol-- : numAtCol++);
+        }
 
-    //     printf("\n");
-    // }
+        printf("\n");
+    }
 
     // // 2nd Approach
     // int spacesInCurrentRow, numAtCol = 0;
@@ -80,23 +80,23 @@ int main()
     // }
 
     // // 3rd Approach
-    int halfOfCols = (maxCols + 1) / 2, vary = 1, numAtCol;
+    // int halfOfCols = (maxCols + 1) / 2, vary = 1, numAtCol;
 
-    for (int row = 1; row <= maxRows; row++)
-    {
+    // for (int row = 1; row <= maxRows; row++)
+    // {
 
-        numAtCol = row;
+    //     numAtCol = row;
 
-        for (int col = 1; col <= maxCols; col++)
-        {
-            if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-                printf("%2d ", col < maxRows ? numAtCol-- : numAtCol++);
-            else
-                printf("   ");
-        }
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    //             printf("%2d ", col < maxRows ? numAtCol-- : numAtCol++);
+    //         else
+    //             printf("   ");
+    //     }
 
-        printf("\n");
-    }
+    //     printf("\n");
+    // }
 
     printf("\n");
     getch();
