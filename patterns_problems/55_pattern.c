@@ -19,6 +19,9 @@ Pattern 55.
 #include <conio.h>
 #include <stdlib.h>
 
+// Function Prototype (Declaration)
+int min(int, int);
+
 // Main Function Start
 int main()
 {
@@ -27,7 +30,7 @@ int main()
     scanf("%d", &n);
 
     // Handling Invalid Input
-    if (maxRows < 1)
+    if (n < 1)
     {
         printf("\n!!! Invalid Input,Plz Enter Positive Number....");
         exit(0);
@@ -61,8 +64,28 @@ int main()
         printf("\n");
     }
 
+    // // 2nd Approach
+    // int numAtCol;
+
+    // for (int row = 0; row < maxRows; row++)
+    // {
+    //     for (int col = 0; col < maxCols; col++)
+    //     {
+    //         numAtCol = n - min(min(row, col), min(maxRows - row, maxCols - col));
+    //         printf("%2d ", numAtCol);
+    //     }
+
+    //     printf("\n");
+    // }
+
     printf("\n");
     getch();
     return 0;
 }
 // Main Function End
+
+// Function to Find Minimum of Two Numbers
+int min(int a, int b)
+{
+    return a < b ? a : b;
+}
