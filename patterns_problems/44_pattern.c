@@ -2,15 +2,17 @@
 
 /*
 
-Pattern 40.
+Pattern 44.
+
 
        *        *
        **      **
-       ***    ***
-       ****  ****
-       **********
-       ****  ****
-       ***    ***
+       * *    * *
+       *  *  *  *
+       *   **   *
+       *   **   *
+       *  *  *  *
+       * *    * *
        **      **
        *        *
 
@@ -48,7 +50,7 @@ int main()
     {
         for (int col = 1; col <= maxCols; col++)
         {
-            if (col <= vary || col >= maxCols + 1 - vary)
+            if (col == 1 || col == vary || col == maxCols + 1 - vary || col == maxCols)
                 printf("*");
             else
                 printf(" ");
@@ -72,13 +74,23 @@ int main()
     //     spacesInCurrentRow = maxCols - vary * 2;
 
     //     for (int col = 1; col <= vary; col++)
-    //         printf("*");
+    //     {
+    //         if (col == 1 || col == vary)
+    //             printf("*");
+    //         else
+    //             printf(" ");
+    //     }
 
     //     for (int space = 1; space <= spacesInCurrentRow; space++)
     //         printf(" ");
 
     //     for (int col = 1; col <= vary; col++)
-    //         printf("*");
+    //     {
+    //         if (col == 1 || col == vary)
+    //             printf("*");
+    //         else
+    //             printf(" ");
+    //     }
 
     //     row < maxCols / 2 ? vary++ : vary--;
 
