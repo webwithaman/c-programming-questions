@@ -2,7 +2,7 @@
 
 /*
 
-Pattern 34s.
+Pattern 34.
 
      * * * * *
       * * * *
