@@ -37,7 +37,18 @@ int main()
     // // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= maxCols; col++)
+        {
+            if (col == 1 || col == maxCols || row == 1 || row == maxRows)
+                printf("*");
+            else
+                printf(" ");
+        }
+
+        printf("\n");
+    }
 
     printf("\n");
     getch();
