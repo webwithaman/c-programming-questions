@@ -139,7 +139,7 @@ int main()
     //     for (int col = 1; col <= maxCols; col++)
     //     {
     //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
-    //             printf("%2d ", col < halfOfCols ? numAtCol++ : numAtCol--);
+    //             printf("%2d ", col < halfOfCols ? numAtCol-- : numAtCol++);
     //         else
     //             printf("   ");
     //     }
