@@ -2,13 +2,14 @@
 
 /*
 
-Pattern 01.
+Pattern 42.
 
-     *
-     * *
-     * * *
-     * * * *
-     * * * * *
+       1
+       0 1
+       1 0 1
+       0 1 0 1
+       1 0 1 0 1
+
 
 */
 
@@ -41,23 +42,23 @@ int main()
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = 1; col <= row; col++)
-            printf("* ");
+            col + row & 1 ? printf("0 ") : printf("1 ");
 
         printf("\n");
     }
 
     // // 2nd Approach
-    // for (int row = 1; row <= maxRows; row++)
-    // {
-    //     for (int col = 1; col <= maxCols; col++)
-    //     {
-    //         if (col <= row)
-    //             printf("* ");
-    //         else
-    //             printf("  ");
-    //     }
-    //     printf("\n");
-    // }
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= maxCols; col++)
+        {
+            if (col <= row)
+                col + row & 1 ? printf("0 ") : printf("1 ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
 
     printf("\n");
     getch();
