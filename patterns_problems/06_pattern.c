@@ -44,8 +44,8 @@ int main()
     {
         spacesInCurrentRow = (row - 1) * 2;
 
-        colsInCurrentRow = maxCols - (row - 1) * 2;
-        // colsInCurrentRow = maxCols - spacesInCurrentRow;
+        // colsInCurrentRow = maxCols - (row - 1) * 2;
+        colsInCurrentRow = maxCols - spacesInCurrentRow;
 
         for (int space = 1; space <= spacesInCurrentRow / 2; space++)
             printf(" ");

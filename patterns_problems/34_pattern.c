@@ -2,13 +2,13 @@
 
 /*
 
-Pattern 33.
+Pattern 34s.
 
-        *
-       * *
-      * * *
-     * * * *
-    * * * * *
+     * * * * *
+      * * * *
+       * * *
+        * *
+         *
 
 */
 
@@ -42,12 +42,12 @@ int main()
 
     for (int row = 1; row <= maxRows; row++)
     {
-        spacesInCurrentRow = (maxRows - row) * 2;
+        spacesInCurrentRow = (row - 1) * 2;
 
         for (int space = 1; space <= spacesInCurrentRow / 2; space++)
             printf(" ");
 
-        for (int col = 1; col <= row; col++)
+        for (int col = 1; col <= maxRows + 1 - row; col++)
             printf("* ");
 
         printf("\n");
@@ -58,9 +58,10 @@ int main()
 
     // for (int row = 1; row <= maxRows; row++)
     // {
-    //     spacesInCurrentRow = (maxRows - row) * 2;
+    //     spacesInCurrentRow = (row - 1) * 2;
+
     //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    //     // colsInCurrentRow = row * 2 - 1;
+    //     // colsInCurrentRow = maxCols - (row - 1) * 2;
     //     toggle = 1;
 
     //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
@@ -84,7 +85,7 @@ int main()
 
     //     for (int col = 1; col <= maxCols; col++)
     //     {
-    //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row && toggle)
+    //         if (col >= row && col <= maxCols + 1 - row && toggle)
     //         {
     //             printf("*");
     //             toggle = 0;
