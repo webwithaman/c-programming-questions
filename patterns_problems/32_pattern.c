@@ -53,6 +53,7 @@ int main()
             else
                 printf(" ");
         }
+
         row < maxCols ? vary++ : vary--;
 
         // If user wants even number of rows
