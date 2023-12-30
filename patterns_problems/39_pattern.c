@@ -44,26 +44,26 @@ int main()
     puts("\n--------------------------------------------\n");
 
     // // 1st Approach
-    // int spacesInCurrentRow = maxRows & 1 ? -1 : -2, colsInCurrentRow;
+    int spacesInCurrentRow = maxRows & 1 ? -1 : -2, colsInCurrentRow;
 
-    // for (int row = 1; row <= maxRows; row++)
-    // {
-    //     if (row != maxRowsInOne + 1)
-    //         spacesInCurrentRow += row <= maxRowsInOne ? 2 : -2;
+    for (int row = 1; row <= maxRows; row++)
+    {
+        if (row != maxRowsInOne + 1)
+            spacesInCurrentRow += row <= maxRowsInOne ? 2 : -2;
 
-    //     colsInCurrentRow = maxCols - spacesInCurrentRow;
+        colsInCurrentRow = maxCols - spacesInCurrentRow;
 
-    //     for (int col = 1; col <= colsInCurrentRow / 2; col++)
-    //         printf("*");
+        for (int col = 1; col <= colsInCurrentRow / 2; col++)
+            printf("*");
 
-    //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    //         printf(" ");
+        for (int space = 1; space <= spacesInCurrentRow; space++)
+            printf(" ");
 
-    //     for (int col = 1; col <= colsInCurrentRow / 2; col++)
-    //         printf("*");
+        for (int col = 1; col <= colsInCurrentRow / 2; col++)
+            printf("*");
 
-    //     printf("\n");
-    // }
+        printf("\n");
+    }
 
     // // 2nd Approach
     // for (int row = 1; row <= maxRowsInOne; row++)
@@ -93,7 +93,23 @@ int main()
     // }
 
     // // 3rd Approach
-    
+    // int vary = maxRows & 1 ? 2 : 1;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col <= maxRowsInOne + 1 - vary || col >= maxRowsInOne + vary || (col >= maxRowsInOne - 1 + vary && maxRows & 1))
+    //             printf("*");
+    //         else
+    //             printf(" ");
+    //     }
+
+    //     if (row != maxRowsInOne || maxRows & 1)
+    //         row < maxRowsInOne ? vary++ : vary--;
+
+    //     printf("\n");
+    // }
 
     printf("\n");
     getch();
