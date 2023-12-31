@@ -1041,3 +1041,7 @@ void pattern_10()
     //     printf("\n");
     // }
 }
+
+void pattern_11(){
+    
+}
