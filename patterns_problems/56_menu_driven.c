@@ -85,11 +85,15 @@ int choice()
 {
     int choice;
     puts("\n>>>>>>>>>>>> WEB WITH AMAN <<<<<<<<<<<<");
-    puts("---------------------------------------");
+    
+    puts("........................\n");
     printf("\nPress 0 : Exit");
     for (int i = 1; i <= 55; i++)
         printf("\nPress %2d : Pattern %2d", i, i);
+    puts("........................");
+
     printf("\nEnter Your Choice => ");
+    puts("..........................\n");
     scanf("%d", &choice);
     return choice;
 }
