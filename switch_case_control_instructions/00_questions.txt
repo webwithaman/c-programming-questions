@@ -1,0 +1,58 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ Switch-Case Control Instructions
+
+
+01. WAP which takes the month number as an input and display
+    number of days in that month.
+
+02. Write a menu driven program with the following options:
+    a. Addition
+    b. Subtraction
+    c. Multiplication
+    d. Division
+    e. Exit
+
+03. WAP which takes the day number of a week and displays a
+    unique greeting message for the day.
+
+04. Write a menu driven program with the following options:
+    a. Check whether a given set of three numbers are lengths of an
+       isosceles triangle or not
+    b. Check whether a given set of three numbers are lengths of sides of
+       a Right angled triangle or not
+    c. Check whether a given set of three numbers are equilateral triangle
+       or not
+    d. Exit
+
+05. Convert the following if-else-if construct into switch case:
+    if(var == 1)
+       printf("good");
+    else if(var == 2)
+       printf("better");
+    else if(var == 3)
+       printlf("best");
+    else
+       printf("invalid");
+
+06. Program to check whether a year is a leap year or not. Using switch
+    Statement.
+
+07. Program to take the value from the user as input electricity unit charges
+    and calculate total electricity bill according to the given condition. using
+    the switch Statement.
+    For the first 50 units Rs. 0.50/unit
+    For the next 100 units Rs. 0.75/unit
+    For the next 100 units Rs. 1.20/unit
+    For units above 250 Rs. 1.50/unit
+    An additional surcharge of 20% is added to the bill.
+
+08. Program to convert a positive number into a negative number and negative
+    number into a positive number using a switch statement.
+
+09. Program to Convert even number into its upper nearest odd number
+    Switch Statement.
+
+10. C program to find all roots of a quadratic equation using switch case.
+
