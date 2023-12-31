@@ -95,205 +95,205 @@ int main()
             pattern_5();
             break;
 
-        case 6:
-            pattern_6();
-            break;
+            // case 6:
+            //     pattern_6();
+            //     break;
 
-        case 7:
-            pattern_7();
-            break;
+            // case 7:
+            //     pattern_7();
+            //     break;
 
-        case 8:
-            pattern_8();
-            break;
+            // case 8:
+            //     pattern_8();
+            //     break;
 
-        case 9:
-            pattern_9();
-            break;
+            // case 9:
+            //     pattern_9();
+            //     break;
 
-        case 10:
-            pattern_10();
-            break;
+            // case 10:
+            //     pattern_10();
+            //     break;
 
-        case 11:
-            pattern_11();
-            break;
+            // case 11:
+            //     pattern_11();
+            //     break;
 
-        case 12:
-            pattern_12();
-            break;
+            // case 12:
+            //     pattern_12();
+            //     break;
 
-        case 13:
-            pattern_13();
-            break;
+            // case 13:
+            //     pattern_13();
+            //     break;
 
-        case 14:
-            pattern_14();
-            break;
+            // case 14:
+            //     pattern_14();
+            //     break;
 
-        case 15:
-            pattern_15();
-            break;
+            // case 15:
+            //     pattern_15();
+            //     break;
 
-        case 16:
-            pattern_16();
-            break;
+            // case 16:
+            //     pattern_16();
+            //     break;
 
-        case 17:
-            pattern_17();
-            break;
+            // case 17:
+            //     pattern_17();
+            //     break;
 
-        case 18:
-            pattern_18();
-            break;
+            // case 18:
+            //     pattern_18();
+            //     break;
 
-        case 19:
-            pattern_19();
-            break;
+            // case 19:
+            //     pattern_19();
+            //     break;
 
-        case 20:
-            pattern_20();
-            break;
+            // case 20:
+            //     pattern_20();
+            //     break;
 
-        case 21:
-            pattern_21();
-            break;
+            // case 21:
+            //     pattern_21();
+            //     break;
 
-        case 22:
-            pattern_22();
-            break;
+            // case 22:
+            //     pattern_22();
+            //     break;
 
-        case 23:
-            pattern_23();
-            break;
+            // case 23:
+            //     pattern_23();
+            //     break;
 
-        case 24:
-            pattern_24();
-            break;
+            // case 24:
+            //     pattern_24();
+            //     break;
 
-        case 25:
-            pattern_25();
-            break;
+            // case 25:
+            //     pattern_25();
+            //     break;
 
-        case 26:
-            pattern_26();
-            break;
+            // case 26:
+            //     pattern_26();
+            //     break;
 
-        case 27:
-            pattern_27();
-            break;
+            // case 27:
+            //     pattern_27();
+            //     break;
 
-        case 28:
-            pattern_28();
-            break;
+            // case 28:
+            //     pattern_28();
+            //     break;
 
-        case 29:
-            pattern_29();
-            break;
+            // case 29:
+            //     pattern_29();
+            //     break;
 
-        case 30:
-            pattern_30();
-            break;
+            // case 30:
+            //     pattern_30();
+            //     break;
 
-        case 31:
-            pattern_31();
-            break;
+            // case 31:
+            //     pattern_31();
+            //     break;
 
-        case 32:
-            pattern_32();
-            break;
+            // case 32:
+            //     pattern_32();
+            //     break;
 
-        case 33:
-            pattern_33();
-            break;
+            // case 33:
+            //     pattern_33();
+            //     break;
 
-        case 34:
-            pattern_34();
-            break;
+            // case 34:
+            //     pattern_34();
+            //     break;
 
-        case 35:
-            pattern_35();
-            break;
+            // case 35:
+            //     pattern_35();
+            //     break;
 
-        case 36:
-            pattern_36();
-            break;
+            // case 36:
+            //     pattern_36();
+            //     break;
 
-        case 37:
-            pattern_37();
-            break;
+            // case 37:
+            //     pattern_37();
+            //     break;
 
-        case 38:
-            pattern_38();
-            break;
+            // case 38:
+            //     pattern_38();
+            //     break;
 
-        case 39:
-            pattern_39();
-            break;
+            // case 39:
+            //     pattern_39();
+            //     break;
 
-        case 40:
-            pattern_40();
-            break;
+            // case 40:
+            //     pattern_40();
+            //     break;
 
-        case 41:
-            pattern_41();
-            break;
+            // case 41:
+            //     pattern_41();
+            //     break;
 
-        case 42:
-            pattern_42();
-            break;
+            // case 42:
+            //     pattern_42();
+            //     break;
 
-        case 43:
-            pattern_43();
-            break;
+            // case 43:
+            //     pattern_43();
+            //     break;
 
-        case 44:
-            pattern_44();
-            break;
+            // case 44:
+            //     pattern_44();
+            //     break;
 
-        case 45:
-            pattern_45();
-            break;
+            // case 45:
+            //     pattern_45();
+            //     break;
 
-        case 46:
-            pattern_46();
-            break;
+            // case 46:
+            //     pattern_46();
+            //     break;
 
-        case 47:
-            pattern_47();
-            break;
+            // case 47:
+            //     pattern_47();
+            //     break;
 
-        case 48:
-            pattern_48();
-            break;
+            // case 48:
+            //     pattern_48();
+            //     break;
 
-        case 49:
-            pattern_49();
-            break;
+            // case 49:
+            //     pattern_49();
+            //     break;
 
-        case 50:
-            pattern_50();
-            break;
+            // case 50:
+            //     pattern_50();
+            //     break;
 
-        case 51:
-            pattern_51();
-            break;
+            // case 51:
+            //     pattern_51();
+            //     break;
 
-        case 52:
-            pattern_52();
-            break;
+            // case 52:
+            //     pattern_52();
+            //     break;
 
-        case 53:
-            pattern_53();
-            break;
+            // case 53:
+            //     pattern_53();
+            //     break;
 
-        case 54:
-            pattern_54();
-            break;
+            // case 54:
+            //     pattern_54();
+            //     break;
 
-        case 55:
-            pattern_55();
-            break;
+            // case 55:
+            //     pattern_55();
+            //     break;
 
         default:
             puts("!!! Invalid Choice....\n");
@@ -312,8 +312,7 @@ int main()
 int choice()
 {
     int choice;
-    for (int i = 0; i < 10; i++)
-        system("cls");
+    system("cls");
     puts("\n>>> WEB WITH AMAN <<<");
     puts(".....................");
     printf("Press  0 : Exit");
