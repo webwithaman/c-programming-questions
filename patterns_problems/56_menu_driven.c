@@ -1318,3 +1318,135 @@ void pattern_13()
     //     printf("\n");
     // }
 }
+
+void pattern_14()
+{
+    /*
+
+    Pattern 14.
+
+         *
+         * *
+         *   *
+         *     *
+         * * * * *
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int colsInCurrentRow;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        colsInCurrentRow = row;
+
+        for (int col = 1; col <= colsInCurrentRow; col++)
+        {
+            if (col == 1 || col == row || row == maxRows)
+                printf("* ");
+            else
+                printf("  ");
+        }
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col == 1 || col == row || row == maxRows)
+    //             printf("* ");
+    //         else
+    //             printf("  ");
+    //     }
+    //     printf("\n");
+    // }
+}
+
+void pattern_15()
+{
+    /*
+
+    Pattern 15.
+
+                 *
+               * *
+             *   *
+           *     *
+         * * * * *
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int colsInCurrentRow, spacesInCurrentRow;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        spacesInCurrentRow = maxCols - row;
+
+        colsInCurrentRow = row;
+
+        for (int space = 1; space <= spacesInCurrentRow; space++)
+            printf("  ");
+
+        for (int col = 1; col <= colsInCurrentRow; col++)
+        {
+            if (col == colsInCurrentRow || col == 1 || row == maxRows)
+                printf("* ");
+            else
+                printf("  ");
+        }
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col == maxCols || col == maxCols + 1 - row || row == maxRows)
+    //             printf("* ");
+    //         else
+    //             printf("  ");
+    //     }
+
+    //     printf("\n");
+    // }
+}
