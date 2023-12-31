@@ -70,13 +70,16 @@ int main()
     switch (choice())
     {
     case 1:
-        starPattern_1();
+        pattern_1();
         break;
 
     default:
-        puts("\n!!! Invalid Choice......\n");
+        puts("!!! Invalid Choice....\n");
         break;
     }
+
+    getch();
+    return 0;
 }
 // Main Function End
 
@@ -84,16 +87,19 @@ int main()
 int choice()
 {
     int choice;
-    puts("\n>>>>>>>>>>>> WEB WITH AMAN <<<<<<<<<<<<");
-    
-    puts("........................\n");
-    printf("\nPress 0 : Exit");
+    puts("\n>>> WEB WITH AMAN <<<");
+    puts(".....................");
+    printf("Press  0 : Exit");
     for (int i = 1; i <= 55; i++)
         printf("\nPress %2d : Pattern %2d", i, i);
-    puts("........................");
+    puts("\n.....................");
 
-    printf("\nEnter Your Choice => ");
-    puts("..........................\n");
+    printf("Enter Your Choice => ");
     scanf("%d", &choice);
     return choice;
+}
+
+void pattern_1()
+{
+    printf("111111111");
 }
