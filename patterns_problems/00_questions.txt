@@ -587,3 +587,6 @@ Pattern 55.
        4 3 2 2 2 3 4
        4 3 3 3 3 3 4
        4 4 4 4 4 4 4
+
+
+56. Create a menu driven program in which user enter his choice to print particular pattern.Also create a function for every pattern.
