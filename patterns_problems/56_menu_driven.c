@@ -5,7 +5,7 @@
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Prototypes (Declarations)
+// Functions Prototypes (Declarations)
 int choice();
 void pattern_1();
 void pattern_2();
@@ -80,5 +80,16 @@ int main()
 }
 // Main Function End
 
-
 // Functions Definitions
+int choice()
+{
+    int choice;
+    puts("\n>>>>>>>>>>>> WEB WITH AMAN <<<<<<<<<<<<");
+    puts("---------------------------------------");
+    printf("\nPress 0 : Exit");
+    for (int i = 1; i <= 55; i++)
+        printf("\nPress %2d : Pattern %2d", i, i);
+    printf("\nEnter Your Choice => ");
+    scanf("%d", &choice);
+    return choice;
+}
