@@ -2732,3 +2732,206 @@ void pattern_34()
     //     printf("\n");
     // }
 }
+
+void pattern_35()
+{
+    /*
+
+    Pattern 35.
+
+         * * * * *
+          * * * *
+           * * *
+            * *
+             *
+             *
+            * *
+           * * *
+          * * * *
+         * * * * *
+
+    */
+
+    int maxRowsInOne, maxRows, maxCols;
+    printf("\nHow Many Rows For One Triangle => ");
+    scanf("%d", &maxRowsInOne);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of maximum columns and maximum rows According to maxRows
+    maxRows = maxRowsInOne * 2;
+    maxCols = maxRowsInOne * 2 - 1;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int spacesInCurrentRow, colsInCurrentRow, toggle;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        spacesInCurrentRow = row <= maxRowsInOne ? (row - 1) * 2 : (maxRows - row) * 2;
+        colsInCurrentRow = maxCols - spacesInCurrentRow;
+        toggle = 1;
+
+        for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+            printf(" ");
+
+        for (int col = 1; col <= colsInCurrentRow; col++)
+        {
+            toggle ? printf("*") : printf(" ");
+            toggle = !toggle;
+        }
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int spacesInCurrentRow;
+
+    // // Print Upper Part
+    // for (int row = 1; row <= maxRowsInOne; row++)
+    // {
+    //     spacesInCurrentRow = (row - 1) * 2;
+
+    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= maxRowsInOne + 1 - row; col++)
+    //         printf("* ");
+
+    //     printf("\n");
+    // }
+
+    // // Print Lower Part
+    // for (int row = 1; row <= maxRowsInOne; row++)
+    // {
+    //     spacesInCurrentRow = (maxRowsInOne - row) * 2;
+
+    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    //         printf(" ");
+
+    //     for (int col = 1; col <= row; col++)
+    //         printf("* ");
+
+    //     printf("\n");
+    // }
+
+    // // 3rd Approach
+    // int toggle, vary = 1;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     toggle = 1;
+
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col >= vary && col <= maxCols + 1 - vary && toggle)
+    //         {
+    //             printf("*");
+    //             toggle = 0;
+    //         }
+    //         else
+    //         {
+    //             printf(" ");
+    //             toggle = 1;
+    //         }
+    //     }
+
+    //     if (row != maxRowsInOne)
+    //         row < maxRowsInOne ? vary++ : vary--;
+
+    //     printf("\n");
+    // }
+}
+
+void pattern_36()
+{
+    /*
+
+    Pattern 36.
+
+              *
+             * *
+            *   *
+           *     *
+          *       *
+           *     *
+            *   *
+             * *
+              *
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        colsInCurrentRow += row <= halfOfCols ? 2 : -2;
+
+        // If user wants even number of rows
+        if (row == halfOfCols + 1 && maxRows % 2 == 0)
+            colsInCurrentRow += 2;
+
+        spacesInCurrentRow = maxCols - colsInCurrentRow;
+
+        for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+            printf(" ");
+
+        for (int col = 1; col <= colsInCurrentRow; col++)
+        {
+            if (col == 1 || col == colsInCurrentRow)
+                printf("*");
+            else
+                printf(" ");
+        }
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int halfOfCols = (maxCols + 1) / 2, vary = 1;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col == halfOfCols + 1 - vary || col == halfOfCols - 1 + vary)
+    //             printf("*");
+    //         else
+    //             printf(" ");
+    //     }
+
+    //     row < halfOfCols ? vary++ : vary--;
+
+    //     // If user wants even number of rows
+    //     if (row == halfOfCols && maxRows % 2 == 0)
+    //         vary++;
+
+    //     printf("\n");
+    // }
+}
