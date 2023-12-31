@@ -71,10 +71,67 @@ int main()
     {
         switch (choice())
         {
+            
         case 0:
             exit(0);
 
         case 1:
+            pattern_1();
+            break;
+
+        case 2:
+            pattern_1();
+            break;
+
+        case 3:
+            pattern_1();
+            break;
+
+        case 4:
+            pattern_1();
+            break;
+
+        case 5:
+            pattern_1();
+            break;
+
+        case 6:
+            pattern_1();
+            break;
+
+        case 7:
+            pattern_1();
+            break;
+
+        case 8:
+            pattern_1();
+            break;
+
+        case 9:
+            pattern_1();
+            break;
+
+        case 10:
+            pattern_1();
+            break;
+
+        case 11:
+            pattern_1();
+            break;
+
+        case 12:
+            pattern_1();
+            break;
+
+        case 13:
+            pattern_1();
+            break;
+
+        case 14:
+            pattern_1();
+            break;
+
+        case 15:
             pattern_1();
             break;
 
