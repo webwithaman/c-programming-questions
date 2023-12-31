@@ -2243,3 +2243,228 @@ void pattern_27()
     //     printf("\n");
     // }
 }
+
+void pattern_28()
+{
+    /*
+
+   Pattern 28.
+
+       1 2 3 4 5 5 4 3 2 1
+       1 2 3 4 * * 4 3 2 1
+       1 2 3 * * * * 3 2 1
+       1 2 * * * * * * 2 1
+       1 * * * * * * * * 1
+
+   */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows * 2;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= maxRows + 1 - row; col++)
+            printf("%3d", col);
+
+        for (int star = 1; star <= (row - 1) * 2; star++)
+            printf("  *");
+
+        for (int col = maxRows + 1 - row; col; col--)
+            printf("%3d", col);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int numAtCol;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     numAtCol = 1;
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col <= maxRows + 1 - row)
+    //             printf("%3d", numAtCol++);
+    //         else if (col >= maxRows + row)
+    //             printf("%3d", --numAtCol);
+    //         else
+    //             printf("  *");
+    //     }
+
+    //     printf("\n");
+    // }
+}
+
+void pattern_29()
+{
+    /*
+
+    Pattern 29.
+
+        4 3 2 1
+        4 3 2 1
+        4 3 2 1
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = maxCols; col; col--)
+            printf("%d ", col);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int numAtCol;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     numAtCol = maxCols;
+    //     for (int col = 1; col <= maxCols; col++)
+    //         printf("%d ", numAtCol--);
+
+    //     printf("\n");
+    // }
+}
+
+void pattern_30()
+{
+    /*
+
+    Pattern 30.
+
+        1 2 3
+        4 5 6
+        7 8 9
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int numAtCol = 1;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= maxCols; col++)
+            printf(" %2d ", numAtCol++);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
+    //         printf(" %2d ", col);
+
+    //     printf("\n");
+    // }
+}
+
+void pattern_31()
+{
+    /*
+
+    Pattern 31.
+
+        1
+        1 2
+        1 2 3
+        1 2 3 4
+        1 2 3 4 5
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int colsInCurrentRow;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        colsInCurrentRow = row;
+
+        for (int col = 1; col <= colsInCurrentRow; col++)
+            printf("%d ", col);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col <= row)
+    //             printf("%d ", col);
+    //         else
+    //             printf("  ");
+    //     }
+    //     printf("\n");
+    // }
+}
