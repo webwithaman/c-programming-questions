@@ -1670,3 +1670,152 @@ void pattern_18()
     //     printf("\n");
     // }
 }
+
+void pattern_19()
+{
+    /*
+
+    Pattern 19.
+
+      *****     *****
+     *******   *******
+    ********* *********
+    ****WEBWITHAMAN****
+     *****************
+      ***************
+       *************
+        ***********
+         *********
+          *******
+           *****
+            ***
+             *
+
+    */
+
+    int maxRows = 13, maxCols = 19;
+    char name[maxCols + 1];
+
+    printf("\nEnter Your Name to Print In Heart => ");
+    fflush(stdin);
+
+    // Get name from user
+    fgets(name, maxCols + 1, stdin);
+    name[strcspn(name, "\n")] = 0;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        if (row <= 3)
+        {
+            for (int col = 1; col <= maxCols; col++)
+            {
+                if (col >= 4 - row && col <= 6 + row || col >= 14 - row && col <= 16 + row)
+                    printf("*");
+                else
+                    printf(" ");
+            }
+        }
+        else if (row == 4)
+        {
+            int lengthOfName = strlen(name), restOfCols = maxCols - lengthOfName;
+
+            for (int col = 1; col <= restOfCols / 2; col++)
+                printf("*");
+
+            printf("%s", name);
+
+            for (int col = lengthOfName & 1 ? 1 : 0; col <= restOfCols / 2; col++)
+                printf("*");
+        }
+        else
+        {
+            for (int col = 1; col <= maxCols; col++)
+            {
+                if (col >= maxCols - (maxCols - (row + 2 - 5)) && col <= maxCols - (row + 1 - 5))
+                    printf("*");
+                else
+                    printf(" ");
+            }
+        }
+
+        printf("\n");
+    }
+}
+
+void pattern_20()
+{
+    /*
+
+    Pattern 20.
+
+        1
+        2 3
+        4 5 6
+        7 8 9 10
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int numAtCol = 1;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+
+        for (int col = 1; col <= row; col++)
+            printf("%3d", numAtCol++);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int numAtCol = 1, vary = 1;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     vary += row - 1;
+
+    //     for (int col = vary; col <= vary + row - 1; col++)
+    //         printf("%3d", col);
+
+    //     printf("\n");
+    // }
+
+    // // 3rd Approach
+    // int numAtCol = 1;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col <= row)
+    //             printf("%3d", numAtCol++);
+    //         else
+    //             printf("   ");
+    //     }
+
+    //     printf("\n");
+    // }
+}
+
+void 
