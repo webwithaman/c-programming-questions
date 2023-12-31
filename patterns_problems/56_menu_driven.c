@@ -3687,7 +3687,7 @@ void pattern_46()
 {
     /*
 
-    Pattern 41.
+    Pattern 46.
 
               *****
              *   *
@@ -3744,4 +3744,250 @@ void pattern_46()
 
     //     printf("\n");
     // }
+}
+
+void pattern_47()
+{
+    /*
+
+    Pattern 47.
+
+          1  2  3  4   17  18  19  20
+             5  6  7   14  15  16
+                8  9   12  13
+                   10  11
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows * 2;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int sum = sumOfFirstNNums(maxRows), addNum;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int space = 1; space <= row - 1; space++)
+            printf("    ");
+
+        addNum = sum - sumOfFirstNNums(maxRows + 1 - row);
+
+        for (int col = 1; col <= maxRows + 1 - row; col++)
+            printf("%3d ", col + addNum);
+
+        addNum = sum + sumOfFirstNNums(maxRows - row);
+
+        for (int col = 1; col <= maxRows + 1 - row; col++)
+            printf("%3d ", col + addNum);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int sum = sumOfFirstNNums(maxRows), countForLeft = 1, countForRight;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     countForRight = sum + 1 + sumOfFirstNNums(maxRows - row);
+
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col >= row && col <= maxCols + 1 - row)
+    //         {
+    //             if (col <= maxRows)
+    //                 printf("%3d ", countForLeft++);
+    //             else
+    //                 printf("%3d ", countForRight++);
+    //         }
+    //         else
+    //             printf("    ");
+    //     }
+
+    //     printf("\n");
+    // }
+
+    // // 3rd Approach
+    // int sum = maxRows * (maxRows + 1) / 2, numAtCol, lock;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     numAtCol = 1 + sum - sumOfFirstNNums(maxRows + 1 - row);
+    //     lock = 1;
+
+    //     for (int col = 0; col <= maxCols; col++)
+    //     {
+    //         if (col >= row && col <= maxCols + 1 - row)
+    //         {
+    //             if (col <= maxRows)
+    //                 printf("%3d ", numAtCol++);
+    //             else
+    //             {
+    //                 if (lock)
+    //                 {
+    //                     numAtCol += sumOfFirstNNums(maxRows - row) * 2;
+    //                     lock = 0;
+    //                 }
+    //                 printf("%3d ", numAtCol++);
+    //             }
+    //         }
+    //         else
+    //             printf("    ");
+    //     }
+
+    //     printf("\n");
+    // }
+}
+
+void pattern_48()
+{
+    /*
+
+    Pattern 48.
+
+             *
+            * *
+           * * *
+          * * * *
+         * * * * *
+          * * * *
+           * * *
+            * *
+             *
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2, toggle;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        colsInCurrentRow += row <= halfOfCols ? 2 : -2;
+        toggle = 1;
+
+        // If user wants even number of rows
+        if (row == halfOfCols + 1 && maxRows % 2 == 0)
+            colsInCurrentRow += 2;
+
+        spacesInCurrentRow = maxCols - colsInCurrentRow;
+
+        for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+            printf(" ");
+
+        for (int col = 1; col <= colsInCurrentRow; col++)
+        {
+            toggle ? printf("*") : printf(" ");
+            toggle = !toggle;
+        }
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // int halfOfCols = (maxCols + 1) / 2, vary = 1, toggle;
+
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+
+    //     toggle = 1;
+
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary && toggle)
+    //         {
+    //             printf("*");
+    //             toggle = 0;
+    //         }
+    //         else
+    //         {
+    //             printf(" ");
+    //             toggle = 0;
+    //         }
+    //     }
+
+    //     row < halfOfCols ? vary++ : vary--;
+
+    //     // If user wants even number of rows
+    //     if (row == halfOfCols && maxRows % 2 == 0)
+    //         vary++;
+
+    //     printf("\n");
+    // }
+}
+
+void pattern_49()
+{
+    /*
+
+    Pattern 49.
+
+             *
+             *
+             *
+       * * * * * * *
+             *
+             *
+             *
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows & 1 ? maxRows : (maxRows += 1);
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= maxCols; col++)
+        {
+            if (col == (maxCols + 1) / 2 || row == (maxCols + 1) / 2)
+                printf("*");
+            else
+                printf(" ");
+        }
+
+        printf("\n");
+    }
 }
