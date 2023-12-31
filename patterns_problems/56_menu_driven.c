@@ -315,9 +315,11 @@ int main()
 int choice()
 {
     int choice;
-    system("cls");
+    system("cls"); // Clear Console
+
     puts("\n>>> WEB WITH AMAN <<<");
     puts(".....................");
+
     printf("Press  0 : Exit");
     for (int i = 1; i <= 55; i++)
         printf("\nPress %2d : Pattern %2d", i, i);
