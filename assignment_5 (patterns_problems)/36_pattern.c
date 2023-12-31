@@ -2,7 +2,7 @@
 
 /*
 
-Pattern 18.
+Pattern 36.
 
           *
          * *

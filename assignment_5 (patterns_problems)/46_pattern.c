@@ -2,7 +2,7 @@
 
 /*
 
-Pattern 41.
+Pattern 46.
 
           *****
          *   *
