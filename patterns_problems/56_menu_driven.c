@@ -4209,10 +4209,112 @@ void pattern_52()
 
 void pattern_53()
 {
+    /*
+
+    Pattern 53.
+
+           E
+           D E
+           C D E
+           B C D E
+           A B C D E
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    char ch;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        ch = 'A' + maxRows - row;
+
+        for (int col = 1; col <= row; col++)
+            printf("%c ", ch++);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= row; col++)
+    //         printf("%c ", 'A' + maxRows - row - 1 + col);
+
+    //     printf("\n");
+    // }
 }
+
 void pattern_54()
 {
+    /*
+
+    Pattern 54.
+
+           E D C B A
+           D C B A
+           C B A
+           B A
+           A
+
+    */
+
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    char ch;
+
+    for (int row = 1; row <= maxRows; row++)
+    {
+        ch = 'A' + maxRows - row;
+
+        for (int col = 1; col <= maxRows + 1 - row; col++)
+            printf("%c ", ch--);
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxRows + 1 - row; col++)
+    //         printf("%c ", 'A' + maxRows - row + 1 - col);
+
+    //     printf("\n");
+    // }
 }
+
 void pattern_55()
 {
 }
