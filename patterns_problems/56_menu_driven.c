@@ -67,15 +67,23 @@ void pattern_55();
 int main()
 {
 
-    switch (choice())
+    while (1)
     {
-    case 1:
-        pattern_1();
-        break;
+        switch (choice())
+        {
+        case 0:
+            exit(0);
 
-    default:
-        puts("!!! Invalid Choice....\n");
-        break;
+        case 1:
+            pattern_1();
+            break;
+
+        default:
+            puts("!!! Invalid Choice....\n");
+            break;
+        }
+
+        getch();
     }
 
     getch();
@@ -87,6 +95,8 @@ int main()
 int choice()
 {
     int choice;
+    for (int i = 0; i < 10; i++)
+        system("cls");
     puts("\n>>> WEB WITH AMAN <<<");
     puts(".....................");
     printf("Press  0 : Exit");
@@ -95,11 +105,50 @@ int choice()
     puts("\n.....................");
 
     printf("Enter Your Choice => ");
+    fflush(stdin);
     scanf("%d", &choice);
+    printf("\n---------------------");
     return choice;
 }
 
 void pattern_1()
 {
-    printf("111111111");
+    int maxRows, maxCols;
+    printf("\nHow Many Rows => ");
+    scanf("%d", &maxRows);
+
+    // Handling Invalid Input
+    if (maxRows < 1)
+    {
+        printf("\n!!! Invalid Input,Plz Enter Positive Number....");
+        exit(0);
+    }
+
+    // Determine Number of Columns According to maxRows
+    maxCols = maxRows;
+
+    // // Print Pattern
+    puts("\n--------------------------------------------\n");
+
+    // // 1st Approach
+    for (int row = 1; row <= maxRows; row++)
+    {
+        for (int col = 1; col <= row; col++)
+            printf("* ");
+
+        printf("\n");
+    }
+
+    // // 2nd Approach
+    // for (int row = 1; row <= maxRows; row++)
+    // {
+    //     for (int col = 1; col <= maxCols; col++)
+    //     {
+    //         if (col <= row)
+    //             printf("* ");
+    //         else
+    //             printf("  ");
+    //     }
+    //     printf("\n");
+    // }
 }
