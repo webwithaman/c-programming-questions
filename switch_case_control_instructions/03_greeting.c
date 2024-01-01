@@ -23,7 +23,7 @@ int main()
         case 'c':
             printf("\n%f x %f => %f", num1, num2, num1 * num2);
             break;
-        case 'd':
+        
             printf("\n%f / %f => %f", num1, num2, num1 / num2);
             break;
         case 'e':
