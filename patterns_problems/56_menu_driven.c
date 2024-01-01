@@ -76,6 +76,7 @@ int main()
         {
 
         case 0:
+            printf("\nProgram End...");
             exit(0);
 
         case 1:
