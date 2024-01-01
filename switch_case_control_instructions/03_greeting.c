@@ -8,32 +8,35 @@
 int main()
 {
 
-    //    int dayNumber;
-       printf("\nEnter Any Day Number of the Week => ");
+    int dayNumber;
+    printf("\nEnter Any Day Number of the Week => ");
+    scanf("%d", &dayNumber);
 
-    
-        switch (dayN)
-        {
-        case 'a':
-            printf("\n%f + %f => %f", num1, num2, num1 + num2);
-            break;
-        case 'b':
-            printf("f => %f", num1, num2, num1 - n
-        case 'c':
-            printf("\n%f x %f => %f", num1, num2, num1 * num2);
-            break;
-        
-            printf("\n%f / %f => %f", num1, num2, num1 / num2);
-            break;
-        case 'e':
-            printf("\nProgram End...");
-            exit(0);
-            break;
-        default:
-            puts("\n!!! Invalid Choice....");
-        }
-
-        getch();
+    switch (dayNumber)
+    {
+    case 1:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    case 2:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    case 3:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    case 4:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    case 5:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    case 6:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    case 7:
+        printf("\n🤩 Sunday Means Funday 🤩");
+        break;
+    default:
+        puts("\n!!! Invalid Input....");
     }
 
     printf("\n");
