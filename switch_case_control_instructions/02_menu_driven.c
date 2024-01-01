@@ -8,7 +8,7 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
-#include <time.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
@@ -31,7 +31,7 @@ int main()
         fflush(stdin);
         scanf("%d", &choice);
 
-        if (choice != 'e')
+        if (choice == 'a' || choice == 'b' || choice == 'c' || choice == 'd')
         {
             printf("\nEnter Two Numbers => ");
             scanf("%f%f", &num1, &num2);
@@ -42,9 +42,20 @@ int main()
         case 'a':
             printf("\n%f + %f => %f", num1, num2, num1 + num2);
             break;
-
-        default:
+        case 'b':
+            printf("\n%f - %f => %f", num1, num2, num1 - num2);
             break;
+        case 'c':
+            printf("\n%f x %f => %f", num1, num2, num1 * num2);
+            break;
+        case 'd':
+            printf("\n%f / %f => %f", num1, num2, num1 / num2);
+            break;
+        case 'e':
+            exit(0);
+            break;
+        default:
+            puts("\n!!! Invalid Choice....");
         }
 
         getch();
