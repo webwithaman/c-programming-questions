@@ -19,7 +19,7 @@ int main()
             break;
         case 'b':
             printf("f => %f", num1, num2, num1 - num2);
-            break;
+        
         case 'c':
             printf("\n%f x %f => %f", num1, num2, num1 * num2);
             break;
