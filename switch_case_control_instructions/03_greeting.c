@@ -15,28 +15,28 @@ int main()
     switch (dayNumber)
     {
     case 1:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Monday!! Work Mode On...");
         break;
     case 2:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Tuesday!! Work Going On...");
         break;
     case 3:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Wednesday!! Work Still Going On...");
         break;
     case 4:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Thursday!! Felling Tired Due to Work...");
         break;
     case 5:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Friday!!  Litte Hope For Sunday....");
         break;
     case 6:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Saturday!! Excited For Sunday...");
         break;
     case 7:
-        printf("\n🤩 Sunday Means Funday 🤩");
+        printf("Sunday!! Fun Day.. Chill Mode On...");
         break;
     default:
-        puts("\n!!! Invalid Input....");
+        printf("!!! Invalid Input... Day Does Not Exist");
     }
 
     printf("\n");
