@@ -29,7 +29,7 @@ int main()
         puts("-------------------------");
         printf("\nEnter Your Choice => ");
         fflush(stdin);
-        scanf("%d", &choice);
+        scanf("%c", &choice);
 
         if (choice == 'a' || choice == 'b' || choice == 'c' || choice == 'd')
         {
@@ -52,6 +52,7 @@ int main()
             printf("\n%f / %f => %f", num1, num2, num1 / num2);
             break;
         case 'e':
+            printf("\nProgram End...");
             exit(0);
             break;
         default:
