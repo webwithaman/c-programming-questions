@@ -18,7 +18,7 @@ int main()
             printf("\n%f + %f => %f", num1, num2, num1 + num2);
             break;
         case 'b':
-            printf("\n%f - %f => %f", num1, num2, num1 - num2);
+            printf("f => %f", num1, num2, num1 - num2);
             break;
         case 'c':
             printf("\n%f x %f => %f", num1, num2, num1 * num2);
