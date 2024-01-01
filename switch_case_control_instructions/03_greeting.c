@@ -8,7 +8,7 @@
 int main()
 {
 
-       int dayNumber;
+    //    int dayNumber;
        printf("\nEnter Any Day Number of the Week => ");
 
     
