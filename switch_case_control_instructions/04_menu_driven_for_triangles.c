@@ -49,12 +49,14 @@ int main()
             break;
 
         case 'b':
-            int side1 = length1 * length1, side2 = length2 * length2, side3 = length3 * length3;
+        {
+            float side1 = length1 * length1, side2 = length2 * length2, side3 = length3 * length3;
             if ((length1 * length2 * length3 != 0) && (side1 == side2 + side3 || side2 == 1 + side1 || side3 == side1 + side2))
                 printf("\nYes, Entered Lengths Are Valid For A Right Angled Triangle...");
             else
                 printf("\nNo, Entered Lengths Are Not Valid For A Right Angled Triangle...");
-            break;
+        }
+        break;
 
         case 'c':
             if ((length1 * length2 * length3 != 0) && (length1 == length2 && length2 == length3))
