@@ -5,7 +5,6 @@
 // For units above 250 Rs. 1.50/unit
 // An additional surcharge of 20% is added to the bill.
 
-
 // Header Files
 #include <stdio.h>
 #include <conio.h>
@@ -14,19 +13,81 @@
 int main()
 {
 
-    int year;
-    printf("\nEnter Any Year to Check Whether It is Leap Year or Not => ");
-    scanf("%d", &year);
+    float units, billAmount = 0;
+    printf("\nEnter Consumed Electricity Units => ");
+    scanf("%f", &units);
 
-    switch ((year % 400 == 0) || (year % 100 && year % 4 == 0))
+    // // 1st Approach
+    switch (units >= 50)
     {
-    case 0:
-        printf("\n%d is Not A Leap Year", year);
-        break;
     case 1:
-        printf("\n%d is Leap Year", year);
+        billAmount += 50 * 0.50;
+        units -= 50;
+
+        switch (units >= 100)
+        {
+        case 1:
+            billAmount += 100 * 0.75;
+            units -= 100;
+
+            switch (units >= 100)
+            {
+            case 1:
+                billAmount += 100 * 1.20;
+                units -= 100;
+
+                switch (units > 0)
+                {
+                case 1:
+                    billAmount += units * 1.50;
+                }
+                break;
+
+            case 0:
+                billAmount += units * 1.20;
+            }
+            break;
+        case 0:
+            billAmount += units * 0.75;
+        }
         break;
+
+    case 0:
+        billAmount += units * 0.50;
     }
+
+    // Add Additional surcharge of 20% is added to the bill.
+    billAmount += .2 * billAmount;
+
+    // // 2nd Approach
+    // switch (units >= 50)
+    // {
+    // case 1:
+    //     switch (units <= 150)
+    //     {
+    //     case 1:
+    //         billAmount += 25 + (units - 50) * .75;
+    //         break;
+    //     case 0:
+    //         switch (units <= 250)
+    //         {
+    //         case 1:
+    //             billAmount += 100 + (units - 150) * 1.20;
+    //             break;
+    //         case 0:
+    //             billAmount += 220 + (units - 250) * 1.50;
+    //         }
+    //         break;
+    //     }
+    //     break;
+    // case 0:
+    //     billAmount += units * .50;
+    // }
+
+    // Add Additional surcharge of 20% is added to the bill.
+    // billAmount += .2 * billAmount;
+
+    printf("\nTotoal Bill Amount => %f", billAmount);
 
     printf("\n");
     getch();
