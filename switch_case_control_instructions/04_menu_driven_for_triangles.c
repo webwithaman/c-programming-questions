@@ -47,6 +47,13 @@ int main()
                 printf("\nNo, Entered Lengths Are Not Valid For An Isosceles Triangle...");
             break;
         case 'b':
+            length1 *= length1;
+            length2 *= length3;
+            length3 *= length3;
+            if ((length1 * length2 * length3 != 0) && (length1 == length2 + length3 || length2 == length1 + length3 || length3 = length1 + length2))
+                printf("\nYes, Entered Lengths Are Valid For An Isosceles Triangle...");
+            else
+                printf("\nNo, Entered Lengths Are Not Valid For An Isosceles Triangle...");
             break;
         case 'c':
             break;
