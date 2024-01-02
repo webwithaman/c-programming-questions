@@ -21,22 +21,22 @@ int main()
         printf("Tuesday, Work Going On...");
         break;
     case 4:
-        printf("Wednesday!! Work Still Going On...");
+        printf("Wednesday, Work Still Going On...");
         break;
     case 5:
-        printf("Thursday!! Felling Tired Due to Work...");
+        printf("Thursday, Felling Tired Due to Work...");
         break;
     case 6:
-        printf("Friday!!  Litte Hope For Sunday....");
+        printf("Friday, Litte Hope For Sunday....");
         break;
     case 7:
-        printf("Saturday!! Excited For Sunday...");
+        printf("Saturday, Excited For Sunday...");
         break;
     case 1:
-        printf("Sunday!! Fun Day.. Chill Mode On...");
+        printf("Sunday, Chill Mode On...");
         break;
     default:
-        printf("!!! Invalid Input... Day Does Not Exist");
+        printf("!!! Invalid Input, Day Does Not Exist...");
     }
 
     printf("\n");
