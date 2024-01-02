@@ -14,7 +14,7 @@ int main()
     printf("\nEnter Radius of Circle => ");
     scanf("%lf", &radius);
     area = areaOfCircle(radius);
-    printf("\nArea of Circle Having Radius %f => %f", radius, area);
+    printf("\nArea of Circle Having Radius %.4f => %.4f", radius, area);
 
     getch();
     return 0;
