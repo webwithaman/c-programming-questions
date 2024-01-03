@@ -5,16 +5,20 @@
 #include <conio.h>
 
 // Function Declaration (Prototype)
-double simpleInterest(double,double,double);
+double simpleInterest(double, double, double);
 
 // Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, si;
-    printf("\ => ");
-    scanf("%lf", &radius);
-    area = areaOfCircle(radius);
-    printf("\nArea of Circle Having Radius %.4f => %.4f", radius, area);
+    printf("\nEnter Principal Amount => ");
+    scanf("%lf", &principalAmount);
+    printf("\nEnter Rate of Interest => ");
+    scanf("%lf", &rateOfInterest);
+    printf("\nEnter Time In Years => ");
+    scanf("%lf", &time);
+    si = simpleInterest(principalAmount, rateOfInterest, time);
+    printf("\nSimple Interest => %lf", si);
 
     getch();
     return 0;
