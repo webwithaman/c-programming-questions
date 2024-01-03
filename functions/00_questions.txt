@@ -1,0 +1,49 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ Functions
+
+
+1. Write a function to calculate the area of a circle. (TSRS)
+
+2. Write a function to calculate simple interest. (TSRS)
+
+3. Write a function to check whether a given number is even or odd. Return 1 if the
+   number is even, otherwise return 0. (TSRS)
+
+4. Write a function to print first N natural numbers (TSRN)
+
+5. Write a function to print first N odd natural numbers. (TSRN)
+
+6. Write a function to calculate the factorial of a number. (TSRS)
+
+7. Write a function to calculate the number of combinations one can make from n items
+   and r selected at a time. (TSRS)
+
+8. Write a function to calculate the number of arrangements one can make from n items
+   and r selected at a time. (TSRS)
+
+9. Write a function to check whether a given number contains a given digit or not. (TSRS)
+
+10. Write a function to print all prime factors of a given number. For example, if the
+    number is 36 then your result should be 2, 2, 3, 3. (TSRN)
+
+11. Write a function to calculate LCM of two numbers. (TSRS)
+
+12. Write a function to calculate HCF of two numbers. (TSRS)
+
+13. Write a function to check whether a given number is Prime or not. (TSRS)
+
+14. Write a function to find the next prime number of a given number. (TSRS)
+
+15. Write a function to print first N prime numbers (TSRN)
+
+16. Write a function to print all Prime numbers between two given numbers. (TSRN)
+
+17. Write a function to print first N terms of Fibonacci series (TSRN)
+
+18. Write a function to print PASCAL Triangle. (TSRN)
+
+19. Write a program in C to find the square of any number using the function.
+
+20. Write a program in C to find the sum of the series 1! /1+2!/2+3!/3+4!/4+5!/5 using the function.
