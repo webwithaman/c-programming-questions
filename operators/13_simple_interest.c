@@ -7,7 +7,7 @@
 // Main Function Start
 int main()
 {
-    double principalAmount, rateOfInterest, time, simpleInterest;
+    double principalAmount, rateOfInterest, time, totalAmount, simpleInterest;
     printf("Enter Pricipal Amount => ");
     scanf("%lf", &principalAmount);
     printf("Enter Rate of Interest => ");
@@ -15,7 +15,9 @@ int main()
     printf("Enter Time In Years => ");
     scanf("%lf", &time);
     simpleInterest = principalAmount * rateOfInterest * time / 100;
-    printf("\nSimple Interest => %.2f", simpleInterest);
+    totalAmount = principalAmount + simpleInterest;
+    printf("\nSimple Interest => %.2lf", simpleInterest);
+    printf("\nTotal Amount  => %.2lf", totalAmount);
 
     getch();
     return 0;

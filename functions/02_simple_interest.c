@@ -18,7 +18,7 @@ int main()
     printf("\nEnter Time In Years => ");
     scanf("%lf", &time);
     si = simpleInterest(principalAmount, rateOfInterest, time);
-    printf("\nSimple Interest => %lf\n", si);
+    printf("\nSimple Interest => %.2lf\n", si);
 
     getch();
     return 0;
