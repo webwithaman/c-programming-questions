@@ -12,6 +12,7 @@ The repository is structured based on different topics, with each topic having i
 - /iterative_control_instructions
 - /patterns_problems
 - /switch_case_control_instructions
+- /functions
 
 ## Clone this Repository
 
