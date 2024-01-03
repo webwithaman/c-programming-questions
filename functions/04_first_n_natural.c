@@ -25,6 +25,12 @@ void firstNNaturalNums(int n)
 {
     putch(10); // It means putch('\n') , ASCII of '\n' is 10
 
+    if (n < 0)
+    {
+        puts("!!! Invalid Input...");
+        return;
+    }
+
     for (int i = 1; i <= n; i++)
         printf("%d ", i);
 
