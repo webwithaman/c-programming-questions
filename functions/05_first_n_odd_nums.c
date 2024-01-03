@@ -1,19 +1,19 @@
-// Write a function to print first N natural numbers (TSRN)
+// Write a function to print first N odd natural numbers. (TSRN)
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
 // Function Declaration (Prototype)
-void firstNNaturalNums(int);
+void firstNOddNaturalNums(int);
 
 // Main Function Start
 int main()
 {
     int n;
-    printf("\nEnter N to Print First N Natural Numbers => ");
+    printf("\nEnter N to Print First N Odd Natural Numbers => ");
     scanf("%d", &n);
-    firstNNaturalNums(n);
+    firstNOddNaturalNums(n);
 
     getch();
     return 0;
@@ -21,7 +21,7 @@ int main()
 // Main Function End
 
 // Function Definition
-void firstNNaturalNums(int n)
+void firstNOddNaturalNums(int n)
 {
     putch(10); // It means putch('\n') , ASCII of '\n' is 10
 
@@ -31,10 +31,10 @@ void firstNNaturalNums(int n)
         return;
     }
 
-    printf(">>>>>>> First %d Natural Numbers <<<<<<<\n", n);
+    printf(">>>>>>> First %d Odd Natural Numbers <<<<<<<\n", n);
 
-    for (int i = 1; i <= n; i++)
-        printf("%d ", i);
+    for (int i = 0; i < n; i++)
+        printf("%d ", i * 2 + 1);
 
     putch('\n');
 }
