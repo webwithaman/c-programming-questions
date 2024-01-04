@@ -25,7 +25,9 @@ int main()
 }
 // Main Function End
 
-// Function Definition
+// Function Definition 👇👇
+
+// Function to Calculate Simple Interest
 double simpleInterest(double principalAmount, double rateOfInterest, double time)
 {
     return principalAmount * rateOfInterest * time / 100;
