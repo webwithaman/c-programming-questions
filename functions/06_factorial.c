@@ -20,7 +20,9 @@ int main()
 }
 // Main Function End
 
-// Function Definition
+// Function Definition 👇👇
+
+// Function to Calculate Factorial of A Number
 long long unsigned int factorial(int n)
 {
     long long unsigned fact = 1;
