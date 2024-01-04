@@ -6,18 +6,22 @@
 
 // Function Declaration (Prototype)
 long long unsigned int factorial(int);
-int combinations(int, int);
+double combinations(int, int);
 
 // Main Function Start
 int main()
 {
-    int n, r, totalCombins;
+    int n, r;
+    double totalCombins;
     printf("\nEnter (n) Number of Items => ");
     scanf("%d", &n);
     printf("\nEnter (r) Selected at a Time => ");
     scanf("%d", &r);
     totalCombins = combinations(n, r);
-    printf("\nTotal Number of Combinations Can be Made => %d", totalCombins);
+    if ((int)totalCombins == -1)
+        printf("\n!!! Invalid Input, Plz Enter Non-negative Numbers (n >= r >= 0)");
+    else
+        printf("\nTotal Number of Combinations Can be Made => %e", totalCombins);
 
     putch('\n');
     getch();
@@ -39,7 +43,10 @@ long long unsigned int factorial(int n)
 }
 
 // Function to Calculate the Number of Combinations
-int combinations(int n, int r)
+double combinations(int n, int r)
 {
+    if (n < 0 || r < 0)
+        return -1;
+
     return factorial(n) / (factorial(r) * factorial(n - r));
 }

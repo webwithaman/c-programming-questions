@@ -8,7 +8,8 @@
 int main()
 {
 
-    int n, fact = 1;
+    int n;
+    double fact = 1;
     printf("\nEnter A Number to Find Factorial => ");
     scanf("%d", &n);
 
@@ -28,7 +29,8 @@ int main()
     // while (i <= n)
     //     fact *= i++;
 
-    printf("\nFactorial of %d => %d", n, fact);
+    printf("\nFactorial of %d (General Form ) => %lf\n", n, fact);
+    printf("\nFactorial of %d (Scientific Form )=> %e", n, fact);
 
     printf("\n");
     getch();

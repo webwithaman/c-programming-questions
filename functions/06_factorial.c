@@ -5,15 +5,20 @@
 #include <conio.h>
 
 // Function Declaration (Prototype)
-long long unsigned int factorial(int);
+// long long unsigned int factorial(int);
+double factorial(int);
 
 // Main Function Start
 int main()
 {
     int n;
-    printf("\nEnter N to Print First N Odd Natural Numbers => ");
+    printf("\nEnter A Number to Calculate Factorial => ");
     scanf("%d", &n);
-    printf("\nFactorial of %d => %llu", n, factorial(n));
+
+    double result = factorial(n);
+
+    printf("\nFactorial of %d (General Form ) => %lf\n", n, result);
+    printf("\nFactorial of %d (Scientific Form )=> %e", n, result);
 
     putch('\n');
     getch();
@@ -24,9 +29,9 @@ int main()
 // Function Definition 👇👇
 
 // Function to Calculate Factorial of A Number
-long long unsigned int factorial(int n)
+double factorial(int n)
 {
-    long long unsigned fact = 1;
+    double fact = 1;
 
     for (int i = 2; i <= n; i++)
         fact *= i;
