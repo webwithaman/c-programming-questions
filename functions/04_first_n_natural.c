@@ -20,7 +20,9 @@ int main()
 }
 // Main Function End
 
-// Function Definition
+// Function Definition 👇👇
+
+// Function to Print First N Natural Numbers
 void firstNNaturalNums(int n)
 {
     putch(10); // It means putch('\n') , ASCII of '\n' is 10
