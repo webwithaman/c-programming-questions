@@ -6,22 +6,28 @@
 
 // Function Declaration (Prototype)
 long long unsigned int factorial(int);
-int combinations(int,int);
+int combinations(int, int);
 
 // Main Function Start
 int main()
 {
-    int n;
-    printf("\nEnter N to Print First N Odd Natural Numbers => ");
+    int n, r, totalCombins;
+    printf("\nEnter (n) Number of Items => ");
     scanf("%d", &n);
-    printf("\nFactorial of %d => %llu\n", n, factorial(n));
+    printf("\nEnter (r) Selected at a Time => ");
+    scanf("%d", &r);
+    totalCombins = combinations(n, r);
+    printf("\nTotal Number of Combinations Can be Made => %d", totalCombins);
 
+    putch('\n');
     getch();
     return 0;
 }
 // Main Function End
 
-// Function Definition
+// Function Definitions 👇👇
+
+// Function to Calculate Factorial of A Number
 long long unsigned int factorial(int n)
 {
     long long unsigned fact = 1;
@@ -32,5 +38,8 @@ long long unsigned int factorial(int n)
     return fact;
 }
 
-int combinations(int,int);
-
+// Function to Calculate the Number of Combinations
+int combinations(int n, int r)
+{
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}

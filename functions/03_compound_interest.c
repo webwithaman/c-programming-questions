@@ -23,6 +23,7 @@ int main()
     ci = compoundInterest(principalAmount, rateOfInterest, time, compoundedAfterMonths);
     printf("\nCompound Interest => %.2lf", ci);
 
+    putch('\n');
     getch();
     return 0;
 }

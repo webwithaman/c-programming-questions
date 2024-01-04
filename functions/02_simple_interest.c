@@ -20,6 +20,7 @@ int main()
     si = simpleInterest(principalAmount, rateOfInterest, time);
     printf("\nSimple Interest => %.2lf\n", si);
 
+    putch('\n');
     getch();
     return 0;
 }

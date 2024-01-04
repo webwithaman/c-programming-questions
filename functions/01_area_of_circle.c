@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype) 
+// Function Declaration (Prototype)
 double areaOfCircle(double);
 
 // Main Function Start
@@ -16,6 +16,7 @@ int main()
     area = areaOfCircle(radius);
     printf("\nArea of Circle Having Radius %.4f => %.4f", radius, area);
 
+    putch('\n');
     getch();
     return 0;
 }
