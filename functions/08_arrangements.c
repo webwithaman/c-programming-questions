@@ -51,7 +51,7 @@ double factorial(int n)
 double arrangements(int n, int r)
 {
     if (n < 0 || r < 0)
-        return -1;
+        return -1; // Invalid Input
 
     return factorial(n) / factorial(n - r);
 }
