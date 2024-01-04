@@ -6,26 +6,26 @@
 
 // Function Declaration (Prototype)
 double factorial(int);
-double combinations(int, int);
+double arrangements(int, int);
 
 // Main Function Start
 int main()
 {
     int n, r;
-    double totalCombins;
+    double totalArr;
     printf("\nEnter (n) Number of Items => ");
     scanf("%d", &n);
     printf("\nEnter (r) Selected at a Time => ");
     scanf("%d", &r);
 
-    totalCombins = combinations(n, r);
+    totalArr = arrangements(n, r);
 
-    if ((int)totalCombins == -1)
+    if ((int)totalArr == -1)
         printf("\n!!! Invalid Input, Plz Enter Non-negative Numbers (n >= r >= 0)");
     else
     {
-        printf("\nTotal Number of Combinations Can be Made (General Form) => %lf", totalCombins);
-        printf("\nTotal Number of Combinations Can be Made (Scientific Form) => %e", totalCombins);
+        printf("\nTotal Number of Arrangements Can be Made (General Form) => %lf", totalArr);
+        printf("\nTotal Number of Arrangements Can be Made (Scientific Form) => %e", totalArr);
     }
 
     putch('\n');
@@ -48,10 +48,10 @@ double factorial(int n)
 }
 
 // Function to Calculate the Number of Combinations
-double combinations(int n, int r)
+double arrangements(int n, int r)
 {
     if (n < 0 || r < 0)
         return -1;
 
-    return factorial(n) / (factorial(r) * factorial(n - r));
+    return factorial(n) / factorial(n - r);
 }
