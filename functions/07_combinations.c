@@ -5,7 +5,7 @@
 #include <conio.h>
 
 // Function Declaration (Prototype)
-long long unsigned int factorial(int);
+double factorial(int);
 double combinations(int, int);
 
 // Main Function Start
@@ -17,11 +17,16 @@ int main()
     scanf("%d", &n);
     printf("\nEnter (r) Selected at a Time => ");
     scanf("%d", &r);
+
     totalCombins = combinations(n, r);
+
     if ((int)totalCombins == -1)
         printf("\n!!! Invalid Input, Plz Enter Non-negative Numbers (n >= r >= 0)");
     else
-        printf("\nTotal Number of Combinations Can be Made => %e", totalCombins);
+    {
+        printf("\nTotal Number of Combinations Can be Made (General Form) => %lf", totalCombins);
+        printf("\nTotal Number of Combinations Can be Made (Scientific Form) => %e", totalCombins);
+    }
 
     putch('\n');
     getch();
@@ -32,9 +37,9 @@ int main()
 // Function Definitions 👇👇
 
 // Function to Calculate Factorial of A Number
-long long unsigned int factorial(int n)
+double factorial(int n)
 {
-    long long unsigned fact = 1;
+    double fact = 1;
 
     for (int i = 2; i <= n; i++)
         fact *= i;
