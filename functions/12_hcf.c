@@ -19,7 +19,7 @@ int main()
     unsigned int hcf = hcfOfTwo(num1, num2);
 
     if (hcf)
-        printf("\nLCM of %d and %d => %u", num1, num2, hcf);
+        printf("\nHCF of %d and %d => %u", num1, num2, hcf);
     else
         printf("\n!!! Invalid Input,Plz Enter Positive Number.HCF of Zero Does not Exist...");
 
