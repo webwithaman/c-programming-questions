@@ -5,7 +5,6 @@
 #include <conio.h>
 
 // Function Declaration (Prototype)
-// long long unsigned int factorial(int);
 double factorial(int);
 
 // Main Function Start
