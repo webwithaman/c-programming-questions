@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
@@ -12,6 +13,12 @@ int main()
     int num1, num2;
     printf("\nEnter Two Numbers to Find LCM => ");
     scanf("%d%d", &num1, &num2);
+
+    if (num1 == 0 || num2 == 0)
+    {
+        printf("\n!!! Invalid Input, LCM of Zero Does not Exist...");
+        exit(0);
+    }
 
     num1 = fabs(num1);
     num2 = fabs(num2);
