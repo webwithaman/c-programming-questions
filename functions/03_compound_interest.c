@@ -28,7 +28,9 @@ int main()
 }
 // Main Function End
 
-// Function Definition
+// Function Definition 👇👇
+
+// Function to Calculate Compound Interest
 double compoundInterest(double principalAmount, double rateOfInterest, double time, double compoundedAfterMonths)
 {
     double n = 12 / compoundedAfterMonths; // Get Compounded Interval (such as Monthly, Quarterly,Half-yearly,Yearly etc.)
