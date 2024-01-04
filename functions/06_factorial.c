@@ -13,8 +13,7 @@ int main()
     int n;
     printf("\nEnter N to Print First N Odd Natural Numbers => ");
     scanf("%d", &n);
-
-    printf("\nFactorial of %d => %llu", factorial(n));
+    printf("\nFactorial of %d => %llu\n", n, factorial(n));
 
     getch();
     return 0;
