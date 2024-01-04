@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// Function Declaration (Prototype) 
 double areaOfCircle(double);
 
 // Main Function Start
@@ -21,7 +21,9 @@ int main()
 }
 // Main Function End
 
-// Function Definition
+// Function Definition 👇👇
+
+// Function to Calculate Area of Circle
 double areaOfCircle(double radius)
 {
     return 22.0 / 7 * radius * radius;
