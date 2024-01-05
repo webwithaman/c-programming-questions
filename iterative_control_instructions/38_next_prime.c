@@ -14,17 +14,18 @@ int main()
     printf("\nEnter A Number to Find Next Prime Number => ");
     scanf("%d", &n);
 
-    //  Handling Invalid Input
-    if (n < 0)
-    {
-        printf("!!! Invalid Input .....");
-        exit(0);
-    }
-
     int num = n + 1, i, flag;
+
     while (1)
     {
+        if (num < 2)
+        {
+            num++;
+            continue;
+        }
+
         flag = 1;
+
         for (i = 2; i <= sqrt(num); i++)
         {
             if (num % i == 0)
@@ -33,11 +34,13 @@ int main()
                 break;
             }
         }
-        if (flag && num != 1)
+
+        if (flag)
         {
             printf("\nNext Prime Number => %d", num);
             break;
         }
+
         num++;
     }
 

@@ -7,6 +7,7 @@
 
 // Function Declaration (Prototype)
 int isPrime(int);
+void primeBetweenTwo(int, int);
 
 // Main Function Start
 int main()
@@ -45,4 +46,9 @@ int isPrime(int num)
     }
 
     return 1;
+}
+
+// Function to Print All Prime Numbers Between Two Numbers
+void primeBetweenTwo(int, int)
+{
 }
