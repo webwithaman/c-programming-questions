@@ -12,18 +12,11 @@ void primeBetweenTwo(int, int);
 // Main Function Start
 int main()
 {
-    int num;
-    printf("\nEnter A Number to Check It is Prime or Not => ");
-    scanf("%d", &num);
+    int beg, end;
+    printf("\nEnter Two Numbers to Print All Prime Numbers Between Them => ");
+    scanf("%d%d", &beg, &end);
 
-    int result = isPrime(num);
-
-    if (result == -1)
-        printf("\n!!! Invalid Input,Plz Enter Positive Number Greater than 1...");
-    else if (result)
-        printf("\nYes, %d is a Prime Number", num);
-    else
-        printf("\nNo, %d is not a Prime Number", num);
+    primeBetweenTwo(beg, end);
 
     putch('\n');
     getch();
@@ -49,6 +42,29 @@ int isPrime(int num)
 }
 
 // Function to Print All Prime Numbers Between Two Numbers
-void primeBetweenTwo(int, int)
+void primeBetweenTwo(int beg, int end)
 {
+    putch(10);
+
+    if (beg > end)
+        beg = (beg + end) - (end = beg); // swap values
+
+    printf(">>>>>>>>> Prime Numbers Between %d and %d <<<<<<<<<<\n", beg, end);
+
+    int primeNumFound = 0;
+
+    while (beg <= end)
+    {
+        if (isPrime(beg) == 1)
+        {
+            printf("%d ", beg);
+            primeNumFound = 1;
+        }
+        beg++;
+    }
+
+    if (!primeNumFound)
+        printf("\nThere is No Prime Numbers Between Entered Numbers...");
+
+    putch(10);
 }
