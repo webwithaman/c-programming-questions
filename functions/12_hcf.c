@@ -23,8 +23,7 @@ int main()
     else if (hcf)
         printf("\nHCF of %d and %d => %u", num1, num2, hcf);
     else
-        printf("\n!!! Invalid Input,Plz Enter Positive Number.HCF of Zero Does not Exist...");
-
+        printf("\n!!! Invalid Input,Plz Enter Positive Number.HCF of 0 and 0 is Undefined Exist...");
     putch('\n');
     getch();
     return 0;
