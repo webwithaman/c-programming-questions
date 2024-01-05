@@ -46,4 +46,4 @@
 
 19. Write a program in C to find the square of any number using the function.
 
-20. Write a program in C to find the sum of the series 1! /1+2!/2+3!/3+4!/4+5!/5 using the function.
+20. Write a program in C to find the sum of the series 1!/1 + 2!/2 + 3!/3 + 4!/4 + 5!/5 using the function.
