@@ -13,6 +13,7 @@ The repository is structured based on different topics, with each topic having i
 - /patterns_problems
 - /switch_case_control_instructions
 - /functions
+- /recursion
 
 ## Clone this Repository
 
