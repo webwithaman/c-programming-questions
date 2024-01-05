@@ -21,7 +21,7 @@ int main()
         exit(0);
     }
 
-    printf("\n>>>>>>> Binary of %d <<<<<<<\n", num);
+    printf("\n>>>>>>> Binary Representation of %d <<<<<<<\n", num);
     binaryOfPositiveInteger(num);
 
     putch('\n');
