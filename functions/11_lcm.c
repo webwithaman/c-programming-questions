@@ -59,6 +59,8 @@ unsigned int hcfOfTwo(int num1, int num2)
 {
     if (num1 == 0 && num2 == 0)
         return 0; // Invalid Input (HCF of 0 and 0 is Undefined)
+    else if (num1 < 0 || num2 < 0)
+        return -1; // Invalid Input Negative Numbers is Undefined
 
     int max = num1 > num2 ? num1 : num2;
     int min = num1 < num2 ? num1 : num2;
