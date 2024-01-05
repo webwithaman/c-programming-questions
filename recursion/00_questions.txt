@@ -28,7 +28,7 @@
 
 12. Write a recursive function to calculate sum of first N odd natural numbers.
 
-13. Write a recursive function to calculate sum of first N odd natural numbers.
+13. Write a recursive function to calculate sum of first N even natural numbers.
 
 14. Write a recursive function to calculate sum of squares of first n natural numbers.
 
