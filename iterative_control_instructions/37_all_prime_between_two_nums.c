@@ -10,40 +10,40 @@
 int main()
 {
 
-    int beg, end, i, flag = 1;
+    int beg, end, i, primeNumFound = 0;
     printf("\nEnter Two Numbers to Print All Prime Numbers Between Them => ");
     scanf("%d%d", &beg, &end);
 
-    //  Handling Invalid Input
-    if (beg < 0 || end < 0)
-    {
-        printf("!!! Invalid Input .....");
-        exit(0);
-    }
     if (beg > end)
         beg = (beg + end) - (end = beg);
 
     printf("\n>>>>>>>>> Prime Numbers Between %d and %d <<<<<<<<<<<<<<<\n", beg, end);
 
-    for (int num = beg; num <= end; num++)
+    while (beg <= end)
     {
-        if (num & 1 && num != 1 || num == 2)
+        if (beg < 2)
         {
-            for (i = 2; i <= sqrt(num); i++)
-            {
-                if (num % i == 0)
-                    break;
-            }
-            if (i > sqrt(num))
-            {
-                printf("%d ", num);
-                flag = 0;
-            }
+            beg++;
+            continue;
         }
+
+        for (i = 2; i <= sqrt(beg); i++)
+        {
+            if (beg % i == 0)
+                break;
+        }
+
+        if (i > sqrt(beg))
+        {
+            printf("%d ", beg);
+            primeNumFound = 1;
+        }
+
+        beg++;
     }
 
-    if (flag)
-        printf("\nThere Are No Prime Numbers Between %d and %d", beg, end);
+    if (!primeNumFound)
+        printf("\nThere Are No Prime Numbers Between Entered Numbers...");
 
     printf("\n");
     getch();
