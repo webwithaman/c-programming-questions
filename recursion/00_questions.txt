@@ -36,9 +36,9 @@
 
 16. Write a recursive function to calculate factorial of a given number.
 
-17. Write a recursive function to calculate HCF of two numbers.
+17. Write a recursive function to Find HCF of two numbers.
 
-18. Write a recursive function to print first N terms of Fibonacci series.
+18. Write a recursive function to find nth term Fibonacci series and then print first n terms using this function.
 
 19. Write a program in C to count the digits of a given number using recursion.
 
