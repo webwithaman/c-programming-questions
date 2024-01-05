@@ -1,19 +1,18 @@
 // Write a recursive function to print first N odd natural numbers.
 
-
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
 // Function Declaration (Prototype)
-void firstNNaturalNums(int);
+void firstNOddNaturalNums(int);
 
 // Main Function Start
 int main()
 {
     int n;
-    printf("\nEnter N to Print First N Natural Numbers => ");
+    printf("\nEnter N to Print First N Odd Natural Numbers => ");
     scanf("%d", &n);
 
     if (n < 0)
@@ -22,8 +21,8 @@ int main()
         exit(0);
     }
 
-    printf("\n>>>>>>> First %d Natural Numbers <<<<<<<\n", n);
-    firstNNaturalNums(n);
+    printf("\n>>>>>>> First %d Odd Natural Numbers <<<<<<<\n", n);
+    firstNOddNaturalNums(n);
 
     putch('\n');
     getch();
@@ -33,12 +32,12 @@ int main()
 
 // Function Definition 👇👇
 
-// Recursive Function to Print First N Natural Numbers
-void firstNNaturalNums(int n)
+// Recursive Function to Print First N Odd Natural Numbers
+void firstNOddNaturalNums(int n)
 {
     if (n > 0)
     {
-        firstNNaturalNums(n - 1);
-        printf("%d ", n);
+        firstNOddNaturalNums(n - 1);
+        printf("%d ", n * 2 - 1);
     }
 }
