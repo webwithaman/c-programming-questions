@@ -1,0 +1,45 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ Recursion
+
+
+01. Write a recursive function to print first N natural numbers.
+
+02. Write a recursive function to print first N natural numbers in reverse order.
+
+03. Write a recursive function to print first N odd natural numbers.
+
+04. Write a recursive function to print first N odd natural numbers in reverse order.
+
+05. Write a recursive function to print first N even natural numbers.
+
+06. Write a recursive function to print first N even natural numbers in reverse order.
+
+07. Write a recursive function to print squares of first N natural numbers.
+
+08. Write a recursive function to print binary of a given decimal number.
+
+09. Write a recursive function to print octal of a given decimal number.
+
+10. Write a recursive function to print reverse of a given number.
+
+11. Write a recursive function to calculate sum of first N natural numbers.
+
+12. Write a recursive function to calculate sum of first N odd natural numbers.
+
+13. Write a recursive function to calculate sum of first N odd natural numbers.
+
+14. Write a recursive function to calculate sum of squares of first n natural numbers.
+
+15. Write a recursive function to calculate sum of digits of a given number.
+
+16. Write a recursive function to calculate factorial of a given number.
+
+17. Write a recursive function to calculate HCF of two numbers.
+
+18. Write a recursive function to print first N terms of Fibonacci series.
+
+19. Write a program in C to count the digits of a given number using recursion.
+
+20. Write a program in C to calculate the power of any number using recursion.
