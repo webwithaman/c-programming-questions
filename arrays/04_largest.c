@@ -1,4 +1,4 @@
-// Write a program to find the Smallest number stored in an array of size 10. Take array values from the user.
+// Write a program to find the largest number stored in an array of size 10. Take array values from the user.
 
 // Header Files
 #include <stdio.h>
@@ -17,16 +17,16 @@ int main()
     for (int i = 0; i < ARRAY_SIZE; i++)
         scanf("%d", &nums[i]);
 
-    int smallest = nums[0];
+    int largest = nums[0];
 
-    // Find Smallest
+    // Find Largest
     for (int i = 1; i < ARRAY_SIZE; i++)
     {
-        if (nums[i] < smallest)
-            smallest = nums[i];
+        if (nums[i] > largest)
+            largest = nums[i];
     }
 
-    printf("\nSmallest Number => %d", smallest);
+    printf("\nLargest Number => %d", largest);
 
     putch('\n');
     getch();

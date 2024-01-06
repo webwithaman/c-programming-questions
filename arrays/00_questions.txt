@@ -13,7 +13,7 @@
 03. Write a program to calculate the sum of all even numbers and sum of all odd
     numbers, which are stored in an array of size 10. Take array values from the user.
 
-04. Write a program to find the greatest number stored in an array of size 10. Take array
+04. Write a program to find the largest number stored in an array of size 10. Take array
     values from the user.
 
 05. Write a program to find the smallest number stored in an array of size 10. Take array
