@@ -14,6 +14,7 @@ The repository is structured based on different topics, with each topic having i
 - /switch_case_control_instructions
 - /functions
 - /recursion
+- /arrays
 
 ## Clone this Repository
 
