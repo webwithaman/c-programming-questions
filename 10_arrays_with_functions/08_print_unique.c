@@ -28,7 +28,7 @@ int main()
     }
 
     // Declare Array of Variable size
-    int arr[ARRAY_SIZE], isAdjDupPresent;
+    int arr[ARRAY_SIZE];
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);

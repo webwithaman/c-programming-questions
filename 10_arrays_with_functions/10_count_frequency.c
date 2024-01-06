@@ -9,9 +9,8 @@
 void printArray(int[], int);
 void inputArray(int[], int);
 int countFrequency(int[], int, int);
-void sortAsc(int[], int);
-int linearSearch(int[], int, int);
-void copyArray(int[], int, int[]);
+void printFrequencyOfEach(int[], int);
+int linearSearch(int arr[], int size, int search);
 
 // Main Function Start
 int main()
@@ -28,7 +27,7 @@ int main()
     }
 
     // Declare Array of Variable size
-    int arr[ARRAY_SIZE], isAdjDupPresent;
+    int arr[ARRAY_SIZE];
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
@@ -38,10 +37,8 @@ int main()
     puts("\n\n>>>>>>>> Entered Elements <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
-    // find first occurrence of adjacent duplicate
-    int totalDup = countTotalDuplicates(arr, ARRAY_SIZE);
-
-    printf("\nThere Are %d Duplicate Elements in Array", totalDup);
+    puts("\n\n>>>>>>>> Frequency of Each Element <<<<<<<<<");
+    printFrequencyOfEach(arr, ARRAY_SIZE);
 
     putch('\n');
     getch();
@@ -72,54 +69,33 @@ void inputArray(int arr[], int size)
 // Function to Count Frequency of Given Element
 int countFrequency(int arr[], int size, int element)
 {
+    int frequency = 0;
 
-    // // 1st Approach (using sorting)
-    int countDup = 0, copyOfArr[size];
-
-    copyArray(arr, size, copyOfArr); // copy arr into copyOfArr
-    sortAsc(copyOfArr, size);        // sort array
-
-    for (int i = 0; i < size - 1; i += countDup ? countDup : 1)
+    for (int i = 0; i < size; i++)
     {
-        for (int j = i + 1; copyOfArr[i] == copyOfArr[j]; j++)
-            countDup++;
+        if (arr[i] == element)
+            frequency++;
     }
-    return countDup;
 
-    // // 2nd Approach
-    // int inspected[size], k = 0, countDup = 0;
-
-    // for (int i = 0; i < size; i++)
-    // {
-    //     if (linearSearch(inspected, k, arr[i]) == -1)
-    //     {
-    //         for (int j = 0; j < size; j++)
-    //         {
-    //             if (arr[i] == arr[j] && i != j)
-    //                 countDup++;
-    //         }
-    //         inspected[k++] = arr[i];
-    //     }
-    // }
-    // return countDup;
+    return frequency;
 }
 
-// Function to Sort an Array in Ascending Order
-void sortAsc(int arr[], int size)
+// Function to Print Frequency of Each Element
+void printFrequencyOfEach(int arr[], int size)
 {
-    // //  Bubble Sort
-    for (int i = 0; i < size - 1; i++)
+    int inspected[size], k = 0;
+
+    for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < size - 1; j++)
+        if (linearSearch(inspected, k, arr[i]) == -1)
         {
-            if (arr[j] < arr[j + 1]) // true, then swap
-            {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
+            printf("\nFrequency of %d => %d", arr[i], countFrequency(arr, size, arr[i]));
+
+            inspected[k++] = arr[i];
         }
     }
+
+    putch('\n');
 }
 
 // Function to Search An Element Using Linear Search
@@ -132,11 +108,4 @@ int linearSearch(int arr[], int size, int search)
     }
 
     return -1;
-}
-
-// Function to Copy Array
-void copyArray(int arr[], int size, int arr2[])
-{
-    for (int i = 0; i < size; i++)
-        arr2[i] = arr[i];
 }
