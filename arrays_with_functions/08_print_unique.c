@@ -8,7 +8,6 @@
 // Functions Declarations (Prototypes)
 void printArray(int[], int);
 void inputArray(int[], int);
-int countTotalDuplicates(int[], int);
 void sortAsc(int[], int);
 int linearSearch(int[], int, int);
 void copyArray(int[], int, int[]);
@@ -66,41 +65,6 @@ void inputArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
         scanf("%d", &arr[i]);
-}
-
-// Function to Find the Total Number of Duplicate Elements In Array
-int countTotalDuplicates(int arr[], int size)
-{
-
-    // // 1st Approach (using sorting)
-    int countDup = 0, copyOfArr[size];
-
-    copyArray(arr, size, copyOfArr); // copy arr into copyOfArr
-    sortAsc(copyOfArr, size);        // sort array
-
-    for (int i = 0; i < size - 1; i += countDup ? countDup : 1)
-    {
-        for (int j = i + 1; copyOfArr[i] == copyOfArr[j]; j++)
-            countDup++;
-    }
-    return countDup;
-
-    // // 2nd Approach
-    // int inspected[size], k = 0, countDup = 0;
-
-    // for (int i = 0; i < size; i++)
-    // {
-    //     if (linearSearch(inspected, k, arr[i]) == -1)
-    //     {
-    //         for (int j = 0; j < size; j++)
-    //         {
-    //             if (arr[i] == arr[j] && i != j)
-    //                 countDup++;
-    //         }
-    //         inspected[k++] = arr[i];
-    //     }
-    // }
-    // return countDup;
 }
 
 // Function to Sort an Array in Ascending Order
