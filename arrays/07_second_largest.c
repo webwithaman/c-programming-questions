@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-#define ARRAY_SIZE 5
+#define ARRAY_SIZE 10
 
 // Main Function Start
 int main()
