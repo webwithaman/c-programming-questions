@@ -19,8 +19,7 @@
 05. Write a program to find the smallest number stored in an array of size 10. Take array
     values from the user.
 
-06. Write a program to sort elements of an array of size 10. Take array values from the
-    user.
+06. Write a program to sort (ascending order) elements of an array of size 10. Take array  values from the user.
 
 07. Write a program to find second largest in an array.Take array values from the user.
 

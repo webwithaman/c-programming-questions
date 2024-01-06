@@ -9,21 +9,21 @@
 // Main Function Start
 int main()
 {
-    int num[ARRAY_SIZE];
+    int nums[ARRAY_SIZE];
 
     printf("\nEnter 10 Numbers => ");
 
     // Input Elements and Search for Greatest
     for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &num[i]);
+        scanf("%d", &nums[i]);
 
-    int greatest = num[0];
+    int greatest = nums[0];
 
     // Find Greatest
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        if (num[i] > greatest)
-            greatest = num[i];
+        if (nums[i] > greatest)
+            greatest = nums[i];
     }
 
     printf("\nGreatest Number => %d", greatest);

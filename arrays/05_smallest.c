@@ -9,21 +9,21 @@
 // Main Function Start
 int main()
 {
-    int num[ARRAY_SIZE];
+    int nums[ARRAY_SIZE];
 
     printf("\nEnter 10 Numbers => ");
 
     // Input Elements and Search for Smallest
     for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &num[i]);
+        scanf("%d", &nums[i]);
 
-    int smallest = num[0];
+    int smallest = nums[0];
 
     // Find Smallest
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        if (num[i] < smallest)
-            smallest = num[i];
+        if (nums[i] < smallest)
+            smallest = nums[i];
     }
 
     printf("\nSmallest Number => %d", smallest);
