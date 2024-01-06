@@ -18,6 +18,7 @@ int main()
     printf("\nHow Many Numbers You Want to Enter => ");
     scanf("%d", &ARRAY_SIZE);
 
+    // Check for Invalid Array Size
     if (ARRAY_SIZE < 1)
     {
         puts("\n!!! Invalid Input, Plz Correctly Specify Number of Elements...");
