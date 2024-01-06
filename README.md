@@ -15,6 +15,7 @@ The repository is structured based on different topics, with each topic having i
 - /functions
 - /recursion
 - /arrays
+- /arrays_with_functions
 
 ## Clone this Repository
 
