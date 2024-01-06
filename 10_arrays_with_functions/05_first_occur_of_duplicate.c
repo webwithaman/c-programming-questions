@@ -32,7 +32,7 @@ int main()
     inputArray(arr, ARRAY_SIZE);
 
     // Print Array
-    puts("\n\n>>>>>>>> Entered Numbers <<<<<<<<<");
+    puts("\n\n>>>>>>>> Entered Elements <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
     // find first occurrence of adjacent duplicate

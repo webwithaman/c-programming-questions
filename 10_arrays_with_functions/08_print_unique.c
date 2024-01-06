@@ -35,7 +35,7 @@ int main()
     inputArray(arr, ARRAY_SIZE);
 
     // Print Array
-    puts("\n\n>>>>>>>> Entered Numbers <<<<<<<<<");
+    puts("\n\n>>>>>>>> Entered Elements <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
     puts("\n\n>>>>>>>> Unique Elements in Array <<<<<<<<<");

@@ -59,14 +59,14 @@ int main()
     }
 
     // Print Array
-    puts("\n\n>>>>>>>> Numbers Before Rotating <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements Before Rotating <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
     // sort in descending order
     rotateArray(arr, ARRAY_SIZE, position, direction);
 
     // Print Array
-    printf("\n\n>>>>>>>> Numbers Before Rotating by %d Position Towards %s Direction <<<<<<<<<\n", position, direction == 'L' || direction == 'l' ? "Left" : "Right");
+    printf("\n\n>>>>>>>> Elements Before Rotating by %d Position Towards %s Direction <<<<<<<<<\n", position, direction == 'L' || direction == 'l' ? "Left" : "Right");
     printArray(arr, ARRAY_SIZE);
 
     putch('\n');

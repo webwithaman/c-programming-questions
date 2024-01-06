@@ -31,14 +31,14 @@ int main()
     inputArray(arr, ARRAY_SIZE);
 
     // Print Elements In Normal Order
-    puts("\n>>>>>>>> Numbers In Normal Order <<<<<<<<<");
+    puts("\n>>>>>>>> Elements In Normal Order <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
     // Reverse Array
     reverseArray(arr, ARRAY_SIZE);
 
     // Print Elements In Reverse Order
-    puts("\n\n>>>>>>>> Numbers In Reverse Order <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements In Reverse Order <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
     putch('\n');
