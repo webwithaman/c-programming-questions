@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 #define ARRAY_SIZE_1 10
-#define ARRAY_SIZE_2 10
+#define ARRAY_SIZE_2 5
 #define ARRAY_SIZE_3 ARRAY_SIZE_1 + ARRAY_SIZE_2
 
 // Functions Declarations (Prototypes)
@@ -19,7 +19,7 @@ int main()
 
     // Declare Array of Variable size
     int arr1[ARRAY_SIZE_1] = {33, 23, 20, 16, 12, 10, 5, -3, -5, -10};
-    int arr2[ARRAY_SIZE_2] = {103, 103, 99, 66, 13, 10, 5, 3, -33, -111};
+    int arr2[ARRAY_SIZE_2] = {103, 103, 99, 66, 13};
     int mergedArray[ARRAY_SIZE_3];
 
     // Print First Array
@@ -70,8 +70,8 @@ void mergeArrays(int arr1[], int size1, int arr2[], int size2, int mergedArray[]
     }
 
     while (i < size1)
-        mergedArray[k++] = arr1[i];
+        mergedArray[k++] = arr1[i++];
 
     while (j < size2)
-        mergedArray[k++] = arr2[j];
+        mergedArray[k++] = arr2[j++];
 }
