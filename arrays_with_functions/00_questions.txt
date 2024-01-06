@@ -7,9 +7,9 @@
 
 02. Write a function to find the smallest number from the given array of any size. (TSRS)
 
-03. Write a function to sort an array of any size. (TSRS)
+03. Write a function to sort (both ascending and descending order) an array of any size. (TSRS)
 
-04. Write a function to rotate an array by n position in d direction. The d is an indicative value for left or right. (For example, if array of size 5 is [32, 29, 40, 12, 70]; n is 2 and d is left, then the resulting array after left rotation 2 times is [40, 12, 70, 32, 29] )
+04. Write a function to rotate an array by n position in d direction. The d is an  indicative value for left or right. (For example, if array of size 5 is [32, 29, 40, 12, 70]; n is 2 and d is left, then the resulting array after left rotation 2 times is [40, 12, 70, 32, 29] )
 
 05. Write a function to find the first occurrence of adjacent duplicate values in the array. Function has to return the value of the element.
 

@@ -7,6 +7,7 @@
 
 // Functions Declarations (Prototypes)
 int largest(int[], int);
+void inputArray(int[], int);
 
 // Main Function Start
 int main()
@@ -26,8 +27,7 @@ int main()
 
     // Input Elements
     printf("\nEnter %d Numbers => ", ARRAY_SIZE);
-    for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &nums[i]);
+    inputArray(nums, ARRAY_SIZE);
 
     printf("\nLargest Number => %d", largest(nums, ARRAY_SIZE));
 
@@ -38,6 +38,13 @@ int main()
 // Main Function End
 
 // Functions Definitions 👇👇
+
+// Function to Input Array Elements
+void inputArray(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+        scanf("%d", &arr[i]);
+}
 
 // Function to Find Largest Element of An Array
 int largest(int arr[], int size)
