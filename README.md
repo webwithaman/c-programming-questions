@@ -16,7 +16,6 @@ The repository is structured based on different topics, with each topic having i
 - /08_recursion
 - /09_arrays
 - /10_arrays_with_functions
-- /11_multi_dimensional_arrays
 
 ## Clone this Repository
 
