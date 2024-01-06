@@ -26,8 +26,7 @@
 08. Write a program to find the second smallest number in an array.Take array values
     from the user.
 
-09. Write a program in C to read n number of values in an array and display it in reverse
-    order. Take array values from the user.
+09. Write a program in C to read n number of values in an array and reverse the array    then display the elements. Take array values from the user.
 
 10. Write a program in C to copy the elements of one array into another array.Take array
     values from the user.
