@@ -11,7 +11,7 @@ int main()
 {
     int arr[ARRAY_SIZE], sumOfEven = 0, sumOfOdd = 0;
 
-    printf("\nEnter 10 Numbers to Calculate Sum of Even And Odd => ");
+    printf("\nEnter 10 Elements to Calculate Sum of Even And Odd => ");
 
     // Input Elements and Add
     for (int i = 0; i < ARRAY_SIZE; i++)

@@ -27,7 +27,7 @@ int main()
         scanf("%d", &arr[i]);
 
     // Print Elements In Normal Order
-    puts("\n>>>>>>>> Numbers In Normal Order <<<<<<<<<");
+    puts("\n>>>>>>>> Elements In Normal Order <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", arr[i]);
 
@@ -52,7 +52,7 @@ int main()
     // }
 
     // Print Elements In Reverse Order
-    puts("\n\n>>>>>>>> Numbers In Reverse Order <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements In Reverse Order <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", arr[i]);
 

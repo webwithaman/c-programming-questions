@@ -11,7 +11,7 @@ int main()
 {
     int arr[ARRAY_SIZE];
 
-    printf("\nEnter 10 Numbers => ");
+    printf("\nEnter 10 Elements => ");
 
     // Input Elements
     for (int i = 0; i < ARRAY_SIZE; i++)

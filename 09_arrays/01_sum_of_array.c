@@ -11,7 +11,7 @@ int main()
 {
     int arr[ARRAY_SIZE], sum = 0;
 
-    printf("\nEnter 10 Numbers to Calculate Sum => ");
+    printf("\nEnter 10 Elements to Calculate Sum => ");
 
     // Input Elements and Add
     for (int i = 0; i < ARRAY_SIZE; i++)
@@ -20,7 +20,7 @@ int main()
         sum += arr[i];
     }
 
-    printf("\nSum of Entered Numbers => %d", sum);
+    printf("\nSum of Entered Elements => %d", sum);
 
     putch('\n');
     getch();
