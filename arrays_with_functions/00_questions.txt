@@ -3,7 +3,7 @@
 🟢 Language ➡ C
 🟢 Topic ➡ Arrays With Functions
 
-01. Write a function to find the greatest number from the given array of any size. (TSRS)
+01. Write a function to find the largest number from the given array of any size. (TSRS)
 
 02. Write a function to find the smallest number from the given array of any size. (TSRS)
 
