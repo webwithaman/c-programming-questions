@@ -4,20 +4,23 @@
 #include <stdio.h>
 #include <conio.h>
 
-#define SIZE 10;
+#define ARRAY_SIZE 10
 
 // Main Function Start
 int main()
 {
-    int num[SIZE], sum = 0;
+    int num[ARRAY_SIZE], sum = 0;
 
     printf("\nEnter 10 Numbers to Calculate Sum => ");
-    for (int i = 0; i < SIZE; i++)
+
+    // Input Elements and Add
+    for (int i = 0; i < ARRAY_SIZE; i++)
     {
         scanf("%d", &num[i]);
         sum += num[i];
     }
 
+    printf("\nSum of Entered Numbers => %d", sum);
 
     putch('\n');
     getch();
