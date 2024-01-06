@@ -15,7 +15,7 @@ void sortAsc(int[], int);
 int main()
 {
     const int ARRAY_SIZE;
-    printf("\nHow Many Numbers You Want to Enter => ");
+    printf("\nHow Many Elements You Want to Enter => ");
     scanf("%d", &ARRAY_SIZE);
 
     // Check for Invalid Array Size
@@ -29,25 +29,25 @@ int main()
     int nums[ARRAY_SIZE];
 
     // Input Elements
-    printf("\nEnter %d Numbers => ", ARRAY_SIZE);
+    printf("\nEnter %d Elements => ", ARRAY_SIZE);
     inputArray(nums, ARRAY_SIZE);
 
     // Print Array
-    puts("\n\n>>>>>>>> Numbers Before Sorting <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements Before Sorting <<<<<<<<<");
     printArray(nums, ARRAY_SIZE);
 
     // sort in descending order
     sortDes(nums, ARRAY_SIZE);
 
     // Print Array
-    puts("\n\n>>>>>>>> Numbers After Sorting In Ascending Order <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements After Sorting In Ascending Order <<<<<<<<<");
     printArray(nums, ARRAY_SIZE);
 
     // sort in ascending order
     sortAsc(nums, ARRAY_SIZE);
 
     // Print Array
-    puts("\n\n>>>>>>>> Numbers After Sorting In Descending Order <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements After Sorting In Descending Order <<<<<<<<<");
     printArray(nums, ARRAY_SIZE);
 
     putch('\n');

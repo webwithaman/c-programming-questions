@@ -17,7 +17,7 @@ void swap(int *, int *);
 int main()
 {
     const int ARRAY_SIZE;
-    printf("\nHow Many Numbers You Want to Enter => ");
+    printf("\nHow Many Elements You Want to Enter => ");
     scanf("%d", &ARRAY_SIZE);
 
     // Check for Invalid Array Size
@@ -32,7 +32,7 @@ int main()
     char direction;
 
     // Input Elements
-    printf("\nEnter %d Numbers => ", ARRAY_SIZE);
+    printf("\nEnter %d Elements => ", ARRAY_SIZE);
     inputArray(nums, ARRAY_SIZE);
 
     // Input Position

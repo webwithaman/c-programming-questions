@@ -14,7 +14,7 @@ void reverseArray(int[], int);
 int main()
 {
     const int ARRAY_SIZE;
-    printf("\nHow Many Numbers You Want to Enter => ");
+    printf("\nHow Many Elements You Want to Enter => ");
     scanf("%d", &ARRAY_SIZE);
 
     if (ARRAY_SIZE < 1)
@@ -27,7 +27,7 @@ int main()
     int nums[ARRAY_SIZE];
 
     // Input Elements
-    printf("\nEnter %d Numbers => ", ARRAY_SIZE);
+    printf("\nEnter %d Elements => ", ARRAY_SIZE);
     inputArray(nums, ARRAY_SIZE);
 
     // Print Elements In Normal Order

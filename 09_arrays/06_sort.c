@@ -18,7 +18,7 @@ int main()
         scanf("%d", &nums[i]);
 
     // Print Elements
-    puts("\n>>>>>>>> Numbers Before Sorting <<<<<<<<<");
+    puts("\n>>>>>>>> Elements Before Sorting <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", nums[i]);
 
@@ -51,7 +51,7 @@ int main()
     // }
 
     // Print Elements
-    puts("\n\n>>>>>>>> Numbers After Sorting <<<<<<<<<");
+    puts("\n\n>>>>>>>> Elements After Sorting <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", nums[i]);
 
