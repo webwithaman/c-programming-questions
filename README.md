@@ -6,16 +6,17 @@ This repository contains a collection of programming questions and solutions in 
 
 The repository is structured based on different topics, with each topic having its dedicated folder containing relevant programming questions and solutions.
 
-- /basic_input_output
-- /operators
-- /decision_control_instructions
-- /iterative_control_instructions
-- /patterns_problems
-- /switch_case_control_instructions
-- /functions
-- /recursion
-- /arrays
-- /arrays_with_functions
+- /01_basic_input_output
+- /02_operators
+- /03_decision_control_instructions
+- /04_iterative_control_instructions
+- /05_patterns_problems
+- /06_switch_case_control_instructions
+- /07_functions
+- /08_recursion
+- /09_arrays
+- /10_arrays_with_functions
+- /11_multi_dimensional_arrays
 
 ## Clone this Repository
 
