@@ -13,7 +13,7 @@
 
 05. Write a function to find the first occurrence of adjacent duplicate values in the array. Function has to return the value of the element.
 
-06. Write a function in C to read n number of values in an array and display it in reverse order.
+06. Write a function in C to Reverse an Array
 
 07. Write a function in C to count a total number of duplicate elements in an array.
 
