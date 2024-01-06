@@ -5,49 +5,37 @@
 #include <conio.h>
 #include <stdlib.h>
 
+#define ARRAY_SIZE_1 10
+#define ARRAY_SIZE_2 10
+#define ARRAY_SIZE_3 ARRAY_SIZE_1 + ARRAY_SIZE_2
+
 // Functions Declarations (Prototypes)
 void printArray(int[], int);
-void inputArray(int[], int);
 void mergeArrays(int[], int, int[], int, int[]);
 
 // Main Function Start
 int main()
 {
-    const int ARRAY_SIZE;
-    printf("\nHow Many Elements You Want to Enter => ");
-    scanf("%d", &ARRAY_SIZE);
-
-    // Check for Invalid Array Size
-    if (ARRAY_SIZE < 1)
-    {
-        puts("\n!!! Invalid Input, Plz Correctly Specify Number of Elements...");
-        exit(0);
-    }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE];
+    int arr1[ARRAY_SIZE_1] = {33, 23, 20, 16, 12, 10, 5, -3, -5, -10};
+    int arr2[ARRAY_SIZE_2] = {103, 103, 99, 66, 13, 10, 5, 3, -33, -111};
+    int mergedArray[ARRAY_SIZE_3];
 
-    // Input Elements
-    printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(nums, ARRAY_SIZE);
+    // Print First Array
+    puts("\n\n>>>>>>>> Elements of First Array <<<<<<<<<");
+    printArray(arr1, ARRAY_SIZE_1);
 
-    // Print Array
-    puts("\n\n>>>>>>>> Elements Before Sorting <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    // Print Second Array
+    puts("\n\n>>>>>>>> Elements of Second Array <<<<<<<<<");
+    printArray(arr2, ARRAY_SIZE_2);
 
-    // sort in descending order
-    sortDes(nums, ARRAY_SIZE);
+    // Merge arr1 and arr2
+    mergeArrays(arr1, ARRAY_SIZE_1, arr2, ARRAY_SIZE_2, mergedArray);
 
-    // Print Array
-    puts("\n\n>>>>>>>> Elements After Sorting In Ascending Order <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
-
-    // sort in ascending order
-    sortAsc(nums, ARRAY_SIZE);
-
-    // Print Array
-    puts("\n\n>>>>>>>> Elements After Sorting In Descending Order <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    // Print Array of Merged Array
+    puts("\n\n>>>>>>>> Elements of Merged Array <<<<<<<<<");
+    printArray(mergedArray, ARRAY_SIZE_3);
 
     putch('\n');
     getch();
@@ -66,13 +54,6 @@ void printArray(int arr[], int size)
         printf("%d ", arr[i]);
 
     putch('\n'); // Add new line
-}
-
-// Function to Input Array Elements
-void inputArray(int arr[], int size)
-{
-    for (int i = 0; i < size; i++)
-        scanf("%d", &arr[i]);
 }
 
 // Function to Merge Two Arrays of Same Size Sorted in Descending order

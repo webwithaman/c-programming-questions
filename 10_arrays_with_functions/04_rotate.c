@@ -28,12 +28,12 @@ int main()
     }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE], position;
+    int arr[ARRAY_SIZE], position;
     char direction;
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(nums, ARRAY_SIZE);
+    inputArray(arr, ARRAY_SIZE);
 
     // Input Position
     printf("\nEnter N to Rotate Array by N Positions => ");
@@ -60,14 +60,14 @@ int main()
 
     // Print Array
     puts("\n\n>>>>>>>> Numbers Before Rotating <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     // sort in descending order
-    rotateArray(nums, ARRAY_SIZE, position, direction);
+    rotateArray(arr, ARRAY_SIZE, position, direction);
 
     // Print Array
     printf("\n\n>>>>>>>> Numbers Before Rotating by %d Position Towards %s Direction <<<<<<<<<\n", position, direction == 'L' || direction == 'l' ? "Left" : "Right");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     putch('\n');
     getch();

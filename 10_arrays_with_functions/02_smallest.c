@@ -24,13 +24,13 @@ int main()
     }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(nums, ARRAY_SIZE);
+    inputArray(arr, ARRAY_SIZE);
 
-    printf("\nSmallest Number => %d", smallest(nums, ARRAY_SIZE));
+    printf("\nSmallest Number => %d", smallest(arr, ARRAY_SIZE));
 
     putch('\n');
     getch();

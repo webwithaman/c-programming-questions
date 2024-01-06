@@ -9,29 +9,29 @@
 // Main Function Start
 int main()
 {
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     printf("\nEnter 10 Numbers => ");
 
     // Input Elements
     for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &nums[i]);
+        scanf("%d", &arr[i]);
 
     // Print Elements
     puts("\n>>>>>>>> Elements Before Sorting <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
-        printf("%d ", nums[i]);
+        printf("%d ", arr[i]);
 
     // // Sorting using Selection Sort
     for (int i = 0; i < ARRAY_SIZE - 1; i++)
     {
         for (int j = i + 1; j < ARRAY_SIZE; j++)
         {
-            if (nums[i] > nums[j]) // true, then swap
+            if (arr[i] > arr[j]) // true, then swap
             {
-                int temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
@@ -41,11 +41,11 @@ int main()
     // {
     //     for (int j = 0; j < ARRAY_SIZE - 1; j++)
     //     {
-    //         if (nums[j] > nums[j + 1]) // true, then swap
+    //         if (arr[j] > arr[j + 1]) // true, then swap
     //         {
-    //             int temp = nums[j];
-    //             nums[j] = nums[j + 1];
-    //             nums[j + 1] = temp;
+    //             int temp = arr[j];
+    //             arr[j] = arr[j + 1];
+    //             arr[j + 1] = temp;
     //         }
     //     }
     // }
@@ -53,7 +53,7 @@ int main()
     // Print Elements
     puts("\n\n>>>>>>>> Elements After Sorting <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
-        printf("%d ", nums[i]);
+        printf("%d ", arr[i]);
 
     putch('\n');
     getch();

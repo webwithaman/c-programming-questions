@@ -9,15 +9,15 @@
 // Main Function Start
 int main()
 {
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     printf("\nEnter 10 Numbers => ");
 
     // Input Elements
     for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &nums[i]);
+        scanf("%d", &arr[i]);
 
-    int largest = nums[0], secondLargest = nums[1];
+    int largest = arr[0], secondLargest = arr[1];
 
     // Set largest and secondLargest accordingly
     if (secondLargest > largest)
@@ -30,13 +30,13 @@ int main()
     // Find Second Largest
     for (int i = 1; i < ARRAY_SIZE; i++)
     {
-        if (nums[i] > largest)
+        if (arr[i] > largest)
         {
             secondLargest = largest;
-            largest = nums[i];
+            largest = arr[i];
         }
-        else if (nums[i] > secondLargest && nums[i] != largest)
-            secondLargest = nums[i];
+        else if (arr[i] > secondLargest && arr[i] != largest)
+            secondLargest = arr[i];
     }
 
     printf("\nSecond Largest Number => %d", secondLargest);

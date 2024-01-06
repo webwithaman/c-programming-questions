@@ -19,25 +19,25 @@ int main()
     }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
     for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &nums[i]);
+        scanf("%d", &arr[i]);
 
     // Print Elements In Normal Order
     puts("\n>>>>>>>> Numbers In Normal Order <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
-        printf("%d ", nums[i]);
+        printf("%d ", arr[i]);
 
     // // 1st Approach
     int beg = 0, end = ARRAY_SIZE - 1, temp;
     while (beg < end)
     {
-        temp = nums[beg];
-        nums[beg] = nums[end];
-        nums[end] = temp;
+        temp = arr[beg];
+        arr[beg] = arr[end];
+        arr[end] = temp;
         beg++;
         end--;
     }
@@ -46,15 +46,15 @@ int main()
     // int temp;
     // for (int i = 0; i < ARRAY_SIZE / 2; i++)
     // {
-    //     temp = nums[i];
-    //     nums[i] = nums[ARRAY_SIZE - 1 - i];
-    //     nums[ARRAY_SIZE - 1 - i] = temp;
+    //     temp = arr[i];
+    //     arr[i] = arr[ARRAY_SIZE - 1 - i];
+    //     arr[ARRAY_SIZE - 1 - i] = temp;
     // }
 
     // Print Elements In Reverse Order
     puts("\n\n>>>>>>>> Numbers In Reverse Order <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
-        printf("%d ", nums[i]);
+        printf("%d ", arr[i]);
 
     putch('\n');
     getch();

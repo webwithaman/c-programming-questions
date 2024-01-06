@@ -24,22 +24,22 @@ int main()
     }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(nums, ARRAY_SIZE);
+    inputArray(arr, ARRAY_SIZE);
 
     // Print Elements In Normal Order
     puts("\n>>>>>>>> Numbers In Normal Order <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     // Reverse Array
-    reverseArray(nums, ARRAY_SIZE);
+    reverseArray(arr, ARRAY_SIZE);
 
     // Print Elements In Reverse Order
     puts("\n\n>>>>>>>> Numbers In Reverse Order <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     putch('\n');
     getch();

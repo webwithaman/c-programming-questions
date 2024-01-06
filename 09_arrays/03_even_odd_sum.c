@@ -9,19 +9,19 @@
 // Main Function Start
 int main()
 {
-    int nums[ARRAY_SIZE], sumOfEven = 0, sumOfOdd = 0;
+    int arr[ARRAY_SIZE], sumOfEven = 0, sumOfOdd = 0;
 
     printf("\nEnter 10 Numbers to Calculate Sum of Even And Odd => ");
 
     // Input Elements and Add
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        scanf("%d", &nums[i]);
+        scanf("%d", &arr[i]);
 
-        if (nums[i] & 1) // if odd
-            sumOfOdd += nums[i];
+        if (arr[i] & 1) // if odd
+            sumOfOdd += arr[i];
         else
-            sumOfEven += nums[i];
+            sumOfEven += arr[i];
     }
 
     printf("\nSum of Even Numbers => %d", sumOfEven);

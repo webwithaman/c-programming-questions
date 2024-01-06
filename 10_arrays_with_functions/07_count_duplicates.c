@@ -28,18 +28,18 @@ int main()
     }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE], isAdjDupPresent;
+    int arr[ARRAY_SIZE], isAdjDupPresent;
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(nums, ARRAY_SIZE);
+    inputArray(arr, ARRAY_SIZE);
 
     // Print Array
     puts("\n\n>>>>>>>> Entered Numbers <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     // find first occurrence of adjacent duplicate
-    int totalDup = countTotalDuplicates(nums, ARRAY_SIZE);
+    int totalDup = countTotalDuplicates(arr, ARRAY_SIZE);
 
     printf("\nThere Are %d Duplicate Elements in Array", totalDup);
 

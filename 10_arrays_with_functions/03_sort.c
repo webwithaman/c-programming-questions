@@ -26,29 +26,29 @@ int main()
     }
 
     // Declare Array of Variable size
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(nums, ARRAY_SIZE);
+    inputArray(arr, ARRAY_SIZE);
 
     // Print Array
     puts("\n\n>>>>>>>> Elements Before Sorting <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     // sort in descending order
-    sortDes(nums, ARRAY_SIZE);
+    sortDes(arr, ARRAY_SIZE);
 
     // Print Array
     puts("\n\n>>>>>>>> Elements After Sorting In Ascending Order <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     // sort in ascending order
-    sortAsc(nums, ARRAY_SIZE);
+    sortAsc(arr, ARRAY_SIZE);
 
     // Print Array
     puts("\n\n>>>>>>>> Elements After Sorting In Descending Order <<<<<<<<<");
-    printArray(nums, ARRAY_SIZE);
+    printArray(arr, ARRAY_SIZE);
 
     putch('\n');
     getch();

@@ -9,7 +9,7 @@
 // Main Function Start
 int main()
 {
-    int nums[ARRAY_SIZE], sum = 0;
+    int arr[ARRAY_SIZE], sum = 0;
     float avg;
 
     printf("\nEnter 10 Numbers to Calculate Average => ");
@@ -17,8 +17,8 @@ int main()
     // Input Elements and Add
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        scanf("%d", &nums[i]);
-        sum += nums[i];
+        scanf("%d", &arr[i]);
+        sum += arr[i];
     }
 
     // Calculate Average

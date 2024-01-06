@@ -9,15 +9,15 @@
 // Main Function Start
 int main()
 {
-    int nums[ARRAY_SIZE];
+    int arr[ARRAY_SIZE];
 
     printf("\nEnter 10 Numbers => ");
 
     // Input Elements
     for (int i = 0; i < ARRAY_SIZE; i++)
-        scanf("%d", &nums[i]);
+        scanf("%d", &arr[i]);
 
-    int smallest = nums[0], secondSmallest = nums[1];
+    int smallest = arr[0], secondSmallest = arr[1];
 
     // Set smallest and secondSmallest accordingly
     if (secondSmallest < smallest)
@@ -30,13 +30,13 @@ int main()
     // Find Second Smallest
     for (int i = 1; i < ARRAY_SIZE; i++)
     {
-        if (nums[i] < smallest)
+        if (arr[i] < smallest)
         {
             secondSmallest = smallest;
-            smallest = nums[i];
+            smallest = arr[i];
         }
-        else if (nums[i] < secondSmallest && nums[i] != smallest)
-            secondSmallest = nums[i];
+        else if (arr[i] < secondSmallest && arr[i] != smallest)
+            secondSmallest = arr[i];
     }
 
     printf("\nSecond Smallest Number => %d", secondSmallest);
