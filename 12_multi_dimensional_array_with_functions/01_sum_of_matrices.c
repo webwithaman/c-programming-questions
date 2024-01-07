@@ -10,8 +10,8 @@
 #define MAX_COLS 10
 
 // Functions Declarations (Prototypes)
-void input2DArray(int (*arr)[MAX_COLS], int, int);
-void print2DArray(int (*arr)[MAX_COLS], int, int);
+void input2DArray(int[][MAX_COLS], int, int);
+void print2DArray(int[][MAX_COLS], int, int);
 void addTwoMatrices(int[][MAX_COLS], int[][MAX_COLS], int[][MAX_COLS], int, int);
 
 // Main Function Start
@@ -80,7 +80,7 @@ int main()
 // Functions Definitions 👇👇
 
 // Function to Input Elements of 2D Array
-void input2DArray(int (*arr)[MAX_COLS], int rows, int cols)
+void input2DArray(int arr[][MAX_COLS], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
     {
@@ -93,7 +93,7 @@ void input2DArray(int (*arr)[MAX_COLS], int rows, int cols)
 }
 
 // Function to Print 2D Array
-void print2DArray(int (*arr)[MAX_COLS], int rows, int cols)
+void print2DArray(int arr[][MAX_COLS], int rows, int cols)
 {
     putch(10); // Add new line
 
