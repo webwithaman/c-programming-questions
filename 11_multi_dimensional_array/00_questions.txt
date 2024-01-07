@@ -16,9 +16,9 @@
 
 06. Write a program in C to find the sum of rows and columns of a Matrix.
 
-07. Write a program in C to print or display the lower triangular of a given matrix.
+07. Write a program in C to display the lower triangular matrix of a given matrix.
 
-08. Write a program in C to print or display an upper triangular matrix.
+08. Write a program in C to display the upper triangular matrix of a given matrix.
 
 09. Write a program in C to accept a matrix and determine whether it is a sparse matrix.
 
