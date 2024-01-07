@@ -1,4 +1,4 @@
-// Write a program in C to find the transpose of a given matrix.
+//  Write a program in C to find the sum of right diagonals of a matrix.
 
 // Header Files
 #include <stdio.h>
@@ -12,18 +12,18 @@
 int main()
 {
     const int ROWS, COLS;
-    printf("\nEnter Order of Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
+    printf("\nEnter Order of Square Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
     scanf("%d%d", &ROWS, &COLS);
 
     // Check Invalid Input for Matrix Order
-    if (ROWS < 1 || ROWS > MAX_ROWS || COLS < 1 || COLS > MAX_COLS)
+    if (ROWS < 1 || ROWS != COLS || ROWS > MAX_ROWS || COLS < 1 || COLS > MAX_COLS)
     {
         puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...\n");
         exit(0);
     }
 
     // Declare 2-d Array of Entered Order
-    int matrixA[ROWS][COLS], matrixB[COLS][ROWS];
+    int matrixA[ROWS][COLS], sumOfRightDiagonals = 0;
 
     // Input Elements of Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
@@ -37,13 +37,6 @@ int main()
         }
     }
 
-    // Find Transpose of Matrix-A
-    for (int i = 0; i < COLS; i++)
-    {
-        for (int j = 0; j < ROWS; j++)
-            matrixB[i][j] = matrixA[j][i];
-    }
-
     // Print Matrix-A
     printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
@@ -54,15 +47,18 @@ int main()
         putch(10); // Add New line
     }
 
-    // Print Matrix-B (Transpose)
-    printf("\n\n>>>>>>>> Transpose Matrix-B of %d x %d <<<<<<<<<\n", COLS, ROWS);
-    for (int i = 0; i < COLS; i++)
+    // Find Sum of Right Diagonals
+    for (int i = 0; i < ROWS; i++)
     {
-        for (int j = 0; j < ROWS; j++)
-            printf("%4d ", matrixB[i][j]);
-
-        putch(10); // Add New line
+        for (int j = 0; j < COLS; j++)
+        {
+            if (ROWS - 1 - i == j)
+                sumOfRightDiagonals += matrixA[i][j];
+        }
     }
+
+    // Print Sum of Right Diagonals
+    printf("\nSum of Right Diagonals => %d", sumOfRightDiagonals);
 
     putch('\n');
     getch();
