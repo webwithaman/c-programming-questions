@@ -6,7 +6,7 @@
 
 01. Write a function to calculate the sum of two matrices given by user.
 
-02. Write a function to calculate the product of two matrices each of order 3x3.
+02. Write a function to calculate the product of two matrices given by user.
 
 03. Write a function in C to find the transpose of a given matrix.
 
