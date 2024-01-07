@@ -3,68 +3,58 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
 
 // Main Function Start
 int main()
 {
-    const int ROWS,COLS;
-    printf("\nEnter ")
-    // Declare 2-d Arrays
-    int matrix1[ROWS][COLS], matrix2[ROWS][COLS], sumOfMatrices[ROWS][COLS];
+    const int ROWS, COLS;
+    printf("\nEnter Order of Matrix-A (Rows x Cols) => ");
+    scanf("%d%d", &ROWS, &COLS);
 
-    // Input Elements of 1st Matrix
-    printf("\n>>>>>> Enter Elements of 1st Matrix of Order %d x %d <<<<<<<\n", ROWS, COLS);
+    // Check Invalid Input for Matrix Order
+    if (ROWS < 1 || COLS < 1)
+    {
+        puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...");
+        exit(0);
+    }
+
+    // Declare 2-d Array of Entered Order
+    int matrixA[ROWS][COLS], matrixB[COLS][ROWS];
+
+    // Input Elements of Matrix-A
+    printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
 
     for (int i = 0; i < ROWS; i++)
     {
         printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
         for (int j = 0; j < COLS; j++)
-            scanf("%d", &matrix1[i][j]);
+            scanf("%d", &matrixA[i][j]);
     }
 
-    // Input Elements of 2nd Matrix
-    printf("\n\n>>>>>> Enter Elements of 2nd Matrix of Order %d x %d <<<<<<<\n", ROWS, COLS);
-
-    for (int i = 0; i < ROWS; i++)
+    // Find Transpose of Matrix-A
+    for (int i = 0; i < COLS; i++)
     {
-        printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
-        for (int j = 0; j < COLS; j++)
-            scanf("%d", &matrix2[i][j]);
+        for (int j = 0; j < ROWS; j++)
+            matrixB[i][j] = matrixA[j][i];
     }
 
-    // Add Matrices
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-            sumOfMatrices[i][j] = matrix1[i][j] + matrix2[i][j];
-    }
-
-    // Print Matrix-1
-    printf("\n\n>>>>>>>> 1st Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    // Print Matrix-A
+    printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrix1[i][j]);
+            printf("%4d ", matrixA[i][j]);
 
         putch(10); // Add New line
     }
 
-    // Print Matrix-2
-    printf("\n\n>>>>>>>> 2nd Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    for (int i = 0; i < ROWS; i++)
+    // Print Matrix-B (Transpose)
+    printf("\n\n>>>>>>>> Transpose Matrix-B of %d x %d <<<<<<<<<\n", COLS, ROWS);
+    for (int i = 0; i < COLS; i++)
     {
-        for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrix2[i][j]);
-
-        putch(10); // Add New line
-    }
-
-    // Print Resultant (sumOfMatrices)
-    printf("\n\n>>>>>>>> Sum Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-            printf("%4d ", sumOfMatrices[i][j]);
+        for (int j = 0; j < ROWS; j++)
+            printf("%4d ", matrixB[i][j]);
 
         putch(10); // Add New line
     }
