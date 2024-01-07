@@ -9,18 +9,18 @@
 // Main Function Start
 int main()
 {
-    int arr[ARRAY_SIZE], sum = 0;
+    int nums[ARRAY_SIZE], sum = 0;
 
-    printf("\nEnter 10 Elements to Calculate Sum => ");
+    printf("\nEnter 10 Numbers to Calculate Sum => ");
 
     // Input Elements and Add
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        scanf("%d", &arr[i]);
-        sum += arr[i];
+        scanf("%d", &nums[i]);
+        sum += nums[i];
     }
 
-    printf("\nSum of Entered Elements => %d", sum);
+    printf("\nSum of Entered Numbers => %d", sum);
 
     putch('\n');
     getch();

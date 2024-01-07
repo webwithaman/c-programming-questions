@@ -9,23 +9,23 @@
 // Main Function Start
 int main()
 {
-    int arr[ARRAY_SIZE], sum = 0;
+    int nums[ARRAY_SIZE], sum = 0;
     float avg;
 
-    printf("\nEnter 10 Elements to Calculate Average => ");
+    printf("\nEnter 10 Numbers to Calculate Average => ");
 
-    // Input Elements and Add
+    // Input Numbers and Add
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        scanf("%d", &arr[i]);
-        sum += arr[i];
+        scanf("%d", &nums[i]);
+        sum += nums[i];
     }
 
     // Calculate Average
     avg = sum / ARRAY_SIZE;
 
-    printf("\nSum of Entered Elements => %d", sum);
-    printf("\nAverage of Entered Elements => %.2f", avg);
+    printf("\nSum of Entered Numbers => %d", sum);
+    printf("\nAverage of Entered Numbers => %.2f", avg);
 
     putch('\n');
     getch();
