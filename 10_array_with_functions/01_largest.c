@@ -13,24 +13,24 @@ void inputArray(int[], int);
 int main()
 {
     const int ARRAY_SIZE;
-    printf("\nHow Many Elements You Want to Enter => ");
+    printf("\nHow Many Numbers You Want to Enter => ");
     scanf("%d", &ARRAY_SIZE);
 
     // Check for Invalid Array Size
     if (ARRAY_SIZE < 1)
     {
-        puts("\n!!! Invalid Input, Plz Correctly Specify Number of Elements...");
+        puts("\n!!! Invalid Input, Plz Correctly Specify Number of Numbers...");
         exit(0);
     }
 
     // Declare Array of Variable size
-    int arr[ARRAY_SIZE];
+    int nums[ARRAY_SIZE];
 
-    // Input Elements
-    printf("\nEnter %d Elements => ", ARRAY_SIZE);
-    inputArray(arr, ARRAY_SIZE);
+    // Input Numbers
+    printf("\nEnter %d Numbers => ", ARRAY_SIZE);
+    inputArray(nums, ARRAY_SIZE);
 
-    printf("\nLargest Number => %d", largest(arr, ARRAY_SIZE));
+    printf("\nLargest Number => %d", largest(nums, ARRAY_SIZE));
 
     putch('\n');
     getch();
@@ -40,22 +40,22 @@ int main()
 
 // Functions Definitions 👇👇
 
-// Function to Input Array Elements
-void inputArray(int arr[], int size)
+// Function to Input Array Numbers
+void inputArray(int nums[], int size)
 {
     for (int i = 0; i < size; i++)
-        scanf("%d", &arr[i]);
+        scanf("%d", &nums[i]);
 }
 
 // Function to Find Largest Element of An Array
-int largest(int arr[], int size)
+int largest(int nums[], int size)
 {
-    int largest = arr[0];
+    int largest = nums[0];
 
     for (int i = 1; i < size; i++)
     {
-        if (arr[i] > largest)
-            largest = arr[i];
+        if (nums[i] > largest)
+            largest = nums[i];
     }
 
     return largest;
