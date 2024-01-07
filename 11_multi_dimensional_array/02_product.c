@@ -1,4 +1,4 @@
-// Write a program to calculate the sum of two matrices each of order 3x3.
+// Write a program to calculate the product of two matrices each of order 3x3.
 
 // Header Files
 #include <stdio.h>
@@ -11,7 +11,7 @@
 int main()
 {
     // Declare 2-d Arrays
-    int matrix1[ROWS][COLS], matrix2[ROWS][COLS], sumOfMatrices[ROWS][COLS];
+    int matrix1[ROWS][COLS], matrix2[ROWS][COLS], productOfMatrices[ROWS][COLS];
 
     // Input Elements of 1st Matrix
     printf("\n>>>>>> Enter Elements of 1st Matrix of Order %d x %d <<<<<<<\n", ROWS, COLS);
@@ -33,11 +33,18 @@ int main()
             scanf("%d", &matrix2[i][j]);
     }
 
-    // Add Matrices
+    // Find Product of Matrices
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            sumOfMatrices[i][j] = matrix1[i][j] + matrix2[i][j];
+        {
+            productOfMatrices[i][j] = 0;
+
+            for (int k = 0; k < COLS; k++)
+            {
+                productOfMatrices[i][j] += matrix1[i][k] * matrix2[k][j];
+            }
+        }
     }
 
     // Print Matrix-1
@@ -60,12 +67,12 @@ int main()
         putch(10); // Add New line
     }
 
-    // Print Resultant (sumOfMatrices)
-    printf("\n\n>>>>>>>> Sum Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    // Print Resultant (productOfMatrices)
+    printf("\n\n>>>>>>>> Product Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", sumOfMatrices[i][j]);
+            printf("%4d ", productOfMatrices[i][j]);
 
         putch(10); // Add New line
     }
