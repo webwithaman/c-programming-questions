@@ -18,9 +18,12 @@ int main()
 
     for (int i = 0; i < ROWS; i++)
     {
-        printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
+        // printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
         for (int j = 0; j < COLS; j++)
+        {
+            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
             scanf("%d", &matrixA[i][j]);
+        }
     }
 
     // Input Elements of Matrix-B
@@ -28,9 +31,11 @@ int main()
 
     for (int i = 0; i < ROWS; i++)
     {
-        printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
         for (int j = 0; j < COLS; j++)
+        {
+            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
             scanf("%d", &matrixC[i][j]);
+        }
     }
 
     // Add Matrices
