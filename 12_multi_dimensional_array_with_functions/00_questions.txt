@@ -1,0 +1,25 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ Multi-Dimensional Array With Functions
+
+
+01. Write a function to calculate the sum of two matrices given by user.
+
+02. Write a function to calculate the product of two matrices each of order 3x3.
+
+03. Write a function in C to find the transpose of a given matrix.
+
+04. Write a function in C to find the sum of right diagonals of a matrix.
+
+05. Write a function in C to find the sum of left diagonals of a matrix.
+
+06. Write a function in C to find the sum of rows and columns of a Matrix.
+
+07. Write a function in C to display the lower triangular matrix of a given matrix.
+
+08. Write a function in C to display the upper triangular matrix of a given matrix.
+
+09. Write a function in C to accept a matrix and determine whether it is a sparse  matrix.
+
+10. Write a function in C to find the row with maximum number of 1s.
