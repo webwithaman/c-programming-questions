@@ -42,7 +42,7 @@ int main()
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            matrixC[i][j] = matrixA[i][j] + matrixC[i][j];
+            matrixC[i][j] = matrixA[i][j] + matrixB[i][j];
     }
 
     // Print Matrix-A
@@ -60,7 +60,7 @@ int main()
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixC[i][j]);
+            printf("%4d ", matrixB[i][j]);
 
         putch(10); // Add New line
     }
