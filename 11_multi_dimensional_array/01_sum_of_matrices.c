@@ -34,7 +34,7 @@ int main()
         for (int j = 0; j < COLS; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &matrixC[i][j]);
+            scanf("%d", &matrixB[i][j]);
         }
     }
 

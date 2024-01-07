@@ -5,15 +5,18 @@
 #include <conio.h>
 #include <stdlib.h>
 
+#define MAX_ROWS 10
+#define MAX_COLS 10
+
 // Main Function Start
 int main()
 {
     const int ROWS, COLS;
-    printf("\nEnter Order of Matrix-A (Rows x Cols) => ");
+    printf("\nEnter Order of Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
     scanf("%d%d", &ROWS, &COLS);
 
     // Check Invalid Input for Matrix Order
-    if (ROWS < 1 || COLS < 1)
+    if (ROWS < 1 || ROWS > MAX_ROWS || COLS < 1 || COLS > MAX_COLS)
     {
         puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...");
         exit(0);
@@ -27,9 +30,11 @@ int main()
 
     for (int i = 0; i < ROWS; i++)
     {
-        printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
         for (int j = 0; j < COLS; j++)
+        {
+            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
             scanf("%d", &matrixA[i][j]);
+        }
     }
 
     // Find Transpose of Matrix-A
