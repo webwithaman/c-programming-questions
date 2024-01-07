@@ -11,26 +11,26 @@
 int main()
 {
     // Declare 2-d Arrays
-    int matrix1[ROWS][COLS], matrix2[ROWS][COLS], productOfMatrices[ROWS][COLS];
+    int matrixA[ROWS][COLS], matrixB[ROWS][COLS], matrixC[ROWS][COLS];
 
-    // Input Elements of 1st Matrix
-    printf("\n>>>>>> Enter Elements of 1st Matrix of Order %d x %d <<<<<<<\n", ROWS, COLS);
+    // Input Elements Matrix-A
+    printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
 
     for (int i = 0; i < ROWS; i++)
     {
         printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
         for (int j = 0; j < COLS; j++)
-            scanf("%d", &matrix1[i][j]);
+            scanf("%d", &matrixA[i][j]);
     }
 
-    // Input Elements of 2nd Matrix
-    printf("\n\n>>>>>> Enter Elements of 2nd Matrix of Order %d x %d <<<<<<<\n", ROWS, COLS);
+    // Input Elements of Matrix-B
+    printf("\n\n>>>>>> Enter Elements of Matrix-B of Order %d x %d <<<<<<<\n", ROWS, COLS);
 
     for (int i = 0; i < ROWS; i++)
     {
         printf("\nEnter %d Elements For Row %d => ", COLS, i + 1);
         for (int j = 0; j < COLS; j++)
-            scanf("%d", &matrix2[i][j]);
+            scanf("%d", &matrixC[i][j]);
     }
 
     // Find Product of Matrices
@@ -38,41 +38,41 @@ int main()
     {
         for (int j = 0; j < COLS; j++)
         {
-            productOfMatrices[i][j] = 0;
+            matrixC[i][j] = 0;
 
             for (int k = 0; k < COLS; k++)
             {
-                productOfMatrices[i][j] += matrix1[i][k] * matrix2[k][j];
+                matrixC[i][j] += matrixA[i][k] * matrixB[k][j];
             }
         }
     }
 
-    // Print Matrix-1
-    printf("\n\n>>>>>>>> 1st Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    // Print Matrix-A
+    printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrix1[i][j]);
+            printf("%4d ", matrixA[i][j]);
 
         putch(10); // Add New line
     }
 
-    // Print Matrix-2
-    printf("\n\n>>>>>>>> 2nd Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    // Print Matrix-B
+    printf("\n\n>>>>>>>> Matrix-B of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrix2[i][j]);
+            printf("%4d ", matrixB[i][j]);
 
         putch(10); // Add New line
     }
 
-    // Print Resultant (productOfMatrices)
-    printf("\n\n>>>>>>>> Product Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    // Print Product of Matrices
+    printf("\n\n>>>>>>>> Product Matrix-C of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", productOfMatrices[i][j]);
+            printf("%4d ", matrixC[i][j]);
 
         putch(10); // Add New line
     }
