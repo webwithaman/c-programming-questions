@@ -1,7 +1,7 @@
 ⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
 
 🟢 Language ➡ C
-🟢 Topic ➡ Arrays With Functions
+🟢 Topic ➡ Array With Functions
 
 01. Write a function to find the largest number from the given array of any size. (TSRS)
 
