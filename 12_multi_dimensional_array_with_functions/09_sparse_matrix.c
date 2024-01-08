@@ -98,6 +98,6 @@ int isSparseMatrix(int (*mat)[], int rows, int cols, float threshold)
     // Determine if the matrix is sparse or not based on the threshold
     if (zeroPercentage >= threshold)
         return 1;
-    else
-        return 0;
+
+    return 0;
 }
