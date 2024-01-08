@@ -36,9 +36,11 @@ int main()
 
     // Print Matrix-A
     printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    input2DArray(matrixA, ROWS, COLS);
+    print2DArray(matrixA, ROWS, COLS);
 
+    // Print Sum of Rows and Cols
     puts("\n>>>>>>>> Sum of Rows and Columns <<<<<<<<<");
+    printRowsColsSum(matrixA, ROWS, COLS);
 
     putch('\n');
     getch();
@@ -92,8 +94,8 @@ void printRowsColsSum(int (*mat)[], int rows, int cols)
 
             for (int j = 0; j < cols; j++)
             {
-                sumOfRows += matrixA[i][j];
-                sumOfCols += matrixA[j][i];
+                sumOfRows += *((int *)mat + i * cols + j);
+                sumOfCols += *((int *)mat + j * cols + i);
             }
 
             printf("\nSum of Row-%d => %d", i + 1, sumOfRows);
@@ -108,7 +110,7 @@ void printRowsColsSum(int (*mat)[], int rows, int cols)
             sumOfRows = 0;
 
             for (int j = 0; j < cols; j++)
-                sumOfRows += matrixA[i][j];
+                sumOfRows += *((int *)mat + i * cols + j);
 
             printf("\nSum of Row-%d => %d", i + 1, sumOfRows);
         }
@@ -119,7 +121,7 @@ void printRowsColsSum(int (*mat)[], int rows, int cols)
             sumOfCols = 0;
 
             for (int j = 0; j < rows; j++)
-                sumOfCols += matrixA[j][i];
+                sumOfCols += *((int *)mat + j * cols + i);
 
             printf("\nSum of Col-%d => %d", i + 1, sumOfCols);
         }
