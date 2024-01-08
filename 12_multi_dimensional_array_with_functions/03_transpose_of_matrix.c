@@ -40,11 +40,11 @@ int main()
     print2DArray(matrixA, ROWS, COLS);
 
     // Find Transpose Matrix of Matrix-A
-    // transposeOfMatrix(matrixA, ROWS, COLS, transposedMatrix);
+    transposeOfMatrix(matrixA, ROWS, COLS, transposedMatrix);
 
-    // // Print Transpose Matrix of Matrix-A
-    // printf("\n\n>>>>>>>> Transpose Matrix of %d x %d <<<<<<<<<\n", COLS, ROWS);
-    // print2DArray(transposedMatrix, COLS, ROWS);
+    // Print Transpose Matrix of Matrix-A
+    printf("\n\n>>>>>>>> Transpose Matrix of %d x %d <<<<<<<<<\n", COLS, ROWS);
+    print2DArray(transposedMatrix, COLS, ROWS);
 
     putch('\n');
     getch();
