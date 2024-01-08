@@ -11,7 +11,7 @@
 // Functions Declarations (Prototypes)
 void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
-int isSparseMatrix(int (*)[], int, int, float);
+int rowWithMaxNum(int (*)[], int, int, int);
 
 // Main Function Start
 int main()
@@ -28,52 +28,24 @@ int main()
     }
 
     // Declare 2-d Array of Entered Order
-    int matrixA[ROWS][COLS], count = 0, rowWIthMaxOnes = -1, numOfOnes = 0;
+    int matrixA[ROWS][COLS], num = 1;
 
     // Input Elements of Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
-
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &matrixA[i][j]);
-        }
-    }
+    input2DArray(matrixA, ROWS, COLS);
 
     // Print Matrix-A
     printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixA[i][j]);
-
-        putch(10); // Add New line
-    }
+    print2DArray(matrixA, ROWS, COLS);
 
     // Find Row with Maximum Number of 1s
-    for (int i = 0; i < ROWS; i++)
-    {
-        count = 0;
-
-        for (int j = 0; j < COLS; j++)
-        {
-            if (matrixA[i][j] == 1)
-                count++;
-        }
-        if (count > numOfOnes)
-        {
-            numOfOnes = count;
-            rowWIthMaxOnes = i + 1;
-        }
-    }
+    int rowWIthMaxOnes = rowWithMaxNum(matrixA, ROWS, COLS, num);
 
     // Print Row with Maximum Number of 1s
     if (rowWIthMaxOnes != -1)
-        printf("\nRow with Maximum Number of 1s => %d and Number of 1s => %d", rowWIthMaxOnes, numOfOnes);
+        printf("\nRow with Maximum Number of 1s => %d", rowWIthMaxOnes);
     else
-        printf("\nThere is No 1 in Matrix");
+        printf("\nThere is No %d in Matrix", num);
 
     putch('\n');
     getch();
@@ -112,27 +84,26 @@ void print2DArray(int (*arr)[], int rows, int cols)
     putch(10); // Add new line
 }
 
-// Function to Check whether a given Matrix is Sparse matrix or Not
-int isSparseMatrix(int (*mat)[], int rows, int cols, float threshold)
+// Function to Find Row with Maximum Number of Given Number
+int rowWithMaxNum(int (*mat)[], int rows, int cols, int num)
 {
-    int countZeros = 0;
+    int count = 0, rowWIthMaxNum = -1, numOfNums = 0;
 
     for (int i = 0; i < rows; i++)
     {
+        count = 0;
+
         for (int j = 0; j < cols; j++)
         {
-
-            if (*((int *)mat + i * cols + j) == 0)
-                countZeros++;
+            if (*((int *)mat + i * cols + j) == num)
+                count++;
+        }
+        if (count > numOfNums)
+        {
+            numOfNums = count;
+            rowWIthMaxNum = i + 1;
         }
     }
 
-    // Calculate the percentage of zero elements
-    float zeroPercentage = (float)countZeros / (rows * cols);
-
-    // Determine if the matrix is sparse or not based on the threshold
-    if (zeroPercentage >= threshold)
-        return 1;
-
-    return 0;
+    return rowWIthMaxNum;
 }
