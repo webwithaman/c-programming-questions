@@ -1,4 +1,4 @@
-// Write a program in C to find the sum of rows and columns of a Matrix.
+// Write a function in C to find the sum of rows and columns of a Matrix.
 
 // Header Files
 #include <stdio.h>
@@ -7,6 +7,11 @@
 
 #define MAX_ROWS 10
 #define MAX_COLS 10
+
+// Functions Declarations (Prototypes)
+void input2DArray(int (*)[], int, int);
+void print2DArray(int (*)[], int, int);
+void printRowsColsSum(int (*)[], int, int);
 
 // Main Function Start
 int main()
@@ -23,41 +28,69 @@ int main()
     }
 
     // Declare 2-d Array of Entered Order
-    int matrixA[ROWS][COLS], sumOfRows, sumOfCols;
+    int matrixA[ROWS][COLS], sumOfRows = 0, sumOfCols = 0;
 
     // Input Elements of Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
-
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &matrixA[i][j]);
-        }
-    }
+    input2DArray(matrixA, ROWS, COLS);
 
     // Print Matrix-A
     printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixA[i][j]);
-
-        putch(10); // Add New line
-    }
+    input2DArray(matrixA, ROWS, COLS);
 
     puts("\n>>>>>>>> Sum of Rows and Columns <<<<<<<<<");
 
+    putch('\n');
+    getch();
+    return 0;
+}
+// Main Function End
+
+// Functions Definitions 👇👇
+
+// Function to Input Elements of 2D Array
+void input2DArray(int (*arr)[], int rows, int cols)
+{
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
+            scanf("%d", &*((int *)arr + i * cols + j));
+        }
+    }
+}
+
+// Function to Print 2D Array
+void print2DArray(int (*arr)[], int rows, int cols)
+{
+    putch(10); // Add new line
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+            printf("%-4d ", *((int *)arr + i * cols + j));
+
+        putch(10); // Add new line
+    }
+
+    putch(10); // Add new line
+}
+
+// Function to Find Transpose Matrix of A Given Matrix
+void printRowsColsSum(int (*mat)[], int rows, int cols)
+{
+    int sumOfRows, sumOfCols;
+
     // Find Sum of Rows and Cols and Print
-    if (ROWS == COLS)
+    if (rows == cols)
     {
         // Find Sum of Rows and Cols
-        for (int i = 0; i < ROWS; i++)
+        for (int i = 0; i < rows; i++)
         {
             sumOfRows = sumOfCols = 0;
 
-            for (int j = 0; j < COLS; j++)
+            for (int j = 0; j < cols; j++)
             {
                 sumOfRows += matrixA[i][j];
                 sumOfCols += matrixA[j][i];
@@ -70,30 +103,25 @@ int main()
     else
     {
         // Find Sum of Rows
-        for (int i = 0; i < ROWS; i++)
+        for (int i = 0; i < rows; i++)
         {
             sumOfRows = 0;
 
-            for (int j = 0; j < COLS; j++)
+            for (int j = 0; j < cols; j++)
                 sumOfRows += matrixA[i][j];
 
             printf("\nSum of Row-%d => %d", i + 1, sumOfRows);
         }
 
         // Find Sum of Cols
-        for (int i = 0; i < COLS; i++)
+        for (int i = 0; i < cols; i++)
         {
             sumOfCols = 0;
 
-            for (int j = 0; j < ROWS; j++)
+            for (int j = 0; j < rows; j++)
                 sumOfCols += matrixA[j][i];
 
             printf("\nSum of Col-%d => %d", i + 1, sumOfCols);
         }
     }
-
-    putch('\n');
-    getch();
-    return 0;
 }
-// Main Function End
