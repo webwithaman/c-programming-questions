@@ -42,7 +42,7 @@ int main()
     lowerTriangularMatrix(matrixA, ROWS, COLS, lowerTri);
 
     // Print Lower Triangular Matrix
-    printf("\n\n>>>>>>>> Lower Triangular Matrix-B of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    printf("\n\n>>>>>>>> Lower Triangular Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)

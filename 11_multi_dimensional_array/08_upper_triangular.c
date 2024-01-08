@@ -23,7 +23,7 @@ int main()
     }
 
     // Declare 2-d Array of Entered Order
-    int matrixA[ROWS][COLS], matrixB[ROWS][COLS];
+    int matrixA[ROWS][COLS], upperTri[ROWS][COLS];
 
     // Input Elements of Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
@@ -53,18 +53,18 @@ int main()
         for (int j = 0; j < COLS; j++)
         {
             if (j < i)
-                matrixB[i][j] = 0;
+                upperTri[i][j] = 0;
             else
-                matrixB[i][j] = matrixA[i][j];
+                upperTri[i][j] = matrixA[i][j];
         }
     }
 
     // Print Upper Triangular Matrix
-    printf("\n\n>>>>>>>> Upper Triangular Matrix-B of %d x %d <<<<<<<<<\n", ROWS, COLS);
+    printf("\n\n>>>>>>>> Upper Triangular Matrix of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixB[i][j]);
+            printf("%4d ", upperTri[i][j]);
 
         putch(10); // Add New line
     }
