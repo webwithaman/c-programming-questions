@@ -10,9 +10,9 @@
 #define MAX_COLS 10
 
 // Functions Declarations (Prototypes)
-void input2DArray(int[][MAX_COLS], int, int);
-void print2DArray(int[][MAX_COLS], int, int);
-void productOfTwoMatrices(int[][MAX_COLS], int, int, int[][MAX_COLS], int, int, int[][MAX_COLS]);
+void input2DArray(int (*)[], int, int);
+void print2DArray(int (*)[], int, int);
+void productOfTwoMatrices(int (*)[], int, int, int (*)[], int, int, int (*)[]);
 
 // Main Function Start
 int main()
@@ -80,27 +80,27 @@ int main()
 // Functions Definitions 👇👇
 
 // Function to Input Elements of 2D Array
-void input2DArray(int arr[][MAX_COLS], int rows, int cols)
+void input2DArray(int (*arr)[], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &arr[i][j]);
+            scanf("%d", &*((int*)arr + i* cols + j));
         }
     }
 }
 
 // Function to Print 2D Array
-void print2DArray(int arr[][MAX_COLS], int rows, int cols)
+void print2DArray(int (*arr)[], int rows, int cols)
 {
     putch(10); // Add new line
 
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            printf("%-4d ", arr[i][j]);
+            printf("%-4d ", *((int*)arr + i* cols + j));
 
         putch(10); // Add new line
     }
@@ -109,17 +109,17 @@ void print2DArray(int arr[][MAX_COLS], int rows, int cols)
 }
 
 // Function to Add Two Matrices
-void productOfTwoMatrices(int mat1[][MAX_COLS], int rows1, int cols1, int mat2[][MAX_COLS], int rows2, int cols2, int res[][MAX_COLS])
+void productOfTwoMatrices(int (*mat1)[], int rows1, int cols1, int (*mat2)[], int rows2, int cols2, int (*res)[])
 {
     for (int i = 0; i < rows1; i++)
     {
         for (int j = 0; j < cols2; j++)
         {
-            res[i][j] = 0;
+            *((int *)res + i * cols1 + j) = 0;
 
             for (int k = 0; k < rows2; k++)
             {
-                res[i][j] += mat1[i][k] * mat2[k][j];
+                *((int *)res + i * cols1 + j) += *((int *)mat1 + i * cols1 + k) * *((int *)mat2 + k * cols2 + j);
             }
         }
     }

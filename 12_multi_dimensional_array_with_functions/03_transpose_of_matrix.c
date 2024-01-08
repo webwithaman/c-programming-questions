@@ -55,20 +55,20 @@ int main()
 // Functions Definitions 👇👇
 
 // Function to Input Elements of 2D Array
-void input2DArray(int arr[][MAX_COLS], int rows, int cols)
+void input2DArray(int (*arr)[], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &arr[i][j]);
+            scanf("%d", &*((int *)arr + i * cols + j));
         }
     }
 }
 
 // Function to Print 2D Array
-void print2DArray(int arr[][MAX_COLS], int rows, int cols)
+void print2DArray(int (*arr)[], int rows, int cols)
 {
 
     putch(10); // Add new line
@@ -76,7 +76,7 @@ void print2DArray(int arr[][MAX_COLS], int rows, int cols)
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            printf("%-4d ", arr[i][j]);
+            printf("%-4d ", *((int *)arr + i * cols + j));
 
         putch(10); // Add new line
     }
@@ -90,6 +90,6 @@ void transposeOfMatrix(int (*mat)[], int rows, int cols, int transposed[][MAX_CO
     for (int i = 0; i < cols; i++)
     {
         for (int j = 0; j < rows; j++)
-            transposed[i][j] = mat[j][i];
+            *((int *)transposed + i * rows + j) = *((int *)mat + j * cols + i);
     }
 }

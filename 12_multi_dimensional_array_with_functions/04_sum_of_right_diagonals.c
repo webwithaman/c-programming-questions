@@ -9,9 +9,9 @@
 #define MAX_COLS 10
 
 // Functions Declarations (Prototypes)
-void input2DArray(int[][MAX_COLS], int, int);
-void print2DArray(int[][MAX_COLS], int, int);
-int sumOfRightDiag(int[][MAX_COLS], int);
+void input2DArray(int (*)[], int, int);
+void print2DArray(int (*)[], int, int);
+int sumOfRightDiag(int (*)[], int);
 
 // Main Function Start
 int main()
@@ -53,27 +53,27 @@ int main()
 // Functions Definitions 👇👇
 
 // Function to Input Elements of 2D Array
-void input2DArray(int arr[][MAX_COLS], int rows, int cols)
+void input2DArray(int (*arr)[], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &arr[i][j]);
+            scanf("%d", &*((int*)arr + i * cols + j));
         }
     }
 }
 
 // Function to Print 2D Array
-void print2DArray(int arr[][MAX_COLS], int rows, int cols)
+void print2DArray(int (*arr)[], int rows, int cols)
 {
     putch(10); // Add new line
 
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            printf("%-4d ", arr[i][j]);
+            printf("%-4d ", *((int*)arr + i * cols + j));
 
         putch(10); // Add new line
     }
