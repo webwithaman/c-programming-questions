@@ -8,7 +8,7 @@
 
 02. Write a function to calculate the product of two matrices given by user.
 
-03. Write a function in C to find the transpose of a given matrix.
+03. Write a function in C to find the transpose Matrix of a given matrix.
 
 04. Write a function in C to find the sum of right diagonals of a matrix.
 
