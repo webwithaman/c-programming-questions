@@ -11,7 +11,7 @@
 // Functions Declarations (Prototypes)
 void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
-void lowerTriangularMatrix(int (*)[], int, int,int (*)[]);
+void lowerTriangularMatrix(int (*)[], int, int, int (*)[]);
 
 // Main Function Start
 int main()
@@ -28,48 +28,25 @@ int main()
     }
 
     // Declare 2-d Array of Entered Order
-    int matrixA[ROWS][COLS], matrixB[ROWS][COLS];
+    int matrixA[ROWS][COLS], lowerTri[ROWS][COLS];
 
     // Input Elements of Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
-
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &matrixA[i][j]);
-        }
-    }
+    input2DArray(matrixA, ROWS, COLS);
 
     // Print Matrix-A
     printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixA[i][j]);
-
-        putch(10); // Add New line
-    }
+    print2DArray(matrixA, ROWS, COLS);
 
     // Find Lower Triangular Matrix
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            if (j > i)
-                matrixB[i][j] = 0;
-            else
-                matrixB[i][j] = matrixA[i][j];
-        }
-    }
+    lowerTriangularMatrix(matrixA, ROWS, COLS, lowerTri);
 
     // Print Lower Triangular Matrix
     printf("\n\n>>>>>>>> Lower Triangular Matrix-B of %d x %d <<<<<<<<<\n", ROWS, COLS);
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixB[i][j]);
+            printf("%4d ", lowerTri[i][j]);
 
         putch(10); // Add New line
     }
@@ -79,8 +56,6 @@ int main()
     return 0;
 }
 // Main Function End
-
-
 
 // Functions Definitions 👇👇
 
@@ -113,3 +88,17 @@ void print2DArray(int (*arr)[], int rows, int cols)
     putch(10); // Add new line
 }
 
+// Function to Find lower Triangular Matrix of A Given Matrix
+void lowerTriangularMatrix(int (*mat)[], int rows, int cols, int (*lowerTri)[])
+{
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (j > i)
+                *((int *)lowerTri + i * cols + j) = 0;
+            else
+                *((int *)lowerTri + i * cols + j) = *((int *)mat + i * cols + j);
+        }
+    }
+}
