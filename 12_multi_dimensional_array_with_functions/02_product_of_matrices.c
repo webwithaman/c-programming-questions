@@ -87,7 +87,7 @@ void input2DArray(int (*arr)[], int rows, int cols)
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &*((int*)arr + i* cols + j));
+            scanf("%d", &*((int *)arr + i * cols + j));
         }
     }
 }
@@ -100,7 +100,7 @@ void print2DArray(int (*arr)[], int rows, int cols)
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            printf("%-4d ", *((int*)arr + i* cols + j));
+            printf("%-4d ", *((int *)arr + i * cols + j));
 
         putch(10); // Add new line
     }
