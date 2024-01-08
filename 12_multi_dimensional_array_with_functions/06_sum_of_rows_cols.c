@@ -79,7 +79,7 @@ void print2DArray(int (*arr)[], int rows, int cols)
     putch(10); // Add new line
 }
 
-// Function to Find Transpose Matrix of A Given Matrix
+// Function to Print Sum of Each Row and Column
 void printRowsColsSum(int (*mat)[], int rows, int cols)
 {
     int sumOfRows, sumOfCols;
