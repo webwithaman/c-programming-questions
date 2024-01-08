@@ -85,7 +85,7 @@ void print2DArray(int arr[][MAX_COLS], int rows, int cols)
 }
 
 // Function to Find Transpose Matrix of A Given Matrix
-void transposeOfMatrix(int mat[][MAX_COLS], int rows, int cols, int transposed[][MAX_COLS])
+void transposeOfMatrix(int (*mat)[], int rows, int cols, int transposed[][MAX_COLS])
 {
     for (int i = 0; i < cols; i++)
     {
