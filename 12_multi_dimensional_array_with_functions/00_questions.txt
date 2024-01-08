@@ -20,6 +20,6 @@
 
 08. Write a function in C to display the upper triangular matrix of a given matrix.
 
-09. Write a function in C to accept a matrix and determine whether it is a sparse  matrix.
+09. Write a function in C to accept a matrix and determine whether it is a sparse matrix.
 
 10. Write a function in C to find the row with maximum number of 1s.
