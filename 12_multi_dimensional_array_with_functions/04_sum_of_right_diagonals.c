@@ -11,7 +11,7 @@
 // Functions Declarations (Prototypes)
 void input2DArray(int[][MAX_COLS], int, int);
 void print2DArray(int[][MAX_COLS], int, int);
-void sumOfRightDiag(int[][MAX_COLS], int, int);
+int sumOfRightDiag(int[][MAX_COLS], int);
 
 // Main Function Start
 int main()
@@ -28,39 +28,18 @@ int main()
     }
 
     // Declare 2-d Array of Entered Order
-    int matrixA[ROWS][COLS], sumOfRightDiagonals = 0;
+    int matrixA[ROWS][COLS], sumOfRightDiagonals;
 
     // Input Elements of Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS, COLS);
-
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &matrixA[i][j]);
-        }
-    }
+    input2DArray(matrixA, ROWS, COLS);
 
     // Print Matrix-A
     printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS, COLS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-            printf("%4d ", matrixA[i][j]);
-
-        putch(10); // Add New line
-    }
+    print2DArray(matrixA, ROWS, COLS);
 
     // Find Sum of Right Diagonals
-    for (int i = 0; i < ROWS; i++)
-    {
-        for (int j = 0; j < COLS; j++)
-        {
-            if (ROWS - 1 - i == j)
-                sumOfRightDiagonals += matrixA[i][j];
-        }
-    }
+    sumOfRightDiagonals = sumOfRightDiag(matrixA, ROWS);
 
     // Print Sum of Right Diagonals
     printf("\nSum of Right Diagonals => %d", sumOfRightDiagonals);
@@ -103,11 +82,19 @@ void print2DArray(int arr[][MAX_COLS], int rows, int cols)
 }
 
 // Function to Find Transpose Matrix of A Given Matrix
-void transposeOfMatrix(int mat[][MAX_COLS], int rows, int cols, int transposed[][MAX_COLS])
+int sumOfRightDiag(int mat[][MAX_COLS], int order)
 {
-    for (int i = 0; i < cols; i++)
+
+    int sumOfRightDiagonals = 0;
+
+    for (int i = 0; i < order; i++)
     {
-        for (int j = 0; j < rows; j++)
-            transposed[i][j] = mat[j][i];
+        for (int j = 0; j < order; j++)
+        {
+            if (order - 1 - i == j)
+                sumOfRightDiagonals += mat[i][j];
+        }
     }
+
+    return sumOfRightDiagonals;
 }
