@@ -10,9 +10,9 @@
 #define MAX_COLS 10
 
 // Functions Declarations (Prototypes)
-void input2DArray(int[][MAX_COLS], int, int);
-void print2DArray(int[][MAX_COLS], int, int);
-void transposeOfMatrix(int[][MAX_COLS], int, int, int[][MAX_COLS]);
+void input2DArray(int (*)[], int, int);
+void print2DArray(int (*)[], int, int);
+void transposeOfMatrix(int (*)[], int, int, int (*)[]);
 
 // Main Function Start
 int main()
@@ -20,7 +20,6 @@ int main()
     const int ROWS, COLS;
     printf("\nEnter Order of Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
     scanf("%d%d", &ROWS, &COLS);
-
 
     // Check Invalid Input for Matrix Order
     if (ROWS < 1 || ROWS > MAX_ROWS || COLS < 1 || COLS > MAX_COLS)
@@ -71,10 +70,6 @@ void input2DArray(int arr[][MAX_COLS], int rows, int cols)
 // Function to Print 2D Array
 void print2DArray(int arr[][MAX_COLS], int rows, int cols)
 {
-    printf("\nssss %p \n",&arr[0][0]);
-    printf("\nssss %p \n",arr);
-    printf("\nsppp %p \n",arr+1);
-
 
     putch(10); // Add new line
 
