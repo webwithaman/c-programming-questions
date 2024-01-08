@@ -12,7 +12,7 @@
 // Functions Declarations (Prototypes)
 void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
-void addTwoMatrices(int (*)[], int (*)[], int (*)[], int);
+void addTwoMatrices(int (*)[], int (*)[], int (*)[], int, int);
 
 // Main Function Start
 int main()
@@ -65,7 +65,7 @@ int main()
     print2DArray(matrixB, ROWS_2, COLS_2);
 
     // Add Matrices
-    addTwoMatrices(matrixA, matrixB, matrixC, ROWS_1);
+    addTwoMatrices(matrixA, matrixB, matrixC, ROWS_1, COLS_1);
 
     // Print Sum of Matrices
     printf("\n\n>>>>>>>> Sum Matrix-C of %d x %d <<<<<<<<<\n", ROWS_1, COLS_2);
@@ -109,12 +109,12 @@ void print2DArray(int (*arr)[], int rows, int cols)
 }
 
 // Function to Add Two Matrices
-void addTwoMatrices(int (*mat1)[], int (*mat2)[], int (*res)[], int order)
+void addTwoMatrices(int (*mat1)[], int (*mat2)[], int (*res)[], int rows, int cols)
 {
 
-    for (int i = 0; i < order; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < order; j++)
-            *((int *)res + i * order + j) = *((int *)mat1 + i * order + j) + *((int *)mat2 + i * order + j);
+        for (int j = 0; j < cols; j++)
+            *((int *)res + i * cols + j) = *((int *)mat1 + i * cols + j) + *((int *)mat2 + i * cols + j);
     }
 }
