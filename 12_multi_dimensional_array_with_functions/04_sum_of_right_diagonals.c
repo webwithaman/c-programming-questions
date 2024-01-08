@@ -60,7 +60,7 @@ void input2DArray(int (*arr)[], int rows, int cols)
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", &*((int*)arr + i * cols + j));
+            scanf("%d", &*((int *)arr + i * cols + j));
         }
     }
 }
@@ -73,7 +73,7 @@ void print2DArray(int (*arr)[], int rows, int cols)
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            printf("%-4d ", *((int*)arr + i * cols + j));
+            printf("%-4d ", *((int *)arr + i * cols + j));
 
         putch(10); // Add new line
     }
@@ -82,7 +82,7 @@ void print2DArray(int (*arr)[], int rows, int cols)
 }
 
 // Function to Find Transpose Matrix of A Given Matrix
-int sumOfRightDiag(int mat[][MAX_COLS], int order)
+int sumOfRightDiag(int (*mat)[], int order)
 {
 
     int sumOfRightDiagonals = 0;
@@ -92,7 +92,7 @@ int sumOfRightDiag(int mat[][MAX_COLS], int order)
         for (int j = 0; j < order; j++)
         {
             if (order - 1 - i == j)
-                sumOfRightDiagonals += mat[i][j];
+                sumOfRightDiagonals += *((int *)mat + i * order + j);
         }
     }
 
