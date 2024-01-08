@@ -8,6 +8,11 @@
 #define MAX_ROWS 10
 #define MAX_COLS 10
 
+// Functions Declarations (Prototypes)
+void input2DArray(int (*)[], int, int);
+void print2DArray(int (*)[], int, int);
+int isSparseMatrix(int (*)[], int, int, float);
+
 // Main Function Start
 int main()
 {
@@ -75,3 +80,59 @@ int main()
     return 0;
 }
 // Main Function End
+
+// Functions Definitions 👇👇
+
+// Function to Input Elements of 2D Array
+void input2DArray(int (*arr)[], int rows, int cols)
+{
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
+            scanf("%d", &*((int *)arr + i * cols + j));
+        }
+    }
+}
+
+// Function to Print 2D Array
+void print2DArray(int (*arr)[], int rows, int cols)
+{
+    putch(10); // Add new line
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+            printf("%-4d ", *((int *)arr + i * cols + j));
+
+        putch(10); // Add new line
+    }
+
+    putch(10); // Add new line
+}
+
+// Function to Check whether a given Matrix is Sparse matrix or Not
+int isSparseMatrix(int (*mat)[], int rows, int cols, float threshold)
+{
+    int countZeros = 0;
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+
+            if (*((int *)mat + i * cols + j) == 0)
+                countZeros++;
+        }
+    }
+
+    // Calculate the percentage of zero elements
+    float zeroPercentage = (float)countZeros / (rows * cols);
+
+    // Determine if the matrix is sparse or not based on the threshold
+    if (zeroPercentage >= threshold)
+        return 1;
+
+    return 0;
+}
