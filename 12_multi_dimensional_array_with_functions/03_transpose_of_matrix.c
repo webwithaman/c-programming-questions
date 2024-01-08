@@ -21,6 +21,7 @@ int main()
     printf("\nEnter Order of Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
     scanf("%d%d", &ROWS, &COLS);
 
+
     // Check Invalid Input for Matrix Order
     if (ROWS < 1 || ROWS > MAX_ROWS || COLS < 1 || COLS > MAX_COLS)
     {
@@ -40,11 +41,11 @@ int main()
     print2DArray(matrixA, ROWS, COLS);
 
     // Find Transpose Matrix of Matrix-A
-    transposeOfMatrix(matrixA, ROWS, COLS, transposedMatrix);
+    // transposeOfMatrix(matrixA, ROWS, COLS, transposedMatrix);
 
-    // Print Transpose Matrix of Matrix-A
-    printf("\n\n>>>>>>>> Transpose Matrix of %d x %d <<<<<<<<<\n", COLS, ROWS);
-    print2DArray(transposedMatrix, COLS, ROWS);
+    // // Print Transpose Matrix of Matrix-A
+    // printf("\n\n>>>>>>>> Transpose Matrix of %d x %d <<<<<<<<<\n", COLS, ROWS);
+    // print2DArray(transposedMatrix, COLS, ROWS);
 
     putch('\n');
     getch();
@@ -70,6 +71,11 @@ void input2DArray(int arr[][MAX_COLS], int rows, int cols)
 // Function to Print 2D Array
 void print2DArray(int arr[][MAX_COLS], int rows, int cols)
 {
+    printf("\nssss %p \n",&arr[0][0]);
+    printf("\nssss %p \n",arr);
+    printf("\nsppp %p \n",arr+1);
+
+
     putch(10); // Add new line
 
     for (int i = 0; i < rows; i++)

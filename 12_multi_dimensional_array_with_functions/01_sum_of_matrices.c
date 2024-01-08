@@ -68,8 +68,8 @@ int main()
     addTwoMatrices(matrixA, matrixB, matrixC, ROWS_1);
 
     // Print Sum of Matrices
-    printf("\n\n>>>>>>>> Sum Matrix-C of %d x %d <<<<<<<<<\n", ROWS_1, COLS_1);
-    print2DArray(matrixC, ROWS_1, COLS_1);
+    printf("\n\n>>>>>>>> Sum Matrix-C of %d x %d <<<<<<<<<\n", ROWS_1, COLS_2);
+    print2DArray(matrixC, ROWS_1, COLS_2);
 
     putch('\n');
     getch();
