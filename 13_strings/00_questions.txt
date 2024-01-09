@@ -1,0 +1,26 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ Strings
+
+
+01. Write a program to calculate the length of the string without using built-in method.
+
+02. Write a program to count the occurrence of a given character in a given string.
+
+03. Write a program to count vowels in a given string.
+
+04. Write a program to convert a given string into uppercase.
+
+05. Write a program to convert a given string into lowercase.
+
+06. Write a program to reverse a string.
+
+07. Write a program in C to count the total number of alphabets, digits and special 
+    characters in a string.
+
+08. Write a program in C to copy one string to another string.
+
+09. Write a C program to sort a string array in ascending order.
+
+10. Write a program in C to Find the Frequency of Characters.
