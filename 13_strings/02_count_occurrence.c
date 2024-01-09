@@ -1,17 +1,17 @@
-// Write a program to calculate the length of the string without using built-in method.
+// Write a program to count the occurrence of a given character in a given string.
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-#define ARRAY_SIZE 31
+#define ARRAY_SIZE 30
 
 // Main Function Start
 int main()
 {
     char name[ARRAY_SIZE], length = 0;
 
-    printf("\nEnter Your Name (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    printf("\nEnter Any String => ");
     fgets(name, ARRAY_SIZE, stdin); // Input String
 
     // Find Length
