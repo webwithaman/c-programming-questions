@@ -3,6 +3,7 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <string.h>
 
 #define ARRAY_SIZE 31
 
@@ -19,7 +20,7 @@ int main()
     while (name[length])
         length++;
 
-    printf("\nYour Name is %s and Number of Characters in Your Name => %d", name, length);
+    printf("\nYour Name is \"%s\" and Number of Characters in Your Name => %d", name, length);
 
     putch('\n');
     getch();
