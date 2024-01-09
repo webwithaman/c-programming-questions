@@ -14,7 +14,7 @@ int main()
 
     printf("\nEnter Your Name (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
     fgets(name, ARRAY_SIZE, stdin);   // Input String
-    name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0'
+    name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0' in name
 
     // Find Length
     while (name[length])

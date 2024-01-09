@@ -3,21 +3,31 @@
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+#include <string.h>
 
 #define ARRAY_SIZE 31
 
 // Main Function Start
 int main()
 {
-    char str[ARRAY_SIZE];
+    char str[ARRAY_SIZE], ch, count = 0;
 
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin); // Input String
+    fgets(str, ARRAY_SIZE, stdin);  // Input String
+    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
 
+    printf("\nEnter a Character to Find Its Occurrence In Given String => ");
+    scanf("%c", &ch);
 
-    name[--length] = '\0'; // Replace '\n' Char with '\0'
+    // Find Occurrence of ch in str
+    for (int i = 0; str[i]; i++)
+    {
+        if (str[i] == ch)
+            count++;
+    }
 
-    printf("\nYour Name is %s and Number of Characters in Your Name => %d", name, length);
+    // Print Occurrence
+    printf("\nThere are %d, '%c' in \"%s\" ", count, ch, str);
 
     putch('\n');
     getch();
