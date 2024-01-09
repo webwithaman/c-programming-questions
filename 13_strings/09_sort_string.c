@@ -19,6 +19,8 @@ int main()
     fgets(str, ARRAY_SIZE, stdin);  // Input String
     str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
 
+    printf("\nString Before Sorting => %s", str);
+
     // Find Length
     while (str[length])
         length++;
@@ -26,10 +28,24 @@ int main()
     // // 1st Approach (Bubble Sort)
     for (int i = 0; i < length - 1; i++)
     {
-        for (int j = 0; j < length - 1 - i)
+        for (int j = 0; j < length - 1 - i; j++)
         {
+            if (str[j] > str[j + 1])
+                swap(&str[j], &str[j + 1]);
         }
     }
+
+    // // 2nd Approach (Selection Sort)
+    // for (int i = 0; i < length - 1; i++)
+    // {
+    //     for (int j = i + 1; j < length; j++)
+    //     {
+    //         if (str[i] > str[j])
+    //             swap(&str[i], &str[j]);
+    //     }
+    // }
+
+    printf("\nString After Sorting => %s", str);
 
     putch('\n');
     getch();
