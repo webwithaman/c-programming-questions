@@ -1,4 +1,4 @@
-// Write a program to convert a given string into uppercase.
+// Write a program to convert a given string into lowercase.
 
 // Header Files
 #include <stdio.h>
@@ -12,18 +12,18 @@ int main()
 {
     char str[ARRAY_SIZE];
 
-    printf("\nEnter Any String to Convert it into Uppercase (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    printf("\nEnter Any String to Convert it into Lowercase (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
     fgets(str, ARRAY_SIZE, stdin);  // Input String
     str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
 
-    // Convert into Uppercase
+    // Convert into Lowercase
     for (int i = 0; str[i]; i++)
     {
-        if (str[i] >= 'a' && str[i] <= 'z')
-            str[i] -= 32;
+        if (str[i] >= 'A' && str[i] <= 'Z')
+            str[i] += 32;
     }
 
-    printf("\nEntered String Converted into Uppercase => %s", str);
+    printf("\nEntered String Converted into Lowercase => %s", str);
 
     putch('\n');
     getch();
