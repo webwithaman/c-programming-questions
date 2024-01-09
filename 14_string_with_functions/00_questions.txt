@@ -1,0 +1,28 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+
+🟢 Language ➡ C
+🟢 Topic ➡ String With Functions
+
+
+01. Write a function to calculate length of the string.
+
+02. Write a function to reverse a string.
+
+03. Write a function to compare two strings.
+
+04. Write a function to transform string into uppercase.
+
+05. Write a function to transform a string into lowercase.
+
+06. Write a function to check whether a given string is an alphanumeric string or not.
+    (Alphanumeric string must contain at least one alphabet and one digit)
+
+07. Write a function to check whether a given string is palindrome or not.
+
+08. Write a function to count words in a given string.
+
+09. Write a function to reverse a string word wise. (For example if the given string is 
+“Mysirg Education Services” then the resulting string should be “Services Education 
+Mysirg” )
+
+10. Write a function to find the repeated character in a given string
