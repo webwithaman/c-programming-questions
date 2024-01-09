@@ -9,6 +9,8 @@
 void printArray(int[], int);
 void inputArray(int[], int);
 int countFrequency(int[], int, int);
+void sortAsc(int[], int);
+void copyArray(int[], int, int[]);
 void printFrequencyOfEach(int[], int);
 int linearSearch(int arr[], int size, int search);
 
@@ -83,6 +85,7 @@ int countFrequency(int arr[], int size, int element)
 // Function to Print Frequency of Each Element
 void printFrequencyOfEach(int arr[], int size)
 {
+    // // 1st Approach
     int inspected[size], k = 0;
 
     for (int i = 0; i < size; i++)
@@ -94,6 +97,21 @@ void printFrequencyOfEach(int arr[], int size)
             inspected[k++] = arr[i];
         }
     }
+
+    // // 2nd Approach
+    // int copyOfArr[size], count;
+    // copyArray(arr, size, copyOfArr); // copy of arr into copyOfArr
+    // sortAsc(copyOfArr, size);        // sort copyOfArr
+
+    // for (int i = 0; i < size; i += count)
+    // {
+    //     count = 1;
+
+    //     for (int j = i + 1; j < size && copyOfArr[i] == copyOfArr[j]; j++)
+    //         count++;
+
+    //     printf("\nFrequecy of %d => %d", copyOfArr[i], count);
+    // }
 
     putch('\n');
 }
@@ -108,4 +126,29 @@ int linearSearch(int arr[], int size, int search)
     }
 
     return -1;
+}
+
+// Function to Sort an Array in Ascending Order
+void sortAsc(int arr[], int size)
+{
+    // //  Bubble Sort
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size - 1; j++)
+        {
+            if (arr[j] < arr[j + 1]) // true, then swap
+            {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
+// Function to Copy Array
+void copyArray(int arr[], int size, int arr2[])
+{
+    for (int i = 0; i < size; i++)
+        arr2[i] = arr[i];
 }
