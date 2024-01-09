@@ -12,13 +12,12 @@ int main()
     char name[ARRAY_SIZE], length = 0;
 
     printf("\nEnter Your Name (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(name, ARRAY_SIZE, stdin); // Input String
+    fgets(name, ARRAY_SIZE, stdin);   // Input String
+    name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
     // Find Length
     while (name[length])
         length++;
-
-    name[--length] = '\0'; // Replace '\n' Char with '\0'
 
     printf("\nYour Name is %s and Number of Characters in Your Name => %d", name, length);
 

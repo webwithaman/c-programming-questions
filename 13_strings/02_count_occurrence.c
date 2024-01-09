@@ -4,19 +4,16 @@
 #include <stdio.h>
 #include <conio.h>
 
-#define ARRAY_SIZE 30
+#define ARRAY_SIZE 31
 
 // Main Function Start
 int main()
 {
-    char name[ARRAY_SIZE], length = 0;
+    char str[ARRAY_SIZE];
 
-    printf("\nEnter Any String => ");
-    fgets(name, ARRAY_SIZE, stdin); // Input String
+    printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    fgets(str, ARRAY_SIZE, stdin); // Input String
 
-    // Find Length
-    while (name[length])
-        length++;
 
     name[--length] = '\0'; // Replace '\n' Char with '\0'
 
