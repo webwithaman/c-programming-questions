@@ -29,7 +29,7 @@ int main()
         }
     }
 
-    // Print Occurrence
+    // Print Number of Vowels
     printf("\nThere are %d vowels in \"%s\" ", count, str);
 
     putch('\n');
