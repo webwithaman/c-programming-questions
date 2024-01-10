@@ -4,13 +4,13 @@
 🟢 Topic ➡ String With Functions
 
 
-01. Write a c program to calculate length of the string using user-defined function
+01. Write a c program to calculate length of the string using user-defined function.
 
 02. Write a c program to calculate length of the string using pre-defined function.
 
-02. Write a function to reverse a string.
+03. Write a c program to reverse a string using user-defined function.
 
-03. Write a function to compare two strings.
+04. Write a c program to reverse a string using pre-defined function.
 
 04. Write a function to transform string into uppercase.
 
