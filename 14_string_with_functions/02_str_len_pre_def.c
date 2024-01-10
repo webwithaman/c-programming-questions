@@ -1,4 +1,4 @@
-// Write a function to calculate length of the string.
+// Write a c program to calculate length of the string using pre-defined function.
 
 // Header Files
 #include <stdio.h>
@@ -19,7 +19,7 @@ int main()
     fgets(name, ARRAY_SIZE, stdin);   // Input String
     name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0' in name
 
-    length = strLength(name); // Find Length using strLength()
+    length = strLength(name); // Find Length using user-defined function
 
     printf("\nYour Name is \"%s\" and Number of Characters in Your Name => %d", name, length);
 

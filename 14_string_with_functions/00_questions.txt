@@ -4,7 +4,9 @@
 🟢 Topic ➡ String With Functions
 
 
-01. Write a function to calculate length of the string.
+01. Write a c program to calculate length of the string using user-defined function
+
+02. Write a c program to calculate length of the string using pre-defined function.
 
 02. Write a function to reverse a string.
 
