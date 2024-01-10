@@ -15,7 +15,7 @@ int strLength(char[]);
 int main()
 {
     char str1[ARRAY_SIZE * 2], str2[ARRAY_SIZE];
-    printf("\n>>>>>>>> Enter Two Strings For Concatination <<<<<<<<<\n");
+    printf("\n>>>>>>>> Enter Two Strings For Concatenation <<<<<<<<<\n");
 
     printf("\nEnter First String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
     fgets(str1, ARRAY_SIZE, stdin);   // Input String
@@ -27,7 +27,7 @@ int main()
 
     conactStrings(str1, str2); // Conact Two strings
 
-    printf("\nStrings After Concatination => %s", str1);
+    printf("\nStrings After Concatenation => %s", str1);
 
     putch('\n');
     getch();
