@@ -12,19 +12,27 @@
 
 04. Write a c program to reverse a string using pre-defined function.
 
-04. Write a function to transform string into uppercase.
+05. Write a c program to transform string into uppercase using user-defined function.
 
-05. Write a function to transform a string into lowercase.
+06. Write a c program to transform string into uppercase using pre-defined function.
 
-06. Write a function to check whether a given string is an alphanumeric string or not.
+07. Write a c program to transform string into lowercase using user-defined function.
+
+08. Write a c program to transform string into lowercase using pre-defined function.
+
+09. Write a function to check whether a given string is an alphanumeric string or not.
     (Alphanumeric string must contain at least one alphabet and one digit)
 
-07. Write a function to check whether a given string is palindrome or not.
+10. Write a function to check whether a given string is palindrome or not.
 
-08. Write a function to count words in a given string.
+11. Write a function to count words in a given string.
 
-09. Write a function to reverse a string word wise. (For example if the given string is 
-“Mysirg Education Services” then the resulting string should be “Services Education 
-Mysirg” )
+12. Write a function to reverse a string word wise. (For example if the given string is 
+    “Mysirg Education Services” then the resulting string should be “Services Education 
+    Mysirg” )
 
-10. Write a function to find the repeated character in a given string
+13. Write a function to find the repeated character in a given string.
+
+14. Write a function to search a given character in a string. (For example if the string  is "c-programming" and the character to be searched is 'a' then return the index of 'a' in string else return -1)
+
+15. Write a function to replace a single character with another single character in a string.
