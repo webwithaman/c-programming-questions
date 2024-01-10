@@ -9,7 +9,7 @@
 #define ARRAY_SIZE 31
 
 // Function Declarations
-int isAnAlphanumericStr(char *);
+int isAnAlphanumericStr(char []);
 
 // Main Function Start
 int main()
