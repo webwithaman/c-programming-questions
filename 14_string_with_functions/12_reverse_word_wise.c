@@ -123,9 +123,9 @@ char *strReverseWordWise(char str[])
             index = i;
             lock = 0;
         }
-        else if (lock == 0 && str[i] == 32 || str[i] == '\t')
+        else if (lock == 0 && str[i] == 32 || str[i] == '\t' || str[i + 1] == '\0')
         {
-            int beg = index, end = i - 1;
+            int beg = index, end = str[i + 1] ? i - 1 : i;
             char temp;
             while (beg < end)
             {
