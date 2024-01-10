@@ -112,7 +112,7 @@ int isStrPalindrome(char str[])
 // Function to Reverse a String word wise
 char *strReverseWordWise(char str[])
 {
-    strReverse(str);
+    strReverse(str); // Reverse str
 
     int index = 0, lock = 1;
 
@@ -123,7 +123,7 @@ char *strReverseWordWise(char str[])
             index = i;
             lock = 0;
         }
-        else if (lock == 0 && str[i] == 32 || str[i] == '\t' || str[i + 1] == '\0')
+        else if (lock == 0 && (str[i] == 32 || str[i] == '\t' || str[i + 1] == '\0'))
         {
             int beg = index, end = str[i + 1] ? i - 1 : i;
             char temp;
@@ -136,6 +136,7 @@ char *strReverseWordWise(char str[])
                 beg++;
                 end--;
             }
+
             lock = 1;
         }
     }
