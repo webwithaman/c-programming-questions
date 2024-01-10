@@ -11,9 +11,6 @@
 // Function Declarations
 int strLength(char[]);
 char *strReverse(char[]);
-char *copyString(char[], char[]);
-int compareStrings(char[], char[]);
-int isStrPalindrome(char[]);
 char *strReverseWordWise(char[]);
 
 // Main Function Start
@@ -67,33 +64,6 @@ char *strReverse(char str[])
     }
 
     return str;
-}
-
-// Function to Copy One String into Another
-char *copyString(char des[], char src[])
-{
-    // Copy str into copy
-    int i = 0;
-    for (i = 0; src[i]; i++)
-        des[i] = src[i];
-
-    des[i] = '\0';
-
-    return des;
-}
-
-// Function to Check Whether a Given String an Alphanumeric String or Not
-int compareStrings(char str1[], char str2[])
-{
-    for (int i = 0; str1[i] || str2[i]; i++)
-    {
-        if (str1[i] > str2[i])
-            return str1[i] - str2[i];
-        else if (str1[i] < str2[i])
-            return str1[i] - str2[i];
-    }
-
-    return 0;
 }
 
 // Function to Check Whether a Given String is Palindrome or Not
