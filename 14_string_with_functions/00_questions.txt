@@ -40,3 +40,7 @@
 16. Write a c program to copy one string into another using user-defined function.
 
 17. Write a c program to copy one string into another using pre-defined function.
+
+18. Write a c program to compare two strings using user-defined function.
+
+19. Write a c program to compare two strings using pre-defined function.

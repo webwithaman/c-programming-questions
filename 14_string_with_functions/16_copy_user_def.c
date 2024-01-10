@@ -32,7 +32,7 @@ int main()
 
 // Function Definitions 👇👇
 
-// Function to Check Whether a Given String an Alphanumeric String or Not
+// Function to Copy One String into Another
 char *copyString(char des[], char src[])
 {
     // Copy str into copy
