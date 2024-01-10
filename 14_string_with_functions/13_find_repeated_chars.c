@@ -9,11 +9,8 @@
 
 // Function Declarations;
 int strLength(char[]);
-char *strReverse(char[]);
 char *copyString(char[], char[]);
 char *sortStr(char str[]);
-int compareStrings(char[], char[]);
-int isStrPalindrome(char[]);
 char *findRepeatedChars(char[], char[]);
 void swap(char *ch1, char *ch2);
 
@@ -56,27 +53,6 @@ int strLength(char str[])
     return length;
 }
 
-// Function to Reverse a String
-char *strReverse(char str[])
-{
-    int length = strLength(str);
-    char temp;
-
-    // Reverse str
-    int beg = 0, end = length - 1;
-    while (beg < end)
-    {
-        // Swap str[beg] with str[end]
-        temp = str[beg];
-        str[beg] = str[end];
-        str[end] = temp;
-        beg++;
-        end--;
-    }
-
-    return str;
-}
-
 // Function to Copy One String into Another
 char *copyString(char des[], char src[])
 {
@@ -88,33 +64,6 @@ char *copyString(char des[], char src[])
     des[i] = '\0';
 
     return des;
-}
-
-// Function to Check Whether a Given String an Alphanumeric String or Not
-int compareStrings(char str1[], char str2[])
-{
-    for (int i = 0; str1[i] || str2[i]; i++)
-    {
-        if (str1[i] > str2[i])
-            return str1[i] - str2[i];
-        else if (str1[i] < str2[i])
-            return str1[i] - str2[i];
-    }
-
-    return 0;
-}
-
-// Function to Check Whether a Given String is Palindrome or Not
-int isStrPalindrome(char str[])
-{
-    char copyStr[strLength(str) + 1]; // create a string to copy str
-    copyString(copyStr, str);         // copy str into copyStr
-    strReverse(copyStr);              // reverse copyStr
-
-    if (compareStrings(copyStr, str))
-        return 0; // String is not Palindrome
-
-    return 1; // String is Palindrome
 }
 
 // Function to Find Repeated Characters in a String
