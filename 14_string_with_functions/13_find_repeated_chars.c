@@ -93,7 +93,7 @@ char *findRepeatedChars(char str[], char repeat[])
         }
     }
 
-    repeat[j] = 0;
+    repeat[j] = '\0'; // Add Null Character At End
 
     return repeat;
 }

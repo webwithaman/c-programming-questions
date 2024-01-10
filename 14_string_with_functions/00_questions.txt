@@ -44,3 +44,5 @@
 18. Write a c program to compare two strings using user-defined function.
 
 19. Write a c program to compare two strings using pre-defined function.
+
+20. Write a c program to concat two strings using user-defined function.
