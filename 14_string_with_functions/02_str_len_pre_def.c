@@ -7,9 +7,6 @@
 
 #define ARRAY_SIZE 31
 
-// Function Declarations
-int strLength(char[]);
-
 // Main Function Start
 int main()
 {
@@ -19,7 +16,7 @@ int main()
     fgets(name, ARRAY_SIZE, stdin);   // Input String
     name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0' in name
 
-    length = strLength(name); // Find Length using user-defined function
+    length = strlen(name); // Find Length using pre-defined function
 
     printf("\nYour Name is \"%s\" and Number of Characters in Your Name => %d", name, length);
 
@@ -28,16 +25,3 @@ int main()
     return 0;
 }
 // Main Function End
-
-// Function Definitions 👇👇
-
-// Function to Calculate Length of String
-int strLength(char str[])
-{
-    int length = 0;
-
-    while (str[length])
-        length++;
-
-    return length;
-}
