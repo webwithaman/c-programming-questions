@@ -16,9 +16,9 @@ The repository is structured based on different topics, with each topic having i
 - /08_recursion
 - /09_arrays
 - /10_array_with_functions
-- /multi_dimensional_array
-- /multi_dimensional_array_with_functions
-- /strings
+- /11_multi_dimensional_array
+- /12_multi_dimensional_array_with_functions
+- /13_strings
 - /string_with_functions
 - /handling_multiple_strings
 
