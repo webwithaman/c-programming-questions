@@ -1,4 +1,4 @@
-// Write a program to search a string in the list of strings.
+// Write a program to sort N city cities stored in two dimensional arrays, taken from the user.
 
 // Header Files
 #include <stdio.h>
@@ -13,7 +13,7 @@
 int main()
 {
     const int ROWS;
-    printf("\nHow Many Names You Want to Enter (MAX %d) => ", MAX_ROWS);
+    printf("\nHow Many Cities You Want to Enter (MAX %d) => ", MAX_ROWS);
     scanf("%d", &ROWS);
 
     // Invalid Input ROWS Entered by User
@@ -24,41 +24,41 @@ int main()
     }
 
     // Declare 2D Array According to user's input
-    char names[ROWS][MAX_COLS], temp[MAX_COLS];
+    char cities[ROWS][MAX_COLS], temp[MAX_COLS];
 
-    // Read Names
-    printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
+    // Read Cities
+    printf("\n>>>>>>>>>>>>> Enter %d Cities <<<<<<<<<<<\n", ROWS);
     for (int i = 0; i < ROWS; i++)
     {
-        printf("\nEnter Name-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
+        printf("\nEnter City-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
         fflush(stdin);
-        fgets(names[i], MAX_COLS, stdin);
-        names[i][strcspn(names[i], "\n")] = '\0'; // Replace '\n' character with '\0'
+        fgets(cities[i], MAX_COLS, stdin);
+        cities[i][strcspn(cities[i], "\n")] = '\0'; // Replace '\n' character with '\0'
     }
 
-    // Display Names Before Sorting
-    printf("\n>>>>>>>>>>>>> List of Names Before Sorting <<<<<<<<<<<\n");
+    // Display Cities Before Sorting
+    printf("\n>>>>>>>>>>>>> List of Cities Before Sorting <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
-        puts(names[i]);
+        puts(cities[i]);
 
-    // Sort Names Using Bubble Sort
+    // Sort Cities Using Bubble Sort
     for (int i = 0; i < ROWS - 1; i++)
     {
         for (int j = 0; j < ROWS - 1 - i; j++)
         {
-            if (strcmp(names[j], names[j + 1]) > 0)
+            if (strcmp(cities[j], cities[j + 1]) > 0)
             {
-                strcpy(temp, names[j]);
-                strcpy(names[j], names[j + 1]);
-                strcpy(names[j + 1], temp);
+                strcpy(temp, cities[j]);
+                strcpy(cities[j], cities[j + 1]);
+                strcpy(cities[j + 1], temp);
             }
         }
     }
 
-    // Display Names After Sorting
-    printf("\n>>>>>>>>>>>>> List of Names After Sorting <<<<<<<<<<<\n");
+    // Display Cities After Sorting
+    printf("\n>>>>>>>>>>>>> List of Cities After Sorting <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
-        puts(names[i]);
+        puts(cities[i]);
 
     putch('\n');
     getch();
