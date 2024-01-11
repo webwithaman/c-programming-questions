@@ -1,0 +1,67 @@
+// Write a program to read and display a 2D array of strings in C language.
+
+// Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#define MAX_ROWS 10
+#define MAX_COLS 31
+
+// Main Function Start
+int main()
+{
+    const int ROWS;
+    printf("\nHow Many Names You Want to Enter (MAX %d) => ", MAX_ROWS);
+    scanf("%d", &ROWS);
+
+    // Invalid Input ROWS Entered by User
+    if (ROWS < 1 || ROWS > MAX_ROWS)
+    {
+        puts("\n!!! Invalid Input...");
+        exit(0);
+    }
+
+    // Declare 2D Array According to user's input
+    char names[ROWS][MAX_COLS], temp[MAX_COLS];
+
+    // Read Names
+    printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
+    for (int i = 0; i < ROWS; i++)
+    {
+        printf("\nEnter Name-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
+        fflush(stdin);
+        fgets(names[i], MAX_COLS, stdin);
+        names[i][strcspn(names[i], "\n")] = '\0'; // Replace '\n' character with '\0'
+    }
+
+    // Display Names Before Sorting
+    printf("\n>>>>>>>>>>>>> List of Names Before Sorting <<<<<<<<<<<\n", ROWS);
+    for (int i = 0; i < ROWS; i++)
+        puts(names[i]);
+
+    // Sort Names Using Bubble Sort
+    for (int i = 0; i < ROWS - 1; i++)
+    {
+        for (int j = 0; j < ROWS - 1 - i; j++)
+        {
+            if (strcmp(names[j], names[j + 1]) > 0)
+            {
+                strcpy(temp, names[j]);
+                strcpy(names[j], names[j + 1]);
+                strcpy(names[j + 1], temp);
+            }
+        }
+    }
+
+    // Display Names After Sorting
+    printf("\n>>>>>>>>>>>>> List of Names After Sorting <<<<<<<<<<<\n", ROWS);
+    for (int i = 0; i < ROWS; i++)
+        puts(names[i]);
+
+    putch('\n');
+    getch();
+    return 0;
+}
+// Main Function End
