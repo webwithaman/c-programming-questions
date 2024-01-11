@@ -1,4 +1,4 @@
-// Create an authentication system that can manage 10 users. It should be menu driven.
+// Write a c program that take password as input from user hiddenly. Display Asterisk '*' when user enter password.
 
 // Header Files
 #include <stdio.h>
@@ -6,22 +6,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX_ROWS 10
 #define MAX_COLS 31
-
-#define cursorforward(x) printf("\033[%dC", (x))
-
-char *getHiddenPassword(char password[])
-{
-
-    return password;
-}
 
 // Main Function Start
 int main()
 {
+    char password[MAX_COLS];
+
     int i = 0; // Represent Index for password array
     char ch;   // Store character taken from user
+
+    printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
 
     while (1) // Read untill user press enter key
     {
@@ -42,9 +37,14 @@ int main()
             putch('*');
             password[i++] = ch;
         }
+
+        if (i == MAX_COLS - 2) // Password Reached At Max length
+            break;
     }
 
     password[i] = '\0'; // Terminate password with '\0'
+
+    printf("\n\nPassword => %s", password);
 
     putch('\n');
     getch();
