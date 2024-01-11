@@ -5,7 +5,6 @@
 #include <conio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <math.h>
 
 #define MAX_ROWS 10
 #define MAX_COLS 16
