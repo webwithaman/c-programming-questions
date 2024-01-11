@@ -20,7 +20,7 @@ int main()
     {
 
         // Clear console
-        sys("cls");
+        system("cls");
 
         // Display Options and get user's choice
         puts(">>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<");
@@ -29,7 +29,7 @@ int main()
         puts("Press 1 : Sign-up");
         puts("Press 2 : Login/Sign-in");
         puts("Press 3 : Forget Password");
-        pust("--------------------------------------------");
+        puts("--------------------------------------------");
 
         printf("Enter You Choice => "); // Input User Choice
         scanf("%d", &userChoice);
@@ -60,7 +60,7 @@ int main()
             do
             {
                 isUsernameValid = 1; // Assume username will be valid
-                printf("Enter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+                printf("\nEnter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
                 fflush(stdin);
                 fgets(username, MAX_COLS, stdin);
                 username[strcspn(username, "\n")] = '\0';
@@ -113,12 +113,12 @@ int main()
                 choosedCorrect = 1;
                 printf("\nPress 1 : For Enter Password Hiddenly");
                 printf("\nPress 2 : For Enter Password Without Hidden");
-                printf("\nEnter Your Choice => ");
+                printf("\n\nEnter Your Choice => ");
                 scanf("%d", &choiceForPass);
 
                 if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
                 {
-                    printf("\nWrong Choice, Plz Select From Given Options. Try Again...");
+                    puts("\nWrong Choice, Plz Select From Given Options. Try Again...");
                     choosedCorrect = 0;
                     getch();
                 }
@@ -129,7 +129,7 @@ int main()
             do
             {
                 isPasswordValid = 1; // Assume Password will be valid
-                printf("Enter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+                printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
 
                 if (choiceForPass == 1) // get password hiddenly
                 {
@@ -177,7 +177,7 @@ int main()
                 {
                     for (int i = 0; password[i]; i++)
                     {
-                        if (password[i] == ' ' || password[i] == '\t' || password == '\v')
+                        if (password[i] == ' ' || password[i] == '\t')
                             isPasswordValid = 0;
                     }
                 }
@@ -191,10 +191,35 @@ int main()
             } while (!isPasswordValid); // Terminate When Password is Valid
 
             // When Both Username and Password Are valid then Create New User
-            strcpy(username[totalAccountCreated], username);
+            strcpy(usernames[totalAccountCreated], username);
             strcpy(passwords[totalAccountCreated], password);
 
+            // Display Accout Created Message
+            puts("\nYour Account Created Successfully...");
+            getch();
+
         } // End of Case-1 (Sign-up)
+        break;
+
+        case 2:
+        {
+            char username[MAX_COLS];
+            puts("\n============== LOGIN ================");
+            printf("\nEnter Your Username => ");
+            fflush(stdin);
+            fgets(username, MAX_COLS, stdin);
+            username[strcspn(username, "\n")] = '\0';
+
+            
+
+
+        }
+        break;
+
+        case 3:
+        {
+        }
+        break;
 
         default:
             puts("\n!!! Invalid Option, Plz Choose One of the Given Options...");
