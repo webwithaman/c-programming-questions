@@ -11,7 +11,7 @@
 03. Write a program to find the number of vowels in each of the 5 strings stored in two 
     dimensional arrays, taken from the user.
 
-04. Write a program to sort n city names stored in two dimensional arrays, taken from 
+04. Write a program to sort N city names stored in two dimensional arrays, taken from 
     the user.
 
 05. Suppose we have a list of email addresses, check whether all email addresses have 

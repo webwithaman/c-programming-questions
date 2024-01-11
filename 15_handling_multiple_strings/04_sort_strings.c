@@ -24,7 +24,7 @@ int main()
     }
 
     // Declare 2D Array According to user's input
-    char names[ROWS][MAX_COLS], search[MAX_COLS], index = -1;
+    char names[ROWS][MAX_COLS], temp[MAX_COLS];
 
     // Read Names
     printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
@@ -37,30 +37,28 @@ int main()
     }
 
     // Display Names Before Sorting
-    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
+    printf("\n>>>>>>>>>>>>> List of Names Before Sorting <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
         puts(names[i]);
 
-    // Input Name to be Searched
-    printf("\nEnter A Name to be Searched in the Given List of Names (MAX CHARACTERS %d) => ", MAX_COLS - 1);
-    fgets(search, MAX_COLS, stdin);
-    search[strcspn(search, "\n")] = '\0'; // Replace '\n' character with '\0'
-
-    // Search Names Using Linear Search
-    for (int i = 0; i < ROWS; i++)
+    // Sort Names Using Bubble Sort
+    for (int i = 0; i < ROWS - 1; i++)
     {
-        if (strcmp(names[i], search) == 0)
+        for (int j = 0; j < ROWS - 1 - i; j++)
         {
-            index = i;
-            break;
+            if (strcmp(names[j], names[j + 1]) > 0)
+            {
+                strcpy(temp, names[j]);
+                strcpy(names[j], names[j + 1]);
+                strcpy(names[j + 1], temp);
+            }
         }
     }
 
-    // Name Found or Not
-    if (index != -1)
-        printf("\nYes, \"%s\" is Present in List of Names...", search);
-    else
-        printf("\nNo, \"%s\" is Not Present in List of Names...", search);
+    // Display Names After Sorting
+    printf("\n>>>>>>>>>>>>> List of Names After Sorting <<<<<<<<<<<\n");
+    for (int i = 0; i < ROWS; i++)
+        puts(names[i]);
 
     putch('\n');
     getch();
