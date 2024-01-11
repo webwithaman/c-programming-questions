@@ -13,7 +13,17 @@
 int main()
 {
     const int ROWS = 8;
-    char words[8][MAX_COLS] = {"apple", "kiwi", "banana", "kiwi", "apple", "date", "apple", "banana"}, word1[MAX_COLS], word2[MAX_COLS];
+    char words[8][MAX_COLS] = {
+        "apple",
+        "kiwi",
+        "banana",
+        "kiwi",
+        "apple",
+        "date",
+        "apple",
+        "banana"};
+
+    char word1[MAX_COLS], word2[MAX_COLS];
     int index1 = -1, index2 = -1, minDis = ROWS - 1;
 
     // Display List of Words
