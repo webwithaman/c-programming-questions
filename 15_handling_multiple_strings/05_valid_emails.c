@@ -24,7 +24,8 @@ int main()
     }
 
     // Declare 2D Array According to user's input
-    char emails[ROWS][MAX_COLS], found = 0, isAllValid = 1;
+    char emails[ROWS][MAX_COLS];
+    int found = 0, isAllValid = 1;
 
     // Read Emails
     printf("\n>>>>>>>>>>>>> Enter %d Emails <<<<<<<<<<<\n", ROWS);
