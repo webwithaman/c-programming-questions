@@ -1,4 +1,4 @@
-// Create an authentication system that can manage 10 users. It should be menu driven.
+// Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union
 
 // Header Files
 #include <stdio.h>
@@ -14,12 +14,14 @@ int main()
 {
 
     char usernames[MAX_ROWS][MAX_COLS], passwords[MAX_ROWS][MAX_COLS];
-    int choice, totalAccountCreated = 0;
+    int userChoice, totalAccountCreated = 0;
 
     while (1)
     {
+
         // Clear console
         sys("cls");
+
         // Display Options and get user's choice
         puts(">>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<");
         puts("\n======== You Have Following Options ========");
@@ -28,15 +30,17 @@ int main()
         puts("Press 2 : Login/Sign-in");
         puts("Press 3 : Forget Password");
         pust("--------------------------------------------");
-        printf("Enter You Choice => ");
-        scanf("%d", &choice);
 
-        switch (choice)
+        printf("Enter You Choice => "); // Input User Choice
+        scanf("%d", &userChoice);
+
+        switch (userChoice)
         {
-        case 0:
+        case 0: // Exit
             puts("\nProgram End...");
             exit(0);
-        case 1:
+
+        case 1: // Sign-up
         {
             puts("\n============== SIGN-UP ================");
 
@@ -74,7 +78,10 @@ int main()
                 }
 
                 if (!isUsernameValid) // True, means username is invalid
+                {
                     puts("\n!!! Username is Invalid, Try Again...");
+                    getch();
+                }
                 else
                 {
                     // Check if username is Already Taken
@@ -84,6 +91,7 @@ int main()
                         {
                             puts("\n!!! This Username is No Available, Try Again with Different Username...");
                             isUsernameValid = 0;
+                            getch();
                         }
                     }
                 }
@@ -92,7 +100,7 @@ int main()
 
             // Input Password
             char password[MAX_COLS];
-            int isPasswordValid = 1, minLengthOfPassword = 8;
+            int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
 
             puts("\n------ Instructions For Password ------");
             printf("\nMinimum Length For Password is %d", minLengthOfPassword);
@@ -100,16 +108,69 @@ int main()
             printf("\nYou Cannot Use Spaces In Username");
             puts("\n---------------------------------------");
 
+            do // Terminate When user Enter Correct Choice for following
+            {
+                choosedCorrect = 1;
+                printf("\nPress 1 : For Enter Password Hiddenly");
+                printf("\nPress 2 : For Enter Password Without Hidden");
+                printf("\nEnter Your Choice => ");
+                scanf("%d", &choiceForPass);
+
+                if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
+                {
+                    printf("\nWrong Choice, Plz Select From Given Options. Try Again...");
+                    choosedCorrect = 0;
+                    getch();
+                }
+
+            } while (!choosedCorrect);
+
             // Terminate When Password is Valid
             do
             {
                 isPasswordValid = 1; // Assume Password will be valid
                 printf("Enter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
-                fflush(stdin);
-                fgets(password, MAX_COLS, stdin);
-                password[strcspn(password, "\n")] = '\0';
 
-                // Validate Username
+                if (choiceForPass == 1) // get password hiddenly
+                {
+
+                    int i = 0; // Represent Index for password array
+                    char ch;   // Store character taken from user
+
+                    while (1) // Read untill user press enter key
+                    {
+                        fflush(stdin); // clear buffer
+                        ch = getch();  // get character from user
+
+                        if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
+                            break;
+                        else if (ch == 8 && i > 0) // if user press backspace key
+                        {
+                            putch('\b');
+                            putch(' ');
+                            putch('\b');
+                            i--;
+                        }
+                        else if (ch >= 32 && ch <= 126) // if character is valid
+                        {
+                            putch('*');
+                            password[i++] = ch;
+                        }
+
+                        if (i == MAX_COLS - 2) // Password Reached At Max length
+                            break;
+                    }
+
+                    password[i] = '\0'; // Terminate password with '\0'
+                }
+                else
+                {
+                    fflush(stdin);
+                    fgets(password, MAX_COLS, stdin);
+                    password[strcspn(password, "\n")] = '\0';
+                }
+
+                // Validate Password
                 if (strlen(password) < minLengthOfPassword)
                     isPasswordValid = 0;
                 else
@@ -121,19 +182,26 @@ int main()
                     }
                 }
 
-                if (!isPasswordValid)
+                if (!isPasswordValid) // if Password is Invalid
+                {
                     puts("\n!!! Password is Invalid, Try Again...");
+                    getch();
+                }
 
             } while (!isPasswordValid); // Terminate When Password is Valid
+
+            // When Both Username and Password Are valid then Create New User
+            strcpy(username[totalAccountCreated], username);
+            strcpy(passwords[totalAccountCreated], password);
 
         } // End of Case-1 (Sign-up)
 
         default:
             puts("\n!!! Invalid Option, Plz Choose One of the Given Options...");
-        }
+        } // End of switch block
 
         getch();
-    }
+    } // End of while block
 
     putch('\n');
     getch();
