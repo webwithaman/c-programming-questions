@@ -1,6 +1,5 @@
 // Suppose we have a list of email addresses, check whether all email addresses have ‘@’ in it. Print the odd email out.
 
-
 // Header Files
 #include <stdio.h>
 #include <conio.h>
@@ -14,7 +13,7 @@
 int main()
 {
     const int ROWS;
-    printf("\nHow Many Names You Want to Enter (MAX %d) => ", MAX_ROWS);
+    printf("\nHow Many Emails You Want to Enter (MAX %d) => ", MAX_ROWS);
     scanf("%d", &ROWS);
 
     // Invalid Input ROWS Entered by User
@@ -25,43 +24,47 @@ int main()
     }
 
     // Declare 2D Array According to user's input
-    char names[ROWS][MAX_COLS], search[MAX_COLS], index = -1;
+    char emails[ROWS][MAX_COLS], found = 0, isAllValid = 1;
 
-    // Read Names
-    printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
+    // Read Emails
+    printf("\n>>>>>>>>>>>>> Enter %d Emails <<<<<<<<<<<\n", ROWS);
     for (int i = 0; i < ROWS; i++)
     {
-        printf("\nEnter Name-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
+        printf("\nEnter Email-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
         fflush(stdin);
-        fgets(names[i], MAX_COLS, stdin);
-        names[i][strcspn(names[i], "\n")] = '\0'; // Replace '\n' character with '\0'
+        fgets(emails[i], MAX_COLS, stdin);
+        emails[i][strcspn(emails[i], "\n")] = '\0'; // Replace '\n' character with '\0'
     }
 
-    // Display Names Before Sorting
-    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
+    // Display All Emails
+    printf("\n>>>>>>>>>>>>> List of Emails <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
-        puts(names[i]);
+        puts(emails[i]);
 
-    // Input Name to be Searched
-    printf("\nEnter A Name to be Searched in the Given List of Names (MAX CHARACTERS %d) => ", MAX_COLS - 1);
-    fgets(search, MAX_COLS, stdin);
-    search[strcspn(search, "\n")] = '\0'; // Replace '\n' character with '\0'
-
-    // Search Names Using Linear Search
+    // Display Emails Which Don't have '@' in it
+    printf("\n>>>>> Following Emails Are Invalid, Don't have '@' Symbol <<<<<<\n");
     for (int i = 0; i < ROWS; i++)
     {
-        if (strcmp(names[i], search) == 0)
+        found = 0;
+
+        for (int j = 0; j < emails[i][j]; j++)
         {
-            index = i;
-            break;
+            if (emails[i][j] == '@')
+            {
+                found = 1;
+                break;
+            }
+        }
+
+        if (!found)
+        { // If '@' not Found
+            printf("\n\"%s\"", emails[i]);
+            isAllValid = 0;
         }
     }
 
-    // Name Found or Not
-    if (index != -1)
-        printf("\nYes, \"%s\" is Present in List of Names...", search);
-    else
-        printf("\nNo, \"%s\" is Not Present in List of Names...", search);
+    if (isAllValid) // If All Emails are Valid
+        puts("\nAll the Emails Are Valid...");
 
     putch('\n');
     getch();
