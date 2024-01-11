@@ -19,8 +19,8 @@ The repository is structured based on different topics, with each topic having i
 - /11_multi_dimensional_array
 - /12_multi_dimensional_array_with_functions
 - /13_strings
-- /string_with_functions
-- /handling_multiple_strings
+- /14_string_with_functions
+- /15_handling_multiple_strings
 
 ## Clone this Repository
 
