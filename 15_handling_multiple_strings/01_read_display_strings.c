@@ -37,7 +37,7 @@ int main()
     }
 
     // Display Names
-    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n", ROWS);
+    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
         puts(names[i]);
 

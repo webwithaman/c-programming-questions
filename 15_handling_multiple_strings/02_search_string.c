@@ -1,4 +1,4 @@
-// Write a program to read and display a 2D array of strings in C language.
+// Write a program to search a string in the list of strings.
 
 // Header Files
 #include <stdio.h>
@@ -37,7 +37,7 @@ int main()
     }
 
     // Display Names Before Sorting
-    printf("\n>>>>>>>>>>>>> List of Names Before Sorting <<<<<<<<<<<\n", ROWS);
+    printf("\n>>>>>>>>>>>>> List of Names Before Sorting <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
         puts(names[i]);
 
@@ -56,7 +56,7 @@ int main()
     }
 
     // Display Names After Sorting
-    printf("\n>>>>>>>>>>>>> List of Names After Sorting <<<<<<<<<<<\n", ROWS);
+    printf("\n>>>>>>>>>>>>> List of Names After Sorting <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
         puts(names[i]);
 
