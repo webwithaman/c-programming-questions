@@ -44,7 +44,7 @@ int main()
         {
             puts("\n============== SIGN-UP ================");
 
-            // Input username
+            // Input username for sign-up
             char username[MAX_COLS];
             int isUsernameValid, minLengthOfUsername = 6;
 
@@ -98,7 +98,7 @@ int main()
 
             } while (!isUsernameValid); // Terminate When Username is Valid
 
-            // Input Password
+            // Input Password for sign-up
             char password[MAX_COLS];
             int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
 
@@ -203,16 +203,51 @@ int main()
 
         case 2:
         {
-            char username[MAX_COLS];
             puts("\n============== LOGIN ================");
+
+            // Input Username for Login
+            char username[MAX_COLS];
+            int isUsernameValid = 0;
             printf("\nEnter Your Username => ");
             fflush(stdin);
             fgets(username, MAX_COLS, stdin);
             username[strcspn(username, "\n")] = '\0';
 
-            
+            // Check if username is valid or not
+            for (int i = 0; i < totalAccountCreated; i++)
+            {
+                if (strcmp(usernames[i], username) == 0)
+                    isUsernameValid = 1;
+            }
 
+            if (!isUsernameValid) // If username is invalid
+            {
+                printf("\n!!! Invalid Username, Try Again...");
+                getch();
+                break;
+            }
 
+            // Input Password for Login
+            char password[MAX_COLS];
+            int isPasswordValid = 0;
+            printf("\nEnter Your Password => ");
+            fflush(stdin);
+            fgets(password, MAX_COLS, stdin);
+            password[strcspn(password, "\n")] = '\0';
+
+            // Check if username is valid or not
+            for (int i = 0; i < totalAccountCreated; i++)
+            {
+                if (strcmp(usernames[i], username) == 0)
+                    isUsernameValid = 1;
+            }
+
+            if (!isUsernameValid) // If username is invalid
+            {
+                printf("\n!!! Invalid Username, Try Again...");
+                getch();
+                break;
+            }
         }
         break;
 
