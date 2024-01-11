@@ -28,4 +28,6 @@
     one of the names in the list then the user is allowed to calculate the factorial of a 
     number. Otherwise, an error message is displayed.
     
-10. Create an authentication system. It should be menu driven.
+10. Write a c program that take password as input from user hiddenly. Display Asterisk '*' when user enter password.
+
+11. Create an authentication system. It should be menu driven.
