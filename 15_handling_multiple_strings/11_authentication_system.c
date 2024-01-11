@@ -24,6 +24,7 @@ int main()
 
         // Display Options and get user's choice
         puts(">>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<");
+        puts("++ Login to Perform Mathematic Operatons  ++");
         puts("\n======== You Have Following Options ========");
         puts("Press 0 : Exit");
         puts("Press 1 : Sign-up");
@@ -213,7 +214,7 @@ int main()
             fgets(username, MAX_COLS, stdin);
             username[strcspn(username, "\n")] = '\0';
 
-            // Check if username is valid or not
+            // Check username is valid or not
             for (int i = 0; i < totalAccountCreated; i++)
             {
                 if (strcmp(usernames[i], username) == 0)
@@ -222,7 +223,8 @@ int main()
 
             if (!isUsernameValid) // If username is invalid
             {
-                printf("\n!!! Invalid Username, Try Again...");
+                puts("\nFailed to Login...");
+                puts("!!! Invalid Username, Try Again...\n");
                 getch();
                 break;
             }
@@ -235,20 +237,76 @@ int main()
             fgets(password, MAX_COLS, stdin);
             password[strcspn(password, "\n")] = '\0';
 
-            // Check if username is valid or not
+            // Check that Password is valid or not
             for (int i = 0; i < totalAccountCreated; i++)
             {
-                if (strcmp(usernames[i], username) == 0)
-                    isUsernameValid = 1;
+                if (strcmp(passwords[i], password) == 0)
+                    isPasswordValid = 1;
             }
 
-            if (!isUsernameValid) // If username is invalid
+            if (!isPasswordValid) // If Password is invalid
             {
-                printf("\n!!! Invalid Username, Try Again...");
+                puts("\nFailed to Login...");
+                puts("!!! Invalid Password, Try Again...\n");
                 getch();
                 break;
             }
-        }
+
+            // Successfully Logged in
+            printf("\nYou Are Successfully Logged In...");
+
+            // Display Options to Perform Mathematics Operations
+            while (1)
+            {
+                system("cls");
+                char choice;
+                float num1, num2;
+                puts("\n>>>>> Choose One of Following Options <<<<<");
+                puts("-------------------------");
+                puts("Press a : Addition");
+                puts("Press b : Subtraction");
+                puts("Press c : Multiplication");
+                puts("Press d : Division");
+                puts("Press e : Exit (Session Expire, You Have to Login Again)");
+                puts("-------------------------");
+                printf("\nEnter Your Choice => ");
+                fflush(stdin);
+                scanf("%c", &choice);
+
+                if (choice == 'a' || choice == 'b' || choice == 'c' || choice == 'd')
+                {
+                    printf("\nEnter Two Numbers => ");
+                    scanf("%f%f", &num1, &num2);
+                }
+
+                switch (choice)
+                {
+                case 'a':
+                    printf("\n%f + %f => %f", num1, num2, num1 + num2);
+                    break;
+                case 'b':
+                    printf("\n%f - %f => %f", num1, num2, num1 - num2);
+                    break;
+                case 'c':
+                    printf("\n%f x %f => %f", num1, num2, num1 * num2);
+                    break;
+                case 'd':
+                    printf("\n%f / %f => %f", num1, num2, num1 / num2);
+                    break;
+                case 'e':
+                    break;
+                default:
+                    puts("\n!!! Invalid Choice....");
+                }
+
+                if (choice == 'e') // Break loop If user press e
+                    break;
+
+                getch();
+
+            } // End of while block
+
+        } // End of case-2 (ogin/signin)
         break;
 
         case 3:
