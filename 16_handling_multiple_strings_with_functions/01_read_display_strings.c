@@ -58,3 +58,8 @@ void displayStrings(char (*strs)[], int rows, int cols)
 
 
 }
+
+
+void inputStrings(char (*strs)[], int rows, int cols){
+
+}
