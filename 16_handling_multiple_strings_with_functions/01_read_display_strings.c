@@ -52,5 +52,3 @@ int main()
 
 // Function Definitions
 
-{
-}
