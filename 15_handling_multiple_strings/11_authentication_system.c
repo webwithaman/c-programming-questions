@@ -44,7 +44,7 @@ int main()
             puts("\nProgram End..\n.");
             exit(0);
 
-        case 1: // Sign-up
+        case 1: // Sign-up / Create New Account
         {
             if (totalAccountCreated == MAX_ROWS - 1) // Check if Account Reached to Maximum Limit
             {
@@ -90,7 +90,7 @@ int main()
 
                 if (!isUsernameValid) // True, means username is invalid
                 {
-                    puts("\n!!! Username is Invalid, Try Again...");
+                    puts("\n\n!!! Username is Invalid, Try Again...");
                     getch();
                 }
                 else
@@ -198,7 +198,7 @@ int main()
 
                 if (!isPasswordValid) // if Password is Invalid
                 {
-                    puts("\n!!! Password is Invalid, Try Again...");
+                    puts("\n\n!!! Password is Invalid, Try Again...");
                     getch();
                 }
 
@@ -213,10 +213,11 @@ int main()
             // Display Accout Created Message
             puts("\n\nYou Have Successfully Created Your Account...");
 
-        } // End of Case-1 (Sign-up)
+        } // End of Case-1 (Sign-up / Create New Account)
+
         break;
 
-        case 2:
+        case 2: // Login / Sign-in
         {
             puts("\n============== LOGIN ================");
 
@@ -370,10 +371,11 @@ int main()
 
             } // End of while block
 
-        } // End of case-2 (ogin/signin)
+        } // End of case-2 (Login / Sign-in)
+
         break;
 
-        case 3:
+        case 3: // Reset Password
         {
             puts("\n============== RESET PASSWORD ================");
 
@@ -396,7 +398,6 @@ int main()
             {
                 puts("\n!!! Invalid Username, Try Again...");
                 puts("Failed to Reset Password...\n");
-                getch();
                 break;
             }
 
@@ -503,14 +504,14 @@ int main()
             puts("\n\nYou Have Successfully Reset Your Account...\n");
 
         } // End of case-3 (Reset Password)
+
         break;
 
-        case 4:
+        case 4: // Delete Account
         {
             if (totalAccountCreated == 0) // Check if there is any Account
             {
                 printf("\nThere is No Account in Machine to Delete...\n");
-                getch();
                 break;
             }
 
@@ -633,6 +634,7 @@ int main()
             puts("\n\nAccount Deleted Successfully...\n");
 
         } // End of case-4 (Delete Account)
+
         break;
 
         default:
