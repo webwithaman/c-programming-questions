@@ -10,6 +10,7 @@
 #define MAX_COLS 31
 
 // Functions Declarations
+void displayStrings(char (*)[],int );
 
 // Main Function Start
 int main()
