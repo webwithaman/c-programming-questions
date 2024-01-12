@@ -11,6 +11,8 @@
 
 // Functions Declarations
 void displayStrings(char (*)[], int, int);
+void inputStrings(char (*)[], int, int);
+
 
 // Main Function Start
 int main()
@@ -53,4 +55,6 @@ int main()
 // Functions Definitions
 void displayStrings(char (*strs)[], int rows, int cols)
 {
+
+
 }
