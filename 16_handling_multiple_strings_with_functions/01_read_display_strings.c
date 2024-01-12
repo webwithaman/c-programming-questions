@@ -1,6 +1,6 @@
 // Write a program to read and display a 2D array of strings in C language.
-
-// Header Files
+                 
+// Header Files   
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -8,6 +8,9 @@
 
 #define MAX_ROWS 10
 #define MAX_COLS 31
+
+// Functions Declarations (Prototype)
+void inputStrings(char[], int);
 
 // Main Function Start
 int main()
@@ -46,3 +49,5 @@ int main()
     return 0;
 }
 // Main Function End
+
+// Function Definitions
