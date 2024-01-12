@@ -23,13 +23,16 @@ int main()
         system("cls");
 
         // Display Options and get user's choice
-        puts(">>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<");
-        puts("++ Login to Perform Mathematic Operatons  ++");
+        puts(">>>>>>>>>>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<<<<<<<");
+        printf("\n### Maximum %d Accounts Can be Created In This Machine ###", MAX_ROWS);
+        printf("\n## There Are %d Accounts Already Created In This Machine ##", totalAccountCreated);
+        puts("\n\n++ Login to Perform Mathematic Operatons  ++");
         puts("\n======== You Have Following Options ========");
         puts("Press 0 : Exit");
         puts("Press 1 : Sign-up");
         puts("Press 2 : Login/Sign-in");
-        puts("Press 3 : Forget Password");
+        puts("Press 3 : Reset Password");
+        puts("Press 4 : Delete Account");
         puts("--------------------------------------------");
 
         printf("Enter You Choice => "); // Input User Choice
@@ -43,6 +46,13 @@ int main()
 
         case 1: // Sign-up
         {
+            if (totalAccountCreated == MAX_ROWS - 1) // Check if Account Reached to Maximum Limit
+            {
+                printf("\nSorry... You Cannot Create a New Account, Because the System Reached its Maximum Accout Limit that is %d\n", MAX_ROWS);
+                getch();
+                break;
+            }
+
             puts("\n============== SIGN-UP ================");
 
             // Input username for sign-up
@@ -98,6 +108,8 @@ int main()
                 }
 
             } while (!isUsernameValid); // Terminate When Username is Valid
+
+            // Reached Here Only if username is valid
 
             // Input Password for sign-up
             char password[MAX_COLS];
@@ -191,9 +203,11 @@ int main()
 
             } while (!isPasswordValid); // Terminate When Password is Valid
 
+            // Reached Here Only if Both username and password is valid
+
             // When Both Username and Password Are valid then Create New User
             strcpy(usernames[totalAccountCreated], username);
-            strcpy(passwords[totalAccountCreated], password);
+            strcpy(passwords[totalAccountCreated++], password);
 
             // Display Accout Created Message
             puts("\nYour Account Created Successfully...");
@@ -229,6 +243,8 @@ int main()
                 break;
             }
 
+            // Reached Here Only if username is valid
+
             // Input Password for Login
             char password[MAX_COLS];
             int isPasswordValid = 0;
@@ -252,10 +268,12 @@ int main()
                 break;
             }
 
+            // Reached Here Only if Both username and password is valid
+
             // Successfully Logged in
             printf("\nYou Are Successfully Logged In...");
 
-            // Display Options to Perform Mathematics Operations
+            // Display Options to Perform Mathematics Operations After Login
             while (1)
             {
                 system("cls");
@@ -311,7 +329,39 @@ int main()
 
         case 3:
         {
-        }
+            puts("\n============== RESET PASSWORD ================");
+
+            // Input Username for Reset Password
+            char username[MAX_COLS];
+            int isUsernameValid = 0;
+            printf("\nEnter Your Username => ");
+            fflush(stdin);
+            fgets(username, MAX_COLS, stdin);
+            username[strcspn(username, "\n")] = '\0';
+
+            // Check username is valid or not
+            for (int i = 0; i < totalAccountCreated; i++)
+            {
+                if (strcmp(usernames[i], username) == 0)
+                    isUsernameValid = 1;
+            }
+
+            if (!isUsernameValid) // If username is invalid
+            {
+                puts("\nFailed to Login...");
+                puts("!!! Invalid Username, Try Again...\n");
+                getch();
+                break;
+            }
+
+            //
+
+        } // End of case-3 (Reset Password)
+        break;
+
+        case 4:
+        {
+        } // End of case-4 (Delete Account)
         break;
 
         default:
