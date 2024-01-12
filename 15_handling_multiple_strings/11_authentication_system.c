@@ -26,11 +26,11 @@ int main()
         puts(">>>>>>>>>>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<<<<<<<");
         printf("\n### Maximum %d Accounts Can be Created In This Machine ###", MAX_ROWS);
         printf("\n## There Are %d Accounts Already Created In This Machine ##", totalAccountCreated);
-        puts("\n\n++ Login to Perform Mathematic Operatons  ++");
+        puts("\n\n# Login to Perform Mathematical Operatons #");
         puts("\n======== You Have Following Options ========");
         puts("Press 0 : Exit");
-        puts("Press 1 : Sign-up");
-        puts("Press 2 : Login/Sign-in");
+        puts("Press 1 : Sign-up / Create New Account");
+        puts("Press 2 : Login / Sign-in");
         puts("Press 3 : Reset Password");
         puts("Press 4 : Delete Account");
         puts("--------------------------------------------");
@@ -41,7 +41,7 @@ int main()
         switch (userChoice)
         {
         case 0: // Exit
-            puts("\nProgram End...");
+            puts("\nProgram End..\n.");
             exit(0);
 
         case 1: // Sign-up
@@ -127,6 +127,7 @@ int main()
                 printf("\nPress 1 : For Enter Password Hiddenly");
                 printf("\nPress 2 : For Enter Password Without Hidden");
                 printf("\n\nEnter Your Choice => ");
+                fflush(stdin);
                 scanf("%d", &choiceForPass);
 
                 if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
@@ -210,7 +211,7 @@ int main()
             strcpy(passwords[totalAccountCreated++], password);
 
             // Display Accout Created Message
-            puts("\nYour Account Created Successfully...");
+            puts("\n\nYou Have Successfully Created Your Account...");
 
         } // End of Case-1 (Sign-up)
         break;
@@ -236,8 +237,8 @@ int main()
 
             if (isUsernameValid == -1) // If username is invalid
             {
-                puts("!!! Invalid Username, Try Again...\n");
-                puts("\nFailed to Login...");
+                puts("\n!!! Invalid Username, Try Again...");
+                puts("Failed to Login...\n");
                 getch();
                 break;
             }
@@ -246,31 +247,79 @@ int main()
 
             // Input Password for Login
             char password[MAX_COLS];
-            int isPasswordValid = 0;
-            printf("\nEnter Your Password => ");
-            fflush(stdin);
-            fgets(password, MAX_COLS, stdin);
-            password[strcspn(password, "\n")] = '\0';
+            int choosedCorrect, choiceForPass;
 
-            // Check that Password is valid or not
-            for (int i = 0; i < totalAccountCreated; i++)
+            do // Terminate When user Enter Correct Choice for following
             {
-                if (strcmp(passwords[i], password) == 0)
-                    isPasswordValid = 1;
+                choosedCorrect = 1;
+                printf("\nPress 1 : For Enter Password Hiddenly");
+                printf("\nPress 2 : For Enter Password Without Hidden");
+                printf("\n\nEnter Your Choice => ");
+                fflush(stdin);
+                scanf("%d", &choiceForPass);
+
+                if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
+                {
+                    puts("\nWrong Choice, Plz Select From Given Options. Try Again...");
+                    choosedCorrect = 0;
+                    getch();
+                }
+
+            } while (!choosedCorrect);
+
+            printf("\nEnter Your Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+
+            if (choiceForPass == 1) // get password hiddenly
+            {
+
+                int i = 0; // Represent Index for password array
+                char ch;   // Store character taken from user
+
+                while (1) // Read untill user press enter key
+                {
+                    fflush(stdin); // clear buffer
+                    ch = getch();  // get character from user
+
+                    if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
+                        break;
+                    else if (ch == 8 && i > 0) // if user press backspace key
+                    {
+                        putch('\b');
+                        putch(' ');
+                        putch('\b');
+                        i--;
+                    }
+                    else if (ch >= 32 && ch <= 126) // if character is valid
+                    {
+                        putch('*');
+                        password[i++] = ch;
+                    }
+
+                    if (i == MAX_COLS - 2) // Password Reached At Max length
+                        break;
+                }
+
+                password[i] = '\0'; // Terminate password with '\0'
+            }
+            else
+            {
+                fflush(stdin);
+                fgets(password, MAX_COLS, stdin);
+                password[strcspn(password, "\n")] = '\0';
             }
 
-            if (!isPasswordValid) // If Password is invalid
+            // Check that Password is valid or not
+            if (strcmp(passwords[isUsernameValid], password) != 0)
             {
-                puts("!!! Invalid Password, Try Again...\n");
-                puts("\nFailed to Login...");
-                getch();
+                puts("\n!!! Invalid Password, Try Again...");
+                puts("Failed to Login...\n");
                 break;
             }
 
             // Reached Here Only if Both username and password is valid
 
             // Successfully Logged in
-            printf("\nYou Are Successfully Logged In...");
+            printf("\n\nYou Have Successfully Logged In...");
 
             // Display Options to Perform Mathematics Operations After Login
             while (1)
@@ -313,7 +362,7 @@ int main()
                 case 'e':
                     break;
                 default:
-                    puts("\n!!! Invalid Choice....");
+                    puts("\n!!! Invalid Choice...");
                 }
 
                 if (choice == 'e') // Break loop If user press e
@@ -345,8 +394,8 @@ int main()
 
             if (isUsernameValid == -1) // If username is invalid
             {
-                puts("!!! Invalid Username, Try Again...\n");
-                puts("\nFailed to Reset Password...");
+                puts("\n!!! Invalid Username, Try Again...");
+                puts("Failed to Reset Password...\n");
                 getch();
                 break;
             }
@@ -369,6 +418,7 @@ int main()
                 printf("\nPress 1 : For Enter Password Hiddenly");
                 printf("\nPress 2 : For Enter Password Without Hidden");
                 printf("\n\nEnter Your Choice => ");
+                fflush(stdin);
                 scanf("%d", &choiceForPass);
 
                 if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
@@ -450,7 +500,7 @@ int main()
             // Reset Password and Display Reset Password Successfully Message
             strcpy(passwords[isUsernameValid], password);
 
-            puts("\nReset Password Successfully....\n");
+            puts("\n\nYou Have Successfully Reset Your Account...\n");
 
         } // End of case-3 (Reset Password)
         break;
@@ -483,8 +533,8 @@ int main()
 
             if (isUsernameValid == -1) // If username is invalid
             {
-                puts("!!! Invalid Username, Try Again...\n");
-                puts("\nFailed to Delete Account...");
+                puts("\n!!! Invalid Username, Try Again...");
+                puts("Failed to Delete Account...\n");
                 getch();
                 break;
             }
@@ -495,18 +545,13 @@ int main()
             char password[MAX_COLS];
             int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
 
-            puts("\n------ Instructions For Password ------");
-            printf("\nMinimum Length For Password is %d", minLengthOfPassword);
-            printf("\nMaximum Length For Username is %d", MAX_COLS - 1);
-            printf("\nYou Cannot Use Spaces In Username");
-            puts("\n---------------------------------------");
-
             do // Terminate When user Enter Correct Choice for following
             {
                 choosedCorrect = 1;
                 printf("\nPress 1 : For Enter Password Hiddenly");
                 printf("\nPress 2 : For Enter Password Without Hidden");
                 printf("\n\nEnter Your Choice => ");
+                fflush(stdin);
                 scanf("%d", &choiceForPass);
 
                 if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
@@ -561,8 +606,8 @@ int main()
 
             if (strcmp(passwords[isUsernameValid], password) != 0)
             {
-                puts("!!! Invalid Password, Try Again...\n");
-                puts("\nFailed to Delete Account...");
+                puts("\n!!! Invalid Password, Try Again...");
+                puts("Failed to Delete Account...\n");
                 getch();
                 break;
             }
@@ -585,16 +630,18 @@ int main()
                 }
             }
 
-            puts("\nAccount Deleted Successfully....\n");
+            puts("\n\nAccount Deleted Successfully...\n");
 
         } // End of case-4 (Delete Account)
         break;
 
         default:
             puts("\n!!! Invalid Option, Plz Choose One of the Given Options...");
+
         } // End of switch block
 
         getch();
+
     } // End of while block
 
     putch('\n');
