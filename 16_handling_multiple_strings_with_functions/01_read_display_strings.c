@@ -10,7 +10,7 @@
 #define MAX_COLS 31
 
 // Functions Declarations
-void displayStrings(char (*)[],int );
+void displayStrings(char (*)[], int, int);
 
 // Main Function Start
 int main()
@@ -51,3 +51,6 @@ int main()
 // Main Function End
 
 // Functions Definitions
+void displayStrings(char (*strs)[], int rows, int cols)
+{
+}
