@@ -9,6 +9,8 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
+// Functions 
+
 // Main Function Start
 int main()
 {
