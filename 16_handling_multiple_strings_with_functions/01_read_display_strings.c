@@ -52,6 +52,5 @@ int main()
 
 // Function Definitions
 
-void inputStrings(char (*strs)[], int rows, s)
 {
 }
