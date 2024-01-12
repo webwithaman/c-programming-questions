@@ -52,6 +52,6 @@ int main()
 
 // Function Definitions
 
-void inputStrings(char str[], int)
+void inputStrings(char (*strs)[], int rows, int cols)
 {
 }
