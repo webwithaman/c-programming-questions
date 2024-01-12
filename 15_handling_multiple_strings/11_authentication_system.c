@@ -211,7 +211,6 @@ int main()
 
             // Display Accout Created Message
             puts("\nYour Account Created Successfully...");
-            getch();
 
         } // End of Case-1 (Sign-up)
         break;
@@ -319,8 +318,6 @@ int main()
 
                 if (choice == 'e') // Break loop If user press e
                     break;
-
-                getch();
 
             } // End of while block
 
@@ -454,7 +451,6 @@ int main()
             strcpy(passwords[isUsernameValid], password);
 
             puts("\nReset Password Successfully....\n");
-            getch();
 
         } // End of case-3 (Reset Password)
         break;
@@ -590,7 +586,6 @@ int main()
             }
 
             puts("\nAccount Deleted Successfully....\n");
-            getch();
 
         } // End of case-4 (Delete Account)
         break;
