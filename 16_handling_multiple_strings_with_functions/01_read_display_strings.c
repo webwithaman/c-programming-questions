@@ -6,11 +6,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX_ROWS 10
-#define MAX_COLS 31
 
 // Functions Declarations (Prototype)
-void inputStrings(char (*)[], int);
 
 // Main Function Start
 int main()
