@@ -48,7 +48,7 @@ int main()
         {
             if (totalAccountCreated == MAX_ROWS - 1) // Check if Account Reached to Maximum Limit
             {
-                printf("\nSorry... You Cannot Create a New Account, Because the System Reached its Maximum Accout Limit that is %d\n", MAX_ROWS);
+                printf("\nSorry... You Cannot Create a New Account, Because the Machine Reached its Maximum Account Limit that is %d\n", MAX_ROWS);
                 getch();
                 break;
             }
@@ -237,8 +237,8 @@ int main()
 
             if (isUsernameValid == -1) // If username is invalid
             {
-                puts("\nFailed to Login...");
                 puts("!!! Invalid Username, Try Again...\n");
+                puts("\nFailed to Login...");
                 getch();
                 break;
             }
@@ -262,8 +262,8 @@ int main()
 
             if (!isPasswordValid) // If Password is invalid
             {
-                puts("\nFailed to Login...");
                 puts("!!! Invalid Password, Try Again...\n");
+                puts("\nFailed to Login...");
                 getch();
                 break;
             }
@@ -348,8 +348,8 @@ int main()
 
             if (isUsernameValid == -1) // If username is invalid
             {
-                puts("\nFailed to Login...");
                 puts("!!! Invalid Username, Try Again...\n");
+                puts("\nFailed to Reset Password...");
                 getch();
                 break;
             }
@@ -461,6 +461,140 @@ int main()
 
         case 4:
         {
+            if (totalAccountCreated == 0) // Check if there is any Account
+            {
+                printf("\nThere is No Account in Machine to Delete...\n");
+                getch();
+                break;
+            }
+
+            puts("\n============== DELETE ACCOUNT ================");
+
+            // Input Username for Delete Account
+            char username[MAX_COLS];
+            int isUsernameValid = -1;
+            printf("\nEnter Your Username => ");
+            fflush(stdin);
+            fgets(username, MAX_COLS, stdin);
+            username[strcspn(username, "\n")] = '\0';
+
+            // Check username is valid or not
+            for (int i = 0; i < totalAccountCreated; i++)
+            {
+                if (strcmp(usernames[i], username) == 0)
+                    isUsernameValid = i;
+            }
+
+            if (isUsernameValid == -1) // If username is invalid
+            {
+                puts("!!! Invalid Username, Try Again...\n");
+                puts("\nFailed to Delete Account...");
+                getch();
+                break;
+            }
+
+            // Reached Here Only if username is valid
+
+            // Input Password for Delete Account
+            char password[MAX_COLS];
+            int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
+
+            puts("\n------ Instructions For Password ------");
+            printf("\nMinimum Length For Password is %d", minLengthOfPassword);
+            printf("\nMaximum Length For Username is %d", MAX_COLS - 1);
+            printf("\nYou Cannot Use Spaces In Username");
+            puts("\n---------------------------------------");
+
+            do // Terminate When user Enter Correct Choice for following
+            {
+                choosedCorrect = 1;
+                printf("\nPress 1 : For Enter Password Hiddenly");
+                printf("\nPress 2 : For Enter Password Without Hidden");
+                printf("\n\nEnter Your Choice => ");
+                scanf("%d", &choiceForPass);
+
+                if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
+                {
+                    puts("\nWrong Choice, Plz Select From Given Options. Try Again...");
+                    choosedCorrect = 0;
+                    getch();
+                }
+
+            } while (!choosedCorrect);
+
+            // Terminate When Password is Valid
+            do
+            {
+                isPasswordValid = 1; // Assume Password will be valid
+                printf("\nEnter Your Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+
+                if (choiceForPass == 1) // get password hiddenly
+                {
+
+                    int i = 0; // Represent Index for password array
+                    char ch;   // Store character taken from user
+
+                    while (1) // Read untill user press enter key
+                    {
+                        fflush(stdin); // clear buffer
+                        ch = getch();  // get character from user
+
+                        if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
+                            break;
+                        else if (ch == 8 && i > 0) // if user press backspace key
+                        {
+                            putch('\b');
+                            putch(' ');
+                            putch('\b');
+                            i--;
+                        }
+                        else if (ch >= 32 && ch <= 126) // if character is valid
+                        {
+                            putch('*');
+                            password[i++] = ch;
+                        }
+
+                        if (i == MAX_COLS - 2) // Password Reached At Max length
+                            break;
+                    }
+
+                    password[i] = '\0'; // Terminate password with '\0'
+                }
+                else
+                {
+                    fflush(stdin);
+                    fgets(password, MAX_COLS, stdin);
+                    password[strcspn(password, "\n")] = '\0';
+                }
+
+                // Validate Password
+                if (strlen(password) < minLengthOfPassword)
+                    isPasswordValid = 0;
+                else
+                {
+                    for (int i = 0; password[i]; i++)
+                    {
+                        if (password[i] == ' ' || password[i] == '\t')
+                            isPasswordValid = 0;
+                    }
+                }
+
+                if (!isPasswordValid) // if Password is Invalid
+                {
+                    puts("\n!!! Password is Invalid, Try Again...");
+                    getch();
+                }
+
+            } while (!isPasswordValid); // Terminate When Password is Valid
+
+            // Reached Here if Both username and Password is valid
+
+            // Reset Password and Display Reset Password Successfully Message
+            strcpy(passwords[isUsernameValid], password);
+
+            puts("\nReset Password Successfully....\n");
+            getch();
+
         } // End of case-4 (Delete Account)
         break;
 
