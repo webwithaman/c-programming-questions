@@ -52,10 +52,8 @@ int main()
 // Main Function End
 
 // Functions Definitions
-void displayStrings(char (*strs)[], int rows, int cols)
+void displayStrings(char strs[][MAX_COLS], int rows)
 {
-    for (int i = 0; i < rows; i++)
-        puts(*strs + i * cols);
 }
 
 void inputStrings(char (*strs)[], int rows, int cols)
