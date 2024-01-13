@@ -10,8 +10,8 @@
 #define MAX_COLS 31
 
 // Functions Declarations
-void displayStrings(char[][MAX_COLS], int);
-void inputStrings(char[][MAX_COLS], int);
+int displayStrings(char[][MAX_COLS], int);
+int inputStrings(char[][MAX_COLS], int);
 
 // Main Function Start
 int main()
@@ -45,23 +45,29 @@ int main()
 // Main Function End
 
 // Functions Definitions
-void displayStrings(char strs[][MAX_COLS], int rows)
+int displayStrings(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
 
-    for (int i = 0; i < rows; i++)
+    int i;
+    for (i = 0; i < rows; i++)
         puts(strs[i]);
 
     putch('\n'); // Add new line
+
+    return i; // return the number of strings that have been displayed
 }
 
-void inputStrings(char strs[][MAX_COLS], int rows)
+int inputStrings(char strs[][MAX_COLS], int rows)
 {
-    for (int i = 0; i < rows; i++)
+    int i;
+    for (i = 0; i < rows; i++)
     {
         printf("\nEnter String-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
         fflush(stdin);
         fgets(strs[i], MAX_COLS, stdin);
         strs[i][strcspn(strs[i], "\n")] = '\0'; // Replace '\n' character with '\0'
     }
+
+    return i; // return the number of strings that have been input by user
 }
