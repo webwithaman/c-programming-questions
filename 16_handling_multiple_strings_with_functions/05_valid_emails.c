@@ -62,6 +62,8 @@ int main()
 }
 // Main Function End
 
+// Function Definitions
+
 // Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
