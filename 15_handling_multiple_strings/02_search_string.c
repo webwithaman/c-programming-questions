@@ -46,7 +46,7 @@ int main()
     fgets(search, MAX_COLS, stdin);
     search[strcspn(search, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    // Search Names Using Linear Search
+    // Search Name Using Linear Search
     for (int i = 0; i < ROWS; i++)
     {
         if (strcmp(names[i], search) == 0)

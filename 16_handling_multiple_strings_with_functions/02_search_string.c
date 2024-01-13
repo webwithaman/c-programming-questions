@@ -12,6 +12,7 @@
 // Functions Declarations
 int display2DStr(char[][MAX_COLS], int);
 int input2DStr(char[][MAX_COLS], int);
+int search2DStr(char[][MAX_COLS], int, char[]);
 
 // Main Function Start
 int main()
@@ -36,23 +37,15 @@ int main()
 
     // Display Names
     printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(names[i]);
+    display2DStr(names, ROWS);
 
     // Input Name to be Searched
     printf("\nEnter A Name to be Searched in the Given List of Names (MAX CHARACTERS %d) => ", MAX_COLS - 1);
     fgets(search, MAX_COLS, stdin);
     search[strcspn(search, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    // Search Names Using Linear Search
-    for (int i = 0; i < ROWS; i++)
-    {
-        if (strcmp(names[i], search) == 0)
-        {
-            index = i;
-            break;
-        }
-    }
+    // Search Name
+    index = search2DStr(names, ROWS, search);
 
     // Name Found or Not
     if (index != -1)
@@ -92,4 +85,15 @@ int input2DStr(char strs[][MAX_COLS], int rows)
     }
 
     return i; // return the number of strings that have been input by user
+}
+
+int search2DStr(char strs[][MAX_COLS], int rows, char search[])
+{
+    for (int i = 0; i < rows; i++)
+    {
+        if (strcmp(strs[i], search) == 0)
+            return i; // return the index at search string found
+    }
+
+    return -1;
 }
