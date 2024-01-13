@@ -37,7 +37,7 @@ int main()
 
 // Function Definitions 👇👇
 
-// Function to Check Whether a Given String an Alphanumeric String or Not
+// Function to Compare Two Strings
 int compareStrings(char str1[], char str2[])
 {
     for (int i = 0; str1[i] || str2[i]; i++)

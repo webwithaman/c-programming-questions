@@ -62,7 +62,7 @@ int main()
 
 // Functions Definitions
 
-// Function to Display 2D Array of Characters
+// Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
@@ -76,7 +76,7 @@ int print2DChar(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been displayed
 }
 
-// Function to Input 2D Array of Characters
+// Function to Input 2D Array of char
 int input2DChar(char strs[][MAX_COLS], int rows)
 {
     int i;
@@ -91,7 +91,7 @@ int input2DChar(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been input by user
 }
 
-// Function to Search String in 2D Array of Characters
+// Function to Search String in 2D Array of char
 int search2DStr(char strs[][MAX_COLS], int rows, char search[])
 {
     for (int i = 0; i < rows; i++)
@@ -103,7 +103,7 @@ int search2DStr(char strs[][MAX_COLS], int rows, char search[])
     return -1;
 }
 
-// Function to Check Whether a Given String an Alphanumeric String or Not
+// Function to Compare Two Strings
 int compareStrings(char str1[], char str2[])
 {
     for (int i = 0; str1[i] || str2[i]; i++)

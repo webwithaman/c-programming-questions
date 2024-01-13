@@ -46,7 +46,7 @@ int main()
 
 // Functions Definitions
 
-// Function to Display 2D Array of Characters
+// Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
@@ -60,7 +60,7 @@ int print2DChar(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been displayed
 }
 
-// Function to Input 2D Array of Characters
+// Function to Input 2D Array of char
 int input2DChar(char strs[][MAX_COLS], int rows)
 {
     int i;
