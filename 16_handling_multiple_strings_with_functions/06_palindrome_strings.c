@@ -34,41 +34,19 @@ int main()
     }
 
     // Declare 2D Array According to user's input
-    char strs[ROWS][MAX_COLS], copy[MAX_COLS];
-    int anyPalindrome = 0;
+    char strs[ROWS][MAX_COLS];
 
     // Read Cities
     printf("\n>>>>>>>>>>>>> Enter %d Strings <<<<<<<<<<<\n", ROWS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        printf("\nEnter City-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
-        fflush(stdin);
-        fgets(strs[i], MAX_COLS, stdin);
-        strs[i][strcspn(strs[i], "\n")] = '\0'; // Replace '\n' character with '\0'
-    }
+    input2DChar(strs, ROWS);
 
     // Display Strings
     printf("\n>>>>>>>>>>>>> List of Strings <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(strs[i]);
+    print2DChar(strs, ROWS);
 
     // Display Palindrome Srings
     printf("\n>>>>>>>>>>>>> Following Strings Are Palindrome <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS - 1; i++)
-    {
-        strcpy(copy, strs[i]); // make a copy of strs[i]
-
-        strrev(copy); // reverse copy strings
-
-        if (strcmp(copy, strs[i]) == 0)
-        { // True, then string is Palindrome
-            printf("\n\"%s\"", strs[i]);
-            anyPalindrome = 1;
-        }
-    }
-
-    if (!anyPalindrome) // If No Palindrome Found
-        printf("\nThere is No Palindrome Strings...");
+    printAllPalindromeOf2D(strs, ROWS);
 
     putch('\n');
     getch();
@@ -176,4 +154,21 @@ int isStrPalindrome(char str[])
         return 0; // String is not Palindrome
 
     return 1; // String is Palindrome
+}
+void printAllPalindromeOf2D(char strs[][MAX_COLS], int rows)
+{
+    char copy[MAX_COLS];
+    int anyPalindrome = 0;
+
+    for (int i = 0; i < rows; i++)
+    {
+        if (isStrPalindrome(strs[i]))
+        {
+            puts(strs[i]);
+            anyPalindrome = 1;
+        }
+    }
+
+    if (!anyPalindrome) // If No Palindrome Found
+        printf("\nThere is No Palindrome Strings...");
 }
