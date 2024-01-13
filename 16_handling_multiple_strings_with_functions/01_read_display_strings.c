@@ -54,6 +54,9 @@ int main()
 // Functions Definitions
 void displayStrings(char strs[][MAX_COLS], int rows)
 {
+    putch('\n'); // Add new line
+
+    putch('\n'); // Add new line
 }
 
 void inputStrings(char (*strs)[], int rows, int cols)
