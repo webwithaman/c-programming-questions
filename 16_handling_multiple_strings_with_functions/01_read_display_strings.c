@@ -45,6 +45,8 @@ int main()
 // Main Function End
 
 // Functions Definitions
+
+// Function to Display 2D Array of Characters
 int display2DStr(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
@@ -58,6 +60,7 @@ int display2DStr(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been displayed
 }
 
+// Function to Input 2D Array of Characters
 int input2DStr(char strs[][MAX_COLS], int rows)
 {
     int i;

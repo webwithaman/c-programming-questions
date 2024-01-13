@@ -61,6 +61,8 @@ int main()
 // Main Function End
 
 // Functions Definitions
+
+// Function to Display 2D Array of Characters
 int display2DStr(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
@@ -74,6 +76,7 @@ int display2DStr(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been displayed
 }
 
+// Function to Input 2D Array of Characters
 int input2DStr(char strs[][MAX_COLS], int rows)
 {
     int i;
@@ -88,6 +91,7 @@ int input2DStr(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been input by user
 }
 
+// Function to Search String in 2D Array of Characters
 int search2DStr(char strs[][MAX_COLS], int rows, char search[])
 {
     for (int i = 0; i < rows; i++)

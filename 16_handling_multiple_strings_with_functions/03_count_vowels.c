@@ -1,4 +1,4 @@
-// Write a program to find the number of vowels in each of the 5 strings stored in two dimensional arrays, taken from the user.Use user - defined Functions to Perform these Tasks.
+// Write a program to find the number of vowels in each of the N strings stored in two dimensional arrays, taken from the user.Use user - defined Functions to Perform these Tasks.
 
 // Header Files
 #include <stdio.h>
@@ -11,7 +11,7 @@
 
 int display2DStr(char[][MAX_COLS], int);
 int input2DStr(char[][MAX_COLS], int);
-void 
+void findVowelsInEachStrOf2D(char[][MAX_COLS], int);
 
 // Main Function Start
 int main()
@@ -75,6 +75,8 @@ int main()
 // Main Function End
 
 // Functions Definitions
+
+// Function to Display 2D Array of Characters
 int display2DStr(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
@@ -88,6 +90,7 @@ int display2DStr(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been displayed
 }
 
+// Function to Input 2D Array of Characters
 int input2DStr(char strs[][MAX_COLS], int rows)
 {
     int i;
@@ -100,4 +103,8 @@ int input2DStr(char strs[][MAX_COLS], int rows)
     }
 
     return i; // return the number of strings that have been input by user
+}
+
+void findVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows)
+{
 }
