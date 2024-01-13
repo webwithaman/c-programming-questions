@@ -14,7 +14,7 @@ int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 int compareStrings(char str1[], char str2[]);
 char *copyString(char des[], char src[]);
-void sort2DChar(char strs[][MAX_COLS], int rows);
+int **sort2DChar(char strs[][MAX_COLS], int rows);
 
 // Main Function Start
 int main()
@@ -86,7 +86,7 @@ int input2DChar(char strs[][MAX_COLS], int rows)
 }
 
 // Function to Sort 2D Array of char Using Bubble sort
-void sort2DChar(char strs[][MAX_COLS], int rows)
+int **sort2DChar(char strs[][MAX_COLS], int rows)
 {
     char temp[MAX_COLS];
 
@@ -102,6 +102,8 @@ void sort2DChar(char strs[][MAX_COLS], int rows)
             }
         }
     }
+
+    return strs;
 }
 
 // Function to Compare Two Strings
@@ -126,7 +128,7 @@ char *copyString(char des[], char src[])
     for (i = 0; src[i]; i++)
         des[i] = src[i];
 
-    des[i] = '\0';
+    des[i] = '\0'; // Terminate with null character
 
     return des;
 }
