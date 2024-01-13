@@ -12,6 +12,9 @@
 // Functions Declarations
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
+int compareStrings(char str1[], char str2[]);
+char *copyString(char des[], char src[]);
+void sort2DChar(char strs[][MAX_COLS], int rows);
 
 // Main Function Start
 int main()
@@ -32,37 +35,18 @@ int main()
 
     // Read Cities
     printf("\n>>>>>>>>>>>>> Enter %d Cities <<<<<<<<<<<\n", ROWS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        printf("\nEnter City-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
-        fflush(stdin);
-        fgets(cities[i], MAX_COLS, stdin);
-        cities[i][strcspn(cities[i], "\n")] = '\0'; // Replace '\n' character with '\0'
-    }
+    input2DChar(cities, ROWS);
 
     // Display Cities Before Sorting
     printf("\n>>>>>>>>>>>>> List of Cities Before Sorting <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(cities[i]);
+    print2DChar(cities, ROWS);
 
-    // Sort Cities Using Bubble Sort
-    for (int i = 0; i < ROWS - 1; i++)
-    {
-        for (int j = 0; j < ROWS - 1 - i; j++)
-        {
-            if (strcmp(cities[j], cities[j + 1]) > 0)
-            {
-                strcpy(temp, cities[j]);
-                strcpy(cities[j], cities[j + 1]);
-                strcpy(cities[j + 1], temp);
-            }
-        }
-    }
+    // Sort Cities
+    sort2DChar(cities, ROWS);
 
     // Display Cities After Sorting
     printf("\n>>>>>>>>>>>>> List of Cities After Sorting <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(cities[i]);
+    print2DChar(cities, ROWS);
 
     putch('\n');
     getch();
@@ -99,28 +83,48 @@ int input2DChar(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been input by user
 }
 
-// Function to Sort 2D Array of char
-void findVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows)
+// Function to Sort 2D Array of char Using Bubble sort
+void sort2DChar(char strs[][MAX_COLS], int rows)
 {
-    int count;
-    char vowels[11] = "AEIOUaeiou";
+    char temp[MAX_COLS];
 
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < rows - 1; i++)
     {
-        count = 0;
-
-        for (int j = 0; j < strs[i][j]; j++)
+        for (int j = 0; j < rows - 1 - i; j++)
         {
-            for (int k = 0; vowels[k]; k++)
+            if (compareStrings(strs[j], strs[j + 1]) > 0)
             {
-                if (strs[i][j] == vowels[k])
-                {
-                    count++;
-                    break;
-                }
+                copyString(temp, strs[j]);
+                copyString(strs[j], strs[j + 1]);
+                copyString(strs[j + 1], temp);
             }
         }
-
-        printf("\nThere Are %d Vowels in \"%s\"", count, strs[i]);
     }
+}
+
+// Function to Compare Two Strings
+int compareStrings(char str1[], char str2[])
+{
+    for (int i = 0; str1[i] || str2[i]; i++)
+    {
+        if (str1[i] > str2[i])
+            return str1[i] - str2[i];
+        else if (str1[i] < str2[i])
+            return str1[i] - str2[i];
+    }
+
+    return 0;
+}
+
+// Function to Copy One String into Another
+char *copyString(char des[], char src[])
+{
+    // Copy str into copy
+    int i = 0;
+    for (i = 0; src[i]; i++)
+        des[i] = src[i];
+
+    des[i] = '\0';
+
+    return des;
 }
