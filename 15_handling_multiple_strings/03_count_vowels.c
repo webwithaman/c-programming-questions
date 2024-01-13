@@ -44,7 +44,7 @@ int main()
 
     printf("\n>>>>>>>>>>>>> Number of Vowels in Each String <<<<<<<<<<<\n");
 
-    // Count Vowels in Each String
+    // Find Vowels in Each String
     for (int i = 0; i < ROWS; i++)
     {
         count = 0;
