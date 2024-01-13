@@ -9,6 +9,10 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
+// Functions Declarations
+int print2DChar(char[][MAX_COLS], int);
+int input2DChar(char[][MAX_COLS], int);
+
 // Main Function Start
 int main()
 {
