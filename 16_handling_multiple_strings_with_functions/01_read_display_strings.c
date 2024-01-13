@@ -10,8 +10,8 @@
 #define MAX_COLS 31
 
 // Functions Declarations
-void displayStrings(char (*)[], int, int);
-void inputStrings(char (*)[], int, int);
+void displayStrings(char[][MAX_COLS], int);
+void inputStrings(char[][MAX_COLS], int);
 
 // Main Function Start
 int main()
@@ -55,11 +55,15 @@ int main()
 void displayStrings(char (*strs)[], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
-    {
-        puts(strs + i * cols);
-    }
+        puts(*strs + i * cols);
 }
 
 void inputStrings(char (*strs)[], int rows, int cols)
 {
+    for (int i = 0; i < rows; i++)
+    {
+        fflush(stdin);
+        fgets((*strs + i * cols), MAX_COLS, stdin);
+        (*strs + i * cols)[strcspn((*strs + i * cols), "\n")] = '\0'; // Replace '\n' character with '\0'
+    }
 }
