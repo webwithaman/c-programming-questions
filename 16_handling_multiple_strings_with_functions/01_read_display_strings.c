@@ -56,6 +56,9 @@ void displayStrings(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
 
+    for (int i = 0; i < rows; i++)
+        puts(strs[i]);
+
     putch('\n'); // Add new line
 }
 
