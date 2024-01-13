@@ -1,4 +1,4 @@
-// Write a program to print the strings which are palindrome in the list of strings.
+// Write a program to print the strings which are palindrome in the list of strings. Use user-defined Functions to Perform these Tasks.
 
 // Header Files
 #include <stdio.h>
@@ -10,13 +10,14 @@
 #define MAX_COLS 31
 
 // Functions Declarations
+int print2DChar(char[][MAX_COLS], int);
+int input2DChar(char[][MAX_COLS], int);
 int strLength(char[]);
 char *strReverse(char[]);
 char *copyString(char[], char[]);
 int compareStrings(char[], char[]);
 int isStrPalindrome(char[]);
-int print2DChar(char[][MAX_COLS], int);
-int input2DChar(char[][MAX_COLS], int);
+void printAllPalindromeOf2D(char[][MAX_COLS], int);
 
 // Main Function Start
 int main()
