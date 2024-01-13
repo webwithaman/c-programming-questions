@@ -10,6 +10,11 @@
 #define MAX_COLS 31
 
 // Functions Declarations
+int strLength(char[]);
+char *strReverse(char[]);
+char *copyString(char[], char[]);
+int compareStrings(char[], char[]);
+int isStrPalindrome(char[]);
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 
