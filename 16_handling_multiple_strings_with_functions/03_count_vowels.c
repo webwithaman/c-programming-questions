@@ -12,7 +12,8 @@
 // Functions Declarations
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
-void findVowelsInEachStrOf2D(char[][MAX_COLS], int);
+void countVowelsInEachStrOf2D(char[][MAX_COLS], int, int[]);
+int countVowelsInStr(char[]);
 
 // Main Function Start
 int main()
@@ -80,28 +81,34 @@ int input2DChar(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been input by user
 }
 
-// Function to Find the Number of vowels in each of the N strings stored in 2D Array of char
-void findVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows)
+// Function to Find the Number of Vowels in Each of the N strings Stored in 2D Array of char
+void findVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows, int vowelCount[])
 {
-    int count;
-    char vowels[11] = "AEIOUaeiou";
-
     for (int i = 0; i < rows; i++)
     {
-        count = 0;
+        vowelCount[i] = countVowelsInStr(strs[i]);
 
-        for (int j = 0; j < strs[i][j]; j++)
+        printf("\nThere Are %d Vowels in \"%s\"", vowelCount[i], strs[i]);
+    }
+}
+
+// Function to Count Number of Vowels In String
+int countVowelsInStr(char str[])
+{
+    char vowels[11] = "AEIOUaeiou";
+    int count = 0;
+
+    for (int i = 0; str[i]; i++)
+    {
+        for (int k = 0; vowels[k]; k++)
         {
-            for (int k = 0; vowels[k]; k++)
+            if (str[i] == vowels[k])
             {
-                if (strs[i][j] == vowels[k])
-                {
-                    count++;
-                    break;
-                }
+                count++;
+                break;
             }
         }
-
-        printf("\nThere Are %d Vowels in \"%s\"", count, strs[i]);
     }
+
+    return count; // return number of vowels
 }
