@@ -1,4 +1,4 @@
-// Write a program to read and display a 2D array of strings in C language. Use Functions to Perform these Tasks.
+// Write a program to search a string in the list of strings. Use Functions to Perform these Tasks.
 
 // Header Files
 #include <stdio.h>
@@ -28,15 +28,37 @@ int main()
     }
 
     // Declare 2D Array According to user's input
-    char names[ROWS][MAX_COLS];
+    char names[ROWS][MAX_COLS], search[MAX_COLS], index = -1;
 
     // Read Names
     printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
     input2DStr(names, ROWS);
 
     // Display Names
-    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<");
-    display2DStr(names, ROWS);
+    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
+    for (int i = 0; i < ROWS; i++)
+        puts(names[i]);
+
+    // Input Name to be Searched
+    printf("\nEnter A Name to be Searched in the Given List of Names (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+    fgets(search, MAX_COLS, stdin);
+    search[strcspn(search, "\n")] = '\0'; // Replace '\n' character with '\0'
+
+    // Search Names Using Linear Search
+    for (int i = 0; i < ROWS; i++)
+    {
+        if (strcmp(names[i], search) == 0)
+        {
+            index = i;
+            break;
+        }
+    }
+
+    // Name Found or Not
+    if (index != -1)
+        printf("\nYes, \"%s\" is Present in List of Names...", search);
+    else
+        printf("\nNo, \"%s\" is Not Present in List of Names...", search);
 
     putch('\n');
     getch();

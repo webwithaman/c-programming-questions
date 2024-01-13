@@ -36,7 +36,7 @@ int main()
         names[i][strcspn(names[i], "\n")] = '\0'; // Replace '\n' character with '\0'
     }
 
-    // Display Names Before Sorting
+    // Display Names
     printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
         puts(names[i]);
