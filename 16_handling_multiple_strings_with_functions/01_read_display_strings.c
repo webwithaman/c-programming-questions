@@ -10,8 +10,8 @@
 #define MAX_COLS 31
 
 // Functions Declarations
-int display2DStr(char[][MAX_COLS], int);
-int input2DStr(char[][MAX_COLS], int);
+int print2DChar(char[][MAX_COLS], int);
+int input2DChar(char[][MAX_COLS], int);
 
 // Main Function Start
 int main()
@@ -32,11 +32,11 @@ int main()
 
     // Read Names
     printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
-    input2DStr(names, ROWS);
+    input2DChar(names, ROWS);
 
     // Display Names
     printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<");
-    display2DStr(names, ROWS);
+    print2DChar(names, ROWS);
 
     putch('\n');
     getch();
@@ -47,7 +47,7 @@ int main()
 // Functions Definitions
 
 // Function to Display 2D Array of Characters
-int display2DStr(char strs[][MAX_COLS], int rows)
+int print2DChar(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
 
@@ -61,7 +61,7 @@ int display2DStr(char strs[][MAX_COLS], int rows)
 }
 
 // Function to Input 2D Array of Characters
-int input2DStr(char strs[][MAX_COLS], int rows)
+int input2DChar(char strs[][MAX_COLS], int rows)
 {
     int i;
     for (i = 0; i < rows; i++)

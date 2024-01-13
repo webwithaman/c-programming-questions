@@ -9,12 +9,14 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-int display2DStr(char[][MAX_COLS], int);
-int input2DStr(char[][MAX_COLS], int);
-void findVowelsInEachStrOf2D(char[][MAX_COLS], int);
+// Functions Declarations
+int print2DChar(char[][MAX_COLS], int);
+int input2DChar(char[][MAX_COLS], int);
+void sortChar2D
 
-// Main Function Start
-int main()
+    // Main Function Start
+    int
+    main()
 {
     const int ROWS;
     printf("\nHow Many Names Strings Want to Enter (MAX %d) => ", MAX_ROWS);
@@ -32,11 +34,11 @@ int main()
 
     // Read Names
     printf("\n>>>>>>>>>>>>> Enter %d Strings <<<<<<<<<<<\n", ROWS);
-    input2DStr(strs, ROWS);
+    input2DChar(strs, ROWS);
 
     // Display Names Before Sorting
     printf("\n>>>>>>>>>>>>> List of Strings <<<<<<<<<<<\n");
-    display2DStr(strs, ROWS);
+    print2DChar(strs, ROWS);
 
     // Find Vowels in Each String
     printf("\n>>>>>>>>>>>>> Number of Vowels in Each String <<<<<<<<<<<\n");
@@ -51,7 +53,7 @@ int main()
 // Functions Definitions
 
 // Function to Display 2D Array of Characters
-int display2DStr(char strs[][MAX_COLS], int rows)
+int print2DChar(char strs[][MAX_COLS], int rows)
 {
     putch('\n'); // Add new line
 
@@ -65,7 +67,7 @@ int display2DStr(char strs[][MAX_COLS], int rows)
 }
 
 // Function to Input 2D Array of Characters
-int input2DStr(char strs[][MAX_COLS], int rows)
+int input2DChar(char strs[][MAX_COLS], int rows)
 {
     int i;
     for (i = 0; i < rows; i++)
