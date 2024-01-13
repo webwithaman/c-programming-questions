@@ -1,4 +1,4 @@
-// Write a program to search a string in the list of strings. Use Functions to Perform these Tasks.
+// Write a program to search a string in the list of strings. Use user-defined Functions to Perform these Tasks.
 
 // Header Files
 #include <stdio.h>
@@ -13,6 +13,7 @@
 int display2DStr(char[][MAX_COLS], int);
 int input2DStr(char[][MAX_COLS], int);
 int search2DStr(char[][MAX_COLS], int, char[]);
+int compareStrings(char[], char[]);
 
 // Main Function Start
 int main()
@@ -91,9 +92,23 @@ int search2DStr(char strs[][MAX_COLS], int rows, char search[])
 {
     for (int i = 0; i < rows; i++)
     {
-        if (strcmp(strs[i], search) == 0)
+        if (compareStrings(strs[i], search) == 0)
             return i; // return the index at search string found
     }
 
     return -1;
+}
+
+// Function to Check Whether a Given String an Alphanumeric String or Not
+int compareStrings(char str1[], char str2[])
+{
+    for (int i = 0; str1[i] || str2[i]; i++)
+    {
+        if (str1[i] > str2[i])
+            return str1[i] - str2[i];
+        else if (str1[i] < str2[i])
+            return str1[i] - str2[i];
+    }
+
+    return 0;
 }
