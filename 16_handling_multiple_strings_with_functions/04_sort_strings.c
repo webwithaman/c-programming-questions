@@ -69,3 +69,58 @@ int main()
     return 0;
 }
 // Main Function End
+
+// Function to Display 2D Array of char
+int print2DChar(char strs[][MAX_COLS], int rows)
+{
+    putch('\n'); // Add new line
+
+    int i;
+    for (i = 0; i < rows; i++)
+        puts(strs[i]);
+
+    putch('\n'); // Add new line
+
+    return i; // return the number of strings that have been displayed
+}
+
+// Function to Input 2D Array of char
+int input2DChar(char strs[][MAX_COLS], int rows)
+{
+    int i;
+    for (i = 0; i < rows; i++)
+    {
+        printf("\nEnter String-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
+        fflush(stdin);
+        fgets(strs[i], MAX_COLS, stdin);
+        strs[i][strcspn(strs[i], "\n")] = '\0'; // Replace '\n' character with '\0'
+    }
+
+    return i; // return the number of strings that have been input by user
+}
+
+// Function to Sort 2D Array of char
+void findVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows)
+{
+    int count;
+    char vowels[11] = "AEIOUaeiou";
+
+    for (int i = 0; i < rows; i++)
+    {
+        count = 0;
+
+        for (int j = 0; j < strs[i][j]; j++)
+        {
+            for (int k = 0; vowels[k]; k++)
+            {
+                if (strs[i][j] == vowels[k])
+                {
+                    count++;
+                    break;
+                }
+            }
+        }
+
+        printf("\nThere Are %d Vowels in \"%s\"", count, strs[i]);
+    }
+}

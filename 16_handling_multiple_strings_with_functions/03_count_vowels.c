@@ -80,7 +80,7 @@ int input2DChar(char strs[][MAX_COLS], int rows)
     return i; // return the number of strings that have been input by user
 }
 
-// Find the Number of vowels in each of the N strings stored in two dimensional arrays
+// Function to Find the Number of vowels in each of the N strings stored in 2D Array of char
 void findVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows)
 {
     int count;
