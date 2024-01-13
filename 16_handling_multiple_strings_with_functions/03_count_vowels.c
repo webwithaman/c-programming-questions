@@ -56,7 +56,6 @@ int main()
 // Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
-    putch('\n'); // Add new line
 
     int i;
     for (i = 0; i < rows; i++)
@@ -91,7 +90,7 @@ int *countVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows, int vowelCount[])
         printf("\nThere Are %d Vowels in \"%s\"", vowelCount[i], strs[i]);
     }
 
-    return vowelCount; 
+    return vowelCount;
 }
 
 // Function to Count Number of Vowels In String

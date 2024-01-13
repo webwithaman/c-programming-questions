@@ -13,7 +13,7 @@
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 int searchCharInStr(char[], char);
-int printInvalidateEmails(char[][MAX_COLS], int);
+int *findInvalidEmails(char[][MAX_COLS], int, int[], int *);
 
 // Main Function Start
 int main()
@@ -31,6 +31,7 @@ int main()
 
     // Declare 2D Array According to user's input
     char emails[ROWS][MAX_COLS];
+    int invalMailsInd[ROWS], sizeOfInval;
 
     // Read Emails
     printf("\n>>>>>>>>>>>>> Enter %d Emails <<<<<<<<<<<\n", ROWS);
@@ -40,8 +41,20 @@ int main()
     printf("\n>>>>>>>>>>>>> List of Emails <<<<<<<<<<<\n");
     print2DChar(emails, ROWS);
 
+    // Find Emails Which Don't have '@' in it
+    findInvalidEmails(emails, ROWS, invalMailsInd, &sizeOfInval);
+
     // Display Emails Which Don't have '@' in it
-    printf("\n>>>>> Following Emails Are Invalid, Don't have '@' Symbol <<<<<<\n");
+    if (sizeOfInval != 0)
+    {
+        printf("\n>>>>> Following Emails Are Invalid, Don't have '@' Symbol <<<<<<\n");
+        for (int i = 0; i < sizeOfInval; i++)
+        {
+            puts(emails[invalMailsInd[i]]);
+        }
+    }
+    else
+        puts("\nAll the Emails Are Valid...");
 
     putch('\n');
     getch();
@@ -52,7 +65,6 @@ int main()
 // Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
-    putch('\n'); // Add new line
 
     int i;
     for (i = 0; i < rows; i++)
@@ -87,32 +99,21 @@ int searchCharInStr(char str[], char search)
             return i; // If Found
     }
 
-    return 0;
+    return -1;
 }
 
-// Function to Print Emails Which Don't have '@' in it
-int printInvalidateEmails(char strs[][MAX_COLS], int rows)
+// Function to Find Emails Which Don't have '@' in it
+int *findInvalidEmails(char emails[][MAX_COLS], int rows, int invalMailsInd[], int *sizeOfInval)
 {
-    for (int i = 0; i < ROWS; i++)
+    int j = 0; // for indexes of invalMailsInd[]
+
+    for (int i = 0; i < rows; i++)
     {
-        found = 0;
-
-        for (int j = 0; j < emails[i][j]; j++)
-        {
-            if (emails[i][j] == '@')
-            {
-                found = 1;
-                break;
-            }
-        }
-
-        if (!found)
-        { // If '@' not Found
-            printf("\n\"%s\"", emails[i]);
-            isAllValid = 0;
-        }
+        if (searchCharInStr(emails[i], '@') == -1)
+            invalMailsInd[j++] = i;
     }
 
-    if (isAllValid) // If All Emails are Valid
-        puts("\nAll the Emails Are Valid...");
+    *sizeOfInval = j; // sizeOfInval of invalMailsInd[]
+
+    return invalMailsInd;
 }

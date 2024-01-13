@@ -35,7 +35,7 @@ int main()
     input2DChar(names, ROWS);
 
     // Display Names
-    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<");
+    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
     print2DChar(names, ROWS);
 
     putch('\n');
@@ -49,7 +49,6 @@ int main()
 // Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
-    putch('\n'); // Add new line
 
     int i;
     for (i = 0; i < rows; i++)
