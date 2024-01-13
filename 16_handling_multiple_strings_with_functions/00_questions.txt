@@ -9,7 +9,7 @@
 02. Write a program to search a string in the list of strings. Use user-defined Functions to Perform these Tasks. 
     
 03. Write a program to find the number of vowels in each of the 5 strings stored in two 
-    dimensional arrays, taken from the user. Use Functions to Perform these Tasks. 
+dimensional arrays, taken from the user. Use user-defined Functions to Perform these Tasks. 
     
 04. Write a program to sort N city names stored in two dimensional arrays, taken from 
     the user. Use Functions to Perform these Tasks. 
