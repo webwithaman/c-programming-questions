@@ -4,15 +4,15 @@
 🟢 Topic ➡ Handling Multiple Strings With Functions (2D-Strings)
     
     
-01. Write a program to read and display a 2D array of strings in C language. Use user-defined Functions to Perform these Tasks. 
+01. Write a program to read and display a 2D array of strings in C language. Use         user-defined Functions to Perform these Tasks. 
     
-02. Write a program to search a string in the list of strings. Use user-defined Functions to Perform these Tasks. 
+02. Write a program to search a string in the list of strings. Use user-defined Functions  to Perform these Tasks. 
     
 03. Write a program to find the number of vowels in each of the N strings stored in two 
-dimensional arrays, taken from the user. Use user-defined Functions to Perform these Tasks. 
+    dimensional arrays, taken from the user. Use user-defined Functions to Perform these Tasks. 
     
 04. Write a program to sort N city names stored in two dimensional arrays, taken from 
-    the user. Use Functions to Perform these Tasks. 
+    the user. Use user-defined Functions to Perform these Tasks. 
     
 05. Suppose we have a list of email addresses, check whether all email addresses have 
     ‘@’ in it. Print the odd email out. Use Functions to Perform these Tasks. 
