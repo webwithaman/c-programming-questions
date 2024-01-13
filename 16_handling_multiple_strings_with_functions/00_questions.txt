@@ -15,9 +15,9 @@
     the user. Use user-defined Functions to Perform these Tasks. 
     
 05. Suppose we have a list of email addresses, check whether all email addresses have 
-    ‘@’ in it. Print the odd email out. Use Functions to Perform these Tasks. 
+    ‘@’ in it. Print the odd email out. Use user-defined Functions to Perform these Tasks. 
     
-06. Write a program to print the strings which are palindrome in the list of strings.
+06. Write a program to print the strings which are palindrome in the list of strings. Use user-defined Functions to Perform these Tasks.
     
 07. From the list of IP addresses, check whether all ip addresses are valid. Use Functions to Perform these Tasks. 
     
