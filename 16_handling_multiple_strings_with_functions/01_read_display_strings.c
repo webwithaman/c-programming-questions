@@ -32,18 +32,11 @@ int main()
 
     // Read Names
     printf("\n>>>>>>>>>>>>> Enter %d Names <<<<<<<<<<<\n", ROWS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        printf("\nEnter Name-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
-        fflush(stdin);
-        fgets(names[i], MAX_COLS, stdin);
-        names[i][strcspn(names[i], "\n")] = '\0'; // Replace '\n' character with '\0'
-    }
+    inputStrings(names, ROWS);
 
     // Display Names
-    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(names[i]);
+    printf("\n>>>>>>>>>>>>> List of Names <<<<<<<<<<<");
+    displayStrings(names, ROWS);
 
     putch('\n');
     getch();
@@ -62,12 +55,13 @@ void displayStrings(char strs[][MAX_COLS], int rows)
     putch('\n'); // Add new line
 }
 
-void inputStrings(char (*strs)[], int rows, int cols)
+void inputStrings(char strs[][MAX_COLS], int rows)
 {
     for (int i = 0; i < rows; i++)
     {
+        printf("\nEnter String-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
         fflush(stdin);
-        fgets((*strs + i * cols), MAX_COLS, stdin);
-        (*strs + i * cols)[strcspn((*strs + i * cols), "\n")] = '\0'; // Replace '\n' character with '\0'
+        fgets(strs[i], MAX_COLS, stdin);
+        strs[i][strcspn(strs[i], "\n")] = '\0'; // Replace '\n' character with '\0'
     }
 }
