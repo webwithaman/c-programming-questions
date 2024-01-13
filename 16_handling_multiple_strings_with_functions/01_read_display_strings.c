@@ -13,7 +13,6 @@
 void displayStrings(char (*)[], int, int);
 void inputStrings(char (*)[], int, int);
 
-
 // Main Function Start
 int main()
 {
@@ -55,11 +54,12 @@ int main()
 // Functions Definitions
 void displayStrings(char (*strs)[], int rows, int cols)
 {
-
-
+    for (int i = 0; i < rows; i++)
+    {
+        puts(strs + i * cols);
+    }
 }
 
-
-void inputStrings(char (*strs)[], int rows, int cols){
-
+void inputStrings(char (*strs)[], int rows, int cols)
+{
 }
