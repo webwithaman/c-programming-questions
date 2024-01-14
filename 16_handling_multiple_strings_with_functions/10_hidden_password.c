@@ -6,7 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX_COLS 31
+#define MAX_COLS 16
 
 // Functions Declarations (Prototypes)
 char *getPasswordHiddenly(char[], int);
@@ -16,10 +16,24 @@ int main()
 {
     char password[MAX_COLS];
 
-    int i = 0; // Represent Index for password array
-    char ch;   // Store character taken from user
-
     printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+
+    getPasswordHiddenly(password, MAX_COLS - 1);
+
+    printf("\n\nPassword => %s", password);
+
+    putch('\n');
+    getch();
+    return 0;
+}
+// Main Function End
+
+// Function Definitions
+
+char *getPasswordHiddenly(char password[], int maxLength)
+{
+    char ch;
+    int i = 0; // for index of password[]
 
     while (1) // Read untill user press enter key
     {
@@ -41,22 +55,11 @@ int main()
             password[i++] = ch;
         }
 
-        if (i == MAX_COLS - 2) // Password Reached At Max length
+        if (i == maxLength - 1) // Password Reached At Max length
             break;
     }
 
     password[i] = '\0'; // Terminate password with '\0'
 
-    printf("\n\nPassword => %s", password);
-
-    putch('\n');
-    getch();
-    return 0;
-}
-// Main Function End
-
-// Function Definitions
-
-char *getPasswordHiddenly(char password[], int maxChars)
-{
+    return password;
 }
