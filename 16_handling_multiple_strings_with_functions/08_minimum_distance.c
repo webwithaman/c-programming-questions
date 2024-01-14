@@ -9,6 +9,10 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
+// Functions Declarations
+int minDisBetTwoWords(char[][MAX_COLS], int, char[], char[]);
+int compareStrings(char[], char[]);
+
 // Main Function Start
 int main()
 {
@@ -24,7 +28,7 @@ int main()
         "banana"};
 
     char word1[MAX_COLS], word2[MAX_COLS];
-    int index1 = -1, index2 = -1, minDis = ROWS - 1;
+    int minDis;
 
     // Display List of Words
     printf("\n>>>>>>>>>>>>> List of Words <<<<<<<<<<<\n");
@@ -45,22 +49,9 @@ int main()
     word2[strcspn(word2, "\n")] = '\0';
 
     // Find Minimum Distance
-    for (int i = 0; i < ROWS; i++)
-    {
-        if (strcmp(word1, words[i]) == 0)
-            index1 = i;
+    minDis = minDisBetTwoWords(words, ROWS, word1, word2);
 
-        if (strcmp(word2, words[i]) == 0)
-            index2 = i;
-
-        if (index1 != -1 && index2 != -1 && index1 <= index2)
-        {
-            if (index2 - index1 < minDis)
-                minDis = index2 - index1;
-        }
-    }
-
-    if (index1 != -1 && index2 != -1)
+    if (minDis != ROWS)
         printf("\nMinimum Distance Between \"%s\" and \"%s\" => %d", word1, word2, minDis);
     else
         printf("\n\"%s\" Or \"%s\" not Present in the List of words", word1, word2);
@@ -70,3 +61,39 @@ int main()
     return 0;
 }
 // Main Function End
+
+int minDisBetTwoWords(char words[][MAX_COLS], int rows, char word1[], char word2[])
+{
+    int index1 = -1, index2 = -1, minDis = rows;
+
+    for (int i = 0; i < rows; i++)
+    {
+        if (compareStrings(word1, words[i]) == 0)
+            index1 = i;
+
+        if (compareStrings(word2, words[i]) == 0)
+            index2 = i;
+
+        if (index1 != -1 && index2 != -1 && index1 <= index2)
+        {
+            if (index2 - index1 < minDis)
+                minDis = index2 - index1;
+        }
+    }
+
+    return minDis;
+}
+
+// Function to Check Whether a Given String an Alphanumeric String or Not
+int compareStrings(char str1[], char str2[])
+{
+    for (int i = 0; str1[i] || str2[i]; i++)
+    {
+        if (str1[i] > str2[i])
+            return str1[i] - str2[i];
+        else if (str1[i] < str2[i])
+            return str1[i] - str2[i];
+    }
+
+    return 0;
+}
