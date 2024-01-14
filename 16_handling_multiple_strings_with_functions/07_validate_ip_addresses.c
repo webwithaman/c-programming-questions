@@ -9,6 +9,12 @@
 #define MAX_ROWS 10
 #define MAX_COLS 16
 
+// Functions Declarations
+int print2DChar(char[][MAX_COLS], int);
+int input2DChar(char[][MAX_COLS], int);
+int strLength(char[]);
+int isValidIP(char[]);
+
 // Main Function Start
 int main()
 {
@@ -29,20 +35,13 @@ int main()
 
     // Read IP Addresses
     printf("\n>>>>>>>>>>>>> Enter %d IP Addresses <<<<<<<<<<<\n", ROWS);
-    for (int i = 0; i < ROWS; i++)
-    {
-        printf("\nEnter IP Address-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
-        fflush(stdin);
-        fgets(ips[i], MAX_COLS, stdin);
-        ips[i][strcspn(ips[i], "\n")] = '\0'; // Replace '\n' character with '\0'
-    }
+    input2DChar(ips, ROWS);
 
     // Display All IP Addresses
     printf("\n>>>>>>>>>>>>> List of IP Addresses <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(ips[i]);
+    print2DChar(ips, ROWS);
 
-    // Display IP Addresses Which Don't have '@' in it
+    // Display Invalid IP Addresses
     printf("\n>>>>> Following IP Addresses Are Invalid <<<<<<\n");
     for (int i = 0; i < ROWS; i++)
     {
@@ -127,3 +126,49 @@ int main()
     return 0;
 }
 // Main Function End
+
+// Function Definitions
+
+// Function to Display 2D Array of char
+int print2DChar(char strs[][MAX_COLS], int rows)
+{
+
+    int i;
+    for (i = 0; i < rows; i++)
+        puts(strs[i]);
+
+    putch('\n'); // Add new line
+
+    return i; // return the number of strings that have been displayed
+}
+
+// Function to Input 2D Array of char
+int input2DChar(char strs[][MAX_COLS], int rows)
+{
+    int i;
+    for (i = 0; i < rows; i++)
+    {
+        printf("\nEnter String-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
+        fflush(stdin);
+        fgets(strs[i], MAX_COLS, stdin);
+        strs[i][strcspn(strs[i], "\n")] = '\0'; // Replace '\n' character with '\0'
+    }
+
+    return i; // return the number of strings that have been input by user
+}
+
+// Function to Calculate Length of String
+int strLength(char str[])
+{
+    int length = 0;
+
+    while (str[length])
+        length++;
+
+    return length;
+}
+
+// Function to Validate IP Address
+int isValidIP(char ip[])
+{
+}

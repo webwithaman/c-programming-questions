@@ -42,7 +42,7 @@ int main()
     for (int i = 0; i < ROWS; i++)
         puts(ips[i]);
 
-    // Display IP Addresses Which Don't have '@' in it
+    // Display Invalid IP Addresses
     printf("\n>>>>> Following IP Addresses Are Invalid <<<<<<\n");
     for (int i = 0; i < ROWS; i++)
     {
