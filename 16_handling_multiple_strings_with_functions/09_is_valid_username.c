@@ -44,9 +44,9 @@ int main()
     username[strcspn(username, "\n")] = '\0';
 
     // Check that username entered by user is one of the usernames or not
-    isUsernameValid = search2DStr(usernames, ROWS, username)
+    isUsernameValid = search2DStr(usernames, ROWS, username);
 
-        if (isUsernameValid) // Username is Valid
+    if (isUsernameValid != -1) // Username is Valid
     {
         puts("\n>>>>>> Username is Valid, You are Allowed to Calculate Factorial of a Number <<<<<<<");
         int num;
@@ -108,5 +108,5 @@ int compareStrings(char str1[], char str2[])
             return str1[i] - str2[i];
     }
 
-    return 0;
+    return 0; // Strings are equal
 }
