@@ -155,6 +155,8 @@ int isStrPalindrome(char str[])
 
     return 1; // String is Palindrome
 }
+
+// Function to Print All Palindrome Strings of 2D Array of char
 void printAllPalindromeOf2D(char strs[][MAX_COLS], int rows)
 {
     char copy[MAX_COLS];

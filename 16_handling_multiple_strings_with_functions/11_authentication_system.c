@@ -10,19 +10,25 @@
 #define MAX_COLS 31
 
 // Functions Declarations (Prototypes)
+int compareStrings(char[], char[]);
+char *copyString(char[], char[]);
 int showOptsAndGetChoice();
 int signup();
 int login();
 int resetPassword();
 int deleteAccount();
+void instructsForUsername();
+void instructsForPassword();
 char *getUsername(char[]);
 int isValidUsername(char[]);
 int isUserExists(char[]);
 char *getPassword(char[]);
 int isValidPassword(char[]);
+char *getPasswordHiddenly(char[], int);
 
 // Global Variables
-char usernames[MAX_ROWS][MAX_COLS], passwords[MAX_ROWS][MAX_COLS];
+char usernames[MAX_ROWS][MAX_COLS],
+    passwords[MAX_ROWS][MAX_COLS];
 int totalAccountCreated = 0;
 
 // Main Function Start
@@ -519,21 +525,15 @@ int signup()
 
     // Input username for sign-up
     char username[MAX_COLS];
-    int isUsernameValid, minLengthOfUsername = 6;
+    int isUsernameValid;
 
-    puts("\n------ Instructions For Username ------");
-    printf("\nMinimum Length For Username is %d", minLengthOfUsername);
-    printf("\nMaximum Length For Username is %d", MAX_COLS - 1);
-    printf("\nYou Cannot Use Spaces In Username");
-    printf("\nYou Can Use (A-Z), (a-z), (0-9) and Underscore (_)");
-    printf("\nYou Cannot Use Any Special Symbol Except Underscore");
-    puts("\n---------------------------------------");
+    instructsForUsername(); // show instructions for username
 
     // Terminate When Username is Valid
     do
     {
         getUsername(username);                       // get username
-        isUsernameValid = isUsernameValid(username); // Validate Username
+        isUsernameValid = isValidUsername(username); // Validate Username
 
         if (!isUsernameValid) // True, means username is invalid
         {
@@ -543,14 +543,12 @@ int signup()
         else
         {
             // Check if username is Already Taken
-            for (int i = 0; i < totalAccountCreated; i++)
+            isUsernameValid = isUserExists(username);
+            if (isUsernameValid != -1)
             {
-                if (strcmp(usernames[i], username) == 0)
-                {
-                    puts("\n!!! This Username is No Available, Try Again with Different Username...");
-                    isUsernameValid = 0;
-                    getch();
-                }
+                puts("\n!!! This Username is No Available, Try Again with Different Username...");
+                isUsernameValid = 0;
+                getch();
             }
         }
 
@@ -562,11 +560,141 @@ int signup()
     char password[MAX_COLS];
     int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
 
+    instructsForPassword(); // show instructions for  password
+
+    // Terminate When Password is Valid
+    do
+    {
+        getPassword(password); // get password
+
+        // Validate Password
+        isPasswordValid = isValidPassword(password);
+
+        if (!isPasswordValid) // if Password is Invalid
+        {
+            puts("\n\n!!! Password is Invalid, Try Again...");
+            getch();
+        }
+
+    } while (!isPasswordValid); // Terminate When Password is Valid
+
+    // Reached Here Only if Both username and password is valid
+
+    // When Both Username and Password Are valid then Create New User
+    copyString(usernames[totalAccountCreated], username);
+    copyString(passwords[totalAccountCreated++], password);
+
+    // Display Accout Created Message
+    puts("\n\nYou Have Successfully Created Your Account...");
+
+    return 1; // Successfully Account Created
+}
+
+// Function to Check Whether a Given String an Alphanumeric String or Not
+int compareStrings(char str1[], char str2[])
+{
+    for (int i = 0; str1[i] || str2[i]; i++)
+    {
+        if (str1[i] > str2[i])
+            return str1[i] - str2[i];
+        else if (str1[i] < str2[i])
+            return str1[i] - str2[i];
+    }
+
+    return 0; // Strings are equal
+}
+
+// Functtion to Show Instructions for username
+void instructsForUsername()
+{
+    int minLengthOfUsername = 6;
+    puts("\n------ Instructions For Username ------");
+    printf("\nMinimum Length For Username is %d", minLengthOfUsername);
+    printf("\nMaximum Length For Username is %d", MAX_COLS - 1);
+    printf("\nYou Cannot Use Spaces In Username");
+    printf("\nYou Can Use (A-Z), (a-z), (0-9) and Underscore (_)");
+    printf("\nYou Cannot Use Any Special Symbol Except Underscore");
+    puts("\n---------------------------------------");
+}
+
+// Function to Get Username
+char *getUsername(char username[])
+{
+    printf("\nEnter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+    fflush(stdin);
+    fgets(username, MAX_COLS, stdin);
+    username[strcspn(username, "\n")] = '\0';
+
+    return username;
+}
+
+// Function to Validate Username
+int isValidUsername(char username[])
+{
+    int minLengthOfUsername = 6;
+
+    // Validate Username
+    if (strlen(username) < minLengthOfUsername)
+        return 0; // username is invalid
+    else
+    {
+        for (int i = 0; username[i]; i++)
+        {
+            if ((username[i] < '0' || username[i] > '9') && (username[i] < 'A' || username[i] > 'Z') && (username[i] < 'a' || username[i] > 'z') && username[i] != '_')
+                return 0; // username is invalid
+        }
+    }
+
+    return 1; // username is valid
+}
+
+int isUserExists(char username[])
+{
+    for (int i = 0; i < totalAccountCreated; i++)
+    {
+        if (compareStrings(usernames[i], username) == 0)
+        {
+            return i; // user not exists
+        }
+    }
+
+    return -1; // user not exists
+}
+
+// Function to Validate Password
+int isValidPassword(char password[])
+{
+    int minLengthOfPassword = 8;
+
+    if (strlen(password) < minLengthOfPassword)
+        return 0; // password is invalid
+    else
+    {
+        for (int i = 0; password[i]; i++)
+        {
+            if (password[i] == ' ' || password[i] == '\t')
+                return 0; // password is invalid
+        }
+    }
+
+    return 1; // password is invalid
+}
+
+// Functtion to Show Instructions for password
+void instructsForPassword()
+{
+    int minLengthOfPassword = 8;
+
     puts("\n------ Instructions For Password ------");
     printf("\nMinimum Length For Password is %d", minLengthOfPassword);
     printf("\nMaximum Length For Username is %d", MAX_COLS - 1);
     printf("\nYou Cannot Use Spaces In Username");
     puts("\n---------------------------------------");
+}
+
+char *getPassword(char password[])
+{
+    int choiceForPass, choosedCorrect = 1;
 
     do // Terminate When user Enter Correct Choice for following
     {
@@ -586,127 +714,64 @@ int signup()
 
     } while (!choosedCorrect);
 
-    // Terminate When Password is Valid
-    do
-    {
-        isPasswordValid = 1; // Assume Password will be valid
-        printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+    printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
 
-        if (choiceForPass == 1) // get password hiddenly
-        {
-
-            int i = 0; // Represent Index for password array
-            char ch;   // Store character taken from user
-
-            while (1) // Read untill user press enter key
-            {
-                fflush(stdin); // clear buffer
-                ch = getch();  // get character from user
-
-                if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
-                    break;
-                else if (ch == 8 && i > 0) // if user press backspace key
-                {
-                    putch('\b');
-                    putch(' ');
-                    putch('\b');
-                    i--;
-                }
-                else if (ch >= 32 && ch <= 126) // if character is valid
-                {
-                    putch('*');
-                    password[i++] = ch;
-                }
-
-                if (i == MAX_COLS - 2) // Password Reached At Max length
-                    break;
-            }
-
-            password[i] = '\0'; // Terminate password with '\0'
-        }
-        else
-        {
-            fflush(stdin);
-            fgets(password, MAX_COLS, stdin);
-            password[strcspn(password, "\n")] = '\0';
-        }
-
-        // Validate Password
-        if (strlen(password) < minLengthOfPassword)
-            isPasswordValid = 0;
-        else
-        {
-            for (int i = 0; password[i]; i++)
-            {
-                if (password[i] == ' ' || password[i] == '\t')
-                    isPasswordValid = 0;
-            }
-        }
-
-        if (!isPasswordValid) // if Password is Invalid
-        {
-            puts("\n\n!!! Password is Invalid, Try Again...");
-            getch();
-        }
-
-    } while (!isPasswordValid); // Terminate When Password is Valid
-
-    // Reached Here Only if Both username and password is valid
-
-    // When Both Username and Password Are valid then Create New User
-    strcpy(usernames[totalAccountCreated], username);
-    strcpy(passwords[totalAccountCreated++], password);
-
-    // Display Accout Created Message
-    puts("\n\nYou Have Successfully Created Your Account...");
-}
-
-// Function to Get Username
-char *getUsername(char username[])
-{
-    printf("\nEnter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
-    fflush(stdin);
-    fgets(username, MAX_COLS, stdin);
-    username[strcspn(username, "\n")] = '\0';
-
-    return username;
-}
-
-// Function to Validate Username
-int isUsernameValid(char username[])
-{
-    int minLengthOfUsername = 6;
-
-    // Validate Username
-    if (strlen(username) < minLengthOfUsername)
-        return 0; // username is invalid
+    if (choiceForPass == 1) // get password hiddenly
+        getPasswordHiddenly(password, MAX_COLS - 1);
     else
     {
-        for (int i = 0; username[i]; i++)
-        {
-            if ((username[i] < '0' || username[i] > '9') && (username[i] < 'A' || username[i] > 'Z') && (username[i] < 'a' || username[i] > 'z') && username[i] != '_')
-                return 0; // username is invalid
-        }
+        fflush(stdin);
+        fgets(password, MAX_COLS, stdin);
+        password[strcspn(password, "\n")] = '\0';
     }
 
-    return 1; // username is valid
+    return password;
 }
 
-// Function to Validate Password
-int isPasswordValid(char password[])
+// Function to Get Password Hiddenly
+char *getPasswordHiddenly(char password[], int maxLength)
 {
-    int minLengthOfPassword = 8;
+    char ch;
+    int i = 0; // for index of password[]
 
-    if (strlen(password) < minLengthOfPassword)
-        return 0; // password is invalid
-    else
+    while (1) // Read untill user press enter key
     {
-        for (int i = 0; password[i]; i++)
+        fflush(stdin); // clear buffer
+        ch = getch();  // get character from user
+
+        if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
+            break;
+        else if (ch == 8 && i > 0) // if user press backspace key
         {
-            if (password[i] == ' ' || password[i] == '\t')
-                return 0; // password is invalid
+            putch('\b');
+            putch(' ');
+            putch('\b');
+            i--;
         }
+        else if (ch >= 32 && ch <= 126) // if character is valid
+        {
+            putch('*');
+            password[i++] = ch;
+        }
+
+        if (i == maxLength - 1) // Password Reached At Max length
+            break;
     }
 
-    return 1; // password is invalid
+    password[i] = '\0'; // Terminate password with '\0'
+
+    return password;
+}
+
+// Function to Copy One String into Another
+char *copyString(char des[], char src[])
+{
+    // Copy str into copy
+    int i = 0;
+    for (i = 0; src[i]; i++)
+        des[i] = src[i];
+
+    des[i] = '\0';
+
+    return des;
 }
