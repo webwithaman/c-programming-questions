@@ -1,4 +1,4 @@
-// Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union
+// Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union. Use user-defined Functions to Perform these Tasks.
 
 // Header Files
 #include <stdio.h>

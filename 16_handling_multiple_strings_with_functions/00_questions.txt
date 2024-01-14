@@ -30,4 +30,4 @@
     
 10. Write a c program that take password as input from user hiddenly. Display Asterisk '*' when user enter password. Use user-defined Functions to Perform these Tasks. 
 
-11. Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union. Use Functions to Perform these Tasks. 
+11. Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union. Use user-defined Functions to Perform these Tasks. 
