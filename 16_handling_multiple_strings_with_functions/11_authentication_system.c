@@ -25,7 +25,7 @@ int isUserExists(char[]);
 char *getPassword(char[]);
 int isValidPassword(char[]);
 char *getPasswordHiddenly(char[], int);
-void showOptionsAfterLoggedIn();
+void showOperationsAfterLoggedIn();
 
 // Global Variables
 char usernames[MAX_ROWS][MAX_COLS],
@@ -49,7 +49,6 @@ int main()
             if (!signup()) // True means Failed to Signin
                 break;
 
-            // Display Accout Created Message
             puts("\n\nYou Have Successfully Created Your Account...");
         }
         break;
@@ -60,7 +59,6 @@ int main()
             if (!login()) // True means Failed to login
                 break;
 
-            // Successfully Logged In
             printf("\n\nYou Have Successfully Logged In...");
 
             // Display Options to Perform Mathematics Operations After Login
@@ -81,7 +79,7 @@ int main()
 
         case 4:
         {
-            if (deleteAccount()) // True means Failed to Delete Account
+            if (!deleteAccount()) // True means Failed to Delete Account
                 break;
 
             puts("\n\nAccount Deleted Successfully...\n");
