@@ -14,6 +14,7 @@ int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 int strLength(char[]);
 int isValidIP(char[]);
+int *findInvalidIPs(char[][MAX_COLS], int, int[], int *);
 
 // Main Function Start
 int main()
@@ -31,7 +32,7 @@ int main()
 
     // Declare 2D Array According to user's input
     char ips[ROWS][MAX_COLS];
-    int isValid, isAllValid = 1, countPeriods, num = 0;
+    int invalIPs[ROWS], invalSize;
 
     // Read IP Addresses
     printf("\n>>>>>>>>>>>>> Enter %d IP Addresses <<<<<<<<<<<\n", ROWS);
@@ -41,84 +42,17 @@ int main()
     printf("\n>>>>>>>>>>>>> List of IP Addresses <<<<<<<<<<<\n");
     print2DChar(ips, ROWS);
 
-    // Display Invalid IP Addresses
-    printf("\n>>>>> Following IP Addresses Are Invalid <<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
+    // Find Invalid IP Addresses
+    findInvalidIPs(ips, ROWS, invalIPs, &invalSize);
+
+    if (invalSize != 0)
     {
-        isValid = 1;      // Initially, Assume that IP is  Valid
-        countPeriods = 0; // Counter to Count Periods for Each IP Address
-
-        if (strlen(ips[i]) < 7) // Minimum Length of a Valid IP Address is 7
-            isValid = 0;
-        else
-        {
-            for (int j = 0; ips[i][j]; j++)
-            {
-                char ch = ips[i][j];
-
-                if ((ch < '0' || ch > '9') && ch != '.') // If there is other character than Digit (0-9) or (.)
-                {
-                    isValid = 0;
-                    break;
-                }
-                else if (ch == '.')
-                {
-                    if (j == 0 || ips[i][j + 1] == '.' || ips[i][j + 1] == '\0') // if Period is 0 Index or if there are consecutive Periods one after another or if Period is at last index
-                    {
-                        isValid = 0;
-                        break;
-                    }
-                    countPeriods++;
-                }
-            }
-
-            if (countPeriods != 3) // if there are no valid number of periods
-                isValid = 0;
-
-            num = 0;
-
-            for (int j = 0; ips[i][j]; j++)
-            {
-                if (ips[i][j] != '.')
-                {
-                    if (j == 0 && ips[i][j] == '0' && ips[i][j + 1] != '.') //  If First Octet value has leading 0
-                    {
-                        isValid = 0;
-                        break;
-                    }
-                    num = num * 10 + (ips[i][j] - 48); // Convert Each char digit in number
-
-                    if (ips[i][j + 1] == '\0' && num > 255) // If last Octet has value Greater than 255
-                    {
-                        isValid = 0;
-                        break;
-                    }
-                }
-                else if (num > 255) // if Any Octet Value is Greater than 255
-                {
-                    isValid = 0;
-                    break;
-                }
-                else
-                {
-                    num = 0;
-                    if (ips[i][j + 1] == '0' && ips[i][j + 2] != '.' && ips[i][j + 2] != '\0') // If Octet value has leading 0
-                    {
-                        isValid = 0;
-                        break;
-                    }
-                }
-            }
-        }
-
-        if (!isValid) // True, then IP is not valid
-        {
-            puts(ips[i]);
-            isAllValid = 0;
-        }
+        // Display Invalid IP Addresses
+        printf("\n>>>>> Following IP Addresses Are Invalid <<<<<<\n");
+        for (int i = 0; i < invalSize; i++)
+            puts(ips[invalIPs[i]]);
     }
-
-    if (isAllValid) // If All IP Addresses are Valid
+    else
         puts("\nAll the IP Addresses Are Valid...");
 
     putch('\n');
@@ -171,5 +105,80 @@ int strLength(char str[])
 // Function to Validate IP Address
 int isValidIP(char ip[])
 {
-    int isValid = 1, isAllValid = 1, countPeriods = 0, num = 0;
+    int countPeriods, num;
+
+    if (strLength(ip) < 7) // Minimum Length of a Valid IP Address is 7
+        return 0;          // IP is invalid
+    else
+    {
+        for (int j = 0; ip[j]; j++)
+        {
+            char ch = ip[j];
+
+            if ((ch < '0' || ch > '9') && ch != '.') // If there is other character than Digit (0-9) or (.)
+            {
+                return 0; // IP is invalid
+            }
+            else if (ch == '.')
+            {
+                if (j == 0 || ip[j + 1] == '.' || ip[j + 1] == '\0') // if Period is 0 Index or if there are consecutive Periods one after another or if Period is at last index
+                {
+                    return 0; // IP is invalid
+                }
+                countPeriods++;
+            }
+        }
+
+        if (countPeriods != 3) // if there are no valid number of periods
+            return 0;          // IP is invalid
+
+        num = 0;
+
+        for (int j = 0; ip[j]; j++)
+        {
+            if (ip[j] != '.')
+            {
+                if (j == 0 && ip[j] == '0' && ip[j + 1] != '.') //  If First Octet value has leading
+                {
+                    return 0; // IP is invalid
+                }
+
+                num = num * 10 + (ip[j] - 48); // Convert Each char digit in number
+
+                if (ip[j + 1] == '\0' && num > 255) // If last Octet has value Greater than 255
+                {
+                    return 0; // IP is invalid
+                }
+            }
+            else if (num > 255) // if Any Octet Value is Greater than 255
+            {
+                return 0; // IP is invalid
+            }
+            else
+            {
+                num = 0;
+                if (ip[j + 1] == '0' && ip[j + 2] != '.' && ip[j + 2] != '\0') // If Octet value has leading 0
+                {
+                    return 0; // IP is invalid
+                }
+            }
+        }
+    }
+
+    return 1; // IP is Valid
+}
+
+int *findInvalidIPs(char ips[][MAX_COLS], int rows, int invalIPs[], int *invalSize)
+{
+    int j = 0; // Denote Index of invalIPs[]
+
+    for (int i = 0; i < rows; i++)
+    {
+        if (isValidIP(ips[i]) == 0)
+            invalIPs[j++] = i;
+    }
+
+    *invalSize = j;
+
+    return invalIPs;
 }
