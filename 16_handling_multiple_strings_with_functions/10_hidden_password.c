@@ -18,8 +18,10 @@ int main()
 
     printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
 
+    // Get Password
     getPasswordHiddenly(password, MAX_COLS - 1);
 
+    // Show Password
     printf("\n\nPassword => %s", password);
 
     putch('\n');
