@@ -10,6 +10,7 @@
 #define MAX_COLS 31
 
 // Functions Declarations (Prototypes)
+int print2DChar(char[][MAX_COLS], int);
 int minDisBetTwoWords(char[][MAX_COLS], int, char[], char[]);
 int compareStrings(char[], char[]);
 

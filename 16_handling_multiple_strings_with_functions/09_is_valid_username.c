@@ -10,6 +10,7 @@
 #define MAX_COLS 31
 
 // Functions Declarations (Prototypes)
+int print2DChar(char[][MAX_COLS], int);
 int search2DStr(char[][MAX_COLS], int, char[]);
 int compareStrings(char[], char[]);
 
@@ -35,8 +36,8 @@ int main()
     printf("\n>>>>>>>>>>>>> List of Username <<<<<<<<<<<\n");
     pri
 
-    // Read Username from user
-    printf("\n>>>>>>>> Enter One of the Usernames, then You Will be Allowed to Calculate Factorial of a Number <<<<<<<<\n");
+        // Read Username from user
+        printf("\n>>>>>>>> Enter One of the Usernames, then You Will be Allowed to Calculate Factorial of a Number <<<<<<<<\n");
     printf("\nEnter username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
     fflush(stdin);
     fgets(username, MAX_COLS, stdin);
@@ -68,6 +69,21 @@ int main()
     return 0;
 }
 // Main Function End
+
+// Function Definitions
+
+// Function to Display 2D Array of char
+int print2DChar(char strs[][MAX_COLS], int rows)
+{
+
+    int i;
+    for (i = 0; i < rows; i++)
+        puts(strs[i]);
+
+    putch('\n'); // Add new line
+
+    return i; // return the number of strings that have been displayed
+}
 
 // Function to Search String in 2D Array of char
 int search2DStr(char strs[][MAX_COLS], int rows, char search[])
