@@ -105,7 +105,7 @@ int strLength(char str[])
 // Function to Validate IP Address
 int isValidIP(char ip[])
 {
-    int countPeriods, num;
+    int countPeriods = 0, num;
 
     if (strLength(ip) < 7) // Minimum Length of a Valid IP Address is 7
         return 0;          // IP is invalid
