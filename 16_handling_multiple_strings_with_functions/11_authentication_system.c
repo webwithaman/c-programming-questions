@@ -79,133 +79,13 @@ int main()
 
         break;
 
-        case 4: // Delete Account
+        case 4:
         {
-            if (totalAccountCreated == 0) // Check if there is any Account
-            {
-                printf("\nThere is No Account in Machine to Delete...\n");
+            if (deleteAccount()) // True means Failed to Delete Account
                 break;
-            }
-
-            puts("\n============== DELETE ACCOUNT ================");
-
-            // Input Username for Delete Account
-            char username[MAX_COLS];
-            int isUsernameValid = -1;
-            printf("\nEnter Your Username => ");
-            fflush(stdin);
-            fgets(username, MAX_COLS, stdin);
-            username[strcspn(username, "\n")] = '\0';
-
-            // Check username is valid or not
-            for (int i = 0; i < totalAccountCreated; i++)
-            {
-                if (strcmp(usernames[i], username) == 0)
-                    isUsernameValid = i;
-            }
-
-            if (isUsernameValid == -1) // If username is invalid
-            {
-                puts("\n!!! Invalid Username, Try Again...");
-                puts("Failed to Delete Account...\n");
-                getch();
-                break;
-            }
-
-            // Reached Here Only if username is valid
-
-            // Input Password for Delete Account
-            char password[MAX_COLS];
-            int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
-
-            do // Terminate When user Enter Correct Choice for following
-            {
-                choosedCorrect = 1;
-                printf("\nPress 1 : For Enter Password Hiddenly");
-                printf("\nPress 2 : For Enter Password Without Hidden");
-                printf("\n\nEnter Your Choice => ");
-                fflush(stdin);
-                scanf("%d", &choiceForPass);
-
-                if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
-                {
-                    puts("\nWrong Choice, Plz Select From Given Options. Try Again...");
-                    choosedCorrect = 0;
-                    getch();
-                }
-
-            } while (!choosedCorrect);
-
-            printf("\nEnter Your Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
-
-            if (choiceForPass == 1) // get password hiddenly
-            {
-
-                int i = 0; // Represent Index for password array
-                char ch;   // Store character taken from user
-
-                while (1) // Read untill user press enter key
-                {
-                    fflush(stdin); // clear buffer
-                    ch = getch();  // get character from user
-
-                    if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
-                        break;
-                    else if (ch == 8 && i > 0) // if user press backspace key
-                    {
-                        putch('\b');
-                        putch(' ');
-                        putch('\b');
-                        i--;
-                    }
-                    else if (ch >= 32 && ch <= 126) // if character is valid
-                    {
-                        putch('*');
-                        password[i++] = ch;
-                    }
-
-                    if (i == MAX_COLS - 2) // Password Reached At Max length
-                        break;
-                }
-
-                password[i] = '\0'; // Terminate password with '\0'
-            }
-            else
-            {
-                fflush(stdin);
-                fgets(password, MAX_COLS, stdin);
-                password[strcspn(password, "\n")] = '\0';
-            }
-
-            if (strcmp(passwords[isUsernameValid], password) != 0)
-            {
-                puts("\n!!! Invalid Password, Try Again...");
-                puts("Failed to Delete Account...\n");
-                getch();
-                break;
-            }
-
-            // Reached Here if Both username and Password is valid
-
-            // Delete Account and Display Account Deleted Successfully Message
-            if (isUsernameValid == totalAccountCreated - 1)
-            {
-                strcpy(usernames[totalAccountCreated - 1], "");
-                strcpy(passwords[totalAccountCreated - 1], "");
-                totalAccountCreated--;
-            }
-            else
-            {
-                for (int i = isUsernameValid; i < totalAccountCreated - 1; i++)
-                {
-                    strcpy(usernames[i], usernames[i + 1]);
-                    strcpy(passwords[i], passwords[i + 1]);
-                }
-            }
 
             puts("\n\nAccount Deleted Successfully...\n");
-
-        } // End of case-4 (Delete Account)
+        }
 
         break;
 
@@ -658,4 +538,66 @@ int resetPassword()
     copyString(passwords[isUsernameValid], password);
 
     return 1; // Successfully Reset Password
+}
+
+// Function to Delete Account
+int deleteAccount()
+{
+    if (totalAccountCreated == 0) // Check if there is any Account
+    {
+        printf("\nThere is No Account in Machine to Delete...\n");
+        return 0; // No Account to Delete
+    }
+
+    puts("\n============== DELETE ACCOUNT ================");
+
+    // Input Username for Delete Account
+    char username[MAX_COLS];
+    int isUsernameValid = -1;
+
+    getUsername(username); // get username
+
+    isUsernameValid = isUserExists(username); // is user exists
+
+    if (isUsernameValid == -1) // If user not exists
+    {
+        puts("\n!!! Invalid Username, Try Again...");
+        puts("Failed to Delete Account...\n");
+        return 0; // Failed to Delete Account
+    }
+
+    // Reached Here Only if username is valid
+
+    // Input Password for Delete Account
+    char password[MAX_COLS];
+    int isPasswordValid;
+
+    getPassword(password); // get password
+
+    if (compareStrings(passwords[isUsernameValid], password) != 0)
+    {
+        puts("\n!!! Invalid Password, Try Again...");
+        puts("Failed to Delete Account...\n");
+        return 0; // Failed to Delete Account
+    }
+
+    // Reached Here if Both username and Password is valid
+
+    // Delete Account and Display Account Deleted Successfully Message
+    if (isUsernameValid == totalAccountCreated - 1)
+    {
+        copyString(usernames[totalAccountCreated - 1], "");
+        copyString(passwords[totalAccountCreated - 1], "");
+        totalAccountCreated--;
+    }
+    else
+    {
+        for (int i = isUsernameValid; i < totalAccountCreated - 1; i++)
+        {
+            copyString(usernames[i], usernames[i + 1]);
+            copyString(passwords[i], passwords[i + 1]);
+        }
+    }
+
+    return 1; //  Account Deleted Successfully
 }
