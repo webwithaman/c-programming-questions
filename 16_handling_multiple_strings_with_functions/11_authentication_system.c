@@ -15,6 +15,11 @@ int signup();
 int login();
 int resetPassword();
 int deleteAccount();
+int getUsername();
+int isUsernameValid();
+int getPassword();
+int isPasswordValid();
+int isUserExists(char[]);
 
 // Global Variables
 char usernames[MAX_ROWS][MAX_COLS], passwords[MAX_ROWS][MAX_COLS];
@@ -33,11 +38,8 @@ int main()
             exit(0);
 
         case 1: // Sign-up / Create New Account
-        {
-
-        } // End of Case-1 (Sign-up / Create New Account)
-
-        break;
+            signup();
+            break;
 
         case 2: // Login / Sign-in
         {
