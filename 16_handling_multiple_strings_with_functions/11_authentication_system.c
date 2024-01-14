@@ -15,11 +15,11 @@ int signup();
 int login();
 int resetPassword();
 int deleteAccount();
-int getUsername();
-int isUsernameValid();
-int getPassword();
-int isPasswordValid();
+char *getUsername(char[]);
+int isValidUsername(char[]);
 int isUserExists(char[]);
+char *getPassword(char[]);
+int isValidPassword(char[]);
 
 // Global Variables
 char usernames[MAX_ROWS][MAX_COLS], passwords[MAX_ROWS][MAX_COLS];
@@ -532,23 +532,8 @@ int signup()
     // Terminate When Username is Valid
     do
     {
-        isUsernameValid = 1; // Assume username will be valid
-        printf("\nEnter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
-        fflush(stdin);
-        fgets(username, MAX_COLS, stdin);
-        username[strcspn(username, "\n")] = '\0';
-
-        // Validate Username
-        if (strlen(username) < minLengthOfUsername)
-            isUsernameValid = 0;
-        else
-        {
-            for (int i = 0; username[i]; i++)
-            {
-                if ((username[i] < '0' || username[i] > '9') && (username[i] < 'A' || username[i] > 'Z') && (username[i] < 'a' || username[i] > 'z') && username[i] != '_')
-                    isUsernameValid = 0;
-            }
-        }
+        getUsername(username);                       // get username
+        isUsernameValid = isUsernameValid(username); // Validate Username
 
         if (!isUsernameValid) // True, means username is invalid
         {
@@ -674,4 +659,54 @@ int signup()
 
     // Display Accout Created Message
     puts("\n\nYou Have Successfully Created Your Account...");
+}
+
+// Function to Get Username
+char *getUsername(char username[])
+{
+    printf("\nEnter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
+    fflush(stdin);
+    fgets(username, MAX_COLS, stdin);
+    username[strcspn(username, "\n")] = '\0';
+
+    return username;
+}
+
+// Function to Validate Username
+int isUsernameValid(char username[])
+{
+    int minLengthOfUsername = 6;
+
+    // Validate Username
+    if (strlen(username) < minLengthOfUsername)
+        return 0; // username is invalid
+    else
+    {
+        for (int i = 0; username[i]; i++)
+        {
+            if ((username[i] < '0' || username[i] > '9') && (username[i] < 'A' || username[i] > 'Z') && (username[i] < 'a' || username[i] > 'z') && username[i] != '_')
+                return 0; // username is invalid
+        }
+    }
+
+    return 1; // username is valid
+}
+
+// Function to Validate Password
+int isPasswordValid(char password[])
+{
+    int minLengthOfPassword = 8;
+
+    if (strlen(password) < minLengthOfPassword)
+        return 0; // password is invalid
+    else
+    {
+        for (int i = 0; password[i]; i++)
+        {
+            if (password[i] == ' ' || password[i] == '\t')
+                return 0; // password is invalid
+        }
+    }
+
+    return 1; // password is invalid
 }
