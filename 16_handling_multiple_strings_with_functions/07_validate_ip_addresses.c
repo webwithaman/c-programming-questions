@@ -1,4 +1,4 @@
-// From the list of IP addresses, check whether all ip addresses are valid.
+// From the list of IP addresses, check whether all ip addresses are valid. Use user-defined Functions to Perform these Tasks.
 
 // Header Files
 #include <stdio.h>

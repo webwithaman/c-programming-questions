@@ -19,7 +19,7 @@
     
 06. Write a program to print the strings which are palindrome in the list of strings. Use user-defined Functions to Perform these Tasks.
     
-07. From the list of IP addresses, check whether all ip addresses are valid. Use Functions to Perform these Tasks. 
+07. From the list of IP addresses, check whether all ip addresses are valid. Use user-defined Functions to Perform these Tasks. 
     
 08. Given a list of words followed by two words, the task is to find the minimum distance 
     between the given two words in the list of words. ( Example : s = {“the”,”quick”,”brown”,”fox”,”quick”} word1 = “the”, word2 = “fox”, OUTPUT : 1 ). Use Functions to Perform these Tasks. 
