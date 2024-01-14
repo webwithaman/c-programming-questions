@@ -9,7 +9,7 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// Functions Declarations
+// Functions Declarations (Prototypes)
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 int search2DStr(char[][MAX_COLS], int, char[]);

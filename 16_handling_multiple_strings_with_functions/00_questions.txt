@@ -26,7 +26,7 @@
     
 09. Write a program that asks the user to enter a username. If the username entered is 
     one of the names in the list then the user is allowed to calculate the factorial of a 
-    number. Otherwise, an error message is displayed. Use Functions to Perform these Tasks. 
+    number. Otherwise, an error message is displayed. Use user-defined Functions to Perform these Tasks. 
     
 10. Write a c program that take password as input from user hiddenly. Display Asterisk '*' when user enter password. Use Functions to Perform these Tasks. 
 

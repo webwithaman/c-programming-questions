@@ -9,7 +9,7 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// Functions Declarations
+// Functions Declarations (Prototypes)
 int minDisBetTwoWords(char[][MAX_COLS], int, char[], char[]);
 int compareStrings(char[], char[]);
 
@@ -62,6 +62,22 @@ int main()
 }
 // Main Function End
 
+// Function Definitions
+
+// Function to Display 2D Array of char
+int print2DChar(char strs[][MAX_COLS], int rows)
+{
+
+    int i;
+    for (i = 0; i < rows; i++)
+        puts(strs[i]);
+
+    putch('\n'); // Add new line
+
+    return i; // return the number of strings that have been displayed
+}
+
+// Functon to Find Minimum Distance Between Two Words
 int minDisBetTwoWords(char words[][MAX_COLS], int rows, char word1[], char word2[])
 {
     int index1 = -1, index2 = -1, minDis = rows;
