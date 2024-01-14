@@ -31,7 +31,7 @@ int main()
 
     // Declare 2D Array According to user's input
     char ips[ROWS][MAX_COLS];
-    int isValid = 1, isAllValid = 1, countPeriods = 0, num = 0;
+    int isValid, isAllValid = 1, countPeriods, num = 0;
 
     // Read IP Addresses
     printf("\n>>>>>>>>>>>>> Enter %d IP Addresses <<<<<<<<<<<\n", ROWS);
@@ -171,4 +171,5 @@ int strLength(char str[])
 // Function to Validate IP Address
 int isValidIP(char ip[])
 {
+    int isValid = 1, isAllValid = 1, countPeriods = 0, num = 0;
 }
