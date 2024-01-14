@@ -10,37 +10,23 @@
 #define MAX_COLS 31
 
 // Functions Declarations (Prototypes)
+int choices();
+int signup();
+int login();
+int resetPassword();
+int deleteAccount();
+
+// Global Variables
+char usernames[MAX_ROWS][MAX_COLS], passwords[MAX_ROWS][MAX_COLS];
+int totalAccountCreated = 0;
 
 // Main Function Start
 int main()
 {
 
-    char usernames[MAX_ROWS][MAX_COLS], passwords[MAX_ROWS][MAX_COLS];
-    int userChoice, totalAccountCreated = 0;
-
     while (1)
     {
-
-        // Clear console
-        system("cls");
-
-        // Display Options and get user's choice
-        puts(">>>>>>>>>>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<<<<<<<");
-        printf("\n### Maximum %d Accounts Can be Created In This Machine ###", MAX_ROWS);
-        printf("\n## There Are %d Accounts Already Created In This Machine ##", totalAccountCreated);
-        puts("\n\n# Login to Perform Mathematical Operatons #");
-        puts("\n======== You Have Following Options ========");
-        puts("Press 0 : Exit");
-        puts("Press 1 : Sign-up / Create New Account");
-        puts("Press 2 : Login / Sign-in");
-        puts("Press 3 : Reset Password");
-        puts("Press 4 : Delete Account");
-        puts("--------------------------------------------");
-
-        printf("Enter You Choice => "); // Input User Choice
-        scanf("%d", &userChoice);
-
-        switch (userChoice)
+        switch (showOptsAndGetChoice())
         {
         case 0: // Exit
             puts("\nProgram End..\n.");
@@ -655,3 +641,26 @@ int main()
 // Main Function End
 
 // Function Definitions
+
+// Function to show Options and get user's choice
+int showOptsAndGetChoice()
+{
+    // Clear console
+    system("cls");
+
+    // Display Options and get user's choice
+    puts(">>>>>>>>>>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<<<<<<<");
+    printf("\n### Maximum %d Accounts Can be Created In This Machine ###", MAX_ROWS);
+    printf("\n## There Are %d Accounts Already Created In This Machine ##", totalAccountCreated);
+    puts("\n\n# Login to Perform Mathematical Operatons #");
+    puts("\n======== You Have Following Options ========");
+    puts("Press 0 : Exit");
+    puts("Press 1 : Sign-up / Create New Account");
+    puts("Press 2 : Login / Sign-in");
+    puts("Press 3 : Reset Password");
+    puts("Press 4 : Delete Account");
+    puts("--------------------------------------------");
+
+    printf("Enter You Choice => "); // Input User Choice
+    scanf("%d", &userChoice);
+}
