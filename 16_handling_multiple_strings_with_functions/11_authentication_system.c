@@ -9,6 +9,8 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
+// Functions Declarations (Prototypes)
+
 // Main Function Start
 int main()
 {
@@ -651,3 +653,5 @@ int main()
     return 0;
 }
 // Main Function End
+
+// Function Definitions

@@ -32,6 +32,7 @@ int main()
 
 // Function Definitions
 
+// Function to Get Password Hiddenly
 char *getPasswordHiddenly(char password[], int maxLength)
 {
     char ch;
