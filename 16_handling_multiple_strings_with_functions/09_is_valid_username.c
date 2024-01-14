@@ -34,10 +34,10 @@ int main()
 
     // Display List of Words
     printf("\n>>>>>>>>>>>>> List of Username <<<<<<<<<<<\n");
-    pri
+    print2DChar(usernames, ROWS);
 
-        // Read Username from user
-        printf("\n>>>>>>>> Enter One of the Usernames, then You Will be Allowed to Calculate Factorial of a Number <<<<<<<<\n");
+    // Read Username from user
+    printf("\n>>>>>>>> Enter One of the Usernames, then You Will be Allowed to Calculate Factorial of a Number <<<<<<<<\n");
     printf("\nEnter username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
     fflush(stdin);
     fgets(username, MAX_COLS, stdin);
@@ -109,3 +109,4 @@ int compareStrings(char str1[], char str2[])
     }
 
     return 0;
+}

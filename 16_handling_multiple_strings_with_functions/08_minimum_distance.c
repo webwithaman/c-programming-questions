@@ -33,8 +33,7 @@ int main()
 
     // Display List of Words
     printf("\n>>>>>>>>>>>>> List of Words <<<<<<<<<<<\n");
-    for (int i = 0; i < ROWS; i++)
-        puts(words[i]);
+    print2DChar(words, ROWS);
 
     // Read Two Words
     printf("\n>>> Enter Two Words From the List to Find Minimum Distance Between <<<<<<<<\n");
