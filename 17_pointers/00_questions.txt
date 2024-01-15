@@ -4,9 +4,9 @@
 🟢 Topic ➡ Pointers
     
     
-01. Write a function to swap values of two in variables by calling a function. (TSRS)
+01. Write a function to swap values of two in variables by calling a function. (TSRN)
 
-02. Write a function to swap strings of two char arrays by calling a functions. (TSRS)
+02. Write a function to swap strings of two char arrays by calling a functions. (TSRN)
 
 03. Write a function to sort an array of int type values. [ void sort(int *ptr,int size); ]
 
