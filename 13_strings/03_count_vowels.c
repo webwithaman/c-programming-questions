@@ -17,7 +17,7 @@ int main()
     fgets(str, ARRAY_SIZE, stdin);  // Input String
     str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
 
-    // Find Occurrence of ch in str
+    // Count Vowels
     for (int i = 0; str[i]; i++)
     {
         for (int j = 0; vowels[j]; j++)

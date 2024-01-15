@@ -10,7 +10,8 @@
 // Main Function Start
 int main()
 {
-    char *ptr, str[ARRAY_SIZE], ch, count = 0, vowels[11] = "AEIOUaeiou";
+    char *ptr, str[ARRAY_SIZE], ch, vowels[11] = "AEIOUaeiou";
+    int countVowels = 0, countConsonants = 0;
 
     printf("\nEnter Any String to Count Vowels and Consonants in it (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
     fgets(str, ARRAY_SIZE, stdin);  // Input String
