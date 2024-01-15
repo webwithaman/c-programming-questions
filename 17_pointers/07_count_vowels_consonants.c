@@ -1,4 +1,4 @@
-// Write a program to count vowels in a given string.
+// Write a program to count the number of vowels and consonants in a string using a pointer.
 
 // Header Files
 #include <stdio.h>
@@ -10,12 +10,14 @@
 // Main Function Start
 int main()
 {
-    char str[ARRAY_SIZE], ch, vowels[11] = "AEIOUaeiou";
-    int count = 0;
+    char *ptr, str[ARRAY_SIZE], ch, count = 0, vowels[11] = "AEIOUaeiou";
 
-    printf("\nEnter Any String to Count Vowels in it (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    printf("\nEnter Any String to Count Vowels and Consonants in it (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
     fgets(str, ARRAY_SIZE, stdin);  // Input String
     str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+
+    // Assign Address to Pointer
+    ptr = str;
 
     // Find Occurrence of ch in str
     for (int i = 0; str[i]; i++)

@@ -10,7 +10,8 @@
 // Main Function Start
 int main()
 {
-    char str[ARRAY_SIZE], ch, count = 0;
+    char str[ARRAY_SIZE], ch;
+    int count = 0;
 
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
     fgets(str, ARRAY_SIZE, stdin);  // Input String

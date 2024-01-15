@@ -17,7 +17,7 @@ int main()
     fgets(str, ARRAY_SIZE, stdin);  // Input String
     str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
 
-    // Assign Address
+    // Assign Address to Pointer
     ptr = str;
 
     // Find Length
