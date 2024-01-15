@@ -1,7 +1,7 @@
 ⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
    
 🟢 Language ➡ C
-🟢 Topic ➡ Pointer
+🟢 Topic ➡ Pointers
     
     
 01. Write a function to swap values of two in variables by calling a function. (TSRN)
