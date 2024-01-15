@@ -6,21 +6,20 @@
     
 01. Write a function to swap values of two in variables by calling a function. (TSRS)
 
-02. Write a function to swap strings of two char arrays of calling functions. (TSRS)
+02. Write a function to swap strings of two char arrays by calling a functions. (TSRS)
 
 03. Write a function to sort an array of int type values. [ void sort(int *ptr,int size); ]
 
 04. Write a program in C to demonstrate how to handle the pointers in the program.
 
-05. Write a program to find the maximum number between two numbers using a pointer.
+05. Write a program to find the largest number between two numbers using a pointer.
 
 06. Write a program to calculate the length of the string using a pointer.
 
-07. Write a program to count the number of vowels and consonants in a string using a
-    pointer.
+07. Write a program to count the number of vowels and consonants in a string using a pointer.
 
-08. Write a program to compute the sum of all elements in an array using pointers.
+08. Write a program to compute the sum of all elements in an array using a pointer.
 
-09. Write a program to print the elements of an array in reverse order.
+09. Write a program to print the elements of an array in reverse order using a pointer.
 
-10. Write a program to print a string in reverse using a pointer
+10. Write a program to print a string in reverse using a pointer.
