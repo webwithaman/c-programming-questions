@@ -1,8 +1,10 @@
-// Write a function to swap strings of two char arrays by calling a functions. (TSRN)
+// Write a function to swap values of two in variables by calling a function. (TSRN)
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
+
+#define ARRAY_SIZE 31
 
 // Functions Declarations (Prototypes)
 void swapTwoVal(int *, int *);
@@ -10,19 +12,24 @@ void swapTwoVal(int *, int *);
 // Main Function Start
 int main()
 {
-    int a, b;
-    printf("\nEnter value of a => ");
-    scanf("%d", &a);
-    printf("\nEnter value of b => ");
-    scanf("%d", &b);
+    char str1[ARRAY_SIZE], str2[ARRAY_SIZE];
+
+    printf("\nEnter String-1 (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    fgets(str1, ARRAY_SIZE, stdin);   // Input String
+    str1[strcspn(str1, "\n")] = '\0'; // Replace '\n' character with '\0'
+
+    printf("\nEnter String-2 (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    fgets(str2, ARRAY_SIZE, stdin);   // Input String
+    str2[strcspn(str2, "\n")] = '\0'; // Replace '\n' character with '\0'
+
     printf("\n\n>>>>>>>>>>> Before Swapping <<<<<<<<<<<\n");
-    printf("a => %d, b => %d\n", a, b);
+    printf("str1 => %s\nb => %s\n", str1, str2);
 
     // Swap values of a and b
-    swapTwoVal(&a, &b);
+    swapTwoStrs(str1, str2);
 
     printf("\n\n>>>>>>>>>>> After Swapping <<<<<<<<<<<\n");
-    printf("a => %d, b => %d\n", a, b);
+    printf("str1 => %s\nb => %s\n", str1, str2);
 
     putch('\n');
     getch();
@@ -31,7 +38,7 @@ int main()
 // Main Function End
 
 // Function to Swap values of two int variables
-void swapTwoVal(int *a, int *b)
+void swapTwoStrs(int *str1, int *str2)
 {
 
     // // using Addition and Subtraction
