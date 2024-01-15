@@ -12,7 +12,7 @@
 
 04. Write a program in C to demonstrate how to handle the extended concept of pointers.
 
-05. Write a program to find the largest number between two numbers using a pointer.
+05. Write a program to find the largest number between two numbers using pointers.
 
 06. Write a program to calculate the length of the string using a pointer.
 
