@@ -20,7 +20,7 @@ int main()
     for (int i = 0; i < ARRAY_SIZE; i++)
         scanf("%d", ptr + i);
 
-    // Find Sum usiing pointer
+    // Find Sum using pointer
     for (int i = 0; i < ARRAY_SIZE; i++)
         sum += *(ptr + i);
 
