@@ -1,10 +1,8 @@
-//  Write a program to read and display a 2D array of strings in C language. Use user-defined Functions to Perform these Tasks.
+// Write a function to swap values of two in variables by calling a function. (TSRN)
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
-#include <string.h>
-#include <stdlib.h>
 
 // Functions Declarations (Prototypes)
 void swapTwoVal(int *, int *);
@@ -21,9 +19,9 @@ int main()
     printf("a => %d, b => %d\n", a, b);
 
     // Swap values of a and b
-    swapTwoVal(&a, &b)
+    swapTwoVal(&a, &b);
 
-        printf("\n\n>>>>>>>>>>> After Swapping <<<<<<<<<<<\n");
+    printf("\n\n>>>>>>>>>>> After Swapping <<<<<<<<<<<\n");
     printf("a => %d, b => %d\n", a, b);
 
     putch('\n');
