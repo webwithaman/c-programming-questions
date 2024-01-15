@@ -13,20 +13,20 @@ int main()
     char *ptr, str[ARRAY_SIZE], ch, vowels[11] = "AEIOUaeiou";
     int countVowels = 0, countConsonants = 0;
 
-    printf("\nEnter Any String to Count Vowels and Consonants in it (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
-
     // Assign Address to Pointer
     ptr = str;
 
+    printf("\nEnter Any String to Count Vowels and Consonants in it (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    fgets(ptr, ARRAY_SIZE, stdin);  // Input String
+    ptr[strcspn(ptr, "\n")] = '\0'; // Replace '\n' character with '\0'
+
     // Count Vowels and Consonants
-    for (int i = 0; str[i]; i++)
+    for (int i = 0; *(ptr + i); i++)
     {
         int j;
         for (j = 0; vowels[j]; j++)
         {
-            if (str[i] == vowels[j])
+            if (*(ptr + i) == vowels[j])
             {
                 countVowels++;
                 break;
