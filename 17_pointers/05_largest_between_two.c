@@ -8,13 +8,14 @@
 int main()
 {
     int num1, num2, largest, *p, *q, *r;
-    printf("\nEnter Two Numbers to Find Largest => ");
-    scanf("%d%d", &num1, &num2);
 
     // Assign addresses to pointers
     p = &num1;
     q = &num2;
     r = &largest;
+
+    printf("\nEnter Two Numbers to Find Largest => ");
+    scanf("%d%d", p, q);
 
     // Find Largest
     *r = *p > *q ? *p : *q;
