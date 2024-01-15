@@ -20,21 +20,25 @@ int main()
     // Assign Address to Pointer
     ptr = str;
 
-    // Find Occurrence of ch in str
+    // Count Vowels and Consonants
     for (int i = 0; str[i]; i++)
     {
-        for (int j = 0; vowels[j]; j++)
+        int j;
+        for (j = 0; vowels[j]; j++)
         {
             if (str[i] == vowels[j])
             {
-                count++;
+                countVowels++;
                 break;
             }
         }
+
+        if (j == 10)
+            countConsonants++;
     }
 
     // Print Number of Vowels
-    printf("\nThere are %d vowels in \"%s\" ", count, str);
+    printf("\nThere are %d vowels and %d consonants in \"%s\" ", countVowels, countConsonants, str);
 
     putch('\n');
     getch();
