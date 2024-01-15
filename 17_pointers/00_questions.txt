@@ -4,30 +4,23 @@
 🟢 Topic ➡ Pointers
     
     
-01. Write a program to read and display a 2D array of strings in C language. Use         user-defined Functions to Perform these Tasks. 
-    
-02. Write a program to search a string in the list of strings. Use user-defined Functions  to Perform these Tasks. 
-    
-03. Write a program to find the number of vowels in each of the N strings stored in two 
-    dimensional arrays, taken from the user. Use user-defined Functions to Perform these Tasks. 
-    
-04. Write a program to sort N city names stored in two dimensional arrays, taken from 
-    the user. Use user-defined Functions to Perform these Tasks. 
-    
-05. Suppose we have a list of email addresses, check whether all email addresses have 
-    ‘@’ in it. Print the odd email out. Use user-defined Functions to Perform these Tasks. 
-    
-06. Write a program to print the strings which are palindrome in the list of strings. Use user-defined Functions to Perform these Tasks.
-    
-07. From the list of IP addresses, check whether all ip addresses are valid. Use user-defined Functions to Perform these Tasks. 
-    
-08. Given a list of words followed by two words, the task is to find the minimum distance 
-    between the given two words in the list of words. ( Example : s = {“the”,”quick”,”brown”,”fox”,”quick”} word1 = “the”, word2 = “fox”, OUTPUT : 1 ). Use user-defined Functions to Perform these Tasks. 
-    
-09. Write a program that asks the user to enter a username. If the username entered is 
-    one of the names in the list then the user is allowed to calculate the factorial of a 
-    number. Otherwise, an error message is displayed. Use user-defined Functions to Perform these Tasks. 
-    
-10. Write a c program that take password as input from user hiddenly. Display Asterisk '*' when user enter password. Use user-defined Functions to Perform these Tasks. 
+01. Write a function to swap values of two in variables of calling function. (TSRS)
 
-11. Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union. Use user-defined Functions to Perform these Tasks. 
+02. Write a function to swap strings of two char arrays of calling functions. (TSRS)
+
+03. Write a function to sort an array of int type values. [ void sort(int *ptr,int size); ]
+
+04. Write a program in C to demonstrate how to handle the pointers in the program.
+
+05. Write a program to find the maximum number between two numbers using a pointer.
+
+06. Write a program to calculate the length of the string using a pointer.
+
+07. Write a program to count the number of vowels and consonants in a string using a
+    pointer.
+
+08. Write a program to compute the sum of all elements in an array using pointers.
+
+09. Write a program to print the elements of an array in reverse order.
+
+10. Write a program to print a string in reverse using a pointer
