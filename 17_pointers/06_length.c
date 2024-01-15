@@ -14,14 +14,17 @@ int main()
     int length = 0;
 
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(name, ARRAY_SIZE, stdin);   // Input String
-    name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0' in name
+    fgets(str, ARRAY_SIZE, stdin);  // Input String
+    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+
+    // Assign Address
+    ptr = str;
 
     // Find Length
-    while (name[length])
+    while (*(ptr + length))
         length++;
 
-    printf("\nYour Name is \"%s\" and Number of Characters in Your Name => %d", name, length);
+    printf("\nLength of String => %d", length);
 
     putch('\n');
     getch();
