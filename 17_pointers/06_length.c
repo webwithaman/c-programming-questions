@@ -13,12 +13,12 @@ int main()
     char str[ARRAY_SIZE], *ptr;
     int length = 0;
 
-    printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
-
     // Assign Address to Pointer
     ptr = str;
+
+    printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
+    fgets(ptr, ARRAY_SIZE, stdin);  // Input String
+    ptr[strcspn(ptr, "\n")] = '\0'; // Replace '\n' character with '\0'
 
     // Find Length
     while (*(ptr + length))
