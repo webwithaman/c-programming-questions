@@ -4,7 +4,7 @@
 🟢 Topic ➡ Pointers
     
     
-01. Write a function to swap values of two in variables of calling function. (TSRS)
+01. Write a function to swap values of two in variables by calling a function. (TSRS)
 
 02. Write a function to swap strings of two char arrays of calling functions. (TSRS)
 
