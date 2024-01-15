@@ -10,7 +10,7 @@
 
 03. Write a function to sort an array of int type values using pointers. [ void sort(int *ptr,int size); ]
 
-04. Write a program in C to demonstrate how to handle the pointers in the program.
+04. Write a program in C to demonstrate how to handle the extended concept of pointers.
 
 05. Write a program to find the largest number between two numbers using a pointer.
 
