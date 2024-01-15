@@ -8,7 +8,7 @@
 
 02. Write a function to swap strings of two char arrays by calling a functions. (TSRN)
 
-03. Write a function to sort an array of int type values. [ void sort(int *ptr,int size); ]
+03. Write a function to sort an array of int type values using pointers. [ void sort(int *ptr,int size); ]
 
 04. Write a program in C to demonstrate how to handle the pointers in the program.
 
