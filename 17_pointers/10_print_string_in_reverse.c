@@ -10,39 +10,25 @@
 // Main Function Start
 int main()
 {
-    char str[ARRAY_SIZE], temp;
+    char *ptr, str[ARRAY_SIZE];
     int length = 0;
 
+    // Assign address to pointer
+    ptr = str;
+
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(ptr, ARRAY_SIZE, stdin);  // Input String
+    ptr[strcspn(ptr, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    // First Find Length
-    while (str[length])
-        length++;
+    // Print Numbers In Normal Order
+    printf("\nString in Original Order => ");
+    for (int i = 0; i < strlen(ptr); i++)
+        printf("%c", *(ptr + i));
 
-    // // 1st Approach
-    int beg = 0, end = length - 1;
-    while (beg < end)
-    {
-        // Swap str[beg] with str[end]
-        temp = str[beg];
-        str[beg] = str[end];
-        str[end] = temp;
-        beg++;
-        end--;
-    }
-
-    // // 2nd Approach
-    // for (int i = 0; i < length / 2; i++)
-    // {
-    //     // Swap str[i] with str[length - 1 - i]
-    //     temp = str[i];
-    //     str[i] = str[length - 1 - i];
-    //     str[length - 1 - i] = temp;
-    // }
-
-    printf("\nReverse of Entered String => %s", str);
+    // Print Numbers In Reverse Order
+    printf("\nString in Reverse Order => ");
+    for (int i = strlen(ptr); i >= 0; i--)
+        printf("%c", *(ptr + i));
 
     putch('\n');
     getch();
