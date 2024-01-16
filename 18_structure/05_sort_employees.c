@@ -1,4 +1,4 @@
-// Write a function to find the highest salary employee from a given array of 10 employees. [ Refer structure from question 1]
+// Write a function to sort employees according to their salaries [ refer structure from question 1]
 
 // Header Files
 #include <stdio.h>
@@ -6,7 +6,7 @@
 #include <string.h>
 
 #define MAX_CHAR_NAME 31
-#define MAX_EMP 10
+#define MAX_EMP 3
 
 // Define Structure
 struct Employee
@@ -20,6 +20,8 @@ struct Employee
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 int highestSalaryEmp(struct Employee *, int);
+struct Employee *sortEmpsAccordSal(struct Employee *, int);
+void swapEmp(struct Employee *, struct Employee *);
 
 // Main Function Start
 int main()
@@ -35,21 +37,24 @@ int main()
         inputEmployee(&emps[i]);
     }
 
-    // Display Employees Data
-    printf("\n>>>>>> Data of %d Employees <<<<<<<\n", MAX_EMP);
+    // Display Employees Data Before Sorting
+    printf("\n>>>>>> Data of %d Employees Before Sorting <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
         printf("\n###### Data of Employee-%d ######", i + 1);
         displayEmployee(emps[i]);
     }
 
-    // Find Highest Salary Employee
-    int index = highestSalaryEmp(emps, MAX_EMP);
-    highestSalEmp = emps[index];
+    // Sort Employees according to their Salarie
+    sortEmpsAccordSal(emps, MAX_EMP);
 
-    // Employee with highest salary
-    printf("\n>>>>>> Following Employee Has Highest Salary <<<<<<<\n\n");
-    displayEmployee(highestSalEmp);
+    // Display Employees Data After Sorting
+    printf("\n>>>>>> Data of %d Employees After Sorting <<<<<<<\n", MAX_EMP);
+    for (int i = 0; i < MAX_EMP; i++)
+    {
+        printf("\n###### Data of Employee-%d ######", i + 1);
+        displayEmployee(emps[i]);
+    }
 
     putch('\n');
     getch();
@@ -84,16 +89,27 @@ void displayEmployee(struct Employee emp)
     puts("\n=========================================");
 }
 
-// Function to Find Highest Salary Employee
-int highestSalaryEmp(struct Employee *empPtr, int size)
+// Function to Sort Employees according to their Salarie
+struct Employee *sortEmpsAccordSal(struct Employee *empPtr, int size)
 {
-    int index = 0;
-
-    for (int i = 1; i < size; i++)
+    for (int i = 0; i < size - 1; i++)
     {
-        if (empPtr[i].salary > empPtr[index].salary)
-            index = i;
+        for (int j = 0; j < size - 1 - i; j++)
+        {
+            if (empPtr[j].salary > empPtr[j + 1].salary)
+            {
+                swapEmp(&empPtr[j], &empPtr[j + 1]);
+            }
+        }
     }
 
-    return index;
+    return empPtr;
+}
+
+// Function to Swap data of two Employees
+void swapEmp(struct Employee *emp1, struct Employee *emp2)
+{
+    struct Employee temp = *emp1;
+    *emp1 = *emp2;
+    *emp2 = temp;
 }
