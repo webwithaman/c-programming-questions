@@ -1,4 +1,4 @@
-// Write a program to ask the user to that how many numbers he would like to enter then create an array dynamically to accommodate the numbers. Now take the input from the user and display the average of numbers.
+// Write a program to calculate the sum of n numbers entered by the user using malloc and free.
 
 // Header Files
 #include <stdio.h>
@@ -12,7 +12,6 @@ int main()
 {
     const int n;
     int *ptr, sum = 0;
-    float avg;
     printf("\nHow Many Numbers You Want to Enter (MAX %d) => ", MAX);
     scanf("%d", &n);
 
@@ -24,7 +23,7 @@ int main()
     }
 
     // Allocate memory dynamically
-    ptr = (int *)calloc(n, sizeof(int));
+    ptr = (int *)malloc(n * sizeof(int));
 
     // Input Numbers
     printf("\nEnter %d Numbers => ", n);
@@ -34,11 +33,11 @@ int main()
         sum += ptr[i];
     }
 
-    // Calculate Average
-    avg = (float)sum / n;
-
     // Display Sum and Average
-    printf("\nSum of Numbers => %d\nAverage of Numbers => %.2f", sum, avg);
+    printf("\nSum of Numbers => %d", sum);
+
+    // Free Dynamically Allocated Memory
+    free(ptr);
 
     putch('\n');
     getch();
