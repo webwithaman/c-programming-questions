@@ -31,21 +31,24 @@ int main()
     printf("\n>>>>>> Enter Employee Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
-        printf("\n------ Enter Data of Employee-%d -------", i + 1);
+        printf("\n###### Enter Data of Employee-%d ######", i + 1);
         inputEmployee(&emps[i]);
     }
 
     // Display Employees Data
-    printf("\n>>>>>> Data of %d Employees <<<<<<<\n\n", MAX_EMP);
+    printf("\n>>>>>> Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
+    {
+        printf("\n###### Data of Employee-%d ######", i + 1);
         displayEmployee(emps[i]);
+    }
 
     // Find Highest Salary Employee
     int index = highestSalaryEmp(emps, MAX_EMP);
     highestSalEmp = emps[index];
 
     // Employee with highest salary
-    printf("\n>>>>>> Employee with Highest Salary <<<<<<<\n\n");
+    printf("\n>>>>>> Following Employee Has Highest Salary <<<<<<<\n\n");
     displayEmployee(highestSalEmp);
 
     putch('\n');
@@ -72,15 +75,13 @@ void inputEmployee(struct Employee *emp)
 // Function to Display Employee data
 void displayEmployee(struct Employee emp)
 {
-    printf("=========================================");
+    puts("\n=========================================");
 
-    printf("\nEmployee Id => %d", emp.id);
+    printf("Employee Id => %d", emp.id);
     printf("\nEmployee Name => %s", emp.name);
     printf("\nEmployee Salary => %.2lf", emp.salary);
 
-    printf("\n=========================================");
-
-    putch(10); // Add new line
+    puts("\n=========================================");
 }
 
 // Function to Find Highest Salary Employee
