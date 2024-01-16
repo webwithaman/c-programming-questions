@@ -42,15 +42,15 @@ int main()
 // Function to Input Employee data
 void inputEmployee(struct Employee *emp)
 {
-    printf("\nEnter Employee Id => ");
+    printf("\nEnter Employee's Id => ");
     scanf("%d", &emp->id);
 
-    printf("Enter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
+    printf("Enter Employee's Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
     fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
     emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    printf("Enter Employee Salary => ");
+    printf("Enter Employee's Salary => ");
     scanf("%lf", &emp->salary);
 }
 

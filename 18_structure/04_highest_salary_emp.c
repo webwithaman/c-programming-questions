@@ -28,7 +28,7 @@ int main()
     struct Employee emps[MAX_EMP], highestSalEmp;
 
     // Input Employees Data
-    printf("\n>>>>>> Enter Employee Data of %d Employees <<<<<<<\n", MAX_EMP);
+    printf("\n>>>>>> Enter Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
         printf("\n###### Enter Data of Employee-%d ######\n", i + 1);
@@ -60,15 +60,15 @@ int main()
 // Function to Input Employee data
 void inputEmployee(struct Employee *emp)
 {
-    printf("\nEnter Employee Id => ");
+    printf("\nEnter Employee's Id => ");
     scanf("%d", &emp->id);
 
-    printf("Enter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
+    printf("Enter Employee's Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
     fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
     emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    printf("Enter Employee Salary => ");
+    printf("Enter Employee's Salary => ");
     scanf("%lf", &emp->salary);
 }
 
