@@ -20,6 +20,10 @@ int main()
     // create variable of structure Employee
     struct Employee emp1;
 
+    // Input Employee Data
+    puts("\n>>>>>> Enter Employee's Data <<<<<<<");
+    inputEmployee(&emp1);
+
     putch('\n');
     getch();
     return 0;
@@ -33,7 +37,10 @@ void inputEmployee(struct Employee *emp)
     scanf("%d", &emp->id);
     printf("\nEnter Employee Name => ");
 
-    printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    printf("\nEnter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
+    fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
+    emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
+
+    printf("\nEnter Employee Salary => ");
+    scanf("%lf", &emp->salary);
 }
