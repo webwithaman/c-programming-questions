@@ -4,11 +4,13 @@
 #include <stdio.h>
 #include <conio.h>
 
+#define MAX_CHAR_NAME 31
+
 // Define Structure
 struct Employee
 {
     int id;
-    char name[31];
+    char name[MAX_CHAR_NAME];
     double salary;
 };
 
