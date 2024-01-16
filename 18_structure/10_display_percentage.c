@@ -9,7 +9,8 @@
 #define MAX_CHAR_NAME 31
 #define MAX_CHAR_STANDARD 11
 #define SUB_OUT_OF_MARKS 100
-#define TOTAL_OUT_OF_MARKS 100
+#define NUM_OF_SUBS 3
+#define TOTAL_OUT_OF_MARKS SUB_OUT_OF_MARKS *NUM_OF_SUBS
 #define MAX_STUDENTS 50
 
 // Define Structure
@@ -79,7 +80,7 @@ void inputStudent(struct Student *student)
     fgets(student->name, MAX_CHAR_NAME, stdin);         // Input String
     student->name[strcspn(student->name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    printf("\nEnter Student's Marks in Chemistry Out of %f => ", SUB_OUT_OF_MARKS);
+    printf("Enter Student's Marks in Chemistry Out of %d => ", SUB_OUT_OF_MARKS);
     scanf("%f", &student->chem_marks);
 
     // Validate Marks
@@ -89,7 +90,7 @@ void inputStudent(struct Student *student)
         exit(0);
     }
 
-    printf("\nEnter Student's Marks in Mathematics Out of %f => ", SUB_OUT_OF_MARKS);
+    printf("Enter Student's Marks in Mathematics Out of %d => ", SUB_OUT_OF_MARKS);
     scanf("%f", &student->math_marks);
 
     // Validate Marks
@@ -99,7 +100,7 @@ void inputStudent(struct Student *student)
         exit(0);
     }
 
-    printf("\nEnter Student's Marks in Physics Out of %f => ", SUB_OUT_OF_MARKS);
+    printf("Enter Student's Marks in Physics Out of %d => ", SUB_OUT_OF_MARKS);
     scanf("%f", &student->phy_marks);
 
     // Validate Marks
@@ -113,7 +114,7 @@ void inputStudent(struct Student *student)
     student->total_scored_marks = student->chem_marks + student->math_marks + student->phy_marks;
 
     // Calculate Percentage
-    student->percentage = student->total_scored_marks / TOTAL_OUT_OF_MARKS * 100;
+    student->percentage = student->total_scored_marks / (TOTAL_OUT_OF_MARKS) * 100;
 }
 
 // Function to Display Student data
@@ -126,7 +127,7 @@ void displayStudent(struct Student student)
     printf("\nStudent's Marks in Chemistry => %.2f", student.chem_marks);
     printf("\nStudent's Marks in Mathematics => %.2f", student.math_marks);
     printf("\nStudent's Marks in Physics => %.2f", student.phy_marks);
-    printf("\nStudent's Scored Marks  => %.2f/%.2f", student.total_scored_marks, TOTAL_OUT_OF_MARKS);
+    printf("\nStudent's Scored Marks  => %.2f/%d", student.total_scored_marks, TOTAL_OUT_OF_MARKS);
     printf("\nStudent's Percentage => %.2f", student.percentage);
 
     puts("\n=========================================");
