@@ -6,7 +6,7 @@
 #include <malloc.h>
 
 // Functions Declarations (Prototypes)
-char *inputString(char *);
+char *inputString();
 
 // Main Function Start
 int main()
@@ -15,7 +15,7 @@ int main()
     printf("\nEnter Any String of Any Length => ");
 
     // Input String
-    inputString(ptr);
+    ptr = inputString();
 
     // Display String
     printf("\nString => %s", ptr);
@@ -27,9 +27,9 @@ int main()
 // Main Function End
 
 // Function to Input a string untill user press enter and store it in an array   without any memory wastage
-char *inputString(char *ptr)
+char *inputString()
 {
-    char ch;
+    char *ptr, ch;
     int index = 0;
 
     // First Allocate 1 byte
