@@ -1,12 +1,14 @@
-// Write a program to store information of 10 students and display them using structure.
+// Write a program to enter the marks of 5 students in Chemistry, Mathematics and Physics (each out of 100) using a structure named Student having elements roll, name, chem_marks, math_marks, phy_marks, total_marks, total_gained_marks and percentage and then display the percentage of each student.
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define MAX_CHAR_NAME 31
 #define MAX_CHAR_STANDARD 11
+#define SUB_MARKS 100
 #define MAX_STUDENTS 50
 
 // Define Structure
@@ -14,7 +16,12 @@ struct Student
 {
     int roll;
     char name[MAX_CHAR_NAME];
-    char standard[MAX_CHAR_STANDARD];
+    float chem_marks;
+    float math_marks;
+    float phy_marks;
+    float total_marks;
+    float total_gained_marks;
+    float percentage;
 };
 
 // Functions Declarations (Prototypes)
@@ -72,10 +79,44 @@ void inputStudent(struct Student *student)
     fgets(student->name, MAX_CHAR_NAME, stdin);         // Input String
     student->name[strcspn(student->name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    printf("Enter Student's Standard (Class) (MAX CHARACTERS %d) => ", MAX_CHAR_STANDARD - 1);
-    fflush(stdin);
-    fgets(student->standard, MAX_CHAR_NAME, stdin);             // Input String
-    student->standard[strcspn(student->standard, "\n")] = '\0'; // Replace '\n' character with '\0'
+    printf("\nEnter Student's Marks in Chemistry Out of %f => ", SUB_MARKS);
+    scanf("%f", &student->chem_marks);
+
+    // Validate Marks
+    if (student->chem_marks < 0 || student->chem_marks > SUB_MARKS)
+    {
+        puts("\n!!! Invalid Marks...\n");
+        exit(0);
+    }
+
+    printf("\nEnter Student's Marks in Mathematics Out of %f => ", SUB_MARKS);
+    scanf("%f", &student->math_marks);
+
+    // Validate Marks
+    if (student->math_marks < 0 || student->math_marks > SUB_MARKS)
+    {
+        puts("\n!!! Invalid Marks...\n");
+        exit(0);
+    }
+
+    printf("\nEnter Student's Marks in Physics Out of %f => ", SUB_MARKS);
+    scanf("%f", &student->phy_marks);
+
+    // Validate Marks
+    if (student->phy_marks < 0 || student->phy_marks > SUB_MARKS)
+    {
+        puts("\n!!! Invalid Marks...\n");
+        exit(0);
+    }
+
+    // Set Total Marks
+    student->total_marks = SUB_MARKS * 3;
+
+    // Set Total Gained Marks
+    student->total_gained_marks = student->chem_marks + student->math_marks + student->phy_marks;
+
+    // Calculate Percentage
+    student->percentage = student->total_gained_marks / student->total_marks * 100;
 }
 
 // Function to Display Student data
@@ -85,7 +126,11 @@ void displayStudent(struct Student student)
 
     printf("Student's Roll => %d", student.roll);
     printf("\nStudent's Name => %s", student.name);
-    printf("\nStudent's Standard => %s", student.standard);
+    printf("\nStudent's Marks in Chemistry => %.2f", student.chem_marks);
+    printf("\nStudent's Marks in Mathematics => %.2f", student.math_marks);
+    printf("\nStudent's Marks in Physics => %.2f", student.phy_marks);
+    printf("\nTotal Gained Marks  => %.2f/%.2f", student.total_gained_marks, student.total_marks);
+    printf("\nStudent's Percentage => %.2f", student.percentage);
 
     puts("\n=========================================");
 }
