@@ -1,18 +1,24 @@
+⭐⭐⭐⭐⭐⭐⭐ WEB WITH AMAN ⭐⭐⭐⭐⭐⭐⭐
+   
+🟢 Language ➡ C
+🟢 Topic ➡ Structure
+
+
 01. Define a structure Employee with member variables id, name, salary.
 
 02. Write a function to take input employee data from the user. [ Refer structure from
-question 1 ]
+    question 1 ]
 
 03. Write a function to display employee data. [ Refer structure from question 1 ]
 
 04. Write a function to find the highest salary employee from a given array of 10
-employees. [ Refer structure from question 1]
+    employees. [ Refer structure from question 1]
 
 05. Write a function to sort employees according to their salaries [ refer structure from
-question 1]
+    question 1]
 
 06. Write a function to sort employees according to their names [refer structure from
-question 1]
+    question 1]
 
 07. Write a program to calculate the difference between two time periods.
 
@@ -21,6 +27,6 @@ question 1]
 09. Write a program to store information of n students and display them using structure.
 
 10. Write a program to enter the marks of 5 students in Chemistry, Mathematics and
-Physics (each out of 100) using a structure named Marks having elements roll no.,
-name, chem_marks, maths_marks and phy_marks and then display the percentage
-of each student
+    Physics (each out of 100) using a structure named Marks having elements roll no.,
+    name, chem_marks, maths_marks and phy_marks and then display the percentage
+    of each student
