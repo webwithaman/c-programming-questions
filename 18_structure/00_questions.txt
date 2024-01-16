@@ -20,7 +20,7 @@
 06. Write a function to sort employees according to their names [refer structure from
     question 1]
 
-07. Write a program to calculate the difference between two time periods.
+07. Write a program to calculate the difference between two time periods. Take Time in  24-Hour Format.
 
 08. Write a program to store information of 10 students and display them using structure.
 

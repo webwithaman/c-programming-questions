@@ -1,59 +1,53 @@
-// Write a function to sort employees according to their names [refer structure from question 1]
+// Write a program to calculate the difference between two time periods. Take Time in  24-Hour Format.
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
-#define MAX_CHAR_NAME 31
-#define MAX_EMP 10
-
 // Define Structure
-struct Employee
+struct Time
 {
-    int id;
-    char name[MAX_CHAR_NAME];
-    double salary;
+    int hours;
+    int minutes;
+    int seconds;
 };
 
 // Functions Declarations (Prototypes)
-void inputEmployee(struct Employee *);
-void displayEmployee(struct Employee);
-int highestSalaryEmp(struct Employee *, int);
-struct Employee *sortEmpsAccordName(struct Employee *, int);
-void swapEmp(struct Employee *, struct Employee *);
+void inputTime(struct Time *);
+void displayTime(struct Time);
+struct Time diffBetTime(struct Time, struct Time);
 
 // Main Function Start
 int main()
 {
-    // create variable of structure Employee
-    struct Employee emps[MAX_EMP], highestSalEmp;
+    // create variable of structure Time
+    struct Time t1, t2, diff;
 
-    // Input Employees Data
-    printf("\n>>>>>> Enter Employee Data of %d Employees <<<<<<<\n", MAX_EMP);
+    // Input Time Data
+    printf("\n>>>>>> Enter First Time Period in 24-Hour <<<<<<<\n");
+    inputTime(&t1);
+
+    printf("\n>>>>>> Enter Second Time Period in 24-Hour <<<<<<<\n");
+    inputTime(&t2);
+
+    // Display Times Data Before Sorting
+    printf("\n>>>>>> Data of %d Times Before Sorting <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
-        printf("\n###### Enter Data of Employee-%d ######\n", i + 1);
-        inputEmployee(&emps[i]);
+        printf("\n###### Data of Time-%d ######", i + 1);
+        displayTime(times[i]);
     }
 
-    // Display Employees Data Before Sorting
-    printf("\n>>>>>> Data of %d Employees Before Sorting <<<<<<<\n", MAX_EMP);
+    // Sort Times according to their Salarie
+    sortEmpsAccordName(times, MAX_EMP);
+
+    // Display Times Data After Sorting
+    printf("\n>>>>>> Data of %d Times After Sorting According to Their Names <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
-        printf("\n###### Data of Employee-%d ######", i + 1);
-        displayEmployee(emps[i]);
-    }
-
-    // Sort Employees according to their Salarie
-    sortEmpsAccordName(emps, MAX_EMP);
-
-    // Display Employees Data After Sorting
-    printf("\n>>>>>> Data of %d Employees After Sorting According to Their Names <<<<<<<\n", MAX_EMP);
-    for (int i = 0; i < MAX_EMP; i++)
-    {
-        printf("\n###### Data of Employee-%d ######", i + 1);
-        displayEmployee(emps[i]);
+        printf("\n###### Data of Time-%d ######", i + 1);
+        displayTime(times[i]);
     }
 
     putch('\n');
@@ -62,54 +56,29 @@ int main()
 }
 // Main Function End
 
-// Function to Input Employee data
-void inputEmployee(struct Employee *emp)
+// Function to Input Time data
+void inputTime(struct Time *time)
 {
-    printf("\nEnter Employee Id => ");
-    scanf("%d", &emp->id);
+    printf("\nEnter Hours => ");
+    scanf("%d", &time->hours);
 
-    printf("Enter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
-    fflush(stdin);
-    fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
-    emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
+    printf("\nEnter Minutes => ");
+    scanf("%d", &time->minutes);
 
-    printf("Enter Employee Salary => ");
-    scanf("%lf", &emp->salary);
+    printf("\nEnter Seconds => ");
+    scanf("%d", &time->seconds);
 }
 
-// Function to Display Employee data
-void displayEmployee(struct Employee emp)
+// Function to Display Time data
+void displayTime(struct Time time)
 {
     puts("\n=========================================");
-
-    printf("Employee Id => %d", emp.id);
-    printf("\nEmployee Name => %s", emp.name);
-    printf("\nEmployee Salary => %.2lf", emp.salary);
-
+    printf("\n%d:%d:%d", time.hours, time.minutes, time.seconds);
     puts("\n=========================================");
 }
 
-// Function to Sort Employees according to their Salarie
-struct Employee *sortEmpsAccordName(struct Employee *empPtr, int size)
+// Function to Find Difference Between Two Time Periods
+struct Time diffBetTime(struct Time t1, struct Time t2)
 {
-    for (int i = 0; i < size - 1; i++)
-    {
-        for (int j = 0; j < size - 1 - i; j++)
-        {
-            if (strcmp(empPtr[j].name, empPtr[j + 1].name) > 0)
-            {
-                swapEmp(&empPtr[j], &empPtr[j + 1]);
-            }
-        }
-    }
-
-    return empPtr;
-}
-
-// Function to Swap data of two Employees
-void swapEmp(struct Employee *emp1, struct Employee *emp2)
-{
-    struct Employee temp = *emp1;
-    *emp1 = *emp2;
-    *emp2 = temp;
+    
 }
