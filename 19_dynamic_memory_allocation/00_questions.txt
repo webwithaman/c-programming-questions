@@ -11,7 +11,7 @@
 03. Write a program to calculate the sum of n numbers entered by the user using malloc
 and free.
 
-04. Write a program to input and print text using dynamic memory allocation.
+04. Write a program to implement a 2D array of int using malloc without any memory wastage according to user's input.
 
 05. Write a program to read a one dimensional array, print sum of all elements along with
 inputted array elements using dynamic memory allocation.
