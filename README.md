@@ -23,6 +23,7 @@ The repository is structured based on different topics, with each topic having i
 - /15_handling_multiple_strings
 - /16_handling_multiple_strings_with_functions
 - /17_pointers
+- /18_structure
 
 ## Clone this Repository
 
