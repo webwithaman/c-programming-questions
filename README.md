@@ -24,6 +24,7 @@ The repository is structured based on different topics, with each topic having i
 - /16_handling_multiple_strings_with_functions
 - /17_pointers
 - /18_structure
+- /19_dynamic_memory_allocation
 
 ## Clone this Repository
 
