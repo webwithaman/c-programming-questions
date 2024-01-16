@@ -40,11 +40,11 @@ void inputEmployee(struct Employee *emp)
     printf("\nEnter Employee Id => ");
     scanf("%d", &emp->id);
 
-    printf("\nEnter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
+    printf("Enter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
     fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
     emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    printf("\nEnter Employee Salary => ");
+    printf("Enter Employee Salary => ");
     scanf("%lf", &emp->salary);
 }

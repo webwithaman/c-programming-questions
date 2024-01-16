@@ -30,7 +30,10 @@ int main()
     // Input Employees Data
     printf("\n>>>>>> Enter Employee Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
+    {
+        printf("\n------ Enter Data of Employee-%d -------", i + 1);
         inputEmployee(&emps[i]);
+    }
 
     // Display Employees Data
     printf("\n>>>>>> Data of %d Employees <<<<<<<\n\n", MAX_EMP);
@@ -38,7 +41,7 @@ int main()
         displayEmployee(emps[i]);
 
     // Find Highest Salary Employee
-    int index = highestSalaryEmp(emps,MAX_EMP);
+    int index = highestSalaryEmp(emps, MAX_EMP);
     highestSalEmp = emps[index];
 
     // Employee with highest salary
@@ -57,12 +60,12 @@ void inputEmployee(struct Employee *emp)
     printf("\nEnter Employee Id => ");
     scanf("%d", &emp->id);
 
-    printf("\nEnter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
+    printf("Enter Employee Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
     fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
     emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
 
-    printf("\nEnter Employee Salary => ");
+    printf("Enter Employee Salary => ");
     scanf("%lf", &emp->salary);
 }
 
