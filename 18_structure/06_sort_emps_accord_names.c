@@ -1,4 +1,4 @@
-// Write a function to sort employees according to their salaries [ refer structure from question 1]
+// Write a function to sort employees according to their names [refer structure from question 1]
 
 // Header Files
 #include <stdio.h>
@@ -6,7 +6,7 @@
 #include <string.h>
 
 #define MAX_CHAR_NAME 31
-#define MAX_EMP 3
+#define MAX_EMP 10
 
 // Define Structure
 struct Employee
@@ -20,7 +20,7 @@ struct Employee
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 int highestSalaryEmp(struct Employee *, int);
-struct Employee *sortEmpsAccordSal(struct Employee *, int);
+struct Employee *sortEmpsAccordName(struct Employee *, int);
 void swapEmp(struct Employee *, struct Employee *);
 
 // Main Function Start
@@ -46,10 +46,10 @@ int main()
     }
 
     // Sort Employees according to their Salarie
-    sortEmpsAccordSal(emps, MAX_EMP);
+    sortEmpsAccordName(emps, MAX_EMP);
 
     // Display Employees Data After Sorting
-    printf("\n>>>>>> Data of %d Employees After Sorting <<<<<<<\n", MAX_EMP);
+    printf("\n>>>>>> Data of %d Employees After Sorting According to Their Names <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
         printf("\n###### Data of Employee-%d ######", i + 1);
@@ -90,13 +90,13 @@ void displayEmployee(struct Employee emp)
 }
 
 // Function to Sort Employees according to their Salarie
-struct Employee *sortEmpsAccordSal(struct Employee *empPtr, int size)
+struct Employee *sortEmpsAccordName(struct Employee *empPtr, int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1 - i; j++)
         {
-            if (empPtr[j].salary > empPtr[j + 1].salary)
+            if (strcmp(empPtr[j].name, empPtr[j + 1].name) > 0)
             {
                 swapEmp(&empPtr[j], &empPtr[j + 1]);
             }
