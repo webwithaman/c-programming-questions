@@ -19,8 +19,8 @@ struct Employee
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 
-    // Main Function Start
-    int main()
+// Main Function Start
+int main()
 {
     // create variable of structure Employee
     struct Employee emp1;
@@ -30,7 +30,7 @@ void displayEmployee(struct Employee);
     inputEmployee(&emp1);
 
     // Display Employee Data
-    puts("\n>>>>>> Employee Data <<<<<<<");
+    puts("\n>>>>>> Employee Data <<<<<<<\n");
     displayEmployee(emp1);
 
     putch('\n');
@@ -57,13 +57,13 @@ void inputEmployee(struct Employee *emp)
 // Function to Display Employee data
 void displayEmployee(struct Employee emp)
 {
-    printf("====================");
+    printf("=========================================");
 
     printf("\nEmployee Id => %d", emp.id);
     printf("\nEmployee Name => %s", emp.name);
     printf("\nEmployee Salary => %.2lf", emp.salary);
 
-    printf("\n====================");
+    printf("\n=========================================");
 
     putch(10); // Add new line
 }
