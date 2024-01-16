@@ -11,7 +11,7 @@
 int main()
 {
     const int n;
-    int *ptr, sum;
+    int *ptr, sum = 0;
     float avg;
     printf("\nHow Many Numbers You Want to Enter (MAX %d) => ", MAX);
     scanf("%d", &n);
@@ -24,10 +24,10 @@ int main()
     }
 
     // Allocate memory dynamically
-    *ptr = (int *)calloc(n, sizeof(int));
+    ptr = (int *)calloc(n, sizeof(int));
 
     // Input Numbers
-    puts("\nEnter %d Numbers => ");
+    printf("\nEnter %d Numbers => ", n);
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &ptr[i]);
