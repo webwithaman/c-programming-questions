@@ -77,9 +77,9 @@ void displayEmployee(struct Employee emp)
 {
     puts("\n=========================================");
 
-    printf("Employee Id => %d", emp.id);
-    printf("\nEmployee Name => %s", emp.name);
-    printf("\nEmployee Salary => %.2lf", emp.salary);
+    printf("Employee's Id => %d", emp.id);
+    printf("\nEmployee's Name => %s", emp.name);
+    printf("\nEmployee's Salary => %.2lf", emp.salary);
 
     puts("\n=========================================");
 }
