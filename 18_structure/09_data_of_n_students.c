@@ -7,7 +7,7 @@
 
 #define MAX_CHAR_NAME 31
 #define MAX_CHAR_STANDARD 11
-#define MAX_STUDENT 10
+#define MAX_STUDENT 50
 
 // Define Structure
 struct Student
@@ -24,20 +24,25 @@ void displayStudent(struct Student);
 // Main Function Start
 int main()
 {
-    // create variable of structure Student
-    struct Student students[MAX_STUDENT];
+    const int NUM__OF_STUDENTS;
+
+    printf("\nEnter Number of Students => ");
+    scanf("%d", &NUM__OF_STUDENTS);
+
+    // create variable of structure Student of variable length
+    struct Student students[NUM__OF_STUDENTS];
 
     // Input Students Data
-    printf("\n>>>>>> Enter Data of %d Students <<<<<<<\n", MAX_STUDENT);
-    for (int i = 0; i < MAX_STUDENT; i++)
+    printf("\n>>>>>> Enter Data of %d Students <<<<<<<\n", NUM__OF_STUDENTS);
+    for (int i = 0; i < NUM__OF_STUDENTS; i++)
     {
         printf("\n###### Enter Data of Student-%d ######\n", i + 1);
         inputStudent(&students[i]);
     }
 
     // Display Students Data
-    printf("\n>>>>>> Data of %d Students <<<<<<<\n", MAX_STUDENT);
-    for (int i = 0; i < MAX_STUDENT; i++)
+    printf("\n>>>>>> Data of %d Students <<<<<<<\n", NUM__OF_STUDENTS);
+    for (int i = 0; i < NUM__OF_STUDENTS; i++)
     {
         printf("\n###### Data of Student-%d ######", i + 1);
         displayStudent(students[i]);
