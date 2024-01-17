@@ -6,7 +6,7 @@
 #include <malloc.h>
 
 #define MAX_ROWS 10
-#define MAX_COLS 50
+#define MAX_COLS 10
 
 // Main Function Start
 int main()
