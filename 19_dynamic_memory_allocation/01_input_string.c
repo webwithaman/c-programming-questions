@@ -17,6 +17,12 @@ int main()
     // Input String
     ptr = inputString();
 
+    if (!ptr)
+    {
+        puts("\nUnable to Allocate Memory Dynamically...\n");
+        exit(0);
+    }
+
     // Display String
     printf("\nString => %s", ptr);
 
@@ -34,6 +40,9 @@ char *inputString()
 
     // First Allocate 1 byte
     ptr = (char *)malloc(sizeof(char) * 1);
+
+    if (!ptr)
+        return NULL; // Unable to Allocate Memory
 
     // Take Input untill user press enter
     while (1)
