@@ -15,7 +15,7 @@ and free.
 
 05. Write a program to implement two 2D arrays of int using malloc without any memory wastage according to user's input. Now, input elements for these two matrices from user, add matrices and store result in another matix then print the sum of matrices. use user-defined functions to perform these operations.
 
-06. Write a program in C to find the largest element using Dynamic Memory Allocation.
+06. Write a program to demonstrate the use realloc function in C.
 
 07. Write a program to demonstrate memory leak in C.
 
