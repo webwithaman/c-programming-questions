@@ -19,61 +19,60 @@ int **addTwoMatrices(int **, int **, int, int);
 // Main Function Start
 int main()
 {
-    createTwo2DIntArray(3, 5);
 
-    // const int ROWS_1, COLS_1, ROWS_2, COLS_2;
-    // printf("\nEnter Order of  Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
-    // scanf("%d%d", &ROWS_1, &COLS_1);
-
-    // // Check Invalid Input for Matrix Order
-    // if (ROWS_1 < 1 || ROWS_1 > MAX_ROWS || COLS_1 < 1 || COLS_1 > MAX_COLS)
-    // {
-    //     puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...\n");
-    //     exit(0);
-    // }
-
-    // printf("\nEnter Order of  Matrix-B (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
-    // scanf("%d%d", &ROWS_2, &COLS_2);
+    const int ROWS_1, COLS_1, ROWS_2, COLS_2;
+    printf("\nEnter Order of  Matrix-A (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
+    scanf("%d%d", &ROWS_1, &COLS_1);
 
     // // Check Invalid Input for Matrix Order
-    // if (ROWS_2 < 1 || ROWS_2 > MAX_ROWS || COLS_2 < 1 || COLS_2 > MAX_COLS)
-    // {
-    //     puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...\n");
-    //     exit(0);
-    // }
+    if (ROWS_1 < 1 || ROWS_1 > MAX_ROWS || COLS_1 < 1 || COLS_1 > MAX_COLS)
+    {
+        puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...\n");
+        exit(0);
+    }
+
+    printf("\nEnter Order of  Matrix-B (Rows x Cols) (MAX %d x %d) => ", MAX_ROWS, MAX_COLS);
+    scanf("%d%d", &ROWS_2, &COLS_2);
+
+    // // Check Invalid Input for Matrix Order
+    if (ROWS_2 < 1 || ROWS_2 > MAX_ROWS || COLS_2 < 1 || COLS_2 > MAX_COLS)
+    {
+        puts("\n!!! Invalid order of Matrix, Plz Enter Appropriate Order...\n");
+        exit(0);
+    }
 
     // // Check that Sum of Matrices is Possible or Not
-    // if (ROWS_1 != ROWS_2 || COLS_1 != COLS_2)
-    // {
-    //     puts("\n!!! Invalid order of Matrix, Sum of Matrices is not Possible...\n");
-    //     exit(0);
-    // }
+    if (ROWS_1 != ROWS_2 || COLS_1 != COLS_2)
+    {
+        puts("\n!!! Invalid order of Matrix, Sum of Matrices is not Possible...\n");
+        exit(0);
+    }
 
     // // Create 2D Arrays
-    // int **matrixA = createTwo2DIntArray(ROWS_1, COLS_1), **matrixB = createTwo2DIntArray(ROWS_2, COLS_2), **matrixC;
+    int **matrixA = createTwo2DIntArray(ROWS_1, COLS_1), **matrixB = createTwo2DIntArray(ROWS_2, COLS_2), **matrixC;
 
     // // Input Elements Matrix-A
-    // printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS_1, COLS_1);
-    // input2DArray(matrixA, ROWS_1, COLS_1);
+    printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS_1, COLS_1);
+    input2DArray(matrixA, ROWS_1, COLS_1);
 
     // // Input Elements Matrix-B
-    // printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS_2, COLS_2);
-    // input2DArray(matrixB, ROWS_2, COLS_2);
+    printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS_2, COLS_2);
+    input2DArray(matrixB, ROWS_2, COLS_2);
 
     // // Print Matrix-A
-    // printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS_1, COLS_1);
-    // print2DArray(matrixA, ROWS_1, COLS_1);
+    printf("\n\n>>>>>>>> Matrix-A of %d x %d <<<<<<<<<\n", ROWS_1, COLS_1);
+    print2DArray(matrixA, ROWS_1, COLS_1);
 
     // // Print Matrix-B
-    // printf("\n\n>>>>>>>> Matrix-B of %d x %d <<<<<<<<<\n", ROWS_2, COLS_2);
-    // print2DArray(matrixB, ROWS_2, COLS_2);
+    printf("\n\n>>>>>>>> Matrix-B of %d x %d <<<<<<<<<\n", ROWS_2, COLS_2);
+    print2DArray(matrixB, ROWS_2, COLS_2);
 
     // // Add Matrices
-    // matrixC = addTwoMatrices(matrixA, matrixB, ROWS_1, COLS_1);
+    matrixC = addTwoMatrices(matrixA, matrixB, ROWS_1, COLS_1);
 
     // // Print Sum of Matrices
-    // printf("\n\n>>>>>>>> Sum Matrix-C of %d x %d <<<<<<<<<\n", ROWS_1, COLS_2);
-    // print2DArray(matrixC, ROWS_1, COLS_2);
+    printf("\n\n>>>>>>>> Sum Matrix-C of %d x %d <<<<<<<<<\n", ROWS_1, COLS_2);
+    print2DArray(matrixC, ROWS_1, COLS_2);
 
     putch('\n');
     getch();
@@ -91,7 +90,6 @@ int **createTwo2DIntArray(int rows, int cols)
     // Allocate memory for rows
     matrix = (int **)malloc(rows * sizeof(int *));
 
-    printf("\nRows \n");
     // Allocate memory for cols
     for (int i = 0; i < rows; i++)
         matrix[i] = (int *)malloc(cols * sizeof(int));
