@@ -104,7 +104,7 @@ void input2DArray(int **arr, int rows, int cols)
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", *((int *)arr + i * cols + j));
+            scanf("%d", ((int *)arr + i * cols + j));
         }
     }
 }
