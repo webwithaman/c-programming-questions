@@ -13,7 +13,7 @@ A memory leak in C occurs when a programmer creates a memory in a heap and forge
 #include <conio.h>
 #include <malloc.h>
 
-// Functions Declarations (Prototypes)
+// Function Declaration (Prototype)
 void inputNumUsingDMA();
 
 // Main Function Start
@@ -39,5 +39,5 @@ void inputNumUsingDMA()
 
     printf("\nNumber => %d", *ptr);
 
-    // Now if we don't free this memory using free(ptr) then pointer ptr will be destroyed when the function will end because it is a local variable and we will be unable to access this dynamically allocated memory. This scenario became memory leak.
+    // // Now if we don't free this memory using free(ptr) then pointer ptr will be destroyed when the function will end because it is a local variable and we will be unable to access this dynamically allocated memory. This scenario became memory leak.
 }
