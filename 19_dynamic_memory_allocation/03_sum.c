@@ -25,6 +25,12 @@ int main()
     // Allocate memory dynamically
     ptr = (int *)malloc(n * sizeof(int));
 
+    if (!ptr)
+    {
+        puts("\nUnable to Allocate Memory Dynamically...\n");
+        exit(0);
+    }
+
     // Input Numbers
     printf("\nEnter %d Numbers => ", n);
     for (int i = 0; i < n; i++)
