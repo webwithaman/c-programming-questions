@@ -94,22 +94,7 @@ int **createTwo2DIntArray(int rows, int cols)
     printf("\nRows \n");
     // Allocate memory for cols
     for (int i = 0; i < rows; i++)
-    {
-        printf("\n%llu", &matrix[i]);
         matrix[i] = (int *)malloc(cols * sizeof(int));
-    }
-
-    printf("\ncols \n");
-
-    matrix[0][0] = 10;
-
-    int **r = matrix;
-
-    for (int i = 0; i < cols; i++)
-    {
-        printf("\n%d", r[0][i]);
-        printf("\n%llu", &matrix[0][i]);
-    }
 
     return matrix; // return pointer to 1st Array
 }
