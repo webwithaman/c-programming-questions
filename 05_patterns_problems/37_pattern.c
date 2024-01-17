@@ -1,4 +1,4 @@
-// //  C program to Print Following Pattern
+//  C program to Print Following Pattern
 
 /*
 
@@ -31,7 +31,7 @@
 // Function Prototype (Declaration)
 int fact(int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -49,10 +49,10 @@ int main()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach (Using 1st Formula)
+    // 1st Approach (Using 1st Formula)
     int spacesInCurrentRow, element;
 
     for (int row = 0; row < maxRows; row++)
@@ -71,7 +71,7 @@ int main()
         printf("\n");
     }
 
-    // // 2nd Approach (Using 1st Formula)
+    // 2nd Approach (Using 1st Formula)
     // int toggle, colno, element;
 
     // for (int row = 0; row < maxRows; row++)
@@ -98,7 +98,7 @@ int main()
     //     printf("\n");
     // }
 
-    // // 3rd Approach (Using 2nd Formula)
+    // 3rd Approach (Using 2nd Formula)
     // int colsInCurrentRow, spacesInCurrentRow, toggle, colno, n, element;
 
     // for (int row = 0; row < maxRows; row++)
@@ -132,7 +132,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Find Factorial
 int fact(int n)

@@ -1,10 +1,10 @@
-// //  C program to convert Celcius to Fahrenheit.
+//  C program to convert Celcius to Fahrenheit.
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float cel, fah;
@@ -16,4 +16,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

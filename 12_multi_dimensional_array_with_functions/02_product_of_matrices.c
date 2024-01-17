@@ -14,7 +14,7 @@ void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
 void productOfTwoMatrices(int (*)[], int, int, int (*)[], int, int, int (*)[]);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ROWS_1, COLS_1, ROWS_2, COLS_2;
@@ -75,7 +75,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 

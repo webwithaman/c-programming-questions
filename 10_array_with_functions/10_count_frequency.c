@@ -14,7 +14,7 @@ void copyArray(int[], int, int[]);
 void printFrequencyOfEach(int[], int);
 int linearSearch(int arr[], int size, int search);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -46,7 +46,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 
@@ -85,7 +85,7 @@ int countFrequency(int arr[], int size, int element)
 // Function to Print Frequency of Each Element
 void printFrequencyOfEach(int arr[], int size)
 {
-    // // 1st Approach
+    // 1st Approach
     int inspected[size], k = 0;
 
     for (int i = 0; i < size; i++)
@@ -98,7 +98,7 @@ void printFrequencyOfEach(int arr[], int size)
         }
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int copyOfArr[size], count;
     // copyArray(arr, size, copyOfArr); // copy of arr into copyOfArr
     // sortAsc(copyOfArr, size);        // sort copyOfArr
@@ -131,7 +131,7 @@ int linearSearch(int arr[], int size, int search)
 // Function to Sort an Array in Ascending Order
 void sortAsc(int arr[], int size)
 {
-    // //  Bubble Sort
+    //  Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)

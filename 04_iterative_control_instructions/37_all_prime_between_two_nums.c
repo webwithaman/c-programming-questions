@@ -1,4 +1,4 @@
-// //  C program to print all Prime numbers between two given numbers
+//  C program to print all Prime numbers between two given numbers
 
 // Header Files
 #include <stdio.h>
@@ -6,7 +6,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -49,4 +49,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

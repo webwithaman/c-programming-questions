@@ -1,11 +1,11 @@
-// //  C program to print the first N odd natural numbers in reverse order
+//  C program to print the first N odd natural numbers in reverse order
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -22,7 +22,7 @@ int main()
 
     printf("\n>>>>>>>> First %d Odd Natural Numbers In Reverse Order <<<<<<<<\n", n);
 
-    // //  1st Approach (using while loop)
+    //  1st Approach (using while loop)
     int i = n;
     while (i)
     {
@@ -30,7 +30,7 @@ int main()
         i--;
     }
 
-    // // 2nd Approach (using while loop)
+    // 2nd Approach (using while loop)
     // int i = n * 2 - 1;
     // while (i > 0)
     // {
@@ -38,7 +38,7 @@ int main()
     //     i -= 2;
     // }
 
-    // // 3rd Approach (using while loop)
+    // 3rd Approach (using while loop)
     // int i = n * 2 -1;
     // while (i)
     // {
@@ -47,7 +47,7 @@ int main()
     //     i--;
     // }
 
-    // // 4th Approach (using do-while loop)
+    // 4th Approach (using do-while loop)
     // int i = n;
     // do
     // {
@@ -55,7 +55,7 @@ int main()
     //     i--;
     // } while (i);
 
-    // // 5th Approach (using do-while loop)
+    // 5th Approach (using do-while loop)
     // int i = n * 2 -1;
     // do
     // {
@@ -63,7 +63,7 @@ int main()
     //     i -= 2;
     // } while (i > 0);
 
-    // // 6th Approach (using do-while loop)
+    // 6th Approach (using do-while loop)
     // int i = n * 2 -1;
     // do
     // {
@@ -72,15 +72,15 @@ int main()
     //     i--;
     // } while (i);
 
-    // // 7th Approach (using for loop)
+    // 7th Approach (using for loop)
     // for (int i = n; i; i--)
     //     printf("\n%d", i * 2 - 1);
 
-    // // 8th Approach (using for loop)
+    // 8th Approach (using for loop)
     // for (int i = n * 2 -1; i > 0; i -= 2)
     //     printf("\n%d", i);
 
-    // // 9th Approach (using for loop)
+    // 9th Approach (using for loop)
     // for (int i = n * 2 -1; i; i--)
     // {
     //     if (i % 2)
@@ -91,4 +91,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

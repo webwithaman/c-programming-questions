@@ -14,7 +14,7 @@ struct Employee
     double salary;
 };
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     // create variable of structure Employee
@@ -24,4 +24,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

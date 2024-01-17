@@ -1,10 +1,10 @@
-// //  C program to print Unit digit of a number
+//  C program to print Unit digit of a number
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num;
@@ -16,4 +16,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

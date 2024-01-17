@@ -19,7 +19,7 @@ Pattern 45.
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int maxRows, maxCols;
@@ -36,7 +36,7 @@ int main()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -55,4 +55,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

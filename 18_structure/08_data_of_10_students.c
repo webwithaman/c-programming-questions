@@ -21,7 +21,7 @@ struct Student
 void inputStudent(struct Student *);
 void displayStudent(struct Student);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     // create variable of structure Student
@@ -47,7 +47,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Input Student data
 void inputStudent(struct Student *student)

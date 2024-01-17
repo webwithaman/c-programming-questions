@@ -8,7 +8,7 @@
 
 #define MAX_COLS 31
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char password[MAX_COLS];
@@ -50,4 +50,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

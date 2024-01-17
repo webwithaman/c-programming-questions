@@ -8,7 +8,7 @@
 double factorial(int);
 double combinations(int, int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int n, r;
@@ -32,7 +32,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 

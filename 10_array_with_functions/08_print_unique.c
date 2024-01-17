@@ -13,7 +13,7 @@ int linearSearch(int[], int, int);
 void copyArray(int[], int, int[]);
 void printUniqueElements(int[], int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -45,7 +45,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 
@@ -70,7 +70,7 @@ void inputArray(int arr[], int size)
 // Function to Sort an Array in Ascending Order
 void sortAsc(int arr[], int size)
 {
-    // //  Bubble Sort
+    //  Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)
@@ -109,7 +109,7 @@ void printUniqueElements(int arr[], int size)
 {
     putch('\n');
 
-    // // 1st Approach (using sorting)
+    // 1st Approach (using sorting)
     // int countDup = 0, copyOfArr[size], foundUnique = 0;
 
     // copyArray(arr, size, copyOfArr); // copy arr into copyOfArr
@@ -144,7 +144,7 @@ void printUniqueElements(int arr[], int size)
     //  if (!foundUnique)
     //     puts("\nThere Are No Unique Elements In Array...");
 
-    // // 2nd Approach
+    // 2nd Approach
     int inspected[size], k = 0, countDup = 0, foundUnique = 0;
 
     for (int i = 0; i < size; i++)

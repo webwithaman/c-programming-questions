@@ -11,7 +11,7 @@
 int searchChar(char[], char);
 char *replaceChar(char[], char, char);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], toBeReplace, replaceWith;
@@ -38,7 +38,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 

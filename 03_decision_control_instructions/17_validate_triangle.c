@@ -1,10 +1,10 @@
-// //  C program which takes the length of the sides of a triangle as an input.Display whether the triangle is valid or not
+//  C program which takes the length of the sides of a triangle as an input.Display whether the triangle is valid or not
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -21,4 +21,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

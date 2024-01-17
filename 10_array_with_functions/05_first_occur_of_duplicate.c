@@ -10,7 +10,7 @@ void printArray(int[], int);
 void inputArray(int[], int);
 int firstOccurOfAdjDup(int[], int, int *);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -47,7 +47,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 

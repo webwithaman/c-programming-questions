@@ -7,7 +7,7 @@
 
 #define ARRAY_SIZE 31
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], countAlphabets = 0, countDigits = 0, countSpecialChars = 0;
@@ -35,4 +35,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

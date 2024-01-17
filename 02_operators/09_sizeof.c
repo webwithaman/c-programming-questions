@@ -1,10 +1,10 @@
-// //  C program to demonstrate the use of sizeof() operator
+//  C program to demonstrate the use of sizeof() operator
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char c;
@@ -53,4 +53,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

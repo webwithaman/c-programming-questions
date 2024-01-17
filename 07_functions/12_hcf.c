@@ -9,7 +9,7 @@
 unsigned int lcmOfTwo(int, int);
 unsigned int hcfOfTwo(int, int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num1, num2;
@@ -28,7 +28,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 
@@ -41,7 +41,7 @@ unsigned int lcmOfTwo(int num1, int num2)
     num1 = fabs(num1);
     num2 = fabs(num2);
 
-    // // 1st Approach
+    // 1st Approach
     int max = num1 > num2 ? num1 : num2;
     int min = num1 < num2 ? num1 : num2;
 
@@ -51,7 +51,7 @@ unsigned int lcmOfTwo(int num1, int num2)
             return i;
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // return num1 * num2 / hcfOfTwo(num1, num2);
 }
 
@@ -69,7 +69,7 @@ unsigned int hcfOfTwo(int num1, int num2)
     if (min == 0)
         return max; // HCF of Any Non-Zero with Zero is that Non-Zero Number
 
-    // // 1st Approach
+    // 1st Approach
     if (max % min == 0)
         return min;
     else
@@ -81,7 +81,7 @@ unsigned int hcfOfTwo(int num1, int num2)
         }
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int remainder;
     // do
     // {
@@ -92,7 +92,7 @@ unsigned int hcfOfTwo(int num1, int num2)
 
     // return max;
 
-    // // 3rd Approach
+    // 3rd Approach
     // return num1 * num2 / lcmOfTwo(num1, num2);
 }
 
@@ -110,7 +110,7 @@ unsigned int hcfOfTwo(int num1, int num2)
     if (min == 0)
         return max; // HCF of Any Non-Zero with Zero is that Non-Zero Number
 
-    // // 1st Approach
+    // 1st Approach
     if (max % min == 0)
         return min;
     else
@@ -122,7 +122,7 @@ unsigned int hcfOfTwo(int num1, int num2)
         }
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int remainder;
     // do
     // {
@@ -133,6 +133,6 @@ unsigned int hcfOfTwo(int num1, int num2)
 
     // return max;
 
-    // // 3rd Approach
+    // 3rd Approach
     // return num1 * num2 / lcmOfTwo(num1, num2);
 }

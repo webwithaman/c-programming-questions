@@ -1,11 +1,11 @@
-// //  C program to input Three Digit Number and calculate Sum of it's Digits
+//  C program to input Three Digit Number and calculate Sum of it's Digits
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num, sumOfDigits;
@@ -25,4 +25,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

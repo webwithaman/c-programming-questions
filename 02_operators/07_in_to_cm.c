@@ -1,4 +1,4 @@
-// //  C program to convert Inches to Centimeters
+//  C program to convert Inches to Centimeters
 
 // Header Files
 #include <stdio.h>
@@ -7,7 +7,7 @@
 // Define Macros
 #define CM_IN_1_INCH 2.54
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float cm, in;
@@ -19,4 +19,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

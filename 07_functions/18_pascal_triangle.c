@@ -9,7 +9,7 @@
 void pascalTriangle(int);
 double factorial(int n);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int maxRows;
@@ -22,7 +22,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 

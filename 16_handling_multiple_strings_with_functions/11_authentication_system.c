@@ -32,7 +32,7 @@ char usernames[MAX_ROWS][MAX_COLS],
     passwords[MAX_ROWS][MAX_COLS];
 int totalAccountCreated = 0;
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -100,7 +100,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions
 

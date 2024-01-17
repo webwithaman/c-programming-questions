@@ -1,11 +1,11 @@
-// //  C program to convert last Digit of a Number into Zero => Digit = 245 Make it => 240.
+//  C program to convert last Digit of a Number into Zero => Digit = 245 Make it => 240.
 // 👉 Output => Result After Converting Last Digit of 245 into 0 => 245
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num, result;
@@ -23,4 +23,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

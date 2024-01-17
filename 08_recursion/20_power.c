@@ -7,7 +7,7 @@
 // Function Declaration (Prototype)
 double power(int, int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int base, exp;
@@ -22,7 +22,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definition 👇👇
 

@@ -14,7 +14,7 @@ int print2DChar(char[][MAX_COLS], int);
 int search2DStr(char[][MAX_COLS], int, char[]);
 int compareStrings(char[], char[]);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ROWS = 10;
@@ -68,7 +68,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions
 

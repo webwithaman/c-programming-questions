@@ -6,7 +6,7 @@
 
 #define ARRAY_SIZE 10
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int nums[ARRAY_SIZE];
@@ -22,7 +22,7 @@ int main()
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", nums[i]);
 
-    // // Sorting using Selection Sort
+    // Sorting using Selection Sort
     // for (int i = 0; i < ARRAY_SIZE - 1; i++)
     // {
     //     for (int j = i + 1; j < ARRAY_SIZE; j++)
@@ -36,7 +36,7 @@ int main()
     //     }
     // }
 
-    // // Sorting using Bubble Sort
+    // Sorting using Bubble Sort
     // for (int i = 0; i < ARRAY_SIZE - 1; i++)
     // {
     //     for (int j = 0; j < ARRAY_SIZE - 1 - i; j++)
@@ -59,4 +59,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

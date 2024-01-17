@@ -8,7 +8,7 @@
 // Functions Declarations (Prototypes)
 char *inputString();
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char *ptr;
@@ -30,7 +30,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Input a string untill user press enter and store it in an array   without any memory wastage
 char *inputString()

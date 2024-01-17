@@ -18,7 +18,7 @@ struct Employee
 // Functions Declarations (Prototypes)
 void inputEmployee(struct Employee *);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     // create variable of structure Employee
@@ -32,7 +32,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Input Employee data
 void inputEmployee(struct Employee *emp)

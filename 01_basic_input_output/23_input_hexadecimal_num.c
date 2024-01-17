@@ -1,10 +1,10 @@
-// //  C program to take input a number in Hexadecimal form and print its Decimal form
+//  C program to take input a number in Hexadecimal form and print its Decimal form
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -16,4 +16,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

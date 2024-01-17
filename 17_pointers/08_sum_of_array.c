@@ -6,7 +6,7 @@
 
 #define ARRAY_SIZE 10
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int *ptr, nums[ARRAY_SIZE], sum = 0;
@@ -30,4 +30,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

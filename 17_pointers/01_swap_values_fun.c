@@ -7,7 +7,7 @@
 // Functions Declarations (Prototypes)
 void swapTwoVal(int *, int *);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int a, b;
@@ -28,27 +28,27 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Swap values of two int variables
 void swapTwoVal(int *a, int *b)
 {
 
-    // // using Addition and Subtraction
+    // using Addition and Subtraction
     *a = *a + *b;
     *b = *a - *b;
     *a = *a - *b;
 
-    // // using Divison and Multiplication
+    // using Divison and Multiplication
     // *a = *a * *b;
     // *b = *a / *b;
     // *a = *a / *b;
 
-    // // using Bitwise XOR (^)
+    // using Bitwise XOR (^)
     // *a = *a ^ *b;
     // *b = *a ^ *b;
     // *a = *a ^ *b;
 
-    // // In Single Statement
+    // In Single Statement
     // *a = (*a + *b) - (*b = *a);
 }

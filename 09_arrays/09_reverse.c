@@ -5,7 +5,7 @@
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -31,7 +31,7 @@ int main()
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", nums[i]);
 
-    // // 1st Approach
+    // 1st Approach
     int beg = 0, end = ARRAY_SIZE - 1, temp;
     while (beg < end)
     {
@@ -42,7 +42,7 @@ int main()
         end--;
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int temp;
     // for (int i = 0; i < ARRAY_SIZE / 2; i++)
     // {
@@ -60,4 +60,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

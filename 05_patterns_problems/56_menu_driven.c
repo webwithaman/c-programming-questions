@@ -66,7 +66,7 @@ void pattern_53();
 void pattern_54();
 void pattern_55();
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -310,7 +310,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions
 int choice()
@@ -362,10 +362,10 @@ void pattern_1()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = 1; col <= row; col++)
@@ -374,7 +374,7 @@ void pattern_1()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -416,10 +416,10 @@ void pattern_2()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -437,7 +437,7 @@ void pattern_2()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -480,10 +480,10 @@ void pattern_3()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = 1; col <= maxCols + 1 - row; col++)
@@ -492,7 +492,7 @@ void pattern_3()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -535,10 +535,10 @@ void pattern_4()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -556,7 +556,7 @@ void pattern_4()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -599,10 +599,10 @@ void pattern_5()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -620,7 +620,7 @@ void pattern_5()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow, colsInCurrentRow = -1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -638,7 +638,7 @@ void pattern_5()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -681,10 +681,10 @@ void pattern_6()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -703,7 +703,7 @@ void pattern_6()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int colsInCurrentRow = maxCols + 2, spacesInCurrentRow;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -721,7 +721,7 @@ void pattern_6()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -764,10 +764,10 @@ void pattern_7()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -788,7 +788,7 @@ void pattern_7()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow, colsInCurrentRow = maxCols + 2;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -808,7 +808,7 @@ void pattern_7()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int spacesInCurrentRow;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -827,7 +827,7 @@ void pattern_7()
     //     printf("\n");
     // }
 
-    // // 4th Approach
+    // 4th Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -869,10 +869,10 @@ void pattern_8()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -891,7 +891,7 @@ void pattern_8()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -937,10 +937,10 @@ void pattern_9()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -959,7 +959,7 @@ void pattern_9()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1005,10 +1005,10 @@ void pattern_10()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1027,7 +1027,7 @@ void pattern_10()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1076,10 +1076,10 @@ void pattern_11()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1098,7 +1098,7 @@ void pattern_11()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
     // char charAtCol;
 
@@ -1120,7 +1120,7 @@ void pattern_11()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // char charAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1167,10 +1167,10 @@ void pattern_12()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1189,7 +1189,7 @@ void pattern_12()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
     // char charAtCol;
 
@@ -1211,7 +1211,7 @@ void pattern_12()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // char charAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1260,10 +1260,10 @@ void pattern_13()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1282,7 +1282,7 @@ void pattern_13()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
     // char charAtCol;
 
@@ -1304,7 +1304,7 @@ void pattern_13()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // char charAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1353,10 +1353,10 @@ void pattern_14()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1374,7 +1374,7 @@ void pattern_14()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -1416,10 +1416,10 @@ void pattern_15()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1442,7 +1442,7 @@ void pattern_15()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -1485,10 +1485,10 @@ void pattern_16()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1511,7 +1511,7 @@ void pattern_16()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -1554,10 +1554,10 @@ void pattern_17()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1581,7 +1581,7 @@ void pattern_17()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -1628,10 +1628,10 @@ void pattern_18()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1653,7 +1653,7 @@ void pattern_18()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int halfOfCols = (maxCols + 1) / 2, vary = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1709,7 +1709,7 @@ void pattern_19()
     fgets(name, maxCols + 1, stdin);
     name[strcspn(name, "\n")] = 0;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -1778,10 +1778,10 @@ void pattern_20()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int numAtCol = 1;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1793,7 +1793,7 @@ void pattern_20()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol = 1, vary = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1806,7 +1806,7 @@ void pattern_20()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int numAtCol = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1851,10 +1851,10 @@ void pattern_21()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int numAtCol;
 
     for (int row = 1; row <= maxRows; row++)
@@ -1867,7 +1867,7 @@ void pattern_21()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = row; col <= row * 2 - 1; col++)
@@ -1876,7 +1876,7 @@ void pattern_21()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1922,10 +1922,10 @@ void pattern_22()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
 
@@ -1935,7 +1935,7 @@ void pattern_22()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // char charAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -1975,10 +1975,10 @@ void pattern_23()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     char charAtCol = 'A';
 
     for (int row = 1; row <= maxRows; row++)
@@ -1989,7 +1989,7 @@ void pattern_23()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
@@ -2026,10 +2026,10 @@ void pattern_24()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2047,7 +2047,7 @@ void pattern_24()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -2089,10 +2089,10 @@ void pattern_25()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2110,7 +2110,7 @@ void pattern_25()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -2152,10 +2152,10 @@ void pattern_26()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2171,7 +2171,7 @@ void pattern_26()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -2212,10 +2212,10 @@ void pattern_27()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     // int colsInCurrentRow, spacesInCurrentRow, numAtCol = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2233,7 +2233,7 @@ void pattern_27()
     //     printf("\n");
     // }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2278,10 +2278,10 @@ void pattern_28()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = 1; col <= maxRows + 1 - row; col++)
@@ -2296,7 +2296,7 @@ void pattern_28()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2342,10 +2342,10 @@ void pattern_29()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = maxCols; col; col--)
@@ -2354,7 +2354,7 @@ void pattern_29()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2393,10 +2393,10 @@ void pattern_30()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int numAtCol = 1;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2407,7 +2407,7 @@ void pattern_30()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
@@ -2445,10 +2445,10 @@ void pattern_31()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2461,7 +2461,7 @@ void pattern_31()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -2507,10 +2507,10 @@ void pattern_32()
     // Determine Number of Columns According to maxRows
     maxCols = (maxRows + 1) / 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int vary = 1;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2532,7 +2532,7 @@ void pattern_32()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int colsInCurrentRow;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2578,10 +2578,10 @@ void pattern_33()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2597,7 +2597,7 @@ void pattern_33()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int colsInCurrentRow, spacesInCurrentRow, toggle;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2619,7 +2619,7 @@ void pattern_33()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int toggle;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2672,10 +2672,10 @@ void pattern_34()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2691,7 +2691,7 @@ void pattern_34()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int colsInCurrentRow, spacesInCurrentRow, toggle;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2714,7 +2714,7 @@ void pattern_34()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int toggle;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2773,10 +2773,10 @@ void pattern_35()
     maxRows = maxRowsInOne * 2;
     maxCols = maxRowsInOne * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow, colsInCurrentRow, toggle;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2797,10 +2797,10 @@ void pattern_35()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
 
-    // // Print Upper Part
+    // Print Upper Part
     // for (int row = 1; row <= maxRowsInOne; row++)
     // {
     //     spacesInCurrentRow = (row - 1) * 2;
@@ -2814,7 +2814,7 @@ void pattern_35()
     //     printf("\n");
     // }
 
-    // // Print Lower Part
+    // Print Lower Part
     // for (int row = 1; row <= maxRowsInOne; row++)
     // {
     //     spacesInCurrentRow = (maxRowsInOne - row) * 2;
@@ -2828,7 +2828,7 @@ void pattern_35()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int toggle, vary = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2888,10 +2888,10 @@ void pattern_36()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2;
 
     for (int row = 1; row <= maxRows; row++)
@@ -2918,7 +2918,7 @@ void pattern_36()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int halfOfCols = (maxCols + 1) / 2, vary = 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -2970,10 +2970,10 @@ void pattern_37()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach (Using 1st Formula)
+    // 1st Approach (Using 1st Formula)
     int spacesInCurrentRow, element;
 
     for (int row = 0; row < maxRows; row++)
@@ -2992,7 +2992,7 @@ void pattern_37()
         printf("\n");
     }
 
-    // // 2nd Approach (Using 1st Formula)
+    // 2nd Approach (Using 1st Formula)
     // int toggle, colno, element;
 
     // for (int row = 0; row < maxRows; row++)
@@ -3019,7 +3019,7 @@ void pattern_37()
     //     printf("\n");
     // }
 
-    // // 3rd Approach (Using 2nd Formula)
+    // 3rd Approach (Using 2nd Formula)
     // int colsInCurrentRow, spacesInCurrentRow, toggle, colno, n, element;
 
     // for (int row = 0; row < maxRows; row++)
@@ -3093,10 +3093,10 @@ void pattern_38()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2, numAtCol = 0;
 
     for (int row = 1; row <= maxRows; row++)
@@ -3130,7 +3130,7 @@ void pattern_38()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3153,7 +3153,7 @@ void pattern_38()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2, numAtCol = 0;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3186,7 +3186,7 @@ void pattern_38()
     //     printf("\n");
     // }
 
-    // // 4th Approach
+    // 4th Approach
     // int halfOfCols = (maxCols + 1) / 2, vary = 1, numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3245,10 +3245,10 @@ void pattern_39()
     maxCols = maxRows;
     maxRowsInOne = (maxRows + 1) / 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow = maxRows & 1 ? -1 : -2, colsInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -3270,7 +3270,7 @@ void pattern_39()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRowsInOne; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -3297,7 +3297,7 @@ void pattern_39()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int vary = maxRows & 1 ? 2 : 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3349,10 +3349,10 @@ void pattern_40()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows + 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int vary = 1;
 
     for (int row = 1; row <= maxRows; row++)
@@ -3374,7 +3374,7 @@ void pattern_40()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
     // int vary = 1;
 
@@ -3429,7 +3429,7 @@ void pattern_41()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -3475,10 +3475,10 @@ void pattern_42()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = 1; col <= row; col++)
@@ -3487,7 +3487,7 @@ void pattern_42()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int col = 1; col <= maxCols; col++)
@@ -3529,7 +3529,7 @@ void pattern_43()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 3;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -3579,10 +3579,10 @@ void pattern_44()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows + 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int vary = 1;
 
     for (int row = 1; row <= maxRows; row++)
@@ -3604,7 +3604,7 @@ void pattern_44()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
     // int vary = 1;
 
@@ -3671,7 +3671,7 @@ void pattern_45()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -3715,10 +3715,10 @@ void pattern_46()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     for (int row = 1; row <= maxRows; row++)
     {
         for (int space = 1; space <= maxRows - row; space++)
@@ -3735,7 +3735,7 @@ void pattern_46()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -3777,10 +3777,10 @@ void pattern_47()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int sum = sumOfFirstNNums(maxRows), addNum;
 
     for (int row = 1; row <= maxRows; row++)
@@ -3801,7 +3801,7 @@ void pattern_47()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int sum = sumOfFirstNNums(maxRows), countForLeft = 1, countForRight;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3824,7 +3824,7 @@ void pattern_47()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int sum = maxRows * (maxRows + 1) / 2, numAtCol, lock;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3894,10 +3894,10 @@ void pattern_48()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow = -1, spacesInCurrentRow, halfOfCols = (maxCols + 1) / 2, toggle;
 
     for (int row = 1; row <= maxRows; row++)
@@ -3923,7 +3923,7 @@ void pattern_48()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int halfOfCols = (maxCols + 1) / 2, vary = 1, toggle;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -3985,7 +3985,7 @@ void pattern_49()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows & 1 ? maxRows : (maxRows += 1);
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -4030,10 +4030,10 @@ void pattern_50()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow = -1, spacesInCurrentRow, numAtCol = 0;
 
     for (int row = 1; row <= maxRows; row++)
@@ -4054,7 +4054,7 @@ void pattern_50()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow, numAtCol = 0;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -4075,7 +4075,7 @@ void pattern_50()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int halfOfCols = (maxCols + 1) / 2, vary = 1, numAtCol;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -4123,10 +4123,10 @@ void pattern_51()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int numAtCol;
 
     for (int row = 1; row <= maxRows; row++)
@@ -4149,7 +4149,7 @@ void pattern_51()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -4197,7 +4197,7 @@ void pattern_52()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
     char ch = 'a';
@@ -4245,10 +4245,10 @@ void pattern_53()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     char ch;
 
     for (int row = 1; row <= maxRows; row++)
@@ -4261,7 +4261,7 @@ void pattern_53()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= row; col++)
@@ -4299,10 +4299,10 @@ void pattern_54()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     char ch;
 
     for (int row = 1; row <= maxRows; row++)
@@ -4315,7 +4315,7 @@ void pattern_54()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxRows + 1 - row; col++)
@@ -4355,10 +4355,10 @@ void pattern_55()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows = n * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int vary = 1, numAtCol;
 
     for (int row = 1; row <= maxRows; row++)
@@ -4380,7 +4380,7 @@ void pattern_55()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 0; row < maxRows; row++)

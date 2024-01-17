@@ -1,4 +1,4 @@
-// //  C program to calculate LCM of two numbers
+//  C program to calculate LCM of two numbers
 
 // Header Files
 #include <stdio.h>
@@ -6,7 +6,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -25,7 +25,7 @@ int main()
     int max = num1 > num2 ? num1 : num2;
     int min = num1 < num2 ? num1 : num2;
 
-    // // 1st Approach
+    // 1st Approach
     int lcm;
     for (int i = max; i <= num1 * num2; i += max)
     {
@@ -37,7 +37,7 @@ int main()
     }
     printf("\nLCM => %d", lcm);
 
-    // // 2nd Approach
+    // 2nd Approach
     // int lcm;
     // for (int j = max; j <= num1 * num2; j += max)
     // {
@@ -49,7 +49,7 @@ int main()
     // }
     // printf("\nLCM => %d", lcm);
 
-    // // 3rd Approach
+    // 3rd Approach
     // int hcf, lcm;
     // if (max % min)
     // {
@@ -71,7 +71,7 @@ int main()
     // lcm = num1 * num2 / hcf;
     // printf("\nLCM => %d", lcm);
 
-    // // 4th Approach
+    // 4th Approach
     // int remainder, hcf, lcm;
     // do
     // {
@@ -88,4 +88,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

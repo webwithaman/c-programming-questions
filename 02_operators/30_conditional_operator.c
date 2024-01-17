@@ -1,10 +1,10 @@
-// //  C program to Demonstrate the use of Conditional Operator ( ? : )
+//  C program to Demonstrate the use of Conditional Operator ( ? : )
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     // Check Whether A Number is Non-Positive or Negative Using Conditional operator and Even or Odd :-
@@ -22,4 +22,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

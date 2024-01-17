@@ -1,11 +1,11 @@
-// //  C program to find all Prime Factors of a given Number
+//  C program to find all Prime Factors of a given Number
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -40,4 +40,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

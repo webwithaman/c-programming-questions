@@ -1,11 +1,11 @@
-// //  C program which takes the month number as an input and display number of days in that month
+//  C program which takes the month number as an input and display number of days in that month
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
 #include <time.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -81,4 +81,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

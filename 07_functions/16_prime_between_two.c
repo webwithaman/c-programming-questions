@@ -9,7 +9,7 @@
 int isPrime(int);
 void primeBetweenTwo(int, int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int beg, end;
@@ -22,7 +22,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 

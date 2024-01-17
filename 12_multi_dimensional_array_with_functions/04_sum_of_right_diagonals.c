@@ -13,7 +13,7 @@ void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
 int sumOfRightDiag(int (*)[], int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ROWS, COLS;
@@ -48,7 +48,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 

@@ -1,11 +1,11 @@
-// //  C program to count number of characters in this string => “C Programming” using printf() function. 
+//  C program to count number of characters in this string => “C Programming” using printf() function. 
 
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -16,4 +16,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

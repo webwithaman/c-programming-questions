@@ -1,4 +1,4 @@
-// //  C program to print all Armstrong numbers under 1000
+//  C program to print all Armstrong numbers under 1000
 
 // Header Files
 #include <stdio.h>
@@ -6,7 +6,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -44,4 +44,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

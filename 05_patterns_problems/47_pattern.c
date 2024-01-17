@@ -19,7 +19,7 @@ Pattern 47.
 // Function Prototype (Declaration)
 int sumOfFirstNNums(int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int maxRows, maxCols;
@@ -36,10 +36,10 @@ int main()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int sum = sumOfFirstNNums(maxRows), addNum;
 
     for (int row = 1; row <= maxRows; row++)
@@ -60,7 +60,7 @@ int main()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int sum = sumOfFirstNNums(maxRows), countForLeft = 1, countForRight;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -83,7 +83,7 @@ int main()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int sum = maxRows * (maxRows + 1) / 2, numAtCol, lock;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -118,7 +118,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Find Sum of First N Natural Numbers
 int sumOfFirstNNums(int n)

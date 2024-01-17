@@ -10,7 +10,7 @@
 // Function Declarations
 char *strReverse(char[]);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str[ARRAY_SIZE];
@@ -27,7 +27,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 
@@ -41,7 +41,7 @@ char *strReverse(char str[])
     while (str[length])
         length++;
 
-    // // 1st Approach
+    // 1st Approach
     int beg = 0, end = length - 1;
     while (beg < end)
     {
@@ -55,7 +55,7 @@ char *strReverse(char str[])
 
     return str;
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int i = 0; i < length / 2; i++)
     // {
     //     // Swap str[i] with str[length - 1 - i]

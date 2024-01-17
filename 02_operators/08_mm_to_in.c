@@ -1,4 +1,4 @@
-// //  C program to convert Millimeters to Inches
+//  C program to convert Millimeters to Inches
 
 // Header Files
 #include <stdio.h>
@@ -8,7 +8,7 @@
 #define CM_IN_1_INCH 2.54
 #define MM_IN_1_CM 10
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float mm, in;
@@ -20,4 +20,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

@@ -10,7 +10,7 @@ void printArray(int[], int);
 void inputArray(int[], int);
 void reverseArray(int[], int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -45,7 +45,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 
@@ -71,7 +71,7 @@ void inputArray(int nums[], int size)
 void reverseArray(int nums[], int size)
 {
 
-    // // 1st Approach
+    // 1st Approach
     int beg = 0, end = size - 1, temp;
     while (beg < end)
     {
@@ -82,7 +82,7 @@ void reverseArray(int nums[], int size)
         end--;
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int temp;
     // for (int i = 0; i < size / 2; i++)
     // {

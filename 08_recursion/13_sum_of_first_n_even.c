@@ -8,7 +8,7 @@
 // Function Declaration (Prototype)
 long long unsigned int sumOfFirstNEven(int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int n;
@@ -27,7 +27,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definition 👇👇
 

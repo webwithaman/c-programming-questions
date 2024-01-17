@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -17,7 +17,7 @@ int main()
     printf("\nEnter Consumed Electricity Units => ");
     scanf("%f", &units);
 
-    // // 1st Approach
+    // 1st Approach
     switch (units >= 50)
     {
     case 1:
@@ -59,7 +59,7 @@ int main()
     // Add Additional surcharge of 20% is added to the bill.
     billAmount += .2 * billAmount;
 
-    // // 2nd Approach
+    // 2nd Approach
     // switch (units >= 50)
     // {
     // case 1:
@@ -93,4 +93,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

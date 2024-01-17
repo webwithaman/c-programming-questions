@@ -8,7 +8,7 @@
 // Function Declaration (Prototype)
 int isPrime(int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num;
@@ -28,7 +28,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 

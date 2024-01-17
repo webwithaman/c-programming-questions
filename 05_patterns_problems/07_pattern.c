@@ -17,7 +17,7 @@ Pattern 07.
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int maxRows, maxCols;
@@ -34,10 +34,10 @@ int main()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int colsInCurrentRow, spacesInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -58,7 +58,7 @@ int main()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int spacesInCurrentRow, colsInCurrentRow = maxCols + 2;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -78,7 +78,7 @@ int main()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int spacesInCurrentRow;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -97,7 +97,7 @@ int main()
     //     printf("\n");
     // }
 
-    // // 4th Approach
+    // 4th Approach
     // for (int row = 1; row <= maxRows; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -115,4 +115,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

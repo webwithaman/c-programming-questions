@@ -10,7 +10,7 @@
 // Function Declaration
 void swap(char *, char *);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], length = 0;
@@ -25,7 +25,7 @@ int main()
     while (str[length])
         length++;
 
-    // // 1st Approach (Bubble Sort)
+    // 1st Approach (Bubble Sort)
     for (int i = 0; i < length - 1; i++)
     {
         for (int j = 0; j < length - 1 - i; j++)
@@ -35,7 +35,7 @@ int main()
         }
     }
 
-    // // 2nd Approach (Selection Sort)
+    // 2nd Approach (Selection Sort)
     // for (int i = 0; i < length - 1; i++)
     // {
     //     for (int j = i + 1; j < length; j++)
@@ -51,7 +51,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Swap values of Two Character variables
 void swap(char *ch1, char *ch2)

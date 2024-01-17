@@ -13,7 +13,7 @@ void rotateTowardsLeft(int[], int, int);
 void rotateTowardsRight(int[], int, int);
 void swap(int *, int *);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -73,7 +73,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 
@@ -108,7 +108,7 @@ void rotateArray(int arr[], int size, int position, int direction)
 // Function to Rotate An Array by n position towards Left
 void rotateTowardsLeft(int arr[], int size, int position)
 {
-    // // 1st Approach
+    // 1st Approach
     int saveElements[position];
 
     for (int i = 0; i < position; i++)
@@ -120,7 +120,7 @@ void rotateTowardsLeft(int arr[], int size, int position)
     for (int i = 0; i < position; i++)
         arr[i + size - position] = saveElements[i];
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int j = 0; j < position; j++)
     // {
     //     for (int i = 0; i < size - 1; i++)
@@ -133,7 +133,7 @@ void rotateTowardsLeft(int arr[], int size, int position)
 // Function to Rotate An Array by n position towards Right
 void rotateTowardsRight(int arr[], int size, int position)
 {
-    // // 1st Approach
+    // 1st Approach
     int saveElements[position];
 
     for (int i = size - position; i < size; i++)
@@ -145,7 +145,7 @@ void rotateTowardsRight(int arr[], int size, int position)
     for (int i = 0; i < position; i++)
         arr[i] = saveElements[i];
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int j = 0; j < position; j++)
     // {
     //     for (int i = size - 1; i > 0; i--)

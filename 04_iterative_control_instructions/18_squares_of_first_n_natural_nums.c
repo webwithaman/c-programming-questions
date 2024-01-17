@@ -1,11 +1,11 @@
-// //  C program to print squares of the first N natural numbers
+//  C program to print squares of the first N natural numbers
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -22,7 +22,7 @@ int main()
 
     printf("\n>>>>>>>> Squares of First %d Natural Numbers <<<<<<<<\n", n);
 
-    // //  1st Approach (using while loop)
+    //  1st Approach (using while loop)
     int i = 1;
     while (i <= n)
     {
@@ -30,12 +30,12 @@ int main()
         i++;
     }
 
-    // // 2nd Approach (using while loop)
+    // 2nd Approach (using while loop)
     // int i = 0;
     // while (i++ < n)
     //     printf("\n%d", i*i);
 
-    // // 3rd Approach (using do-while loop)
+    // 3rd Approach (using do-while loop)
     // int i = 1;
     // do
     // {
@@ -43,14 +43,14 @@ int main()
     //     i++;
     // } while (i <= n);
 
-    // // 4th Approach (using do-while loop)
+    // 4th Approach (using do-while loop)
     // int i = 0;
     // do
     // {
     //     printf("\n%d", (i + 1) * (i + 1));
     // } while (++i < n);
 
-    // // 5th Approach (using for loop)
+    // 5th Approach (using for loop)
     // for (int i = 1; i <= n; i++)
     //     printf("\n%d", i * i);
 
@@ -58,4 +58,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

@@ -1,10 +1,10 @@
-// //  C program to take input an integer number and now take only first two digits of that number which user enters and omit rest of the digits
+//  C program to take input an integer number and now take only first two digits of that number which user enters and omit rest of the digits
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -16,4 +16,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

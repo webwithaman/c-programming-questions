@@ -1,11 +1,11 @@
-// //  C program calculate Compound Interest
+//  C program calculate Compound Interest
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, totalAmount, compoundInterest, compoundedAfterMonths;
@@ -29,4 +29,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

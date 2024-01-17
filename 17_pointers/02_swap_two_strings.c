@@ -11,7 +11,7 @@
 void swapTwoStrs1(char *, char *);
 void swapTwoStrs2(char **, char **);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str1[ARRAY_SIZE], str2[ARRAY_SIZE];
@@ -27,10 +27,10 @@ int main()
     printf("\n\n>>>>>>>>>>> Before Swapping <<<<<<<<<<<\n");
     printf("str1 => %s\nstr2 => %s\n", str1, str2);
 
-    // // Swap Strings str1 and str2 (1st Approach)
+    // Swap Strings str1 and str2 (1st Approach)
     swapTwoStrs1(str1, str2);
 
-    // // Swap Strings str1 and str2 (2nd Approach)
+    // Swap Strings str1 and str2 (2nd Approach)
     // swapTwoStrs2((char **)&str1, (char **)&str2);
 
     printf("\n\n>>>>>>>>>>> After Swapping <<<<<<<<<<<\n");
@@ -40,7 +40,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Swap Two Strings (1st Approach)
 void swapTwoStrs1(char *str1, char *str2)

@@ -1,4 +1,4 @@
-// //  C program to find all roots of a quadratic equation using switch case
+//  C program to find all roots of a quadratic equation using switch case
 
 // Header Files
 #include <stdio.h>
@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float a, b, c, disc, r1, r2, imaginaryPart;
@@ -55,4 +55,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

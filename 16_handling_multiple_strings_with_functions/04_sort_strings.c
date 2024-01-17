@@ -16,7 +16,7 @@ int compareStrings(char str1[], char str2[]);
 char *copyString(char des[], char src[]);
 int **sort2DChar(char strs[][MAX_COLS], int rows);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ROWS;
@@ -52,7 +52,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions
 

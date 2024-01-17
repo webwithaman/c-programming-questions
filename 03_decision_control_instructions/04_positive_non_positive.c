@@ -1,10 +1,10 @@
-// //  C program to check whether a given number is positive or non-positive
+//  C program to check whether a given number is positive or non-positive
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num;
@@ -20,4 +20,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

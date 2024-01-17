@@ -1,4 +1,4 @@
-// //  C program to convert Kilometers to Miles
+//  C program to convert Kilometers to Miles
 
 // Header Files
 #include <stdio.h>
@@ -7,7 +7,7 @@
 // Define Macros
 #define KM_IN_1_MILE 1.609344
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float mile, km;
@@ -19,4 +19,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

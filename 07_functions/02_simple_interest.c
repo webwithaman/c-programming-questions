@@ -7,7 +7,7 @@
 // Function Declaration (Prototype)
 double simpleInterest(double, double, double);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, si;
@@ -24,7 +24,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definition 👇👇
 

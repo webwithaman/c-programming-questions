@@ -1,10 +1,10 @@
-// //  C program to find Area and Perimeter of a Rectangle
+//  C program to find Area and Perimeter of a Rectangle
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float area, perimeter, l, b;
@@ -18,4 +18,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

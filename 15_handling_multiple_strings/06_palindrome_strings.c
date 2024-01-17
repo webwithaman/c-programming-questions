@@ -9,7 +9,7 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ROWS;
@@ -64,4 +64,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

@@ -1,10 +1,10 @@
-// //  C program calculate Simple Interest
+//  C program calculate Simple Interest
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, totalAmount, simpleInterest;
@@ -22,4 +22,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

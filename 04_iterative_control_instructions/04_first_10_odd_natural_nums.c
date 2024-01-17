@@ -1,16 +1,16 @@
-// //  C program to print the first 10 odd natural numbers
+//  C program to print the first 10 odd natural numbers
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
     printf("\n>>>>>>>>> First 10 Odd Natural Numbers <<<<<<<<<\n");
 
-    // //  1st Approach (using while loop)
+    //  1st Approach (using while loop)
     int i = 1;
     while (i <= 10)
     {
@@ -18,7 +18,7 @@ int main()
         i++;
     }
 
-    // // 2nd Approach (using while loop)
+    // 2nd Approach (using while loop)
     // int i = 1;
     // while (i <= 20)
     // {
@@ -26,7 +26,7 @@ int main()
     //     i += 2;
     // }
 
-    // // 3rd Approach (using while loop)
+    // 3rd Approach (using while loop)
     // int i = 1;
     // while (i <= 20)
     // {
@@ -35,14 +35,14 @@ int main()
     //     i++;
     // }
 
-    // // 4th Approach (using do-while loop)
+    // 4th Approach (using do-while loop)
     // int i = 1;
     // do
     // {
     //     printf("\n%d", i * 2 - 1);
     // } while (++i <= 10);
 
-    // // 5th Approach (using do-while loop)
+    // 5th Approach (using do-while loop)
     // int i = 1;
     // do
     // {
@@ -50,7 +50,7 @@ int main()
     //     i += 2;
     // } while (i <= 20);
 
-    // // 6th Approach (using do-while loop)
+    // 6th Approach (using do-while loop)
     // int i = 1;
     // do
     // {
@@ -59,15 +59,15 @@ int main()
     //     i++;
     // } while (i <= 20);
 
-    // // 7th Approach (using for loop)
+    // 7th Approach (using for loop)
     // for (int i = 1; i <= 10; i++)
     //     printf("\n%d", i * 2 - 1);
 
-    // // 8th Approach (using for loop)
+    // 8th Approach (using for loop)
     // for (int i = 1; i <= 20; i += 2)
     //     printf("\n%d", i);
 
-    // // 9th Approach (using for loop)
+    // 9th Approach (using for loop)
     // for (int i = 1; i <= 20; i++)
     // {
     //     if (i % 2)
@@ -78,4 +78,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

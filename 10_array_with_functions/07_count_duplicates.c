@@ -13,7 +13,7 @@ void sortAsc(int[], int);
 int linearSearch(int[], int, int);
 void copyArray(int[], int, int[]);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -47,7 +47,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 
@@ -73,7 +73,7 @@ void inputArray(int arr[], int size)
 int countTotalDuplicates(int arr[], int size)
 {
 
-    // // 1st Approach (using sorting)
+    // 1st Approach (using sorting)
     int countDup = 0, copyOfArr[size];
 
     copyArray(arr, size, copyOfArr); // copy arr into copyOfArr
@@ -86,7 +86,7 @@ int countTotalDuplicates(int arr[], int size)
     }
     return countDup;
 
-    // // 2nd Approach
+    // 2nd Approach
     // int inspected[size], k = 0, countDup = 0;
 
     // for (int i = 0; i < size; i++)
@@ -107,7 +107,7 @@ int countTotalDuplicates(int arr[], int size)
 // Function to Sort an Array in Ascending Order
 void sortAsc(int arr[], int size)
 {
-    // //  Bubble Sort
+    //  Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)

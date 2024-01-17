@@ -1,11 +1,11 @@
-// //  C program to calculate HCF of two numbers
+//  C program to calculate HCF of two numbers
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -18,7 +18,7 @@ int main()
     int max = num1 > num2 ? num1 : num2;
     int min = num1 < num2 ? num1 : num2;
 
-    // // 1st Approach
+    // 1st Approach
     int remainder, hcf;
     do
     {
@@ -30,7 +30,7 @@ int main()
     hcf = num1;
     printf("\nHCF => %d", hcf);
 
-    // // 2nd Approach
+    // 2nd Approach
     // int hcf;
     // if (max % min)
     // {
@@ -51,7 +51,7 @@ int main()
 
     // printf("\nHCF => %d", hcf);
 
-    // // 3rd Approach
+    // 3rd Approach
     // int lcm;
     // for (int j = max; j <= num1 * num2; j += max)
     // {
@@ -64,7 +64,7 @@ int main()
     // hcf = num1 * num2 / lcm;
     // printf("\nHCF => %d", hcf);
 
-    // // 4th Approach
+    // 4th Approach
     // int lcm, hcf;
     // for (int i = max; i <= num1 * num2; i += max)
     // {
@@ -81,4 +81,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

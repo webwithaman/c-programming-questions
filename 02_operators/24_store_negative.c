@@ -1,10 +1,10 @@
-// //  C program to Store -8 in a Variable using Bitwise operator. You cannot Directly Assign -8 to a Variable.
+//  C program to Store -8 in a Variable using Bitwise operator. You cannot Directly Assign -8 to a Variable.
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     // Bitwise Complemet (~) Returns 1's complement of Its Operand
@@ -18,4 +18,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

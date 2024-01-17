@@ -1,16 +1,16 @@
-// //  C program to print the first 10 even natural numbers in reverse order
+//  C program to print the first 10 even natural numbers in reverse order
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
     printf("\n>>>>>>>>> First 10 Even Natural Numbers In Reverse Order <<<<<<<<<\n");
 
-    // //  1st Approach (using while loop)
+    //  1st Approach (using while loop)
     int i = 10;
     while (i)
     {
@@ -18,7 +18,7 @@ int main()
         i--;
     }
 
-    // // 2nd Approach (using while loop)
+    // 2nd Approach (using while loop)
     // int i = 20;
     // while (i)
     // {
@@ -26,7 +26,7 @@ int main()
     //     i -= 2;
     // }
 
-    // // 3rd Approach (using while loop)
+    // 3rd Approach (using while loop)
     // int i = 20;
     // while (i)
     // {
@@ -35,7 +35,7 @@ int main()
     //     i--;
     // }
 
-    // // 4th Approach (using do-while loop)
+    // 4th Approach (using do-while loop)
     // int i = 10;
     // do
     // {
@@ -43,7 +43,7 @@ int main()
     //     i--;
     // } while (i);
 
-    // // 5th Approach (using do-while loop)
+    // 5th Approach (using do-while loop)
     // int i = 20;
     // do
     // {
@@ -51,7 +51,7 @@ int main()
     //     i -= 2;
     // } while (i);
 
-    // // 6th Approach (using do-while loop)
+    // 6th Approach (using do-while loop)
     // int i = 20;
     // do
     // {
@@ -60,15 +60,15 @@ int main()
     //     i--;
     // } while (i);
 
-    // // 7th Approach (using for loop)
+    // 7th Approach (using for loop)
     // for (int i = 10; i; i--)
     //     printf("\n%d", i * 2 );
 
-    // // 8th Approach (using for loop)
+    // 8th Approach (using for loop)
     // for (int i = 20; i ; i -= 2)
     //     printf("\n%d", i);
 
-    // // 9th Approach (using for loop)
+    // 9th Approach (using for loop)
     // for (int i = 20; i; i--)
     // {
     //     if (i % 2 == 0)
@@ -79,4 +79,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

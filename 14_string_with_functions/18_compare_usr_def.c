@@ -10,7 +10,7 @@
 // Function Declarations
 int compareStrings(char[], char[]);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str1[ARRAY_SIZE], str2[ARRAY_SIZE];
@@ -33,7 +33,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definitions 👇👇
 

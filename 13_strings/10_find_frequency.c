@@ -7,7 +7,7 @@
 
 #define ARRAY_SIZE 31
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], copyStr[ARRAY_SIZE], length = 0, count;
@@ -59,4 +59,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

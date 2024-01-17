@@ -13,7 +13,7 @@
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ROWS;
@@ -42,7 +42,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions
 

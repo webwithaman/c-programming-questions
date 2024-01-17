@@ -7,7 +7,7 @@
 // Function Declaration (Prototype)
 double areaOfCircle(double);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     double radius, area;
@@ -20,7 +20,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function Definition 👇👇
 

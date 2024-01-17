@@ -11,7 +11,7 @@ void inputArray(int[], int);
 void sortDes(int[], int);
 void sortAsc(int[], int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -54,7 +54,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Functions Definitions 👇👇
 
@@ -79,7 +79,7 @@ void inputArray(int nums[], int size)
 // Function to Sort an Array in Descending Order
 void sortDes(int nums[], int size)
 {
-    // // Selection Sort
+    // Selection Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = i + 1; j < size; j++)
@@ -93,7 +93,7 @@ void sortDes(int nums[], int size)
         }
     }
 
-    // //  Bubble Sort
+    //  Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)
@@ -111,7 +111,7 @@ void sortDes(int nums[], int size)
 // Function to Sort an Array in Ascending Order
 void sortAsc(int nums[], int size)
 {
-    // // Selection Sort
+    // Selection Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = i + 1; j < size; j++)
@@ -125,7 +125,7 @@ void sortAsc(int nums[], int size)
         }
     }
 
-    // //  Bubble Sort
+    //  Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)

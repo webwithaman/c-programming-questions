@@ -1,11 +1,11 @@
-// //  C program to print New line character '\n' on screen.
+//  C program to print New line character '\n' on screen.
 // 👉 Output => \n
 
 // Header files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -14,4 +14,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

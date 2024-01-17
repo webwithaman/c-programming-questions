@@ -7,14 +7,14 @@
 
 #define MAX_BYTES 31
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int bytes;
     printf("\nHow Many Bytes Memory You Want to Allocate For char Array (MAX %d) => ", MAX_BYTES - 1);
     scanf("%d", &bytes);
 
-    // // Invalid Input
+    // Invalid Input
     if (bytes < 1 || bytes > MAX_BYTES - 1)
     {
         puts("\n!!! Invalid Input...\n");
@@ -39,4 +39,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

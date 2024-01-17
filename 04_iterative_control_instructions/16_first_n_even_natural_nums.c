@@ -1,11 +1,11 @@
-// //  C program to print the first N even natural numbers
+//  C program to print the first N even natural numbers
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
 
@@ -22,7 +22,7 @@ int main()
 
     printf("\n>>>>>>>> First %d Even Natural Numbers <<<<<<<<\n", n);
 
-    // //  1st Approach (using while loop)
+    //  1st Approach (using while loop)
     int i = 1;
     while (i <= n)
     {
@@ -30,7 +30,7 @@ int main()
         i++;
     }
 
-    // // 2nd Approach (using while loop)
+    // 2nd Approach (using while loop)
     // int i = 2;
     // while (i <= n * 2)
     // {
@@ -38,7 +38,7 @@ int main()
     //     i += 2;
     // }
 
-    // // 3rd Approach (using while loop)
+    // 3rd Approach (using while loop)
     // int i = 2;
     // while (i <= n * 2)
     // {
@@ -47,14 +47,14 @@ int main()
     //     i++;
     // }
 
-    // // 4th Approach (using do-while loop)
+    // 4th Approach (using do-while loop)
     // int i = 1;
     // do
     // {
     //     printf("\n%d", i * 2);
     // } while (++i <= n);
 
-    // // 5th Approach (using do-while loop)
+    // 5th Approach (using do-while loop)
     // int i = 2;
     // do
     // {
@@ -62,7 +62,7 @@ int main()
     //     i += 2;
     // } while (i <= n * 2);
 
-    // // 6th Approach (using do-while loop)
+    // 6th Approach (using do-while loop)
     // int i = 2;
     // do
     // {
@@ -71,15 +71,15 @@ int main()
     //     i++;
     // } while (i <= n * 2);
 
-    // // 7th Approach (using for loop)
+    // 7th Approach (using for loop)
     // for (int i = 1; i <= n; i++)
     //     printf("\n%d", i * 2 );
 
-    // // 8th Approach (using for loop)
+    // 8th Approach (using for loop)
     // for (int i = 2; i <= n * 2; i += 2)
     //     printf("\n%d", i);
 
-    // // 9th Approach (using for loop)
+    // 9th Approach (using for loop)
     // for (int i = 2; i <= n * 2; i++)
     // {
     //     if (!(i % 2))
@@ -90,4 +90,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

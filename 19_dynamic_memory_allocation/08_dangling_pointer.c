@@ -13,7 +13,7 @@ A pointer pointing to a memory location that has been deleted (or freed) is call
 #include <conio.h>
 #include <malloc.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int *ptr;
@@ -27,10 +27,10 @@ int main()
 
     free(ptr); // Free dynamically allocated memory
 
-    // // Now the pointer ptr is still pointing to the memory address which is now in free area that is deallocated. Therefore ptr is a Dangling pointer.
+    // Now the pointer ptr is still pointing to the memory address which is now in free area that is deallocated. Therefore ptr is a Dangling pointer.
 
     putch('\n');
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

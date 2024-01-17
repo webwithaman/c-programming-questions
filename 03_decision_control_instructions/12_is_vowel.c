@@ -1,10 +1,10 @@
-// //  C program to take an alphabet from user and check whether the given alphabet is a vowel or a consonant
+//  C program to take an alphabet from user and check whether the given alphabet is a vowel or a consonant
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     char ch;
@@ -23,4 +23,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

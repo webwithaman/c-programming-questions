@@ -1,4 +1,4 @@
-// //  C program to take amount in INR and convert it into USD, Where 1 USD = 83.19
+//  C program to take amount in INR and convert it into USD, Where 1 USD = 83.19
 
 // Header Files
 #include <stdio.h>
@@ -7,7 +7,7 @@
 // Define Macros
 #define INR_IN_1_USD 83.19
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float INR, USD;
@@ -20,4 +20,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

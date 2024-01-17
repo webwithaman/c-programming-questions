@@ -1,10 +1,10 @@
-// //  C program to check whether a given number is divisible by 3 and divisible by 2
+//  C program to check whether a given number is divisible by 3 and divisible by 2
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num;
@@ -27,4 +27,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

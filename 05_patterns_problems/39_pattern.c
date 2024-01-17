@@ -22,7 +22,7 @@ Pattern 39.
 #include <conio.h>
 #include <stdlib.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int maxRows, maxCols, maxRowsInOne;
@@ -40,10 +40,10 @@ int main()
     maxCols = maxRows;
     maxRowsInOne = (maxRows + 1) / 2;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int spacesInCurrentRow = maxRows & 1 ? -1 : -2, colsInCurrentRow;
 
     for (int row = 1; row <= maxRows; row++)
@@ -65,7 +65,7 @@ int main()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // for (int row = 1; row <= maxRowsInOne; row++)
     // {
     //     for (int col = 1; col <= maxCols; col++)
@@ -92,7 +92,7 @@ int main()
     //     printf("\n");
     // }
 
-    // // 3rd Approach
+    // 3rd Approach
     // int vary = maxRows & 1 ? 2 : 1;
 
     // for (int row = 1; row <= maxRows; row++)
@@ -115,4 +115,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

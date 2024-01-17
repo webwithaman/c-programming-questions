@@ -1,10 +1,10 @@
-// //  C program to Find Product of Two Real Numbers
+//  C program to Find Product of Two Real Numbers
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float num1, num2, result;
@@ -16,4 +16,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

@@ -1,10 +1,10 @@
-// //  C program to find Position of first 1 when searching from LSB to MSB.
+//  C program to find Position of first 1 when searching from LSB to MSB.
 
 // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int num, position = 1;
@@ -43,4 +43,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

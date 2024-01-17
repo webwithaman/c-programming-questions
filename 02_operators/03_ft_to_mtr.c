@@ -1,4 +1,4 @@
-// //  C program to convert Feets to Meters
+//  C program to convert Feets to Meters
 
 // Header Files
 #include <stdio.h>
@@ -7,7 +7,7 @@
 // Define Macros
 #define FT_IN_1_MTR 3.280839
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     float ft, mtr;
@@ -19,4 +19,4 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End

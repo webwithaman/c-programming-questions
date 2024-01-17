@@ -22,7 +22,7 @@ Pattern 55.
 // Function Prototype (Declaration)
 int min(int, int);
 
-// // Main Function Start
+// Main Function Start
 int main()
 {
     int n, maxRows, maxCols;
@@ -39,10 +39,10 @@ int main()
     // Determine Number of Columns According to maxRows
     maxCols = maxRows = n * 2 - 1;
 
-    // // Print Pattern
+    // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // // 1st Approach
+    // 1st Approach
     int vary = 1, numAtCol;
 
     for (int row = 1; row <= maxRows; row++)
@@ -64,7 +64,7 @@ int main()
         printf("\n");
     }
 
-    // // 2nd Approach
+    // 2nd Approach
     // int numAtCol;
 
     // for (int row = 0; row < maxRows; row++)
@@ -82,7 +82,7 @@ int main()
     getch();
     return 0;
 }
-// // Main Function End
+// Main Function End
 
 // Function to Find Minimum of Two Numbers
 int min(int a, int b)
