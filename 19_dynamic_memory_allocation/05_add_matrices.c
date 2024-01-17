@@ -51,6 +51,12 @@ int main()
     // // Create 2D Arrays
     int **matrixA = createTwo2DIntArray(ROWS_1, COLS_1), **matrixB = createTwo2DIntArray(ROWS_2, COLS_2), **matrixC;
 
+    if (!matrixA || !matrixB)
+    {
+        puts("\nUnable to Allocate Memory Dynamically...\n");
+        exit(0);
+    }
+
     // // Input Elements Matrix-A
     printf("\n>>>>>> Enter Elements of Matrix-A of Order %d x %d <<<<<<<\n", ROWS_1, COLS_1);
     input2DArray(matrixA, ROWS_1, COLS_1);
@@ -69,6 +75,12 @@ int main()
 
     // // Add Matrices
     matrixC = addTwoMatrices(matrixA, matrixB, ROWS_1, COLS_1);
+
+    if (!matrixC)
+    {
+        puts("\nUnable to Allocate Memory Dynamically...\n");
+        exit(0);
+    }
 
     // // Print Sum of Matrices
     printf("\n\n>>>>>>>> Sum Matrix-C of %d x %d <<<<<<<<<\n", ROWS_1, COLS_2);
@@ -90,9 +102,17 @@ int **createTwo2DIntArray(int rows, int cols)
     // Allocate memory for rows
     matrix = (int **)malloc(rows * sizeof(int *));
 
+    if (!matrix) // Unable to Allocate Memory
+        return NULL;
+
     // Allocate memory for cols
     for (int i = 0; i < rows; i++)
+    {
         matrix[i] = (int *)malloc(cols * sizeof(int));
+
+        if (!matrix[i]) // Unable to Allocate Memory
+            return NULL;
+    }
 
     return matrix; // return pointer to 1st Array
 }
@@ -134,6 +154,9 @@ void print2DArray(int **arr, int rows, int cols)
 int **addTwoMatrices(int **mat1, int **mat2, int rows, int cols)
 {
     int **res = createTwo2DIntArray(rows, cols);
+
+    if (!res) // Unable to Allocate Memory
+        return NULL;
 
     for (int i = 0; i < rows; i++)
     {
