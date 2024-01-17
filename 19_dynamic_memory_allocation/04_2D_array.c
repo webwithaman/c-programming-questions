@@ -27,9 +27,23 @@ int main()
     // create rows
     int **matrix = (int **)malloc(ROWS * sizeof(int *));
 
+    if (!matrix)
+    {
+        puts("\nUnable to Allocate Memory Dynamically...\n");
+        exit(0);
+    }
+
     // create cols
     for (int i = 0; i < ROWS; i++)
+    {
         matrix[i] = (int *)malloc(COLS * sizeof(int *));
+
+        if (!matrix[i])
+        {
+            puts("\nUnable to Allocate Memory Dynamically...\n");
+            exit(0);
+        }
+    }
 
     // Input Elements of Matrix
     printf("\n>>>>>> Enter Elements of Matrix of Order %d x %d <<<<<<<\n", ROWS, COLS);
