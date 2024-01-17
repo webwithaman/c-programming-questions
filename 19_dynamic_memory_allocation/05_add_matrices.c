@@ -100,12 +100,14 @@ int **createTwo2DIntArray(int rows, int cols)
 // Function to Input Elements of 2D Array
 void input2DArray(int **arr, int rows, int cols)
 {
+    // scanf("%d", ((int *)arr + i * cols + j));
+
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
         {
             printf("\nEnter element[%d][%d] => ", i + 1, j + 1);
-            scanf("%d", ((int *)arr + i * cols + j));
+            scanf("%d", &arr[i][j]);
         }
     }
 }
@@ -136,7 +138,9 @@ int **addTwoMatrices(int **mat1, int **mat2, int rows, int cols)
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            *((int *)res + i * cols + j) = *((int *)mat1 + i * cols + j) + *((int *)mat2 + i * cols + j);
+        {
+            res[i][j] = mat1[i][j] + mat2[i][j];
+        }
     }
 
     return res;
