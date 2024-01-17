@@ -1,4 +1,4 @@
-// C program calculate Compound Interest
+// //  C program calculate Compound Interest
 
 // Header Files
 #include <stdio.h>

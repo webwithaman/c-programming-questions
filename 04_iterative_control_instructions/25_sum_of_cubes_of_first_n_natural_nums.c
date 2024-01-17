@@ -1,4 +1,4 @@
-// C program to calculte sum of cubes of first N natural numbers
+// //  C program to calculte sum of cubes of first N natural numbers
 
 // Header Files
 #include <stdio.h>

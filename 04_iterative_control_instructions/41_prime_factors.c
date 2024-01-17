@@ -1,4 +1,4 @@
-// C program to find all Prime Factors of a given Number
+// //  C program to find all Prime Factors of a given Number
 
 // Header Files
 #include <stdio.h>

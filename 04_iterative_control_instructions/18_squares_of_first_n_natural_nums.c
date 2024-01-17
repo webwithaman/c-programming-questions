@@ -1,4 +1,4 @@
-// C program to print squares of the first N natural numbers
+// //  C program to print squares of the first N natural numbers
 
 // Header Files
 #include <stdio.h>

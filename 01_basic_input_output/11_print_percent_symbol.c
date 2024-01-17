@@ -1,4 +1,4 @@
-// C program to print Percent symbol (%) on screen
+// //  C program to print Percent symbol (%) on screen
 // 👉 Output => %
 
 // Header files

@@ -1,4 +1,4 @@
-// C program to take time as an input in below given format and convert print it in other format :-
+// //  C program to take time as an input in below given format and convert print it in other format :-
 // 👉 Input format => HH:MM:SS. Example => (06:22:45)
 // 👉 Output format => HH Hour, MM Minute and SS Second. Example => (06 Hour 22 Minute and 45 Second)
 

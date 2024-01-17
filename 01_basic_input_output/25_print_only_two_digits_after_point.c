@@ -1,4 +1,4 @@
-// C program to take a floating point number and print only two digits after the decimal point.
+// //  C program to take a floating point number and print only two digits after the decimal point.
 
 // Header files
 #include <stdio.h>

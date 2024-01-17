@@ -1,4 +1,4 @@
-// C program which takes the length of the sides of a triangle as an input.Display whether the triangle is valid or not
+// //  C program which takes the length of the sides of a triangle as an input.Display whether the triangle is valid or not
 
 // Header Files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to check whether a given number is in the Fibonacci series or not
+// //  C program to check whether a given number is in the Fibonacci series or not
 
 // Header Files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to print C in first line and Programming in the second line.
+// //  C program to print C in first line and Programming in the second line.
 
 // Header files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to input Three Digit Number and calculate Sum of it's Digits
+// //  C program to input Three Digit Number and calculate Sum of it's Digits
 
 // Header Files
 #include <stdio.h>

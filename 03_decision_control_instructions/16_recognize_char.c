@@ -1,4 +1,4 @@
-// C program to check whether a given character is an alphabet (uppercase), an alphabet (lower case), a digit or a special character
+// //  C program to check whether a given character is an alphabet (uppercase), an alphabet (lower case), a digit or a special character
 
 // Header Files
 #include <stdio.h>

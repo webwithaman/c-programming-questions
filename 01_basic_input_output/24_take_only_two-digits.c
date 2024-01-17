@@ -1,4 +1,4 @@
-// C program to take input an integer number and now take only first two digits of that number which user enters and omit rest of the digits
+// //  C program to take input an integer number and now take only first two digits of that number which user enters and omit rest of the digits
 
 // Header files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to print the first N odd natural numbers in reverse order
+// //  C program to print the first N odd natural numbers in reverse order
 
 // Header Files
 #include <stdio.h>

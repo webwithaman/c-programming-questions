@@ -1,4 +1,4 @@
-// C program to find Area and Perimeter of a Rectangle
+// //  C program to find Area and Perimeter of a Rectangle
 
 // Header Files
 #include <stdio.h>

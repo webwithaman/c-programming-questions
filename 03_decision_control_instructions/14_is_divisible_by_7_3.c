@@ -1,4 +1,4 @@
-// C program to check whether a given number is divisible by 7 or divisible by 3
+// //  C program to check whether a given number is divisible by 7 or divisible by 3
 
 // Header Files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to count number of characters in this string => “C Programming” using printf() function. 
+// //  C program to count number of characters in this string => “C Programming” using printf() function. 
 
 
 // Header files

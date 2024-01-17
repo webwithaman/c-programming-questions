@@ -1,4 +1,4 @@
-// C program to check whether two given numbers are co-prime numbers or not
+// //  C program to check whether two given numbers are co-prime numbers or not
 
 // Co Prime Numbers are a pair of numbers with just one factor in common, which is 1
 

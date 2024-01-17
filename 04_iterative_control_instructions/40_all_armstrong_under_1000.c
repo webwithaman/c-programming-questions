@@ -1,4 +1,4 @@
-// C program to print all Armstrong numbers under 1000
+// //  C program to print all Armstrong numbers under 1000
 
 // Header Files
 #include <stdio.h>

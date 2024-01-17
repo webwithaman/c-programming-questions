@@ -1,4 +1,4 @@
-// C program to demonstrate the use of sizeof() operator
+// //  C program to demonstrate the use of sizeof() operator
 
 // Header Files
 #include <stdio.h>

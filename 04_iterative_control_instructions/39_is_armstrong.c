@@ -1,4 +1,4 @@
-// C program to to check whether a given number is an Armstrong number or not
+// //  C program to to check whether a given number is an Armstrong number or not
 
 // Header Files
 #include <stdio.h>

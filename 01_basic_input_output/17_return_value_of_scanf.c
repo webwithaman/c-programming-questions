@@ -1,4 +1,4 @@
-// C program to print return value of scanf() function
+// //  C program to print return value of scanf() function
 
 // Header files
 #include <stdio.h>

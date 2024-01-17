@@ -1,4 +1,4 @@
-// C program which takes the month number as an input and display number of days in that month
+// //  C program which takes the month number as an input and display number of days in that month
 
 // Header files
 #include <stdio.h>

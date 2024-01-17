@@ -1,4 +1,4 @@
-// C program to calculate LCM of two numbers
+// //  C program to calculate LCM of two numbers
 
 // Header Files
 #include <stdio.h>

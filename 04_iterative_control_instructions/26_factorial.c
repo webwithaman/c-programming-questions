@@ -1,4 +1,4 @@
-// C program to calculate factorial of a number
+// //  C program to calculate factorial of a number
 
 // Header Files
 #include <stdio.h>

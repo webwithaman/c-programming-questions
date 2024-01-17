@@ -1,4 +1,4 @@
-// C program to print a table of N
+// //  C program to print a table of N
 
 // Header Files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to input an alphabet from user and check whether the given alphabet is in uppercase or in lowercase
+// //  C program to input an alphabet from user and check whether the given alphabet is in uppercase or in lowercase
 
 // Header Files
 #include <stdio.h>

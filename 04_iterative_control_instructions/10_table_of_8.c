@@ -1,4 +1,4 @@
-// C program to print a table of 8
+// //  C program to print a table of 8
 
 // Header Files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to input two dates from user then print which of the entered date is greater or print same if both are equal
+// //  C program to input two dates from user then print which of the entered date is greater or print same if both are equal
 
 // Header Files
 #include <stdio.h>

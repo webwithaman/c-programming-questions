@@ -1,4 +1,4 @@
-// C program to calculate HCF of two numbers
+// //  C program to calculate HCF of two numbers
 
 // Header Files
 #include <stdio.h>

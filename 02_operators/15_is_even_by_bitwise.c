@@ -1,4 +1,4 @@
-// C program to check whether a number is Even or Odd using Bitwise operator
+// //  C program to check whether a number is Even or Odd using Bitwise operator
 
 // Header Files
 #include <stdio.h>

@@ -1,4 +1,4 @@
-// C program to calculte sum of first N even natural numbers
+// //  C program to calculte sum of first N even natural numbers
 
 // Header Files
 #include <stdio.h>

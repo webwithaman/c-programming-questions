@@ -1,4 +1,4 @@
-// C program to reverse a given number
+// //  C program to reverse a given number
 
 // Header Files
 #include <stdio.h>

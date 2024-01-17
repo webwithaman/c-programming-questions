@@ -1,4 +1,4 @@
-// C program to find Position of first 1 when searching from LSB to MSB.
+// //  C program to find Position of first 1 when searching from LSB to MSB.
 
 // Header Files
 #include <stdio.h>

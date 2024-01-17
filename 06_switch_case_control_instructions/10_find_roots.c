@@ -1,4 +1,4 @@
-// C program to find all roots of a quadratic equation using switch case
+// //  C program to find all roots of a quadratic equation using switch case
 
 // Header Files
 #include <stdio.h>

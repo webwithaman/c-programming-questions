@@ -1,4 +1,4 @@
-// C program to calculte sum of first N odd natural numbers
+// //  C program to calculte sum of first N odd natural numbers
 
 // Header Files
 #include <stdio.h>

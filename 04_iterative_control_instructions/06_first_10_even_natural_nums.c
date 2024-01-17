@@ -1,4 +1,4 @@
-// C program to print the first 10 even natural numbers
+// //  C program to print the first 10 even natural numbers
 
 // Header Files
 #include <stdio.h>

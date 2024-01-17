@@ -1,4 +1,4 @@
-// C program to take two numbers as input and print sum of the numbers in following format :-
+// //  C program to take two numbers as input and print sum of the numbers in following format :-
 // 👉 Output => Sum of N and N => N
 
 // Header files

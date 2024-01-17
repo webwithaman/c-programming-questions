@@ -1,4 +1,4 @@
-// C program to check whether roots of a given quadratic equation are real & distinct, real & equal or imaginary roots
+// //  C program to check whether roots of a given quadratic equation are real & distinct, real & equal or imaginary roots
 
 // Header Files
 #include <stdio.h>

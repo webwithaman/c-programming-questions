@@ -1,4 +1,4 @@
-// C program to take an alphabet from user and check whether the given alphabet is a vowel or a consonant
+// //  C program to take an alphabet from user and check whether the given alphabet is a vowel or a consonant
 
 // Header Files
 #include <stdio.h>

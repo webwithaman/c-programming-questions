@@ -1,4 +1,4 @@
-// C program to print greater among three numbers.Print one number of among if two or  all are the same
+// //  C program to print greater among three numbers.Print one number of among if two or  all are the same
 
 // Header Files
 #include <stdio.h>

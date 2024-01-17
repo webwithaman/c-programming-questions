@@ -1,4 +1,4 @@
-// C program to take amount in INR and convert it into USD, Where 1 USD = 83.19
+// //  C program to take amount in INR and convert it into USD, Where 1 USD = 83.19
 
 // Header Files
 #include <stdio.h>

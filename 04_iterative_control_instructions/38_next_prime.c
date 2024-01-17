@@ -1,4 +1,4 @@
-// C program to find next Prime number of a given number
+// //  C program to find next Prime number of a given number
 
 // Header Files
 #include <stdio.h>

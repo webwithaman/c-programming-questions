@@ -1,4 +1,4 @@
-// C Program to Print Following Pattern
+// //  C program to Print Following Pattern
 
 /*
 
