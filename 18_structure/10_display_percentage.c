@@ -29,7 +29,7 @@ struct Student
 void inputStudent(struct Student *);
 void displayStudent(struct Student);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int NUM__OF_STUDENTS;

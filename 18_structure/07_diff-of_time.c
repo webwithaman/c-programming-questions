@@ -20,7 +20,7 @@ void displayTime(struct Time);
 int validateTime(struct Time);
 struct Time diffBetTime(struct Time, struct Time);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     // create variable of structure Time

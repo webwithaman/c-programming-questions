@@ -7,7 +7,7 @@
 
 #define ARRAY_SIZE 31
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char *ptr, str[ARRAY_SIZE];

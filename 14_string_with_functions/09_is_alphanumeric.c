@@ -11,7 +11,7 @@
 // Function Declarations
 int isAnAlphanumericStr(char []);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], length;

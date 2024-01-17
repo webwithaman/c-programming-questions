@@ -19,7 +19,7 @@ struct Employee
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     // create variable of structure Employee

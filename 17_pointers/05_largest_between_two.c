@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num1, num2, largest, *p, *q, *r;

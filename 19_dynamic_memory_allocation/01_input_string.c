@@ -8,7 +8,7 @@
 // Functions Declarations (Prototypes)
 char *inputString();
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char *ptr;

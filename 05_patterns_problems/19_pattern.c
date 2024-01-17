@@ -26,7 +26,7 @@ Pattern 19.
 #include <stdlib.h>
 #include <string.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int maxRows = 13, maxCols = 19;
@@ -84,4 +84,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function Start
+// // Main Function Start

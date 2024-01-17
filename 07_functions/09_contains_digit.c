@@ -7,7 +7,7 @@
 // Function Declaration (Prototype)
 int isContainsDigit(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num, digit;

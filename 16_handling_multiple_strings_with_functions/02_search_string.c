@@ -15,7 +15,7 @@ int input2DChar(char[][MAX_COLS], int);
 int search2DStr(char[][MAX_COLS], int, char[]);
 int compareStrings(char[], char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS;

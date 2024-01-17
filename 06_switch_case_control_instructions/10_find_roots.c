@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     float a, b, c, disc, r1, r2, imaginaryPart;

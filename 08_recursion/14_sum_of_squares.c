@@ -8,7 +8,7 @@
 // Function Declaration (Prototype)
 long long unsigned int sumOfSquaresOfFirstN(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;

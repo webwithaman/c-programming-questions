@@ -31,7 +31,7 @@
 // Function Prototype (Declaration)
 int fact(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 

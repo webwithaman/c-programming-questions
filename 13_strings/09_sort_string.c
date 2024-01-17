@@ -10,7 +10,7 @@
 // Function Declaration
 void swap(char *, char *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], length = 0;

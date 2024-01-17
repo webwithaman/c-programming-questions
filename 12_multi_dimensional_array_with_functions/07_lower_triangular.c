@@ -13,7 +13,7 @@ void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
 void lowerTriangularMatrix(int (*)[], int, int, int (*)[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS, COLS;

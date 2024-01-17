@@ -22,7 +22,7 @@ Pattern 55.
 // Function Prototype (Declaration)
 int min(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n, maxRows, maxCols;

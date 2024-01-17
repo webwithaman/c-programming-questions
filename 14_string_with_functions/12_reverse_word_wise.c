@@ -13,7 +13,7 @@ int strLength(char[]);
 char *strReverse(char[]);
 char *strReverseWordWise(char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE];

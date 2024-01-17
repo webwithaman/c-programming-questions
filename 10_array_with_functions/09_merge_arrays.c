@@ -13,7 +13,7 @@
 void printArray(int[], int);
 void mergeArrays(int[], int, int[], int, int[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 

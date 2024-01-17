@@ -19,7 +19,7 @@ Pattern 47.
 // Function Prototype (Declaration)
 int sumOfFirstNNums(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int maxRows, maxCols;

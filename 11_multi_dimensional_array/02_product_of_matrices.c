@@ -7,7 +7,7 @@
 #define ROWS 3
 #define COLS 3
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     // Declare 2-d Arrays

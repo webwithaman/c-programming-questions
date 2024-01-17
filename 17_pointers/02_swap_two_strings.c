@@ -11,7 +11,7 @@
 void swapTwoStrs1(char *, char *);
 void swapTwoStrs2(char **, char **);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str1[ARRAY_SIZE], str2[ARRAY_SIZE];

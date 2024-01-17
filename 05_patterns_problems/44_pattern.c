@@ -23,7 +23,7 @@ Pattern 44.
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int maxRows, maxCols;

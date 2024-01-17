@@ -9,7 +9,7 @@
 int nextPrime(int);
 int isPrime(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     // Check Whether A Number is Non-Positive or Negative Using Conditional operator and Even or Odd :-

@@ -7,7 +7,7 @@
 // Function Declaration (Prototype)
 double areaOfCircle(double);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double radius, area;

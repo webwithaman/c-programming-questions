@@ -19,7 +19,7 @@ int compareStrings(char[], char[]);
 int isStrPalindrome(char[]);
 void printAllPalindromeOf2D(char[][MAX_COLS], int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS;

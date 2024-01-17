@@ -14,7 +14,7 @@ void input2DArray(int (*)[], int, int);
 void print2DArray(int (*)[], int, int);
 void addTwoMatrices(int (*)[], int (*)[], int (*)[], int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS_1, COLS_1, ROWS_2, COLS_2;

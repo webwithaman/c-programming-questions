@@ -11,7 +11,7 @@
 // Functions Declarations (Prototypes)
 char *getPasswordHiddenly(char[], int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char password[MAX_COLS];

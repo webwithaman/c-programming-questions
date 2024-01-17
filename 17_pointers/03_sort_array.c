@@ -9,7 +9,7 @@
 // Functions Declarations (Prototypes)
 void sort(int *, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int nums[ARRAY_SIZE];

@@ -22,7 +22,7 @@ Pattern 35.
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int maxRowsInOne, maxRows, maxCols;

@@ -16,7 +16,7 @@ int strLength(char[]);
 int isValidIP(char[]);
 int *findInvalidIPs(char[][MAX_COLS], int, int[], int *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS;

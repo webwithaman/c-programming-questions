@@ -9,7 +9,7 @@
 int smallest(int[], int);
 void inputArray(int[], int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;

@@ -14,7 +14,7 @@ char *sortStr(char str[]);
 char *findRepeatedChars(char[], char[]);
 void swap(char *ch1, char *ch2);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], repeatedChars[ARRAY_SIZE];

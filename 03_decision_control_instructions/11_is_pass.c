@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     float m1, m2, m3, m4, m5;

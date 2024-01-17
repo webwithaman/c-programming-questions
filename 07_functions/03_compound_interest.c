@@ -8,7 +8,7 @@
 // Function Declaration (Prototype)
 double compoundInterest(double, double, double, double);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, totalAmount, ci, compoundedAfterMonths;

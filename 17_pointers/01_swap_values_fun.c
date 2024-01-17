@@ -7,7 +7,7 @@
 // Functions Declarations (Prototypes)
 void swapTwoVal(int *, int *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int a, b;

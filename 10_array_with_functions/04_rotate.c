@@ -13,7 +13,7 @@ void rotateTowardsLeft(int[], int, int);
 void rotateTowardsRight(int[], int, int);
 void swap(int *, int *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;

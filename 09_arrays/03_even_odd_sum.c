@@ -6,7 +6,7 @@
 
 #define ARRAY_SIZE 10
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int nums[ARRAY_SIZE], sumOfEven = 0, sumOfOdd = 0;

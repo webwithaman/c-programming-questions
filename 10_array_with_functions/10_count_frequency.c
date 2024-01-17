@@ -14,7 +14,7 @@ void copyArray(int[], int, int[]);
 void printFrequencyOfEach(int[], int);
 int linearSearch(int arr[], int size, int search);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;

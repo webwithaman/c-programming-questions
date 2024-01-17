@@ -14,7 +14,7 @@ char *copyString(char[], char[]);
 int compareStrings(char[], char[]);
 int isStrPalindrome(char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE];

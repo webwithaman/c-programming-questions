@@ -5,7 +5,7 @@
 #include <conio.h>
 #include <math.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, totalAmount, compoundInterest, compoundedAfterMonths;

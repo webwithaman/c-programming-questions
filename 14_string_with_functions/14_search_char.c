@@ -10,7 +10,7 @@
 // Function Declarations;
 int searchChar(char[], char);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], search;

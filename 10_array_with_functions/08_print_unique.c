@@ -13,7 +13,7 @@ int linearSearch(int[], int, int);
 void copyArray(int[], int, int[]);
 void printUniqueElements(int[], int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;

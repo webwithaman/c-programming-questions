@@ -10,7 +10,7 @@
 // Function Declarations
 char *copyString(char[], char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], copyStr[ARRAY_SIZE];

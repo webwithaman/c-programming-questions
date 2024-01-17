@@ -7,7 +7,7 @@
 // Function Declaration (Prototype)
 long long unsigned int square(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;

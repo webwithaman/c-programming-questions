@@ -22,7 +22,7 @@ void displayEmployee(struct Employee);
 struct Employee *sortEmpsAccordName(struct Employee *, int);
 void swapEmp(struct Employee *, struct Employee *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     // create variable of structure Employee

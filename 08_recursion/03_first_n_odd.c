@@ -8,7 +8,7 @@
 // Function Declaration (Prototype)
 void firstNOddNaturalNums(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;

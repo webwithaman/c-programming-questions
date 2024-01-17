@@ -15,7 +15,7 @@ int input2DChar(char[][MAX_COLS], int);
 int searchCharInStr(char[], char);
 int *findInvalidEmails(char[][MAX_COLS], int, int[], int *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS;

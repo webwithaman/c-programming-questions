@@ -16,7 +16,7 @@ A memory leak in C occurs when a programmer creates a memory in a heap and forge
 // Function Declaration (Prototype)
 void inputNumUsingDMA();
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     inputNumUsingDMA();

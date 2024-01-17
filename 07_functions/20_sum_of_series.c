@@ -8,7 +8,7 @@
 double sumOfSeries(int);
 double factorial(int n);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;

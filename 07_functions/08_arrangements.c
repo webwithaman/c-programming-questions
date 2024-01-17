@@ -8,7 +8,7 @@
 double factorial(int);
 double arrangements(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n, r;

@@ -8,7 +8,7 @@
 // Function Declaration (Prototype)
 int hcfOfTwo(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num1, num2;

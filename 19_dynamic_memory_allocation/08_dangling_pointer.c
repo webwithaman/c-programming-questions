@@ -13,7 +13,7 @@ A pointer pointing to a memory location that has been deleted (or freed) is call
 #include <conio.h>
 #include <malloc.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int *ptr;

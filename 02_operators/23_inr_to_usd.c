@@ -7,7 +7,7 @@
 // Define Macros
 #define INR_IN_1_USD 83.19
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     float INR, USD;

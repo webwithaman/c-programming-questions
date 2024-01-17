@@ -14,7 +14,7 @@ int print2DChar(char[][MAX_COLS], int);
 int minDisBetTwoWords(char[][MAX_COLS], int, char[], char[]);
 int compareStrings(char[], char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS = 8;

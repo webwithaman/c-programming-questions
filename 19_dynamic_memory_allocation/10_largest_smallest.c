@@ -7,7 +7,7 @@
 
 #define MAX 50
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int n;

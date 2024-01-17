@@ -15,7 +15,7 @@ int input2DChar(char[][MAX_COLS], int);
 int *countVowelsInEachStrOf2D(char[][MAX_COLS], int, int[]);
 int countVowelsInStr(char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS;

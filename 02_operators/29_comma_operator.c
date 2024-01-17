@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     // Comma as an operator: It evaluates the first operand and discards the result, then evaluates the second operand and returns the value as a result. For example, int i = (5, 10); assigns 10 to i.
