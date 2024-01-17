@@ -118,7 +118,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Find Sum of First N Natural Numbers
 int sumOfFirstNNums(int n)

@@ -25,7 +25,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Input a Number and display it using Dynamic memory allocation
 void inputNumUsingDMA()

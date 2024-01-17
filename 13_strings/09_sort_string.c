@@ -51,7 +51,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Swap values of Two Character variables
 void swap(char *ch1, char *ch2)

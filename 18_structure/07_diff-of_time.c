@@ -67,7 +67,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Input Time data
 void inputTime(struct Time *time)

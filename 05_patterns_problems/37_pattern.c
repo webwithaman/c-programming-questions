@@ -132,7 +132,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Find Factorial
 int fact(int n)

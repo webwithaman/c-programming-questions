@@ -47,7 +47,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Input Student data
 void inputStudent(struct Student *student)

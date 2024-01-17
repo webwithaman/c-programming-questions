@@ -32,7 +32,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Input Employee data
 void inputEmployee(struct Employee *emp)

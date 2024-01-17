@@ -82,7 +82,7 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
 // Function to Find Minimum of Two Numbers
 int min(int a, int b)
