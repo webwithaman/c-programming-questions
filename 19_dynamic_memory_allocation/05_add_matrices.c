@@ -90,7 +90,7 @@ int **createTwo2DIntArray(int rows, int cols)
     matrix = (int **)malloc(rows * sizeof(int *));
 
     // Allocate memory for cols
-    for (int i = 0; i < cols; i++)
+    for (int i = 0; i < rows; i++)
         matrix[i] = (int *)malloc(cols * sizeof(int));
 
     return matrix; // return pointer to 1st Array
@@ -114,10 +114,12 @@ void print2DArray(int **arr, int rows, int cols)
 {
     putch(10); // Add new line
 
+    // printf("%-4d ", *((int *)arr + i * cols + j));
+
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
-            printf("%-4d ", *((int *)arr + i * cols + j));
+            printf("%-4d ", arr[i][j]);
 
         putch(10); // Add new line
     }
@@ -135,4 +137,6 @@ int **addTwoMatrices(int **mat1, int **mat2, int rows, int cols)
         for (int j = 0; j < cols; j++)
             *((int *)res + i * cols + j) = *((int *)mat1 + i * cols + j) + *((int *)mat2 + i * cols + j);
     }
+
+    return res;
 }
