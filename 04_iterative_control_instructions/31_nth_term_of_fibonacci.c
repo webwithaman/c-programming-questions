@@ -1,4 +1,4 @@
-// //  C program to find nth term of fibonacci series
+// // C program to find nth term of fibonacci series
 
 // // Header Files
 #include <stdio.h>
@@ -34,14 +34,14 @@ int main()
     // // int prev = 0, next = 1, result, count = 1;
     // // for (int count = 1; count <= n; count++)
     // // {
-    // //     if (count == 1)
-    // //         result = 1;
-    // //     else
-    // //     {
-    // //         result = prev + next;
-    // //         prev = next;
-    // //         next = result;
-    // //     }
+    // //    if (count == 1)
+    // //        result = 1;
+    // //    else
+    // //    {
+    // //        result = prev + next;
+    // //        prev = next;
+    // //        next = result;
+    // //    }
     // // }
     // // printf("\n%dth term of Fibonacci Series => %d", n, result);
 

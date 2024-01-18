@@ -1,4 +1,4 @@
-// //  Write a function in C to display the upper triangular matrix of a given matrix.
+// // Write a function in C to display the upper triangular matrix of a given matrix.
 
 // // Header Files
 #include <stdio.h>

@@ -68,28 +68,28 @@ int main()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRowsInOne + 1 - row || col >= maxRowsInOne + row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRowsInOne + 1 - row || col >= maxRowsInOne + row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row || col >= maxCols + 1 - row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row || col >= maxCols + 1 - row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -97,18 +97,18 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRowsInOne + 1 - vary || col >= maxRowsInOne + vary || (col >= maxRowsInOne - 1 + vary && maxRows & 1))
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRowsInOne + 1 - vary || col >= maxRowsInOne + vary || (col >= maxRowsInOne - 1 + vary && maxRows & 1))
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     if (row != maxRowsInOne || maxRows & 1)
-    // //         row < maxRowsInOne ? vary++ : vary--;
+    // //    if (row != maxRowsInOne || maxRows & 1)
+    // //        row < maxRowsInOne ? vary++ : vary--;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

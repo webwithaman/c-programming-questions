@@ -1,4 +1,4 @@
-// //  C program to convert Miles to Kilometers
+// // C program to convert Miles to Kilometers
 
 // // Header Files
 #include <stdio.h>

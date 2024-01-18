@@ -1,4 +1,4 @@
-// //  C program to find Position of first 1 when searching from LSB to MSB.
+// // C program to find Position of first 1 when searching from LSB to MSB.
 
 // // Header Files
 #include <stdio.h>
@@ -15,16 +15,16 @@ int main()
     // // // // 1st Approach
     // // if (copyNum)
     // // {
-    // //     while (!(num & 1))
-    // //     {
-    // //         num >>= 1;
-    // //         position++;
-    // //     }
+    // //    while (!(num & 1))
+    // //    {
+    // //        num >>= 1;
+    // //        position++;
+    // //    }
 
-    // //     printf("\nPostion of First 1 In the Binary of %d => %d\n", copyNum, position);
+    // //    printf("\nPostion of First 1 In the Binary of %d => %d\n", copyNum, position);
     // // }
     // // else
-    // //     printf("\nThere is No 1 in the Binary of 0\n");
+    // //    printf("\nThere is No 1 in the Binary of 0\n");
 
     // // // // 2nd Approach
     while (num)

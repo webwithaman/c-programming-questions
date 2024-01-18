@@ -1,4 +1,4 @@
-// //  C program to calculte sum of first N even natural numbers
+// // C program to calculte sum of first N even natural numbers
 
 // // Header Files
 #include <stdio.h>
@@ -28,13 +28,13 @@ int main()
     // // int i = 1;
     // // do
     // // {
-    // //     sum += i++ * 2;
+    // //    sum += i++ * 2;
     // // } while (i <= n);
 
-    // //  3rd Approach (using while loop)
+    // // 3rd Approach (using while loop)
     // // int i = 1;
     // // while (i <= n)
-    // //     sum += i++ * 2;
+    // //    sum += i++ * 2;
 
     printf("\nSum of First %d Even Natural Numbers => %d", n, sum);
 

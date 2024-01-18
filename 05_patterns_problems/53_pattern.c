@@ -53,10 +53,10 @@ int main()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("%c ", 'A' + maxRows - row - 1 + col);
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("%c ", 'A' + maxRows - row - 1 + col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

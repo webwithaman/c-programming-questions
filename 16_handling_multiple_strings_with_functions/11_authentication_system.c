@@ -430,7 +430,7 @@ int login()
         return 0; // // Failed to Login
     }
 
-    return 1; // //  Successfully Logged In
+    return 1; // // Successfully Logged In
 }
 
 // // Function to Perform Operations after logged in
@@ -597,5 +597,5 @@ int deleteAccount()
         }
     }
 
-    return 1; // //  Account Deleted Successfully
+    return 1; // // Account Deleted Successfully
 }

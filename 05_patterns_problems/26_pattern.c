@@ -55,15 +55,15 @@ int main()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row)
-    // //             printf("%2d", col);
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row)
+    // //            printf("%2d", col);
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

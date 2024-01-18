@@ -64,19 +64,19 @@ int main()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     spacesInCurrentRow = maxRows - row;
-    // //     numAtCol = row;
+    // //    spacesInCurrentRow = maxRows - row;
+    // //    numAtCol = row;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = numAtCol; col; col--)
-    // //         printf("%2d ", col);
+    // //    for (int col = numAtCol; col; col--)
+    // //        printf("%2d ", col);
 
-    // //     for (int col = 2; col <= numAtCol; col++)
-    // //         printf("%2d ", col);
+    // //    for (int col = 2; col <= numAtCol; col++)
+    // //        printf("%2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -85,17 +85,17 @@ int main()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     numAtCol = row;
+    // //    numAtCol = row;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-    // //             printf("%2d ", col < maxRows ? numAtCol-- : numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    // //            printf("%2d ", col < maxRows ? numAtCol-- : numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

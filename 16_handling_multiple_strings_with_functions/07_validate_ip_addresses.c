@@ -138,7 +138,7 @@ int isValidIP(char ip[])
         {
             if (ip[j] != '.')
             {
-                if (j == 0 && ip[j] == '0' && ip[j + 1] != '.') // //  If First Octet value has leading
+                if (j == 0 && ip[j] == '0' && ip[j + 1] != '.') // // If First Octet value has leading
                 {
                     return 0; // // IP is invalid
                 }

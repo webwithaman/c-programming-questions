@@ -1,4 +1,4 @@
-// //  C program to Demonstrate the use of Comma Operator (,)
+// // C program to Demonstrate the use of Comma Operator (,)
 
 // // Header Files
 #include <stdio.h>

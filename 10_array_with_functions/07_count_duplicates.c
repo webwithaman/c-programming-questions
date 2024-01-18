@@ -91,15 +91,15 @@ int countTotalDuplicates(int arr[], int size)
 
     // // for (int i = 0; i < size; i++)
     // // {
-    // //     if (linearSearch(inspected, k, arr[i]) == -1)
-    // //     {
-    // //         for (int j = 0; j < size; j++)
-    // //         {
-    // //             if (arr[i] == arr[j] && i != j)
-    // //                 countDup++;
-    // //         }
-    // //         inspected[k++] = arr[i];
-    // //     }
+    // //    if (linearSearch(inspected, k, arr[i]) == -1)
+    // //    {
+    // //        for (int j = 0; j < size; j++)
+    // //        {
+    // //            if (arr[i] == arr[j] && i != j)
+    // //                countDup++;
+    // //        }
+    // //        inspected[k++] = arr[i];
+    // //    }
     // // }
     // // return countDup;
 }
@@ -107,7 +107,7 @@ int countTotalDuplicates(int arr[], int size)
 // // Function to Sort an Array in Ascending Order
 void sortAsc(int arr[], int size)
 {
-    // //  Bubble Sort
+    // // Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)

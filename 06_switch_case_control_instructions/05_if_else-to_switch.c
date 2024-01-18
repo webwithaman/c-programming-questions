@@ -1,13 +1,13 @@
 // // Convert the following if - else - if construct into switch case:
 
 // // if (var == 1)
-// //     printf("good");
+// //    printf("good");
 // // else if (var == 2)
-// //     printf("better");
+// //    printf("better");
 // // else if (var == 3)
-// //     printlf("best");
+// //    printlf("best");
 // // else
-// //     printf("invalid");
+// //    printf("invalid");
 
 // // Header Files
 #include <stdio.h>

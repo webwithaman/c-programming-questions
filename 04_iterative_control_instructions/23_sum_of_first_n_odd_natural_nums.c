@@ -1,4 +1,4 @@
-// //  C program to calculte sum of first N odd natural numbers
+// // C program to calculte sum of first N odd natural numbers
 
 // // Header Files
 #include <stdio.h>
@@ -28,13 +28,13 @@ int main()
     // // int i = 1;
     // // do
     // // {
-    // //     sum += i++ * 2 - 1;
+    // //    sum += i++ * 2 - 1;
     // // } while (i <= n);
 
-    // //  3rd Approach (using while loop)
+    // // 3rd Approach (using while loop)
     // // int i = 1;
     // // while (i <= n)
-    // //     sum += i++ * 2 - 1;
+    // //    sum += i++ * 2 - 1;
 
     printf("\nSum of First %d Odd Natural Numbers => %d", n, sum);
 

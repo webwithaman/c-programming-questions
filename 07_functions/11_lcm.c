@@ -84,9 +84,9 @@ unsigned int hcfOfTwo(int num1, int num2)
     // // int remainder;
     // // do
     // // {
-    // //     remainder = max % min;
-    // //     max = min;
-    // //     min = remainder;
+    // //    remainder = max % min;
+    // //    max = min;
+    // //    min = remainder;
     // // } while (remainder);
 
     // // return max;

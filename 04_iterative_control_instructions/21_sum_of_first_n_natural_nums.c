@@ -1,4 +1,4 @@
-// //  C program to calculte sum of first N natural numbers
+// // C program to calculte sum of first N natural numbers
 
 // // Header Files
 #include <stdio.h>
@@ -28,13 +28,13 @@ int main()
     // // int i = 1;
     // // do
     // // {
-    // //   sum+=i++;
+    // //  sum+=i++;
     // // } while (i <= n);
 
-    // //  3rd Approach (using while loop)
+    // // 3rd Approach (using while loop)
     // // int i = 1;
     // // while (i <= n)
-    // //     sum += i++;
+    // //    sum += i++;
 
     // // 4th Approach (using Direct formula)
     // // int sum = n * (n + 1) / 2;

@@ -65,18 +65,18 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - row * 2;
+    // //    spacesInCurrentRow = maxCols - row * 2;
 
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("%2d", col);
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("%2d", col);
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("  ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("  ");
 
-    // //     for (int col = row; col; col--)
-    // //         printf("%2d", col);
+    // //    for (int col = row; col; col--)
+    // //        printf("%2d", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

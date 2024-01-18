@@ -51,11 +51,11 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //         printf("%c ", charAtCol++);
+    // //    charAtCol = 'A';
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //        printf("%c ", charAtCol++);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

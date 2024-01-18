@@ -53,12 +53,12 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     vary += row - 1;
+    // //    vary += row - 1;
 
-    // //     for (int col = vary; col <= vary + row - 1; col++)
-    // //         printf("%3d", col);
+    // //    for (int col = vary; col <= vary + row - 1; col++)
+    // //        printf("%3d", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -67,15 +67,15 @@ int main()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row)
-    // //             printf("%3d", numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row)
+    // //            printf("%3d", numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

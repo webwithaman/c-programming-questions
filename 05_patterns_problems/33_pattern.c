@@ -58,21 +58,21 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRows - row) * 2;
-    // //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    // //     // // colsInCurrentRow = row * 2 - 1;
-    // //     toggle = 1;
+    // //    spacesInCurrentRow = (maxRows - row) * 2;
+    // //    colsInCurrentRow = maxCols - spacesInCurrentRow;
+    // //    // // colsInCurrentRow = row * 2 - 1;
+    // //    toggle = 1;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //     {
-    // //         toggle ? printf("*") : printf(" ");
-    // //         toggle = !toggle;
-    // //     }
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //    {
+    // //        toggle ? printf("*") : printf(" ");
+    // //        toggle = !toggle;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -80,23 +80,23 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     toggle = 1;
+    // //    toggle = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row && toggle)
-    // //         {
-    // //             printf("*");
-    // //             toggle = 0;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf(" ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row && toggle)
+    // //        {
+    // //            printf("*");
+    // //            toggle = 0;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf(" ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

@@ -1,4 +1,4 @@
-// //  C program to calculate HCF of two numbers
+// // C program to calculate HCF of two numbers
 
 // // Header Files
 #include <stdio.h>
@@ -34,20 +34,20 @@ int main()
     // // int hcf;
     // // if (max % min)
     // // {
-    // //     if (max == min + 1 || max == min + 2)
-    // //         hcf = 1;
-    // //     else
-    // //         for (int k = min / 2; k; k--)
-    // //         {
-    // //             if (num1 % k == 0 && num2 % k == 0)
-    // //             {
-    // //                 hcf = k;
-    // //                 break;
-    // //             }
-    // //         }
+    // //    if (max == min + 1 || max == min + 2)
+    // //        hcf = 1;
+    // //    else
+    // //        for (int k = min / 2; k; k--)
+    // //        {
+    // //            if (num1 % k == 0 && num2 % k == 0)
+    // //            {
+    // //                hcf = k;
+    // //                break;
+    // //            }
+    // //        }
     // // }
     // // else
-    // //     hcf = min;
+    // //    hcf = min;
 
     // // printf("\nHCF => %d", hcf);
 
@@ -55,11 +55,11 @@ int main()
     // // int lcm;
     // // for (int j = max; j <= num1 * num2; j += max)
     // // {
-    // //     if (j % num1 == 0 && j % num2 == 0)
-    // //     {
-    // //         lcm = j;
-    // //         break;
-    // //     }
+    // //    if (j % num1 == 0 && j % num2 == 0)
+    // //    {
+    // //        lcm = j;
+    // //        break;
+    // //    }
     // // }
     // // hcf = num1 * num2 / lcm;
     // // printf("\nHCF => %d", hcf);
@@ -68,11 +68,11 @@ int main()
     // // int lcm, hcf;
     // // for (int i = max; i <= num1 * num2; i += max)
     // // {
-    // //     if (i % min == 0)
-    // //     {
-    // //         lcm = i;
-    // //         break;
-    // //     }
+    // //    if (i % min == 0)
+    // //    {
+    // //        lcm = i;
+    // //        break;
+    // //    }
     // // }
     // // hcf = num1 * num2 / lcm;
     // // printf("\nHCF => %d", hcf);

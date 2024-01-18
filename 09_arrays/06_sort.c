@@ -1,4 +1,4 @@
-// //  Write a program to sort (ascending order) elements of an array of size 10. Take array  values from the user.
+// // Write a program to sort (ascending order) elements of an array of size 10. Take array  values from the user.
 
 // // Header Files
 #include <stdio.h>
@@ -25,29 +25,29 @@ int main()
     // // Sorting using Selection Sort
     // // for (int i = 0; i < ARRAY_SIZE - 1; i++)
     // // {
-    // //     for (int j = i + 1; j < ARRAY_SIZE; j++)
-    // //     {
-    // //         if (nums[i] > nums[j]) // // true, then swap
-    // //         {
-    // //             int temp = nums[i];
-    // //             nums[i] = nums[j];
-    // //             nums[j] = temp;
-    // //         }
-    // //     }
+    // //    for (int j = i + 1; j < ARRAY_SIZE; j++)
+    // //    {
+    // //        if (nums[i] > nums[j]) // // true, then swap
+    // //        {
+    // //            int temp = nums[i];
+    // //            nums[i] = nums[j];
+    // //            nums[j] = temp;
+    // //        }
+    // //    }
     // // }
 
     // // Sorting using Bubble Sort
     // // for (int i = 0; i < ARRAY_SIZE - 1; i++)
     // // {
-    // //     for (int j = 0; j < ARRAY_SIZE - 1 - i; j++)
-    // //     {
-    // //         if (nums[j] > nums[j + 1]) // // true, then swap
-    // //         {
-    // //             int temp = nums[j];
-    // //             nums[j] = nums[j + 1];
-    // //             nums[j + 1] = temp;
-    // //         }
-    // //     }
+    // //    for (int j = 0; j < ARRAY_SIZE - 1 - i; j++)
+    // //    {
+    // //        if (nums[j] > nums[j + 1]) // // true, then swap
+    // //        {
+    // //            int temp = nums[j];
+    // //            nums[j] = nums[j + 1];
+    // //            nums[j + 1] = temp;
+    // //        }
+    // //    }
     // // }
 
     // // Print Numbers

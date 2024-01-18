@@ -1,4 +1,4 @@
-// //  C program to print all Prime numbers under 150
+// // C program to print all Prime numbers under 150
 
 // // Header Files
 #include <stdio.h>

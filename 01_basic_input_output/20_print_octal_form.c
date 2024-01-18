@@ -1,4 +1,4 @@
-// //  C program to take input a number in Decimal form and print its Octal form
+// // C program to take input a number in Decimal form and print its Octal form
 
 // // Header files
 #include <stdio.h>

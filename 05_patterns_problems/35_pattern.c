@@ -70,29 +70,29 @@ int main()
     // // Print Upper Part
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= maxRowsInOne + 1 - row; col++)
-    // //         printf("* ");
+    // //    for (int col = 1; col <= maxRowsInOne + 1 - row; col++)
+    // //        printf("* ");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // Print Lower Part
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRowsInOne - row) * 2;
+    // //    spacesInCurrentRow = (maxRowsInOne - row) * 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("* ");
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("* ");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -100,26 +100,26 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     toggle = 1;
+    // //    toggle = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= vary && col <= maxCols + 1 - vary && toggle)
-    // //         {
-    // //             printf("*");
-    // //             toggle = 0;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf(" ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= vary && col <= maxCols + 1 - vary && toggle)
+    // //        {
+    // //            printf("*");
+    // //            toggle = 0;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf(" ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     if (row != maxRowsInOne)
-    // //         row < maxRowsInOne ? vary++ : vary--;
+    // //    if (row != maxRowsInOne)
+    // //        row < maxRowsInOne ? vary++ : vary--;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

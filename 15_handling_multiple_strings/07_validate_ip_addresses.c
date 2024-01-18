@@ -82,7 +82,7 @@ int main()
             {
                 if (ips[i][j] != '.')
                 {
-                    if (j == 0 && ips[i][j] == '0' && ips[i][j + 1] != '.') // //  If First Octet value has leading 0
+                    if (j == 0 && ips[i][j] == '0' && ips[i][j + 1] != '.') // // If First Octet value has leading 0
                     {
                         isValid = 0;
                         break;

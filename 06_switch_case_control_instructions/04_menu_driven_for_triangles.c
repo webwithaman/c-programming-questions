@@ -1,9 +1,9 @@
 // // Write a menu driven program with the following options:
 // // a. Check whether a given set of three numbers are lengths of an
-// //    isosceles triangle or not
+// //   isosceles triangle or not
 // // b. Check whether a given set of three numbers are lengths of Right angled triangle or not
 // // c. Check whether a given set of three numbers are lengths of an equilateral triangle
-// //    or not
+// //   or not
 // // d. Check whether a given set of three numbers are Lenghts of a Scalene triangle or not
 // // e. Exit
 

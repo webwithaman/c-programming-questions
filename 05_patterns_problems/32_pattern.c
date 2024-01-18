@@ -68,16 +68,16 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     colsInCurrentRow = row <= maxCols ? row : maxCols - (row - maxCols);
+    // //    colsInCurrentRow = row <= maxCols ? row : maxCols - (row - maxCols);
 
-    // //     // // If user wants even number of rows
-    // //     if (row >= maxCols + 1 && maxRows % 2 == 0)
-    // //         colsInCurrentRow++;
+    // //    // // If user wants even number of rows
+    // //    if (row >= maxCols + 1 && maxRows % 2 == 0)
+    // //        colsInCurrentRow++;
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

@@ -1,4 +1,4 @@
-// //  C program to Swap values of Two int Variables without using Bitwise XOR (^)
+// // C program to Swap values of Two int Variables without using Bitwise XOR (^)
 
 // // Header Files
 #include <stdio.h>

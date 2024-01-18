@@ -63,19 +63,19 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
-    // //     colsInCurrentRow -= 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
+    // //    colsInCurrentRow -= 2;
 
-    // //     for (int col = 1; col <= colsInCurrentRow / 2; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow / 2; col++)
+    // //        printf("*");
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow / 2; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow / 2; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -83,32 +83,32 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("*");
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = maxRows + row; col <= maxCols; col++)
-    // //         printf("*");
+    // //    for (int col = maxRows + row; col <= maxCols; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 4th Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row || col >= maxRows + row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row || col >= maxRows + row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

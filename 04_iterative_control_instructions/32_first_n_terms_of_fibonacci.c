@@ -1,4 +1,4 @@
-// //  C program to print first N terms of fibonacci series
+// // C program to print first N terms of fibonacci series
 
 // // Header Files
 #include <stdio.h>
@@ -36,15 +36,15 @@ int main()
     // // int prev = 0, next = 1, result, count = 1;
     // // for (int count = 1; count <= n; count++)
     // // {
-    // //     if (count == 1)
-    // //         result = 1;
-    // //     else
-    // //     {
-    // //         result = prev + next;
-    // //         prev = next;
-    // //         next = result;
-    // //     }
-    // //     printf("%d ", result);
+    // //    if (count == 1)
+    // //        result = 1;
+    // //    else
+    // //    {
+    // //        result = prev + next;
+    // //        prev = next;
+    // //        next = result;
+    // //    }
+    // //    printf("%d ", result);
     // // }
 
     printf("\n");

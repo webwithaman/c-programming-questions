@@ -63,15 +63,15 @@ int main()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == maxCols || col == maxCols + 1 - row || row == maxRows)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == maxCols || col == maxCols + 1 - row || row == maxRows)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

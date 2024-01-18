@@ -58,10 +58,10 @@ char *strReverse(char str[])
     // // 2nd Approach
     // // for (int i = 0; i < length / 2; i++)
     // // {
-    // //     // // Swap str[i] with str[length - 1 - i]
-    // //     temp = str[i];
-    // //     str[i] = str[length - 1 - i];
-    // //     str[length - 1 - i] = temp;
+    // //    // // Swap str[i] with str[length - 1 - i]
+    // //    temp = str[i];
+    // //    str[i] = str[length - 1 - i];
+    // //    str[length - 1 - i] = temp;
     // // }
 
     // // return str;

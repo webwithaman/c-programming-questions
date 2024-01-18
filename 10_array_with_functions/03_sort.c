@@ -93,7 +93,7 @@ void sortDes(int nums[], int size)
         }
     }
 
-    // //  Bubble Sort
+    // // Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)
@@ -125,7 +125,7 @@ void sortAsc(int nums[], int size)
         }
     }
 
-    // //  Bubble Sort
+    // // Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)

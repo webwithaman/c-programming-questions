@@ -1,4 +1,4 @@
-// //  C program to calculate LCM of two numbers
+// // C program to calculate LCM of two numbers
 
 // // Header Files
 #include <stdio.h>
@@ -41,11 +41,11 @@ int main()
     // // int lcm;
     // // for (int j = max; j <= num1 * num2; j += max)
     // // {
-    // //     if (j % num1 == 0 && j % num2 == 0)
-    // //     {
-    // //         lcm=j;
-    // //         break;
-    // //     }
+    // //    if (j % num1 == 0 && j % num2 == 0)
+    // //    {
+    // //        lcm=j;
+    // //        break;
+    // //    }
     // // }
     // // printf("\nLCM => %d", lcm);
 
@@ -53,20 +53,20 @@ int main()
     // // int hcf, lcm;
     // // if (max % min)
     // // {
-    // //     if (max == min + 1 || max == min + 2)
-    // //         hcf = 1;
-    // //     else
-    // //         for (int k = min / 2; k; k--)
-    // //         {
-    // //             if (num1 % k == 0 && num2 % k == 0)
-    // //             {
-    // //                 hcf = k;
-    // //                 break;
-    // //             }
-    // //         }
+    // //    if (max == min + 1 || max == min + 2)
+    // //        hcf = 1;
+    // //    else
+    // //        for (int k = min / 2; k; k--)
+    // //        {
+    // //            if (num1 % k == 0 && num2 % k == 0)
+    // //            {
+    // //                hcf = k;
+    // //                break;
+    // //            }
+    // //        }
     // // }
     // // else
-    // //     hcf = min;
+    // //    hcf = min;
 
     // // lcm = num1 * num2 / hcf;
     // // printf("\nLCM => %d", lcm);
@@ -75,9 +75,9 @@ int main()
     // // int remainder, hcf, lcm;
     // // do
     // // {
-    // //     remainder = num1 % num2;
-    // //     num1 = num2;
-    // //     num2 = remainder;
+    // //    remainder = num1 % num2;
+    // //    num1 = num2;
+    // //    num2 = remainder;
     // // } while (remainder);
 
     // // hcf = num1;

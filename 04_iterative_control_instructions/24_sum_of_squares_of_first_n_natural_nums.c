@@ -1,4 +1,4 @@
-// //  C program to calculte sum of squares of first N natural numbers
+// // C program to calculte sum of squares of first N natural numbers
 
 // // Header Files
 #include <stdio.h>
@@ -28,16 +28,16 @@ int main()
     // // int i = 1;
     // // do
     // // {
-    // //     sum += i * i;
-    // //     i++;
+    // //    sum += i * i;
+    // //    i++;
     // // } while (i <= n);
 
-    // //  3rd Approach (using while loop)
+    // // 3rd Approach (using while loop)
     // // int i = 1;
     // // while (i <= n){
-    // //     sum += i * i;
-    // //     i++;
-    // //  }
+    // //    sum += i * i;
+    // //    i++;
+    // // }
 
     printf("\nSum of Squares of First %d Natural Numbers => %d", n, sum);
 

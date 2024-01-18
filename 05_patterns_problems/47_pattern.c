@@ -65,22 +65,22 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     countForRight = sum + 1 + sumOfFirstNNums(maxRows - row);
+    // //    countForRight = sum + 1 + sumOfFirstNNums(maxRows - row);
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //         {
-    // //             if (col <= maxRows)
-    // //                 printf("%3d ", countForLeft++);
-    // //             else
-    // //                 printf("%3d ", countForRight++);
-    // //         }
-    // //         else
-    // //             printf("    ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //        {
+    // //            if (col <= maxRows)
+    // //                printf("%3d ", countForLeft++);
+    // //            else
+    // //                printf("%3d ", countForRight++);
+    // //        }
+    // //        else
+    // //            printf("    ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -88,30 +88,30 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1 + sum - sumOfFirstNNums(maxRows + 1 - row);
-    // //     lock = 1;
+    // //    numAtCol = 1 + sum - sumOfFirstNNums(maxRows + 1 - row);
+    // //    lock = 1;
 
-    // //     for (int col = 0; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //         {
-    // //             if (col <= maxRows)
-    // //                 printf("%3d ", numAtCol++);
-    // //             else
-    // //             {
-    // //                 if (lock)
-    // //                 {
-    // //                     numAtCol += sumOfFirstNNums(maxRows - row) * 2;
-    // //                     lock = 0;
-    // //                 }
-    // //                 printf("%3d ", numAtCol++);
-    // //             }
-    // //         }
-    // //         else
-    // //             printf("    ");
-    // //     }
+    // //    for (int col = 0; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //        {
+    // //            if (col <= maxRows)
+    // //                printf("%3d ", numAtCol++);
+    // //            else
+    // //            {
+    // //                if (lock)
+    // //                {
+    // //                    numAtCol += sumOfFirstNNums(maxRows - row) * 2;
+    // //                    lock = 0;
+    // //                }
+    // //                printf("%3d ", numAtCol++);
+    // //            }
+    // //        }
+    // //        else
+    // //            printf("    ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

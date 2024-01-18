@@ -57,18 +57,18 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1;
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row)
-    // //             printf("%3d", numAtCol++);
-    // //         else if (col >= maxRows + row)
-    // //             printf("%3d", --numAtCol);
-    // //         else
-    // //             printf("  *");
-    // //     }
+    // //    numAtCol = 1;
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row)
+    // //            printf("%3d", numAtCol++);
+    // //        else if (col >= maxRows + row)
+    // //            printf("%3d", --numAtCol);
+    // //        else
+    // //            printf("  *");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

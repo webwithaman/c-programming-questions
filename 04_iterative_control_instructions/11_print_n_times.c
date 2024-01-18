@@ -1,4 +1,4 @@
-// //  C program to print C-Programming N times on the screen
+// // C program to print C-Programming N times on the screen
 
 // // Header Files
 #include <stdio.h>
@@ -22,7 +22,7 @@ int main()
 
     printf("\n>>>>>>>> C-Programming %d Times <<<<<<<<\n", n);
 
-    // //  1st Approach (using while loop)
+    // // 1st Approach (using while loop)
     int i = 0;
     while (i < n)
     {
@@ -33,26 +33,26 @@ int main()
     // // 2nd Approach (using while loop)
     // // int i = 0;
     // // while (i++ < n)
-    // //     printf("\nC-Programming");
+    // //    printf("\nC-Programming");
 
     // // 3rd Approach (using do-while loop)
     // // int i = 0;
     // // do
     // // {
-    // //     printf("\nC-Programming");
-    // //     i++;
+    // //    printf("\nC-Programming");
+    // //    i++;
     // // } while (i < n);
 
     // // 4th Approach (using do-while loop)
     // // int i = 0;
     // // do
     // // {
-    // //     printf("\nC-Programming");
+    // //    printf("\nC-Programming");
     // // } while (++i < n);
 
     // // 5th Approach (using for loop)
     // // for (int i = 0; i < n; i++)
-    // //     printf("\nC-Programming");
+    // //    printf("\nC-Programming");
 
     printf("\n");
     getch();

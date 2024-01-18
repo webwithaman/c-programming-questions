@@ -40,17 +40,17 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - row;
+    // //    spacesInCurrentRow = maxCols - row;
 
-    // //     colsInCurrentRow = row;
+    // //    colsInCurrentRow = row;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("%3d", numAtCol++);
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("%3d", numAtCol++);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 2nd Approach
@@ -58,15 +58,15 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxCols + 1 - row)
-    // //             printf("%3d", numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxCols + 1 - row)
+    // //            printf("%3d", numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

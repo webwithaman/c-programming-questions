@@ -69,13 +69,13 @@ int main()
 
     // // for (int row = 0; row < maxRows; row++)
     // // {
-    // //     for (int col = 0; col < maxCols; col++)
-    // //     {
-    // //         numAtCol = n - min(min(row, col), min(maxRows - row, maxCols - col));
-    // //         printf("%2d ", numAtCol);
-    // //     }
+    // //    for (int col = 0; col < maxCols; col++)
+    // //    {
+    // //        numAtCol = n - min(min(row, col), min(maxRows - row, maxCols - col));
+    // //        printf("%2d ", numAtCol);
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

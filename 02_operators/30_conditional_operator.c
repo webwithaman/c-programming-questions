@@ -1,4 +1,4 @@
-// //  C program to Demonstrate the use of Conditional Operator ( ? : )
+// // C program to Demonstrate the use of Conditional Operator ( ? : )
 
 // // Header Files
 #include <stdio.h>

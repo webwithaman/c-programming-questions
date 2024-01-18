@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is positive or non-positive
+// // C program to check whether a given number is positive or non-positive
 
 // // Header Files
 #include <stdio.h>

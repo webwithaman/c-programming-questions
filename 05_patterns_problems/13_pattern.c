@@ -64,20 +64,20 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2 - 1;
-    // //     charAtCol = 'A';
+    // //    spacesInCurrentRow = (row - 1) * 2 - 1;
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("%c", charAtCol++);
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("%c", charAtCol++);
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     charAtCol -= row == 1 ? 2 : 1;
-    // //     for (int col = row == 1 ? maxRows - 1 : maxRows + 1 - row; col; col--)
-    // //         printf("%c", charAtCol--);
+    // //    charAtCol -= row == 1 ? 2 : 1;
+    // //    for (int col = row == 1 ? maxRows - 1 : maxRows + 1 - row; col; col--)
+    // //        printf("%c", charAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -85,19 +85,19 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
-    // //             printf("%c", charAtCol);
-    // //         else
-    // //             printf(" ");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
+    // //            printf("%c", charAtCol);
+    // //        else
+    // //            printf(" ");
 
-    // //         col < maxRows ? charAtCol++ : charAtCol--;
-    // //     }
+    // //        col < maxRows ? charAtCol++ : charAtCol--;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

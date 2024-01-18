@@ -1,4 +1,4 @@
-// //  C program to print (%d) on screen
+// // C program to print (%d) on screen
 // // 👉 Output => %d
 
 // // Header files

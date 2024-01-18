@@ -63,25 +63,25 @@ int main()
     // // switch (units >= 50)
     // // {
     // // case 1:
-    // //     switch (units <= 150)
-    // //     {
-    // //     case 1:
-    // //         billAmount += 25 + (units - 50) * .75;
-    // //         break;
-    // //     case 0:
-    // //         switch (units <= 250)
-    // //         {
-    // //         case 1:
-    // //             billAmount += 100 + (units - 150) * 1.20;
-    // //             break;
-    // //         case 0:
-    // //             billAmount += 220 + (units - 250) * 1.50;
-    // //         }
-    // //         break;
-    // //     }
-    // //     break;
+    // //    switch (units <= 150)
+    // //    {
+    // //    case 1:
+    // //        billAmount += 25 + (units - 50) * .75;
+    // //        break;
+    // //    case 0:
+    // //        switch (units <= 250)
+    // //        {
+    // //        case 1:
+    // //            billAmount += 100 + (units - 150) * 1.20;
+    // //            break;
+    // //        case 0:
+    // //            billAmount += 220 + (units - 250) * 1.50;
+    // //        }
+    // //        break;
+    // //    }
+    // //    break;
     // // case 0:
-    // //     billAmount += units * .50;
+    // //    billAmount += units * .50;
     // // }
 
     // // Add Additional surcharge of 20% is added to the bill.

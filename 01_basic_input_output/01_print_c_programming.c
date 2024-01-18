@@ -1,4 +1,4 @@
-// //  C program to print C Programming on screen
+// // C program to print C Programming on screen
 
 // // Header files
 #include <stdio.h>

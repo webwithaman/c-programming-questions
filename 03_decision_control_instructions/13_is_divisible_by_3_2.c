@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is divisible by 3 and divisible by 2
+// // C program to check whether a given number is divisible by 3 and divisible by 2
 
 // // Header Files
 #include <stdio.h>
@@ -19,9 +19,9 @@ int main()
 
     // // 2nd Approach
     // // if (num % 3 || num % 2)
-    // //     printf("\n%d is not divisible by 3 and divisible by 2");
+    // //    printf("\n%d is not divisible by 3 and divisible by 2");
     // // else
-    // //     printf("\n%d is divisible by 3 and divisible by 2");
+    // //    printf("\n%d is divisible by 3 and divisible by 2");
 
     printf("\n");
     getch();

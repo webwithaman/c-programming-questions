@@ -1,4 +1,4 @@
-// //  C program to take radius of circle and print area of circle in following format :-
+// // C program to take radius of circle and print area of circle in following format :-
 // // 👉 Output => Area of Circle is A having radius R
 // // Where A is Area of Circle and R is Radius of Circle.
 

@@ -62,20 +62,20 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
-    // //     charAtCol = 'A';
+    // //    spacesInCurrentRow = (row - 1) * 2;
+    // //    charAtCol = 'A';
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("%c", charAtCol++);
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("%c", charAtCol++);
 
-    // //     charAtCol -= 2;
-    // //     for (int col = maxRows - row; col > 0; col--)
-    // //         printf("%c", charAtCol--);
+    // //    charAtCol -= 2;
+    // //    for (int col = maxRows - row; col > 0; col--)
+    // //        printf("%c", charAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -83,17 +83,17 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //             printf("%c", col < maxRows ? charAtCol++ : charAtCol--);
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //            printf("%c", col < maxRows ? charAtCol++ : charAtCol--);
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

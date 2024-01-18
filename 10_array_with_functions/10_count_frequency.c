@@ -105,12 +105,12 @@ void printFrequencyOfEach(int arr[], int size)
 
     // // for (int i = 0; i < size; i += count)
     // // {
-    // //     count = 1;
+    // //    count = 1;
 
-    // //     for (int j = i + 1; j < size && copyOfArr[i] == copyOfArr[j]; j++)
-    // //         count++;
+    // //    for (int j = i + 1; j < size && copyOfArr[i] == copyOfArr[j]; j++)
+    // //        count++;
 
-    // //     printf("\nFrequecy of %d => %d", copyOfArr[i], count);
+    // //    printf("\nFrequecy of %d => %d", copyOfArr[i], count);
     // // }
 
     putch('\n');
@@ -131,7 +131,7 @@ int linearSearch(int arr[], int size, int search)
 // // Function to Sort an Array in Ascending Order
 void sortAsc(int arr[], int size)
 {
-    // //  Bubble Sort
+    // // Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)

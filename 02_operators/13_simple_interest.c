@@ -1,4 +1,4 @@
-// //  C program calculate Simple Interest
+// // C program calculate Simple Interest
 
 // // Header Files
 #include <stdio.h>

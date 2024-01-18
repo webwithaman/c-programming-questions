@@ -1,4 +1,4 @@
-// //  C program to reverse a given number
+// // C program to reverse a given number
 
 // // Header Files
 #include <stdio.h>
@@ -15,8 +15,8 @@ int main()
     // // 1st Approach
     // // while (num)
     // // {
-    // //     rev = rev * 10 + num % 10;
-    // //     num /= 10;
+    // //    rev = rev * 10 + num % 10;
+    // //    num /= 10;
     // // }
     // // printf("\nReverse of Entered Number => %d", rev);
 
@@ -42,7 +42,7 @@ int main()
         copyNum /= 10;
     }
 
-    // //  Print Zeros
+    // // Print Zeros
     while (count--)
     {
         printf("0");

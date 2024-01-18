@@ -1,4 +1,4 @@
-// //  C program to convert Meters to Feets
+// // C program to convert Meters to Feets
 
 // // Header Files
 #include <stdio.h>

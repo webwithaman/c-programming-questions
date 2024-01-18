@@ -1,4 +1,4 @@
-// //  C program to print single Back Slash (\) on screen
+// // C program to print single Back Slash (\) on screen
 // // 👉 Output => \
 
 // // Header files

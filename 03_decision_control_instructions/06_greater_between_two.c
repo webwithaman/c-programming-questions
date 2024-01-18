@@ -1,4 +1,4 @@
-// //  C program to Print greater between two numbers.Print one number of both if both are the same
+// // C program to Print greater between two numbers.Print one number of both if both are the same
 
 // // Header Files
 #include <stdio.h>

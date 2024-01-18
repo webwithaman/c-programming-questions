@@ -1,4 +1,4 @@
-// //  Write a program to demonstrate the use realloc function in C.
+// // Write a program to demonstrate the use realloc function in C.
 
 // // Header Files
 #include <stdio.h>

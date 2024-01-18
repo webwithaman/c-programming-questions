@@ -1,4 +1,4 @@
-// //  C program to count digits of a given number
+// // C program to count digits of a given number
 
 // // Header Files
 #include <stdio.h>

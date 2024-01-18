@@ -1,4 +1,4 @@
-// //  C program to print the first N even natural numbers
+// // C program to print the first N even natural numbers
 
 // // Header Files
 #include <stdio.h>
@@ -22,7 +22,7 @@ int main()
 
     printf("\n>>>>>>>> First %d Even Natural Numbers <<<<<<<<\n", n);
 
-    // //  1st Approach (using while loop)
+    // // 1st Approach (using while loop)
     int i = 1;
     while (i <= n)
     {
@@ -34,56 +34,56 @@ int main()
     // // int i = 2;
     // // while (i <= n * 2)
     // // {
-    // //     printf("\n%d", i);
-    // //     i += 2;
+    // //    printf("\n%d", i);
+    // //    i += 2;
     // // }
 
     // // 3rd Approach (using while loop)
     // // int i = 2;
     // // while (i <= n * 2)
     // // {
-    // //     if (!(i & 1))
-    // //         printf("\n%d", i);
-    // //     i++;
+    // //    if (!(i & 1))
+    // //        printf("\n%d", i);
+    // //    i++;
     // // }
 
     // // 4th Approach (using do-while loop)
     // // int i = 1;
     // // do
     // // {
-    // //     printf("\n%d", i * 2);
+    // //    printf("\n%d", i * 2);
     // // } while (++i <= n);
 
     // // 5th Approach (using do-while loop)
     // // int i = 2;
     // // do
     // // {
-    // //     printf("\n%d", i);
-    // //     i += 2;
+    // //    printf("\n%d", i);
+    // //    i += 2;
     // // } while (i <= n * 2);
 
     // // 6th Approach (using do-while loop)
     // // int i = 2;
     // // do
     // // {
-    // //     if (!(i & 1))
-    // //         printf("\n%d", i);
-    // //     i++;
+    // //    if (!(i & 1))
+    // //        printf("\n%d", i);
+    // //    i++;
     // // } while (i <= n * 2);
 
     // // 7th Approach (using for loop)
     // // for (int i = 1; i <= n; i++)
-    // //     printf("\n%d", i * 2 );
+    // //    printf("\n%d", i * 2 );
 
     // // 8th Approach (using for loop)
     // // for (int i = 2; i <= n * 2; i += 2)
-    // //     printf("\n%d", i);
+    // //    printf("\n%d", i);
 
     // // 9th Approach (using for loop)
     // // for (int i = 2; i <= n * 2; i++)
     // // {
-    // //     if (!(i % 2))
-    // //         printf("\n%d", i);
+    // //    if (!(i % 2))
+    // //        printf("\n%d", i);
     // // }
 
     printf("\n");

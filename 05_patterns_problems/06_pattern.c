@@ -61,31 +61,31 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     colsInCurrentRow -= 2;
+    // //    colsInCurrentRow -= 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

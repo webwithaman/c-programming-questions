@@ -46,9 +46,9 @@ int main()
     // // int temp;
     // // for (int i = 0; i < ARRAY_SIZE / 2; i++)
     // // {
-    // //     temp = nums[i];
-    // //     nums[i] = nums[ARRAY_SIZE - 1 - i];
-    // //     nums[ARRAY_SIZE - 1 - i] = temp;
+    // //    temp = nums[i];
+    // //    nums[i] = nums[ARRAY_SIZE - 1 - i];
+    // //    nums[ARRAY_SIZE - 1 - i] = temp;
     // // }
 
     // // Print Numbers In Reverse Order

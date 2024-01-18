@@ -43,7 +43,7 @@ int strLength(char str[])
     return length;
 }
 
-// //  Function to Count words in a Given String
+// // Function to Count words in a Given String
 int countWords(char str[])
 {
     // // ASCII Code of Space ' ' is 32

@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is a three-digit number or not
+// // C program to check whether a given number is a three-digit number or not
 
 // // Header Files
 #include <stdio.h>

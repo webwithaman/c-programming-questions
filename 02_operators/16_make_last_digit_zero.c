@@ -1,4 +1,4 @@
-// //  C program to convert last Digit of a Number into Zero => Digit = 245 Make it => 240.
+// // C program to convert last Digit of a Number into Zero => Digit = 245 Make it => 240.
 // // 👉 Output => Result After Converting Last Digit of 245 into 0 => 245
 
 // // Header Files

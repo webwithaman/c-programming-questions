@@ -1,4 +1,4 @@
-// //  C program to print "C Programming" in Single Quotes
+// // C program to print "C Programming" in Single Quotes
 
 // // Header files
 #include <stdio.h>

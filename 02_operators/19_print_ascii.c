@@ -1,4 +1,4 @@
-// //  C program  to take a Character as an input and print its ASCII Code
+// // C program  to take a Character as an input and print its ASCII Code
 
 // // Header Files
 #include <stdio.h>

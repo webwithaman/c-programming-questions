@@ -377,14 +377,14 @@ void pattern_1()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
-    // //     printf("\n");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
+    // //    printf("\n");
     // // }
 }
 
@@ -440,15 +440,15 @@ void pattern_2()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxCols + 1 - row)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxCols + 1 - row)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -495,15 +495,15 @@ void pattern_3()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxCols + 1 - row)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxCols + 1 - row)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -559,15 +559,15 @@ void pattern_4()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -625,31 +625,31 @@ void pattern_5()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRows - row) * 2;
+    // //    spacesInCurrentRow = (maxRows - row) * 2;
 
-    // //     colsInCurrentRow += 2;
+    // //    colsInCurrentRow += 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -708,31 +708,31 @@ void pattern_6()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     colsInCurrentRow -= 2;
+    // //    colsInCurrentRow -= 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -793,19 +793,19 @@ void pattern_7()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
-    // //     colsInCurrentRow -= 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
+    // //    colsInCurrentRow -= 2;
 
-    // //     for (int col = 1; col <= colsInCurrentRow / 2; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow / 2; col++)
+    // //        printf("*");
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow / 2; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow / 2; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -813,32 +813,32 @@ void pattern_7()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("*");
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = maxRows + row; col <= maxCols; col++)
-    // //         printf("*");
+    // //    for (int col = maxRows + row; col <= maxCols; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 4th Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row || col >= maxRows + row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row || col >= maxRows + row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -896,17 +896,17 @@ void pattern_8()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1;
+    // //    numAtCol = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-    // //             printf("%2d", col < maxRows ? numAtCol++ : numAtCol--);
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    // //            printf("%2d", col < maxRows ? numAtCol++ : numAtCol--);
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -964,17 +964,17 @@ void pattern_9()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1;
+    // //    numAtCol = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //             printf("%2d", col < maxRows ? numAtCol++ : numAtCol--);
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //            printf("%2d", col < maxRows ? numAtCol++ : numAtCol--);
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1032,19 +1032,19 @@ void pattern_10()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1;
+    // //    numAtCol = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
-    // //             printf("%2d", numAtCol);
-    // //         else
-    // //             printf("  ");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
+    // //            printf("%2d", numAtCol);
+    // //        else
+    // //            printf("  ");
 
-    // //         col < maxRows ? numAtCol++ : numAtCol--;
-    // //     }
+    // //        col < maxRows ? numAtCol++ : numAtCol--;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1104,20 +1104,20 @@ void pattern_11()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRows - row) * 2;
-    // //     charAtCol = 'A';
+    // //    spacesInCurrentRow = (maxRows - row) * 2;
+    // //    charAtCol = 'A';
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("%c", charAtCol++);
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("%c", charAtCol++);
 
-    // //     charAtCol -= 2;
-    // //     for (int col = row - 1; col; col--)
-    // //         printf("%c", charAtCol--);
+    // //    charAtCol -= 2;
+    // //    for (int col = row - 1; col; col--)
+    // //        printf("%c", charAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -1125,17 +1125,17 @@ void pattern_11()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-    // //             printf("%c", col < maxRows ? charAtCol++ : charAtCol--);
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    // //            printf("%c", col < maxRows ? charAtCol++ : charAtCol--);
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1195,20 +1195,20 @@ void pattern_12()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
-    // //     charAtCol = 'A';
+    // //    spacesInCurrentRow = (row - 1) * 2;
+    // //    charAtCol = 'A';
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("%c", charAtCol++);
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("%c", charAtCol++);
 
-    // //     charAtCol -= 2;
-    // //     for (int col = maxRows - row; col > 0; col--)
-    // //         printf("%c", charAtCol--);
+    // //    charAtCol -= 2;
+    // //    for (int col = maxRows - row; col > 0; col--)
+    // //        printf("%c", charAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -1216,17 +1216,17 @@ void pattern_12()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //             printf("%c", col < maxRows ? charAtCol++ : charAtCol--);
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //            printf("%c", col < maxRows ? charAtCol++ : charAtCol--);
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1288,20 +1288,20 @@ void pattern_13()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2 - 1;
-    // //     charAtCol = 'A';
+    // //    spacesInCurrentRow = (row - 1) * 2 - 1;
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("%c", charAtCol++);
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("%c", charAtCol++);
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     charAtCol -= row == 1 ? 2 : 1;
-    // //     for (int col = row == 1 ? maxRows - 1 : maxRows + 1 - row; col; col--)
-    // //         printf("%c", charAtCol--);
+    // //    charAtCol -= row == 1 ? 2 : 1;
+    // //    for (int col = row == 1 ? maxRows - 1 : maxRows + 1 - row; col; col--)
+    // //        printf("%c", charAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -1309,19 +1309,19 @@ void pattern_13()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
+    // //    charAtCol = 'A';
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
-    // //             printf("%c", charAtCol);
-    // //         else
-    // //             printf(" ");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
+    // //            printf("%c", charAtCol);
+    // //        else
+    // //            printf(" ");
 
-    // //         col < maxRows ? charAtCol++ : charAtCol--;
-    // //     }
+    // //        col < maxRows ? charAtCol++ : charAtCol--;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1377,14 +1377,14 @@ void pattern_14()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == 1 || col == row || row == maxRows)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
-    // //     printf("\n");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == 1 || col == row || row == maxRows)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
+    // //    printf("\n");
     // // }
 }
 
@@ -1445,15 +1445,15 @@ void pattern_15()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == maxCols || col == maxCols + 1 - row || row == maxRows)
-    // //             printf("* ");
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == maxCols || col == maxCols + 1 - row || row == maxRows)
+    // //            printf("* ");
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1514,15 +1514,15 @@ void pattern_16()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == maxRows + 1 - row || col == maxRows - 1 + row || row == maxRows)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == maxRows + 1 - row || col == maxRows - 1 + row || row == maxRows)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1584,15 +1584,15 @@ void pattern_17()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == row || col == maxCols + 1 - row || row == 1)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == row || col == maxCols + 1 - row || row == 1)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1659,21 +1659,21 @@ void pattern_18()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     row < halfOfCols ? vary++ : vary--;
+    // //    row < halfOfCols ? vary++ : vary--;
 
-    // //     // // If user wants even number of rows
-    // //     if (row == halfOfCols && maxRows % 2 == 0)
-    // //         vary++;
+    // //    // // If user wants even number of rows
+    // //    if (row == halfOfCols && maxRows % 2 == 0)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1798,12 +1798,12 @@ void pattern_20()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     vary += row - 1;
+    // //    vary += row - 1;
 
-    // //     for (int col = vary; col <= vary + row - 1; col++)
-    // //         printf("%3d", col);
+    // //    for (int col = vary; col <= vary + row - 1; col++)
+    // //        printf("%3d", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -1812,15 +1812,15 @@ void pattern_20()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row)
-    // //             printf("%3d", numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row)
+    // //            printf("%3d", numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1870,10 +1870,10 @@ void pattern_21()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = row; col <= row * 2 - 1; col++)
-    // //         printf("%3d", col);
+    // //    for (int col = row; col <= row * 2 - 1; col++)
+    // //        printf("%3d", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -1881,17 +1881,17 @@ void pattern_21()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = row;
+    // //    numAtCol = row;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row)
-    // //             printf("%3d", numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row)
+    // //            printf("%3d", numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1940,11 +1940,11 @@ void pattern_22()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     charAtCol = 'A';
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //         printf("%c ", charAtCol++);
+    // //    charAtCol = 'A';
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //        printf("%c ", charAtCol++);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -1992,10 +1992,10 @@ void pattern_23()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
-    // //         printf("%c ", 'A' - 1 + col);
+    // //    for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
+    // //        printf("%c ", 'A' - 1 + col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2050,15 +2050,15 @@ void pattern_24()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row)
-    // //             printf("%2d", row);
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row)
+    // //            printf("%2d", row);
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2113,15 +2113,15 @@ void pattern_25()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxCols + 1 - row)
-    // //             printf("%2d", row);
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxCols + 1 - row)
+    // //            printf("%2d", row);
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2174,15 +2174,15 @@ void pattern_26()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row)
-    // //             printf("%2d", col);
-    // //         else
-    // //             printf("  ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row)
+    // //            printf("%2d", col);
+    // //        else
+    // //            printf("  ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2220,17 +2220,17 @@ void pattern_27()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - row;
+    // //    spacesInCurrentRow = maxCols - row;
 
-    // //     colsInCurrentRow = row;
+    // //    colsInCurrentRow = row;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("%3d", numAtCol++);
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("%3d", numAtCol++);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 2nd Approach
@@ -2238,15 +2238,15 @@ void pattern_27()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxCols + 1 - row)
-    // //             printf("%3d", numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxCols + 1 - row)
+    // //            printf("%3d", numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2301,18 +2301,18 @@ void pattern_28()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1;
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row)
-    // //             printf("%3d", numAtCol++);
-    // //         else if (col >= maxRows + row)
-    // //             printf("%3d", --numAtCol);
-    // //         else
-    // //             printf("  *");
-    // //     }
+    // //    numAtCol = 1;
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row)
+    // //            printf("%3d", numAtCol++);
+    // //        else if (col >= maxRows + row)
+    // //            printf("%3d", --numAtCol);
+    // //        else
+    // //            printf("  *");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2359,11 +2359,11 @@ void pattern_29()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = maxCols;
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //         printf("%d ", numAtCol--);
+    // //    numAtCol = maxCols;
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //        printf("%d ", numAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2410,10 +2410,10 @@ void pattern_30()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
-    // //         printf(" %2d ", col);
+    // //    for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
+    // //        printf(" %2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2464,14 +2464,14 @@ void pattern_31()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row)
-    // //             printf("%d ", col);
-    // //         else
-    // //             printf("  ");
-    // //     }
-    // //     printf("\n");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row)
+    // //            printf("%d ", col);
+    // //        else
+    // //            printf("  ");
+    // //    }
+    // //    printf("\n");
     // // }
 }
 
@@ -2537,16 +2537,16 @@ void pattern_32()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     colsInCurrentRow = row <= maxCols ? row : maxCols - (row - maxCols);
+    // //    colsInCurrentRow = row <= maxCols ? row : maxCols - (row - maxCols);
 
-    // //     // // If user wants even number of rows
-    // //     if (row >= maxCols + 1 && maxRows % 2 == 0)
-    // //         colsInCurrentRow++;
+    // //    // // If user wants even number of rows
+    // //    if (row >= maxCols + 1 && maxRows % 2 == 0)
+    // //        colsInCurrentRow++;
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //        printf("*");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2602,21 +2602,21 @@ void pattern_33()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRows - row) * 2;
-    // //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    // //     // // colsInCurrentRow = row * 2 - 1;
-    // //     toggle = 1;
+    // //    spacesInCurrentRow = (maxRows - row) * 2;
+    // //    colsInCurrentRow = maxCols - spacesInCurrentRow;
+    // //    // // colsInCurrentRow = row * 2 - 1;
+    // //    toggle = 1;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //     {
-    // //         toggle ? printf("*") : printf(" ");
-    // //         toggle = !toggle;
-    // //     }
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //    {
+    // //        toggle ? printf("*") : printf(" ");
+    // //        toggle = !toggle;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -2624,23 +2624,23 @@ void pattern_33()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     toggle = 1;
+    // //    toggle = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row && toggle)
-    // //         {
-    // //             printf("*");
-    // //             toggle = 0;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf(" ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row && toggle)
+    // //        {
+    // //            printf("*");
+    // //            toggle = 0;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf(" ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2696,22 +2696,22 @@ void pattern_34()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    // //     // // colsInCurrentRow = maxCols - (row - 1) * 2;
-    // //     toggle = 1;
+    // //    colsInCurrentRow = maxCols - spacesInCurrentRow;
+    // //    // // colsInCurrentRow = maxCols - (row - 1) * 2;
+    // //    toggle = 1;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //     {
-    // //         toggle ? printf("*") : printf(" ");
-    // //         toggle = !toggle;
-    // //     }
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //    {
+    // //        toggle ? printf("*") : printf(" ");
+    // //        toggle = !toggle;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -2719,23 +2719,23 @@ void pattern_34()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     toggle = 1;
+    // //    toggle = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row && toggle)
-    // //         {
-    // //             printf("*");
-    // //             toggle = 0;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf(" ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row && toggle)
+    // //        {
+    // //            printf("*");
+    // //            toggle = 0;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf(" ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2803,29 +2803,29 @@ void pattern_35()
     // // Print Upper Part
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     spacesInCurrentRow = (row - 1) * 2;
+    // //    spacesInCurrentRow = (row - 1) * 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= maxRowsInOne + 1 - row; col++)
-    // //         printf("* ");
+    // //    for (int col = 1; col <= maxRowsInOne + 1 - row; col++)
+    // //        printf("* ");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // Print Lower Part
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRowsInOne - row) * 2;
+    // //    spacesInCurrentRow = (maxRowsInOne - row) * 2;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("* ");
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("* ");
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -2833,26 +2833,26 @@ void pattern_35()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     toggle = 1;
+    // //    toggle = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= vary && col <= maxCols + 1 - vary && toggle)
-    // //         {
-    // //             printf("*");
-    // //             toggle = 0;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf(" ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= vary && col <= maxCols + 1 - vary && toggle)
+    // //        {
+    // //            printf("*");
+    // //            toggle = 0;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf(" ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     if (row != maxRowsInOne)
-    // //         row < maxRowsInOne ? vary++ : vary--;
+    // //    if (row != maxRowsInOne)
+    // //        row < maxRowsInOne ? vary++ : vary--;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2924,21 +2924,21 @@ void pattern_36()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == halfOfCols + 1 - vary || col == halfOfCols - 1 + vary)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == halfOfCols + 1 - vary || col == halfOfCols - 1 + vary)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     row < halfOfCols ? vary++ : vary--;
+    // //    row < halfOfCols ? vary++ : vary--;
 
-    // //     // // If user wants even number of rows
-    // //     if (row == halfOfCols && maxRows % 2 == 0)
-    // //         vary++;
+    // //    // // If user wants even number of rows
+    // //    if (row == halfOfCols && maxRows % 2 == 0)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -2997,26 +2997,26 @@ void pattern_37()
 
     // // for (int row = 0; row < maxRows; row++)
     // // {
-    // //     toggle = 1;
-    // //     colno = 0;
+    // //    toggle = 1;
+    // //    colno = 0;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows - row && col <= maxRows + row && toggle)
-    // //         {
-    // //             element = fact(row) / (fact(colno) * (fact(row - colno)));
-    // //             printf("%2d ", element);
-    // //             toggle = 0;
-    // //             colno++;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf("   ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows - row && col <= maxRows + row && toggle)
+    // //        {
+    // //            element = fact(row) / (fact(colno) * (fact(row - colno)));
+    // //            printf("%2d ", element);
+    // //            toggle = 0;
+    // //            colno++;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf("   ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach (Using 2nd Formula)
@@ -3024,30 +3024,30 @@ void pattern_37()
 
     // // for (int row = 0; row < maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRows - row - 1) * 2;
-    // //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    // //     toggle = n = 1;
-    // //     colno = 0;
+    // //    spacesInCurrentRow = (maxRows - row - 1) * 2;
+    // //    colsInCurrentRow = maxCols - spacesInCurrentRow;
+    // //    toggle = n = 1;
+    // //    colno = 0;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf("   ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //     {
-    // //         if (toggle)
-    // //         {
-    // //             printf("%2d ", n);
-    // //             n = n * (row - colno) / (colno + 1);
-    // //             colno++;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf("   ");
-    // //         }
-    // //         toggle = !toggle;
-    // //     }
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //    {
+    // //        if (toggle)
+    // //        {
+    // //            printf("%2d ", n);
+    // //            n = n * (row - colno) / (colno + 1);
+    // //            colno++;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf("   ");
+    // //        }
+    // //        toggle = !toggle;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3135,22 +3135,22 @@ void pattern_38()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = row <= halfOfCols ? halfOfCols - row : row - halfOfCols;
+    // //    spacesInCurrentRow = row <= halfOfCols ? halfOfCols - row : row - halfOfCols;
 
-    // //     // // If user wants even number of rows
-    // //     if (row >= halfOfCols + 1 && maxRows % 2 == 0)
-    // //         spacesInCurrentRow--;
+    // //    // // If user wants even number of rows
+    // //    if (row >= halfOfCols + 1 && maxRows % 2 == 0)
+    // //        spacesInCurrentRow--;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = row <= halfOfCols ? row : maxRows + 1 - row; col; col--)
-    // //         printf("%2d ", col);
+    // //    for (int col = row <= halfOfCols ? row : maxRows + 1 - row; col; col--)
+    // //        printf("%2d ", col);
 
-    // //     for (int col = 2; col <= (row <= halfOfCols ? row : maxRows + 1 - row); col++)
-    // //         printf("%2d ", col);
+    // //    for (int col = 2; col <= (row <= halfOfCols ? row : maxRows + 1 - row); col++)
+    // //        printf("%2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -3159,31 +3159,31 @@ void pattern_38()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     if (row <= halfOfCols)
-    // //     {
-    // //         spacesInCurrentRow = halfOfCols - row;
-    // //         numAtCol = row;
-    // //     }
-    // //     else
-    // //     {
-    // //         spacesInCurrentRow = row - halfOfCols;
-    // //         numAtCol = maxRows + 1 - row;
-    // //     }
+    // //    if (row <= halfOfCols)
+    // //    {
+    // //        spacesInCurrentRow = halfOfCols - row;
+    // //        numAtCol = row;
+    // //    }
+    // //    else
+    // //    {
+    // //        spacesInCurrentRow = row - halfOfCols;
+    // //        numAtCol = maxRows + 1 - row;
+    // //    }
 
-    // //     // // If user wants even number of rows
-    // //     if (row >= halfOfCols + 1 && maxRows % 2 == 0)
-    // //         spacesInCurrentRow--;
+    // //    // // If user wants even number of rows
+    // //    if (row >= halfOfCols + 1 && maxRows % 2 == 0)
+    // //        spacesInCurrentRow--;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = numAtCol; col; col--)
-    // //         printf("%2d ", col);
+    // //    for (int col = numAtCol; col; col--)
+    // //        printf("%2d ", col);
 
-    // //     for (int col = 2; col <= numAtCol; col++)
-    // //         printf("%2d ", col);
+    // //    for (int col = 2; col <= numAtCol; col++)
+    // //        printf("%2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 4th Approach
@@ -3191,23 +3191,23 @@ void pattern_38()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = row <= halfOfCols ? row : maxRows + 1 - row;
+    // //    numAtCol = row <= halfOfCols ? row : maxRows + 1 - row;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
-    // //             printf("%2d ", col < halfOfCols ? numAtCol-- : numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
+    // //            printf("%2d ", col < halfOfCols ? numAtCol-- : numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     row < halfOfCols ? vary++ : vary--;
+    // //    row < halfOfCols ? vary++ : vary--;
 
-    // //     // // If user wants even number of rows
-    // //     if (row == halfOfCols && maxRows % 2 == 0)
-    // //         vary++;
+    // //    // // If user wants even number of rows
+    // //    if (row == halfOfCols && maxRows % 2 == 0)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3273,28 +3273,28 @@ void pattern_39()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRowsInOne + 1 - row || col >= maxRowsInOne + row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRowsInOne + 1 - row || col >= maxRowsInOne + row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // for (int row = 1; row <= maxRowsInOne; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= row || col >= maxCols + 1 - row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= row || col >= maxCols + 1 - row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -3302,18 +3302,18 @@ void pattern_39()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRowsInOne + 1 - vary || col >= maxRowsInOne + vary || (col >= maxRowsInOne - 1 + vary && maxRows & 1))
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRowsInOne + 1 - vary || col >= maxRowsInOne + vary || (col >= maxRowsInOne - 1 + vary && maxRows & 1))
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     if (row != maxRowsInOne || maxRows & 1)
-    // //         row < maxRowsInOne ? vary++ : vary--;
+    // //    if (row != maxRowsInOne || maxRows & 1)
+    // //        row < maxRowsInOne ? vary++ : vary--;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3380,24 +3380,24 @@ void pattern_40()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - vary * 2;
+    // //    spacesInCurrentRow = maxCols - vary * 2;
 
-    // //     for (int col = 1; col <= vary; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= vary; col++)
+    // //        printf("*");
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= vary; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= vary; col++)
+    // //        printf("*");
 
-    // //     row < maxCols / 2 ? vary++ : vary--;
+    // //    row < maxCols / 2 ? vary++ : vary--;
 
-    // //     // // if user wants even number of rows
-    // //     if (maxRows % 2 == 0 && row == maxCols / 2)
-    // //         vary++;
+    // //    // // if user wants even number of rows
+    // //    if (maxRows % 2 == 0 && row == maxCols / 2)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3610,34 +3610,34 @@ void pattern_44()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - vary * 2;
+    // //    spacesInCurrentRow = maxCols - vary * 2;
 
-    // //     for (int col = 1; col <= vary; col++)
-    // //     {
-    // //         if (col == 1 || col == vary)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= vary; col++)
+    // //    {
+    // //        if (col == 1 || col == vary)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= vary; col++)
-    // //     {
-    // //         if (col == 1 || col == vary)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= vary; col++)
+    // //    {
+    // //        if (col == 1 || col == vary)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     row < maxCols / 2 ? vary++ : vary--;
+    // //    row < maxCols / 2 ? vary++ : vary--;
 
-    // //     // // if user wants even number of rows
-    // //     if (maxRows % 2 == 0 && row == maxCols / 2)
-    // //         vary++;
+    // //    // // if user wants even number of rows
+    // //    if (maxRows % 2 == 0 && row == maxCols / 2)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3738,15 +3738,15 @@ void pattern_46()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col == maxRows + 1 - row || col == maxCols + 1 - row || row == 1 && col >= maxRows + 1 - row || row == maxRows && col <= maxCols + 1 - row)
-    // //             printf("*");
-    // //         else
-    // //             printf(" ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col == maxRows + 1 - row || col == maxCols + 1 - row || row == 1 && col >= maxRows + 1 - row || row == maxRows && col <= maxCols + 1 - row)
+    // //            printf("*");
+    // //        else
+    // //            printf(" ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3806,22 +3806,22 @@ void pattern_47()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     countForRight = sum + 1 + sumOfFirstNNums(maxRows - row);
+    // //    countForRight = sum + 1 + sumOfFirstNNums(maxRows - row);
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //         {
-    // //             if (col <= maxRows)
-    // //                 printf("%3d ", countForLeft++);
-    // //             else
-    // //                 printf("%3d ", countForRight++);
-    // //         }
-    // //         else
-    // //             printf("    ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //        {
+    // //            if (col <= maxRows)
+    // //                printf("%3d ", countForLeft++);
+    // //            else
+    // //                printf("%3d ", countForRight++);
+    // //        }
+    // //        else
+    // //            printf("    ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -3829,30 +3829,30 @@ void pattern_47()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1 + sum - sumOfFirstNNums(maxRows + 1 - row);
-    // //     lock = 1;
+    // //    numAtCol = 1 + sum - sumOfFirstNNums(maxRows + 1 - row);
+    // //    lock = 1;
 
-    // //     for (int col = 0; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= row && col <= maxCols + 1 - row)
-    // //         {
-    // //             if (col <= maxRows)
-    // //                 printf("%3d ", numAtCol++);
-    // //             else
-    // //             {
-    // //                 if (lock)
-    // //                 {
-    // //                     numAtCol += sumOfFirstNNums(maxRows - row) * 2;
-    // //                     lock = 0;
-    // //                 }
-    // //                 printf("%3d ", numAtCol++);
-    // //             }
-    // //         }
-    // //         else
-    // //             printf("    ");
-    // //     }
+    // //    for (int col = 0; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= row && col <= maxCols + 1 - row)
+    // //        {
+    // //            if (col <= maxRows)
+    // //                printf("%3d ", numAtCol++);
+    // //            else
+    // //            {
+    // //                if (lock)
+    // //                {
+    // //                    numAtCol += sumOfFirstNNums(maxRows - row) * 2;
+    // //                    lock = 0;
+    // //                }
+    // //                printf("%3d ", numAtCol++);
+    // //            }
+    // //        }
+    // //        else
+    // //            printf("    ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -3929,29 +3929,29 @@ void pattern_48()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     toggle = 1;
+    // //    toggle = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary && toggle)
-    // //         {
-    // //             printf("*");
-    // //             toggle = 0;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf(" ");
-    // //             toggle = 0;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary && toggle)
+    // //        {
+    // //            printf("*");
+    // //            toggle = 0;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf(" ");
+    // //            toggle = 0;
+    // //        }
+    // //    }
 
-    // //     row < halfOfCols ? vary++ : vary--;
+    // //    row < halfOfCols ? vary++ : vary--;
 
-    // //     // // If user wants even number of rows
-    // //     if (row == halfOfCols && maxRows % 2 == 0)
-    // //         vary++;
+    // //    // // If user wants even number of rows
+    // //    if (row == halfOfCols && maxRows % 2 == 0)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -4060,19 +4060,19 @@ void pattern_50()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     spacesInCurrentRow = maxRows - row;
-    // //     numAtCol = row;
+    // //    spacesInCurrentRow = maxRows - row;
+    // //    numAtCol = row;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = numAtCol; col; col--)
-    // //         printf("%2d ", col);
+    // //    for (int col = numAtCol; col; col--)
+    // //        printf("%2d ", col);
 
-    // //     for (int col = 2; col <= numAtCol; col++)
-    // //         printf("%2d ", col);
+    // //    for (int col = 2; col <= numAtCol; col++)
+    // //        printf("%2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -4081,17 +4081,17 @@ void pattern_50()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     numAtCol = row;
+    // //    numAtCol = row;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
-    // //             printf("%2d ", col < maxRows ? numAtCol-- : numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows + 1 - row && col <= maxRows - 1 + row)
+    // //            printf("%2d ", col < maxRows ? numAtCol-- : numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -4154,18 +4154,18 @@ void pattern_51()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - row * 2;
+    // //    spacesInCurrentRow = maxCols - row * 2;
 
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("%2d", col);
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("%2d", col);
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("  ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("  ");
 
-    // //     for (int col = row; col; col--)
-    // //         printf("%2d", col);
+    // //    for (int col = row; col; col--)
+    // //        printf("%2d", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -4264,10 +4264,10 @@ void pattern_53()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= row; col++)
-    // //         printf("%c ", 'A' + maxRows - row - 1 + col);
+    // //    for (int col = 1; col <= row; col++)
+    // //        printf("%c ", 'A' + maxRows - row - 1 + col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -4318,10 +4318,10 @@ void pattern_54()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = 1; col <= maxRows + 1 - row; col++)
-    // //         printf("%c ", 'A' + maxRows - row + 1 - col);
+    // //    for (int col = 1; col <= maxRows + 1 - row; col++)
+    // //        printf("%c ", 'A' + maxRows - row + 1 - col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }
 
@@ -4385,12 +4385,12 @@ void pattern_55()
 
     // // for (int row = 0; row < maxRows; row++)
     // // {
-    // //     for (int col = 0; col < maxCols; col++)
-    // //     {
-    // //         numAtCol = n - min(min(row, col), min(maxRows - row, maxCols - col));
-    // //         printf("%2d ", numAtCol);
-    // //     }
+    // //    for (int col = 0; col < maxCols; col++)
+    // //    {
+    // //        numAtCol = n - min(min(row, col), min(maxRows - row, maxCols - col));
+    // //        printf("%2d ", numAtCol);
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 }

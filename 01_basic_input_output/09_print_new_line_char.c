@@ -1,4 +1,4 @@
-// //  C program to print New line character '\n' on screen.
+// // C program to print New line character '\n' on screen.
 // // 👉 Output => \n
 
 // // Header files

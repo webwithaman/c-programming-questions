@@ -69,24 +69,24 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = maxCols - vary * 2;
+    // //    spacesInCurrentRow = maxCols - vary * 2;
 
-    // //     for (int col = 1; col <= vary; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= vary; col++)
+    // //        printf("*");
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf(" ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf(" ");
 
-    // //     for (int col = 1; col <= vary; col++)
-    // //         printf("*");
+    // //    for (int col = 1; col <= vary; col++)
+    // //        printf("*");
 
-    // //     row < maxCols / 2 ? vary++ : vary--;
+    // //    row < maxCols / 2 ? vary++ : vary--;
 
-    // //     // // if user wants even number of rows
-    // //     if (maxRows % 2 == 0 && row == maxCols / 2)
-    // //         vary++;
+    // //    // // if user wants even number of rows
+    // //    if (maxRows % 2 == 0 && row == maxCols / 2)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

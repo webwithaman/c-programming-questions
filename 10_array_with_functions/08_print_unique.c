@@ -70,7 +70,7 @@ void inputArray(int arr[], int size)
 // // Function to Sort an Array in Ascending Order
 void sortAsc(int arr[], int size)
 {
-    // //  Bubble Sort
+    // // Bubble Sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - 1; j++)
@@ -117,32 +117,32 @@ void printUniqueElements(int arr[], int size)
 
     // // if (size > 1 && copyOfArr[0] != copyOfArr[1])
     // // {
-    // //     printf("%d ", copyOfArr[0]);
-    // //     foundUnique = 1;
+    // //    printf("%d ", copyOfArr[0]);
+    // //    foundUnique = 1;
     // // }
     // // else if (size == 1)
     // // {
-    // //     printf("%d ", copyOfArr[0]);
-    // //     foundUnique = 1;
+    // //    printf("%d ", copyOfArr[0]);
+    // //    foundUnique = 1;
     // // }
 
     // // for (int i = 1; i < size - 1; i++)
     // // {
-    // //     if (copyOfArr[i] != copyOfArr[i - 1] && copyOfArr[i] != copyOfArr[i + 1])
-    // //     {
-    // //         printf("%d ", copyOfArr[i]);
-    // //         foundUnique = 1;
-    // //     }
+    // //    if (copyOfArr[i] != copyOfArr[i - 1] && copyOfArr[i] != copyOfArr[i + 1])
+    // //    {
+    // //        printf("%d ", copyOfArr[i]);
+    // //        foundUnique = 1;
+    // //    }
     // // }
 
     // // if (size > 1 && copyOfArr[size - 1] != copyOfArr[size - 2])
     // // {
-    // //     printf("%d ", copyOfArr[size - 1]);
-    // //     foundUnique = 1;
+    // //    printf("%d ", copyOfArr[size - 1]);
+    // //    foundUnique = 1;
     // // }
 
-    // //  if (!foundUnique)
-    // //     puts("\nThere Are No Unique Elements In Array...");
+    // // if (!foundUnique)
+    // //    puts("\nThere Are No Unique Elements In Array...");
 
     // // 2nd Approach
     int inspected[size], k = 0, countDup = 0, foundUnique = 0;

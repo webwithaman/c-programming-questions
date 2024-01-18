@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is in the Fibonacci series or not
+// // C program to check whether a given number is in the Fibonacci series or not
 
 // // Header Files
 #include <stdio.h>
@@ -30,15 +30,15 @@ int main()
     // // int prev = 0, next = 1, result = 1;
     // // while (result < num)
     // // {
-    // //     result = prev + next;
-    // //     prev = next;
-    // //     next = result;
+    // //    result = prev + next;
+    // //    prev = next;
+    // //    next = result;
     // // }
 
     // // if (result == num)
-    // //     printf("\nYes, %d is a term in Fibonacci Series", num);
+    // //    printf("\nYes, %d is a term in Fibonacci Series", num);
     // // else
-    // //     printf("\nNo, %d is not a term in Fibonacci Series", num);
+    // //    printf("\nNo, %d is not a term in Fibonacci Series", num);
 
     printf("\n");
     getch();

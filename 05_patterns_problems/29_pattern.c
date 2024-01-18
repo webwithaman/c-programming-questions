@@ -49,11 +49,11 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = maxCols;
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //         printf("%d ", numAtCol--);
+    // //    numAtCol = maxCols;
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //        printf("%d ", numAtCol--);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

@@ -1,4 +1,4 @@
-// //  Write a program to read and display a 2D array of strings in C language. Use user-defined Functions to Perform these Tasks.
+// // Write a program to read and display a 2D array of strings in C language. Use user-defined Functions to Perform these Tasks.
 
 // // Header Files
 #include <stdio.h>

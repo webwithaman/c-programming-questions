@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is an even number or an odd
+// // C program to check whether a given number is an even number or an odd
 
 // // Header Files
 #include <stdio.h>
@@ -19,15 +19,15 @@ int main()
 
     // // 2nd Approach
     // // if (num / 2.0 - num / 2 == 0)
-    // //     printf("\n%d is Even", num);
+    // //    printf("\n%d is Even", num);
     // // else
-    // //     printf("\n%d is Odd", num);
+    // //    printf("\n%d is Odd", num);
 
     // // 3rd Approach
     // // if (num / 2 * 2 == num)
-    // //     printf("\n%d is Even", num);
+    // //    printf("\n%d is Even", num);
     // // else
-    // //     printf("\n%d is Odd", num);
+    // //    printf("\n%d is Odd", num);
 
     printf("\n");
     getch();

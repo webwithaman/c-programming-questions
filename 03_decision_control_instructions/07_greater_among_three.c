@@ -1,4 +1,4 @@
-// //  C program to print greater among three numbers.Print one number of among if two or  all are the same
+// // C program to print greater among three numbers.Print one number of among if two or  all are the same
 
 // // Header Files
 #include <stdio.h>
@@ -29,16 +29,16 @@ int main()
 
     // // using conditional operator
     // // int greater = num1 > num2 ? num1 > num3 ? num1 : num3 : num2 > num3 ? num2
-    // //                                                                     : num3;
+    // //                                                                    : num3;
     // // printf("\n%f is Greater", greater);
 
     // // using logical operator and if-else-if ladder
     // // if (num1 > num2 && num1 > num3)
-    // //     printf("\n%f is Greater", num1);
+    // //    printf("\n%f is Greater", num1);
     // // else if (num2 > num3)
-    // //     printf("\n%f is Greater", num2);
+    // //    printf("\n%f is Greater", num2);
     // // else
-    // //     printf("\n%f is Greater", num3);
+    // //    printf("\n%f is Greater", num3);
 
     printf("\n");
     getch();

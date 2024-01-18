@@ -1,4 +1,4 @@
-// //  C program to add two Complex Numbers
+// // C program to add two Complex Numbers
 
 // // Header Files
 #include <stdio.h>

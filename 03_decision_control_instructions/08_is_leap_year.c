@@ -1,4 +1,4 @@
-// //  C program to check whether a given year is a leap year or not
+// // C program to check whether a given year is a leap year or not
 
 // // Header Files
 #include <stdio.h>
@@ -24,16 +24,16 @@ int main()
     // // using nested if-else
     // // if (year % 4 == 0)
     // // {
-    // //     if (year % 100 != 0)
-    // //         printf("\n%d is a Leap Year", year);
-    // //     else if (year % 400 == 0)
-    // //         printf("\n%d is a Leap Year", year);
-    // //     else
-    // //         printf("\n%d is not a Leap Year", year);
+    // //    if (year % 100 != 0)
+    // //        printf("\n%d is a Leap Year", year);
+    // //    else if (year % 400 == 0)
+    // //        printf("\n%d is a Leap Year", year);
+    // //    else
+    // //        printf("\n%d is not a Leap Year", year);
     // // }
     // // else
     // // {
-    // //     printf("\n%d is not a Leap Year", year);
+    // //    printf("\n%d is not a Leap Year", year);
     // // }
 
     printf("\n");

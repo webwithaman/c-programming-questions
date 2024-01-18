@@ -1,4 +1,4 @@
-// //  C program to print return value of printf() function
+// // C program to print return value of printf() function
 
 // // Header files
 #include <stdio.h>

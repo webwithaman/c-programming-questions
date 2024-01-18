@@ -123,10 +123,10 @@ void rotateTowardsLeft(int arr[], int size, int position)
     // // 2nd Approach
     // // for (int j = 0; j < position; j++)
     // // {
-    // //     for (int i = 0; i < size - 1; i++)
-    // //     {
-    // //         swap(&arr[i], &arr[i + 1]);
-    // //     }
+    // //    for (int i = 0; i < size - 1; i++)
+    // //    {
+    // //        swap(&arr[i], &arr[i + 1]);
+    // //    }
     // // }
 }
 
@@ -148,10 +148,10 @@ void rotateTowardsRight(int arr[], int size, int position)
     // // 2nd Approach
     // // for (int j = 0; j < position; j++)
     // // {
-    // //     for (int i = size - 1; i > 0; i--)
-    // //     {
-    // //         swap(&arr[i], &arr[i - 1]);
-    // //     }
+    // //    for (int i = size - 1; i > 0; i--)
+    // //    {
+    // //        swap(&arr[i], &arr[i - 1]);
+    // //    }
     // // }
 }
 

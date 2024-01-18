@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is divisible by 5 or not
+// // C program to check whether a given number is divisible by 5 or not
 
 // // Header Files
 #include <stdio.h>

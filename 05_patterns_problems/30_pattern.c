@@ -49,10 +49,10 @@ int main()
     // // 2nd Approach
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
-    // //         printf(" %2d ", col);
+    // //    for (int col = maxCols * (row - 1) + 1; col <= maxCols * row; col++)
+    // //        printf(" %2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

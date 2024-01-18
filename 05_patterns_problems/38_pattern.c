@@ -78,22 +78,22 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = row <= halfOfCols ? halfOfCols - row : row - halfOfCols;
+    // //    spacesInCurrentRow = row <= halfOfCols ? halfOfCols - row : row - halfOfCols;
 
-    // //     // // If user wants even number of rows
-    // //     if (row >= halfOfCols + 1 && maxRows % 2 == 0)
-    // //         spacesInCurrentRow--;
+    // //    // // If user wants even number of rows
+    // //    if (row >= halfOfCols + 1 && maxRows % 2 == 0)
+    // //        spacesInCurrentRow--;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = row <= halfOfCols ? row : maxRows + 1 - row; col; col--)
-    // //         printf("%2d ", col);
+    // //    for (int col = row <= halfOfCols ? row : maxRows + 1 - row; col; col--)
+    // //        printf("%2d ", col);
 
-    // //     for (int col = 2; col <= (row <= halfOfCols ? row : maxRows + 1 - row); col++)
-    // //         printf("%2d ", col);
+    // //    for (int col = 2; col <= (row <= halfOfCols ? row : maxRows + 1 - row); col++)
+    // //        printf("%2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach
@@ -102,31 +102,31 @@ int main()
     // // for (int row = 1; row <= maxRows; row++)
     // // {
 
-    // //     if (row <= halfOfCols)
-    // //     {
-    // //         spacesInCurrentRow = halfOfCols - row;
-    // //         numAtCol = row;
-    // //     }
-    // //     else
-    // //     {
-    // //         spacesInCurrentRow = row - halfOfCols;
-    // //         numAtCol = maxRows + 1 - row;
-    // //     }
+    // //    if (row <= halfOfCols)
+    // //    {
+    // //        spacesInCurrentRow = halfOfCols - row;
+    // //        numAtCol = row;
+    // //    }
+    // //    else
+    // //    {
+    // //        spacesInCurrentRow = row - halfOfCols;
+    // //        numAtCol = maxRows + 1 - row;
+    // //    }
 
-    // //     // // If user wants even number of rows
-    // //     if (row >= halfOfCols + 1 && maxRows % 2 == 0)
-    // //         spacesInCurrentRow--;
+    // //    // // If user wants even number of rows
+    // //    if (row >= halfOfCols + 1 && maxRows % 2 == 0)
+    // //        spacesInCurrentRow--;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow; space++)
+    // //        printf("   ");
 
-    // //     for (int col = numAtCol; col; col--)
-    // //         printf("%2d ", col);
+    // //    for (int col = numAtCol; col; col--)
+    // //        printf("%2d ", col);
 
-    // //     for (int col = 2; col <= numAtCol; col++)
-    // //         printf("%2d ", col);
+    // //    for (int col = 2; col <= numAtCol; col++)
+    // //        printf("%2d ", col);
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 4th Approach
@@ -134,23 +134,23 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = row <= halfOfCols ? row : maxRows + 1 - row;
+    // //    numAtCol = row <= halfOfCols ? row : maxRows + 1 - row;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
-    // //             printf("%2d ", col < halfOfCols ? numAtCol-- : numAtCol++);
-    // //         else
-    // //             printf("   ");
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= halfOfCols + 1 - vary && col <= halfOfCols - 1 + vary)
+    // //            printf("%2d ", col < halfOfCols ? numAtCol-- : numAtCol++);
+    // //        else
+    // //            printf("   ");
+    // //    }
 
-    // //     row < halfOfCols ? vary++ : vary--;
+    // //    row < halfOfCols ? vary++ : vary--;
 
-    // //     // // If user wants even number of rows
-    // //     if (row == halfOfCols && maxRows % 2 == 0)
-    // //         vary++;
+    // //    // // If user wants even number of rows
+    // //    if (row == halfOfCols && maxRows % 2 == 0)
+    // //        vary++;
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

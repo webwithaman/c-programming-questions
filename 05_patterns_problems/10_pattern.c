@@ -60,19 +60,19 @@ int main()
 
     // // for (int row = 1; row <= maxRows; row++)
     // // {
-    // //     numAtCol = 1;
+    // //    numAtCol = 1;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
-    // //             printf("%2d", numAtCol);
-    // //         else
-    // //             printf("  ");
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col <= maxRows + 1 - row || col >= maxRows - 1 + row)
+    // //            printf("%2d", numAtCol);
+    // //        else
+    // //            printf("  ");
 
-    // //         col < maxRows ? numAtCol++ : numAtCol--;
-    // //     }
+    // //        col < maxRows ? numAtCol++ : numAtCol--;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     printf("\n");

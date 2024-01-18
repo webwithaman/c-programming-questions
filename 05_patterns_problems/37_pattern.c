@@ -1,4 +1,4 @@
-// //  C program to Print Following Pattern
+// // C program to Print Following Pattern
 
 /*
 
@@ -76,26 +76,26 @@ int main()
 
     // // for (int row = 0; row < maxRows; row++)
     // // {
-    // //     toggle = 1;
-    // //     colno = 0;
+    // //    toggle = 1;
+    // //    colno = 0;
 
-    // //     for (int col = 1; col <= maxCols; col++)
-    // //     {
-    // //         if (col >= maxRows - row && col <= maxRows + row && toggle)
-    // //         {
-    // //             element = fact(row) / (fact(colno) * (fact(row - colno)));
-    // //             printf("%2d ", element);
-    // //             toggle = 0;
-    // //             colno++;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf("   ");
-    // //             toggle = 1;
-    // //         }
-    // //     }
+    // //    for (int col = 1; col <= maxCols; col++)
+    // //    {
+    // //        if (col >= maxRows - row && col <= maxRows + row && toggle)
+    // //        {
+    // //            element = fact(row) / (fact(colno) * (fact(row - colno)));
+    // //            printf("%2d ", element);
+    // //            toggle = 0;
+    // //            colno++;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf("   ");
+    // //            toggle = 1;
+    // //        }
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     // // 3rd Approach (Using 2nd Formula)
@@ -103,30 +103,30 @@ int main()
 
     // // for (int row = 0; row < maxRows; row++)
     // // {
-    // //     spacesInCurrentRow = (maxRows - row - 1) * 2;
-    // //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    // //     toggle = n = 1;
-    // //     colno = 0;
+    // //    spacesInCurrentRow = (maxRows - row - 1) * 2;
+    // //    colsInCurrentRow = maxCols - spacesInCurrentRow;
+    // //    toggle = n = 1;
+    // //    colno = 0;
 
-    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    // //         printf("   ");
+    // //    for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //        printf("   ");
 
-    // //     for (int col = 1; col <= colsInCurrentRow; col++)
-    // //     {
-    // //         if (toggle)
-    // //         {
-    // //             printf("%2d ", n);
-    // //             n = n * (row - colno) / (colno + 1);
-    // //             colno++;
-    // //         }
-    // //         else
-    // //         {
-    // //             printf("   ");
-    // //         }
-    // //         toggle = !toggle;
-    // //     }
+    // //    for (int col = 1; col <= colsInCurrentRow; col++)
+    // //    {
+    // //        if (toggle)
+    // //        {
+    // //            printf("%2d ", n);
+    // //            n = n * (row - colno) / (colno + 1);
+    // //            colno++;
+    // //        }
+    // //        else
+    // //        {
+    // //            printf("   ");
+    // //        }
+    // //        toggle = !toggle;
+    // //    }
 
-    // //     printf("\n");
+    // //    printf("\n");
     // // }
 
     getch();

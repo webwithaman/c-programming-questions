@@ -1,4 +1,4 @@
-// //  C program to check whether a given number is a Prime number or not
+// // C program to check whether a given number is a Prime number or not
 
 // // A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself. Negative integers can't be prime because when considering their factors, the concept of primality isn't applicable in the same way.
 

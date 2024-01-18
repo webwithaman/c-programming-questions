@@ -1,4 +1,4 @@
-// //  C program to print a Number without its Last Digit
+// // C program to print a Number without its Last Digit
 
 // // Header Files
 #include <stdio.h>

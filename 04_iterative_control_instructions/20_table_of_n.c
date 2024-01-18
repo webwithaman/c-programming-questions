@@ -1,4 +1,4 @@
-// //  C program to print a table of N
+// // C program to print a table of N
 
 // // Header Files
 #include <stdio.h>
@@ -14,7 +14,7 @@ int main()
 
     printf("\n>>>>>>>>>> Table of %d <<<<<<<<<<\n", n);
 
-    // //  1st Approach (using while loop)
+    // // 1st Approach (using while loop)
     int i = 1;
     while (i <= 10)
     {
@@ -31,13 +31,13 @@ int main()
     // // int i = 1;
     // // do
     // // {
-    // //     printf("\n%d x %2d = %d", n, i, n * i);
-    // //     i++;
+    // //    printf("\n%d x %2d = %d", n, i, n * i);
+    // //    i++;
     // // } while (i <= 10);
 
     // // 4th Approach (using for loop)
     // // for (int i = 1; i <= 10; i++)
-    // //     printf("\n%d x %2d = %d", n, i, n * i);
+    // //    printf("\n%d x %2d = %d", n, i, n * i);
 
     printf("\n");
     getch();

@@ -1,4 +1,4 @@
-// //  C program to print all Prime numbers between two given numbers
+// // C program to print all Prime numbers between two given numbers
 
 // // Header Files
 #include <stdio.h>

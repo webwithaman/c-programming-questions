@@ -86,8 +86,8 @@ void reverseArray(int nums[], int size)
     // // int temp;
     // // for (int i = 0; i < size / 2; i++)
     // // {
-    // //     temp = nums[i];
-    // //     nums[i] = nums[size - 1 - i];
-    // //     nums[size - 1 - i] = temp;
+    // //    temp = nums[i];
+    // //    nums[i] = nums[size - 1 - i];
+    // //    nums[size - 1 - i] = temp;
     // // }
 }
