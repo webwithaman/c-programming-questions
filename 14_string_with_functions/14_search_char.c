@@ -1,23 +1,23 @@
-// Write a function to search a given character in a string. (For example if the string  is "c-programming" and the character to be searched is 'a' then return the index of 'a' in string else return -1)
+// // Write a function to search a given character in a string. (For example if the string  is "c-programming" and the character to be searched is 'a' then return the index of 'a' in string else return -1)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Function Declarations;
+// // Function Declarations;
 int searchChar(char[], char);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], search;
 
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(str, ARRAY_SIZE, stdin);  // // Input String
+    str[strcspn(str, "\n")] = '\0'; // // Replace '\n' character with '\0' in str
 
     printf("\nEnter A Character to be Searched => ");
     scanf("%c", &search);
@@ -33,11 +33,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Search given Character in a String
+// // Function to Search given Character in a String
 int searchChar(char str[], char search)
 {
     for (int i = 0; str[i]; i++)

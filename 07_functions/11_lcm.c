@@ -1,15 +1,15 @@
-// Write a function to calculate LCM of two numbers. (TSRS)
+// // Write a function to calculate LCM of two numbers. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 unsigned int lcmOfTwo(int, int);
 unsigned int hcfOfTwo(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num1, num2;
@@ -27,20 +27,20 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Calculate LCM of Two Numbers
+// // Function to Calculate LCM of Two Numbers
 unsigned int lcmOfTwo(int num1, int num2)
 {
     if (num1 == 0 || num2 == 0)
-        return 0; // Invalid Input
+        return 0; // // Invalid Input
 
     num1 = fabs(num1);
     num2 = fabs(num2);
 
-    // 1st Approach
+    // // 1st Approach
     int max = num1 > num2 ? num1 : num2;
     int min = num1 < num2 ? num1 : num2;
 
@@ -50,25 +50,25 @@ unsigned int lcmOfTwo(int num1, int num2)
             return i;
     }
 
-    // 2nd Approach
-    // return num1 * num2 / hcfOfTwo(num1, num2);
+    // // 2nd Approach
+    // // return num1 * num2 / hcfOfTwo(num1, num2);
 }
 
-// Function to Calculate HCF of Two Numbers
+// // Function to Calculate HCF of Two Numbers
 unsigned int hcfOfTwo(int num1, int num2)
 {
     if (num1 == 0 && num2 == 0)
-        return 0; // Invalid Input (HCF of 0 and 0 is Undefined)
+        return 0; // // Invalid Input (HCF of 0 and 0 is Undefined)
     else if (num1 < 0 || num2 < 0)
-        return -1; // Invalid Input Negative Numbers is Undefined
+        return -1; // // Invalid Input Negative Numbers is Undefined
 
     int max = num1 > num2 ? num1 : num2;
     int min = num1 < num2 ? num1 : num2;
 
     if (min == 0)
-        return max; // HCF of Any Non-Zero with Zero is that Non-Zero Number
+        return max; // // HCF of Any Non-Zero with Zero is that Non-Zero Number
 
-    // 1st Approach
+    // // 1st Approach
     if (max % min == 0)
         return min;
     else
@@ -80,17 +80,17 @@ unsigned int hcfOfTwo(int num1, int num2)
         }
     }
 
-    // 2nd Approach
-    // int remainder;
-    // do
-    // {
-    //     remainder = max % min;
-    //     max = min;
-    //     min = remainder;
-    // } while (remainder);
+    // // 2nd Approach
+    // // int remainder;
+    // // do
+    // // {
+    // //     remainder = max % min;
+    // //     max = min;
+    // //     min = remainder;
+    // // } while (remainder);
 
-    // return max;
+    // // return max;
 
-    // 3rd Approach
-    // return num1 * num2 / lcmOfTwo(num1, num2);
+    // // 3rd Approach
+    // // return num1 * num2 / lcmOfTwo(num1, num2);
 }

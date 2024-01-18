@@ -1,14 +1,14 @@
-// Write a recursive function to calculate sum of squares of first n natural numbers.
+// // Write a recursive function to calculate sum of squares of first n natural numbers.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 long long unsigned int sumOfSquaresOfFirstN(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -27,11 +27,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Calculate Sum of First N Odd Natural Numbers
+// // Recursive Function to Calculate Sum of First N Odd Natural Numbers
 long long unsigned int sumOfSquaresOfFirstN(int n)
 {
     if (n == 1)

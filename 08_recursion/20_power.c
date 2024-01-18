@@ -1,13 +1,13 @@
-// Write a program in C to calculate the power of any number using recursion.
+// // Write a program in C to calculate the power of any number using recursion.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double power(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int base, exp;
@@ -22,11 +22,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Calculate the Power 
+// // Recursive Function to Calculate the Power 
 double power(int base, int exp)
 {
     if (exp == 0)

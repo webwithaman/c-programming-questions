@@ -1,27 +1,27 @@
-// Write a function to find the repeated character in a given string.
+// // Write a function to find the repeated character in a given string.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Function Declarations;
+// // Function Declarations;
 int strLength(char[]);
 char *copyString(char[], char[]);
 char *sortStr(char str[]);
 char *findRepeatedChars(char[], char[]);
 void swap(char *ch1, char *ch2);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], repeatedChars[ARRAY_SIZE];
 
     printf("\nEnter Any String to Find Repeated Characters in It (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(str, ARRAY_SIZE, stdin);  // // Input String
+    str[strcspn(str, "\n")] = '\0'; // // Replace '\n' character with '\0' in str
 
     findRepeatedChars(str, repeatedChars);
 
@@ -38,11 +38,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Calculate Length of String
+// // Function to Calculate Length of String
 int strLength(char str[])
 {
     int length = 0;
@@ -53,10 +53,10 @@ int strLength(char str[])
     return length;
 }
 
-// Function to Copy One String into Another
+// // Function to Copy One String into Another
 char *copyString(char des[], char src[])
 {
-    // Copy str into copy
+    // // Copy str into copy
     int i = 0;
     for (i = 0; src[i]; i++)
         des[i] = src[i];
@@ -66,13 +66,13 @@ char *copyString(char des[], char src[])
     return des;
 }
 
-// Function to Find Repeated Characters in a String
+// // Function to Find Repeated Characters in a String
 char *findRepeatedChars(char str[], char repeat[])
 {
     int length = strLength(str);
-    char copyStr[length];     // create a string to copy str
-    copyString(copyStr, str); // copy str into copyStr
-    sortStr(copyStr);         // sort copyStr
+    char copyStr[length];     // // create a string to copy str
+    copyString(copyStr, str); // // copy str into copyStr
+    sortStr(copyStr);         // // sort copyStr
 
     if (length <= 1)
     {
@@ -93,12 +93,12 @@ char *findRepeatedChars(char str[], char repeat[])
         }
     }
 
-    repeat[j] = '\0'; // Add Null Character At End
+    repeat[j] = '\0'; // // Add Null Character At End
 
     return repeat;
 }
 
-// Function to sort a string in ascending order
+// // Function to sort a string in ascending order
 char *sortStr(char str[])
 {
     int length = strLength(str);
@@ -113,7 +113,7 @@ char *sortStr(char str[])
     }
 }
 
-// Function to Swap values of Two Character variables
+// // Function to Swap values of Two Character variables
 void swap(char *ch1, char *ch2)
 {
     *ch1 = (*ch1 + *ch2) - (*ch2 = *ch1);

@@ -1,12 +1,12 @@
-// WAP to Take A Three Digit Number And Rotate Its Digit By One Position Towards Right => Ex. 638 Convert it into 863.
-// 👉 Output => 638 After Rotating One Digit Towards Right => 863
+// // WAP to Take A Three Digit Number And Rotate Its Digit By One Position Towards Right => Ex. 638 Convert it into 863.
+// // 👉 Output => 638 After Rotating One Digit Towards Right => 863
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num, result;
@@ -26,4 +26,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

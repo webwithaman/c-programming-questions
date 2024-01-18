@@ -1,14 +1,14 @@
-//  C program to check whether a given number is a Prime number or not
+// //  C program to check whether a given number is a Prime number or not
 
-// A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself. Negative integers can't be prime because when considering their factors, the concept of primality isn't applicable in the same way.
+// // A prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself. Negative integers can't be prime because when considering their factors, the concept of primality isn't applicable in the same way.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -45,4 +45,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

@@ -1,6 +1,6 @@
-// Given a list of words followed by two words, the task is to find the minimum distance between the given two words in the list of words.(Example : s = {“the”,”quick”,”brown”,”fox”,”quick”} word1 = “the”, word2 = “fox”, OUTPUT : 1)
+// // Given a list of words followed by two words, the task is to find the minimum distance between the given two words in the list of words.(Example : s = {“the”,”quick”,”brown”,”fox”,”quick”} word1 = “the”, word2 = “fox”, OUTPUT : 1)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -9,7 +9,7 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS = 8;
@@ -26,12 +26,12 @@ int main()
     char word1[MAX_COLS], word2[MAX_COLS];
     int index1 = -1, index2 = -1, minDis = ROWS - 1;
 
-    // Display List of Words
+    // // Display List of Words
     printf("\n>>>>>>>>>>>>> List of Words <<<<<<<<<<<\n");
     for (int i = 0; i < ROWS; i++)
         puts(words[i]);
 
-    // Read Two Words
+    // // Read Two Words
     printf("\n>>> Enter Two Words From the List to Find Minimum Distance Between <<<<<<<<\n");
 
     printf("\nEnter Word-1 (MAX CHARACTERS %d) => ", MAX_COLS - 1);
@@ -44,7 +44,7 @@ int main()
     fgets(word2, MAX_COLS, stdin);
     word2[strcspn(word2, "\n")] = '\0';
 
-    // Find Minimum Distance
+    // // Find Minimum Distance
     for (int i = 0; i < ROWS; i++)
     {
         if (strcmp(word1, words[i]) == 0)
@@ -69,4 +69,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

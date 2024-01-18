@@ -1,6 +1,6 @@
-// Write a function to find the highest salary employee from a given array of 10 employees. [ Refer structure from question 1]
+// // Write a function to find the highest salary employee from a given array of 10 employees. [ Refer structure from question 1]
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -8,7 +8,7 @@
 #define MAX_CHAR_NAME 31
 #define MAX_EMP 10
 
-// Define Structure
+// // Define Structure
 struct Employee
 {
     int id;
@@ -16,18 +16,18 @@ struct Employee
     double salary;
 };
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 int highestSalaryEmp(struct Employee *, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
-    // create variable of structure Employee
+    // // create variable of structure Employee
     struct Employee emps[MAX_EMP], highestSalEmp;
 
-    // Input Employees Data
+    // // Input Employees Data
     printf("\n>>>>>> Enter Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
@@ -35,7 +35,7 @@ int main()
         inputEmployee(&emps[i]);
     }
 
-    // Display Employees Data
+    // // Display Employees Data
     printf("\n>>>>>> Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
@@ -43,11 +43,11 @@ int main()
         displayEmployee(emps[i]);
     }
 
-    // Find Highest Salary Employee
+    // // Find Highest Salary Employee
     int index = highestSalaryEmp(emps, MAX_EMP);
     highestSalEmp = emps[index];
 
-    // Employee with highest salary
+    // // Employee with highest salary
     printf("\n>>>>>> Following Employee Has Highest Salary <<<<<<<\n\n");
     displayEmployee(highestSalEmp);
 
@@ -55,9 +55,9 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function to Input Employee data
+// // Function to Input Employee data
 void inputEmployee(struct Employee *emp)
 {
     printf("\nEnter Employee's Id => ");
@@ -65,14 +65,14 @@ void inputEmployee(struct Employee *emp)
 
     printf("Enter Employee's Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
-    fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
-    emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
+    fgets(emp->name, MAX_CHAR_NAME, stdin);     // // Input String
+    emp->name[strcspn(emp->name, "\n")] = '\0'; // // Replace '\n' character with '\0'
 
     printf("Enter Employee's Salary => ");
     scanf("%lf", &emp->salary);
 }
 
-// Function to Display Employee data
+// // Function to Display Employee data
 void displayEmployee(struct Employee emp)
 {
     puts("\n=========================================");
@@ -84,7 +84,7 @@ void displayEmployee(struct Employee emp)
     puts("\n=========================================");
 }
 
-// Function to Find Highest Salary Employee
+// // Function to Find Highest Salary Employee
 int highestSalaryEmp(struct Employee *empPtr, int size)
 {
     int index = 0;

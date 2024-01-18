@@ -1,14 +1,14 @@
-// Write a program in C to find the sum of the series 1!/1 + 2!/2 + 3!/3 + 4!/4 + 5!/5 using the function.
+// // Write a program in C to find the sum of the series 1!/1 + 2!/2 + 3!/3 + 4!/4 + 5!/5 using the function.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double sumOfSeries(int);
 double factorial(int n);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -21,11 +21,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Find Sum of Series like this - 1!/1 + 2!/2 + 3!/3 + 4!/4 + 5!/5
+// // Function to Find Sum of Series like this - 1!/1 + 2!/2 + 3!/3 + 4!/4 + 5!/5
 double sumOfSeries(int n)
 {
     if (n < 0)
@@ -38,7 +38,7 @@ double sumOfSeries(int n)
     return sum;
 }
 
-// Function to Calculate Factorial of A Number
+// // Function to Calculate Factorial of A Number
 double factorial(int n)
 {
     double fact = 1;

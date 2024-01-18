@@ -1,15 +1,15 @@
-// Write a function to print PASCAL Triangle. (TSRN)
+// // Write a function to print PASCAL Triangle. (TSRN)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 void pascalTriangle(int);
 double factorial(int n);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int maxRows;
@@ -22,11 +22,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Print Pascal Triangle
+// // Function to Print Pascal Triangle
 void pascalTriangle(int maxRows)
 {
     if (maxRows < 1)
@@ -52,11 +52,11 @@ void pascalTriangle(int maxRows)
             printf("%3d ", element);
         }
 
-        printf("\n"); // New Line
+        printf("\n"); // // New Line
     }
 }
 
-// Function to Calculate Factorial of A Number
+// // Function to Calculate Factorial of A Number
 double factorial(int n)
 {
     double fact = 1;

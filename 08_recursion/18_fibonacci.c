@@ -1,14 +1,14 @@
-// Write a recursive function to find nth term Fibonacci series and then print first n terms using this function.
+// // Write a recursive function to find nth term Fibonacci series and then print first n terms using this function.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 long long  int nthTermOfFibonacci(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -30,15 +30,15 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Print First N Natural Numbers
+// // Recursive Function to Print First N Natural Numbers
 long long int nthTermOfFibonacci(int n)
 {
     if (n < 1)
-        return -1; // Invalid Input
+        return -1; // // Invalid Input
     else if (n == 1)
         return 0;
     else if (n == 2)

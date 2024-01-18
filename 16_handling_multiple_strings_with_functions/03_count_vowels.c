@@ -1,6 +1,6 @@
-// Write a program to find the number of vowels in each of the N strings stored in two dimensional arrays, taken from the user.Use user - defined Functions to Perform these Tasks.
+// // Write a program to find the number of vowels in each of the N strings stored in two dimensional arrays, taken from the user.Use user - defined Functions to Perform these Tasks.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -9,39 +9,39 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 int print2DChar(char[][MAX_COLS], int);
 int input2DChar(char[][MAX_COLS], int);
 int *countVowelsInEachStrOf2D(char[][MAX_COLS], int, int[]);
 int countVowelsInStr(char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS;
     printf("\nHow Many Names Strings Want to Enter (MAX %d) => ", MAX_ROWS);
     scanf("%d", &ROWS);
 
-    // Invalid Input ROWS Entered by User
+    // // Invalid Input ROWS Entered by User
     if (ROWS < 1 || ROWS > MAX_ROWS)
     {
         puts("\n!!! Invalid Input...");
         exit(0);
     }
 
-    // Declare 2D Array According to user's input
+    // // Declare 2D Array According to user's input
     char strs[ROWS][MAX_COLS];
     int vowelCount[ROWS];
 
-    // Read Names
+    // // Read Names
     printf("\n>>>>>>>>>>>>> Enter %d Strings <<<<<<<<<<<\n", ROWS);
     input2DChar(strs, ROWS);
 
-    // Display Names Before Sorting
+    // // Display Names Before Sorting
     printf("\n>>>>>>>>>>>>> List of Strings <<<<<<<<<<<\n");
     print2DChar(strs, ROWS);
 
-    // Find Vowels in Each String
+    // // Find Vowels in Each String
     printf("\n>>>>>>>>>>>>> Number of Vowels in Each String <<<<<<<<<<<\n");
     countVowelsInEachStrOf2D(strs, ROWS, vowelCount);
 
@@ -49,11 +49,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Functions Definitions
+// // Functions Definitions
 
-// Function to Display 2D Array of char
+// // Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
 
@@ -61,12 +61,12 @@ int print2DChar(char strs[][MAX_COLS], int rows)
     for (i = 0; i < rows; i++)
         puts(strs[i]);
 
-    putch('\n'); // Add new line
+    putch('\n'); // // Add new line
 
-    return i; // return the number of strings that have been displayed
+    return i; // // return the number of strings that have been displayed
 }
 
-// Function to Input 2D Array of char
+// // Function to Input 2D Array of char
 int input2DChar(char strs[][MAX_COLS], int rows)
 {
     int i;
@@ -75,13 +75,13 @@ int input2DChar(char strs[][MAX_COLS], int rows)
         printf("\nEnter String-%d (MAX CHARACTERS %d) => ", i + 1, MAX_COLS - 1);
         fflush(stdin);
         fgets(strs[i], MAX_COLS, stdin);
-        strs[i][strcspn(strs[i], "\n")] = '\0'; // Replace '\n' character with '\0'
+        strs[i][strcspn(strs[i], "\n")] = '\0'; // // Replace '\n' character with '\0'
     }
 
-    return i; // return the number of strings that have been input by user
+    return i; // // return the number of strings that have been input by user
 }
 
-// Function to Find the Number of Vowels in Each of the N strings Stored in 2D Array of char
+// // Function to Find the Number of Vowels in Each of the N strings Stored in 2D Array of char
 int *countVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows, int vowelCount[])
 {
     for (int i = 0; i < rows; i++)
@@ -93,7 +93,7 @@ int *countVowelsInEachStrOf2D(char strs[][MAX_COLS], int rows, int vowelCount[])
     return vowelCount;
 }
 
-// Function to Count Number of Vowels In String
+// // Function to Count Number of Vowels In String
 int countVowelsInStr(char str[])
 {
     char vowels[11] = "AEIOUaeiou";
@@ -111,5 +111,5 @@ int countVowelsInStr(char str[])
         }
     }
 
-    return count; // return number of vowels
+    return count; // // return number of vowels
 }

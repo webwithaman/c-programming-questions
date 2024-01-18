@@ -1,24 +1,24 @@
-// Write a function to replace a single character with another single character in a string.
+// // Write a function to replace a single character with another single character in a string.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Function Declarations;
+// // Function Declarations;
 int searchChar(char[], char);
 char *replaceChar(char[], char, char);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], toBeReplace, replaceWith;
 
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(str, ARRAY_SIZE, stdin);  // // Input String
+    str[strcspn(str, "\n")] = '\0'; // // Replace '\n' character with '\0' in str
 
     fflush(stdin);
     printf("\nEnter the Character to be Replaced => ");
@@ -38,11 +38,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Search given Character in a String
+// // Function to Search given Character in a String
 int searchChar(char str[], char search)
 {
     for (int i = 0; str[i]; i++)
@@ -54,7 +54,7 @@ int searchChar(char str[], char search)
     return -1;
 }
 
-// Function to Search given Character in a String
+// // Function to Search given Character in a String
 char *replaceChar(char str[], char toBeReplace, char replaceWith)
 {
     int index = searchChar(str, toBeReplace);

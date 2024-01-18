@@ -1,4 +1,4 @@
-// C proram to print following Pattern
+// // C proram to print following Pattern
 
 /*
 
@@ -20,13 +20,13 @@ Pattern 19.
 
 */
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 #include <string.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int maxRows = 13, maxCols = 19;
@@ -35,11 +35,11 @@ int main()
     printf("\nEnter Your Name to Print In Heart => ");
     fflush(stdin);
 
-    // Get name from user
+    // // Get name from user
     fgets(name, maxCols + 1, stdin);
     name[strcspn(name, "\n")] = 0;
 
-    // Print Pattern
+    // // Print Pattern
     puts("\n--------------------------------------------\n");
 
     for (int row = 1; row <= maxRows; row++)
@@ -84,4 +84,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function Start
+// // Main Function Start

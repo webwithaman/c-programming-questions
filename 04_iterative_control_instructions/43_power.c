@@ -1,11 +1,11 @@
-// C proram to input base and exponent from user then calculate power
+// // C proram to input base and exponent from user then calculate power
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -30,4 +30,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

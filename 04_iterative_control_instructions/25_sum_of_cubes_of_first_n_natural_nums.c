@@ -1,11 +1,11 @@
-//  C program to calculte sum of cubes of first N natural numbers
+// //  C program to calculte sum of cubes of first N natural numbers
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -13,31 +13,31 @@ int main()
     printf("\nEnter N to Calculate Sum of Cubes of First N Natural Numbers => ");
     scanf("%d", &n);
 
-    // Handling Invalid Input
+    // // Handling Invalid Input
     if (n < 0)
     {
         printf("!!! Invalid Input .....");
         exit(0);
     }
 
-    // 1st Approach (using for loop)
+    // // 1st Approach (using for loop)
     for (int i = 1; i <= n; i++)
         sum += i * i * i;
 
-    // 2nd Approach (using do-while loop)
-    // int i = 1;
-    // do
-    // {
-    //     sum += i * i  * i;
-    //     i++;
-    // } while (i <= n);
+    // // 2nd Approach (using do-while loop)
+    // // int i = 1;
+    // // do
+    // // {
+    // //     sum += i * i  * i;
+    // //     i++;
+    // // } while (i <= n);
 
-    //  3rd Approach (using while loop)
-    // int i = 1;
-    // while (i <= n){
-    //     sum += i * i * i;
-    //     i++;
-    //  }
+    // //  3rd Approach (using while loop)
+    // // int i = 1;
+    // // while (i <= n){
+    // //     sum += i * i * i;
+    // //     i++;
+    // //  }
 
     printf("\nSum of Cubes of First %d Natural Numbers => %d", n, sum);
 
@@ -45,4 +45,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

@@ -1,11 +1,11 @@
-//  C program calculate Compound Interest
+// //  C program calculate Compound Interest
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, totalAmount, compoundInterest, compoundedAfterMonths;
@@ -18,7 +18,7 @@ int main()
     printf("\nCompounded After Every N Months => ");
     scanf("%lf", &compoundedAfterMonths);
 
-    double n = 12 / compoundedAfterMonths; // Get Compounded Interval (such as Monthly, Quarterly,Half-yearly,Yearly etc.)
+    double n = 12 / compoundedAfterMonths; // // Get Compounded Interval (such as Monthly, Quarterly,Half-yearly,Yearly etc.)
 
     totalAmount = principalAmount * pow((1 + rateOfInterest / (100 * n)), n * time);
     compoundInterest = totalAmount - principalAmount;
@@ -29,4 +29,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

@@ -1,10 +1,10 @@
-//  C program to Swap values of Two int Variables. You can use Two or Three Variables
+// //  C program to Swap values of Two int Variables. You can use Two or Three Variables
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int a, b;
@@ -15,28 +15,28 @@ int main()
     printf("\n\n>>>>>>>>>>> Before Swapping <<<<<<<<<<<\n");
     printf("a => %d, b => %d\n", a, b);
 
-    // using third variable
+    // // using third variable
     int temp = a;
     a = b;
     b = temp;
 
-    // using Addition and Subtraction
-    // a = a + b;
-    // b = a - b;
-    // a = a - b;
+    // // using Addition and Subtraction
+    // // a = a + b;
+    // // b = a - b;
+    // // a = a - b;
 
-    // using Divison and Multiplication
-    // a = a * b;
-    // b = a / b;
-    // a = a / b;
+    // // using Divison and Multiplication
+    // // a = a * b;
+    // // b = a / b;
+    // // a = a / b;
 
-    // using Bitwise XOR (^)
-    // a = a ^ b;
-    // b = a ^ b;
-    // a = a ^ b;
+    // // using Bitwise XOR (^)
+    // // a = a ^ b;
+    // // b = a ^ b;
+    // // a = a ^ b;
 
-    // In Single line
-    // a = (a + b) - (b = a);
+    // // In Single line
+    // // a = (a + b) - (b = a);
 
     printf("\n\n>>>>>>>>>>> After Swapping <<<<<<<<<<<\n");
     printf("a => %d, b => %d\n", a, b);
@@ -44,4 +44,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

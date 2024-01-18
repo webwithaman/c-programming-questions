@@ -1,14 +1,14 @@
-// Write a recursive function to calculate sum of first N Even natural numbers.
+// // Write a recursive function to calculate sum of first N Even natural numbers.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 long long unsigned int sumOfFirstNEven(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -27,11 +27,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Calculate Sum of First N Even Natural Numbers
+// // Recursive Function to Calculate Sum of First N Even Natural Numbers
 long long unsigned int sumOfFirstNEven(int n)
 {
     if (n == 1)

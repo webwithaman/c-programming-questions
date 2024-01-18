@@ -1,13 +1,13 @@
-// Write a function to calculate the factorial of a number. (TSRS)
+// // Write a function to calculate the factorial of a number. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double factorial(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -23,11 +23,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Calculate Factorial of A Number
+// // Function to Calculate Factorial of A Number
 double factorial(int n)
 {
     double fact = 1;

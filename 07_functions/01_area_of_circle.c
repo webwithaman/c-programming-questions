@@ -1,13 +1,13 @@
-// Write a function to calculate the area of a circle. (TSRS)
+// // Write a function to calculate the area of a circle. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double areaOfCircle(double);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double radius, area;
@@ -20,11 +20,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Calculate Area of Circle
+// // Function to Calculate Area of Circle
 double areaOfCircle(double radius)
 {
     return 22.0 / 7 * radius * radius;

@@ -1,13 +1,13 @@
-// Write a program in C to find the square of any number using the function.
+// // Write a program in C to find the square of any number using the function.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 long long unsigned int square(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;
@@ -20,11 +20,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Calculate Factorial of A Number
+// // Function to Calculate Factorial of A Number
 long long unsigned int square(int num)
 {
     long long unsigned int sq = num * num;

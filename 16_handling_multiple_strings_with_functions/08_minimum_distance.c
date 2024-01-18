@@ -1,6 +1,6 @@
-// Given a list of words followed by two words, the task is to find the minimum distance between the given two words in the list of words.(Example : s = {“the”,”quick”,”brown”,”fox”,”quick”} word1 = “the”, word2 = “fox”, OUTPUT : 1).Use user - defined Functions to Perform these Tasks.
+// // Given a list of words followed by two words, the task is to find the minimum distance between the given two words in the list of words.(Example : s = {“the”,”quick”,”brown”,”fox”,”quick”} word1 = “the”, word2 = “fox”, OUTPUT : 1).Use user - defined Functions to Perform these Tasks.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -9,12 +9,12 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 int print2DChar(char[][MAX_COLS], int);
 int minDisBetTwoWords(char[][MAX_COLS], int, char[], char[]);
 int compareStrings(char[], char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ROWS = 8;
@@ -31,11 +31,11 @@ int main()
     char word1[MAX_COLS], word2[MAX_COLS];
     int minDis;
 
-    // Display List of Words
+    // // Display List of Words
     printf("\n>>>>>>>>>>>>> List of Words <<<<<<<<<<<\n");
     print2DChar(words, ROWS);
 
-    // Read Two Words
+    // // Read Two Words
     printf("\n>>> Enter Two Words From the List to Find Minimum Distance Between <<<<<<<<\n");
 
     printf("\nEnter Word-1 (MAX CHARACTERS %d) => ", MAX_COLS - 1);
@@ -48,7 +48,7 @@ int main()
     fgets(word2, MAX_COLS, stdin);
     word2[strcspn(word2, "\n")] = '\0';
 
-    // Find Minimum Distance
+    // // Find Minimum Distance
     minDis = minDisBetTwoWords(words, ROWS, word1, word2);
 
     if (minDis != ROWS)
@@ -60,11 +60,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions
+// // Function Definitions
 
-// Function to Display 2D Array of char
+// // Function to Display 2D Array of char
 int print2DChar(char strs[][MAX_COLS], int rows)
 {
 
@@ -72,12 +72,12 @@ int print2DChar(char strs[][MAX_COLS], int rows)
     for (i = 0; i < rows; i++)
         puts(strs[i]);
 
-    putch('\n'); // Add new line
+    putch('\n'); // // Add new line
 
-    return i; // return the number of strings that have been displayed
+    return i; // // return the number of strings that have been displayed
 }
 
-// Functon to Find Minimum Distance Between Two Words
+// // Functon to Find Minimum Distance Between Two Words
 int minDisBetTwoWords(char words[][MAX_COLS], int rows, char word1[], char word2[])
 {
     int index1 = -1, index2 = -1, minDis = rows;
@@ -100,7 +100,7 @@ int minDisBetTwoWords(char words[][MAX_COLS], int rows, char word1[], char word2
     return minDis;
 }
 
-// Function to Check Whether a Given String an Alphanumeric String or Not
+// // Function to Check Whether a Given String an Alphanumeric String or Not
 int compareStrings(char str1[], char str2[])
 {
     for (int i = 0; str1[i] || str2[i]; i++)

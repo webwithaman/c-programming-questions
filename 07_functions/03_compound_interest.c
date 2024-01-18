@@ -1,14 +1,14 @@
-// Write a function to calculate Compound interest. (TSRS)
+// // Write a function to calculate Compound interest. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double compoundInterest(double, double, double, double);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, totalAmount, ci, compoundedAfterMonths;
@@ -27,14 +27,14 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Calculate Compound Interest
+// // Function to Calculate Compound Interest
 double compoundInterest(double principalAmount, double rateOfInterest, double time, double compoundedAfterMonths)
 {
-    double n = 12 / compoundedAfterMonths; // Get Compounded Interval (such as Monthly, Quarterly,Half-yearly,Yearly etc.)
+    double n = 12 / compoundedAfterMonths; // // Get Compounded Interval (such as Monthly, Quarterly,Half-yearly,Yearly etc.)
 
     return principalAmount * pow((1 + rateOfInterest / (100 * n)), n * time) - principalAmount;
 }

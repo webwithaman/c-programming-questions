@@ -1,12 +1,12 @@
-//  C program to take time as an input in below given format and convert print it in other format :-
-// 👉 Input format => HH:MM:SS. Example => (06:22:45)
-// 👉 Output format => HH Hour, MM Minute and SS Second. Example => (06 Hour 22 Minute and 45 Second)
+// //  C program to take time as an input in below given format and convert print it in other format :-
+// // 👉 Input format => HH:MM:SS. Example => (06:22:45)
+// // 👉 Output format => HH Hour, MM Minute and SS Second. Example => (06 Hour 22 Minute and 45 Second)
 
-// Header files
+// // Header files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -18,4 +18,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

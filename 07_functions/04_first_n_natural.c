@@ -1,13 +1,13 @@
-// Write a function to print first N natural numbers (TSRN)
+// // Write a function to print first N natural numbers (TSRN)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 void firstNNaturalNums(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -18,14 +18,14 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Print First N Natural Numbers
+// // Function to Print First N Natural Numbers
 void firstNNaturalNums(int n)
 {
-    putch(10); // It means putch('\n') , ASCII of '\n' is 10
+    putch(10); // // It means putch('\n') , ASCII of '\n' is 10
 
     if (n < 0)
     {

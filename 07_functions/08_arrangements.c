@@ -1,14 +1,14 @@
-// Write a function to calculate the number of arrangements one can make from n items and r selected at a time. (TSRS)
+// // Write a function to calculate the number of arrangements one can make from n items and r selected at a time. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double factorial(int);
 double arrangements(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n, r;
@@ -32,11 +32,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Calculate Factorial of A Number
+// // Function to Calculate Factorial of A Number
 double factorial(int n)
 {
     double fact = 1;
@@ -47,11 +47,11 @@ double factorial(int n)
     return fact;
 }
 
-// Function to Calculate the Number of Combinations
+// // Function to Calculate the Number of Combinations
 double arrangements(int n, int r)
 {
     if (n < 0 || r < 0)
-        return -1; // Invalid Input
+        return -1; // // Invalid Input
 
     return factorial(n) / factorial(n - r);
 }

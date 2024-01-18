@@ -1,10 +1,10 @@
-//  C program to take marks of 5 subjects from the user. Assume marks are given out of 100 and passing marks is 33. Now display whether the candidate passed the examination or failed
+// //  C program to take marks of 5 subjects from the user. Assume marks are given out of 100 and passing marks is 33. Now display whether the candidate passed the examination or failed
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     float m1, m2, m3, m4, m5;
@@ -20,4 +20,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

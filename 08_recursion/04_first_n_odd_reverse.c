@@ -1,14 +1,14 @@
-// Write a recursive function to print first N odd natural numbers in reverse order.
+// // Write a recursive function to print first N odd natural numbers in reverse order.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 void firstNOddNaturalNumsReverse(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -28,11 +28,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Print First N Odd Natural Numbers In Reverse Order
+// // Recursive Function to Print First N Odd Natural Numbers In Reverse Order
 void firstNOddNaturalNumsReverse(int n)
 {
     if (n > 0)

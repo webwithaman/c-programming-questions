@@ -1,18 +1,18 @@
-// Write a program in C to demonstrate how to handle the extended concept of pointers.
+// // Write a program in C to demonstrate how to handle the extended concept of pointers.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
-    int x = 10;    // x is an ordinary variable
-    int *p = &x;   // p is a pointer to an int variable
-    int **q = &p;  // q is a pointer to a pointer to an int variable
-    int ***r = &q; // r is a pointer to a pointer to a pointer to an int variable
+    int x = 10;    // // x is an ordinary variable
+    int *p = &x;   // // p is a pointer to an int variable
+    int **q = &p;  // // q is a pointer to a pointer to an int variable
+    int ***r = &q; // // r is a pointer to a pointer to a pointer to an int variable
 
-    // Access value of x using these pointers
+    // // Access value of x using these pointers
     printf("\nx => %d", x);
     printf("\n*p => %d", *p);
     printf("\n**q => %d", **q);
@@ -22,4 +22,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

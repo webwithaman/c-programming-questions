@@ -1,13 +1,13 @@
-// Find out the largest and smallest element from an array that is created using dynamic memory allocation in C.
+// // Find out the largest and smallest element from an array that is created using dynamic memory allocation in C.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <malloc.h>
 
 #define MAX 50
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int n;
@@ -15,14 +15,14 @@ int main()
     printf("\nHow Many Elements You Want to Enter (MAX %d) => ", MAX);
     scanf("%d", &n);
 
-    // Invalid Input
+    // // Invalid Input
     if (n < 1 || n > MAX)
     {
         puts("\n!!! Invalid Input...\n");
         exit(0);
     }
 
-    // Allocate memory dynamically
+    // // Allocate memory dynamically
     ptr = (int *)malloc(n * sizeof(int));
 
     if (!ptr)
@@ -31,14 +31,14 @@ int main()
         exit(0);
     }
 
-    // Input Numbers
+    // // Input Numbers
     printf("\nEnter %d Numbers => ", n);
     for (int i = 0; i < n; i++)
         scanf("%d", &ptr[i]);
 
     smallest = largest = ptr[0];
 
-    // Find Largest and Smallest Element
+    // // Find Largest and Smallest Element
     for (int i = 1; i < n; i++)
     {
         if (ptr[i] > largest)
@@ -50,11 +50,11 @@ int main()
 
     printf("\nSmallest Element => %d\nLargest Element => %d", smallest, largest);
 
-    // Free Dynamically Allocated Memory
+    // // Free Dynamically Allocated Memory
     free(ptr);
 
     putch('\n');
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

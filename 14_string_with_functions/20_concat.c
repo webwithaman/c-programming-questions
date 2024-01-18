@@ -1,31 +1,31 @@
-// Write a c program to concat two strings using user-defined function.
+// // Write a c program to concat two strings using user-defined function.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Function Declarations;
+// // Function Declarations;
 char *conactStrings(char[], char[]);
 int strLength(char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str1[ARRAY_SIZE * 2], str2[ARRAY_SIZE];
     printf("\n>>>>>>>> Enter Two Strings For Concatenation <<<<<<<<<\n");
 
     printf("\nEnter First String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str1, ARRAY_SIZE, stdin);   // Input String
-    str1[strcspn(str1, "\n")] = '\0'; // Replace '\n' character with '\0' in str1
+    fgets(str1, ARRAY_SIZE, stdin);   // // Input String
+    str1[strcspn(str1, "\n")] = '\0'; // // Replace '\n' character with '\0' in str1
 
     printf("\nEnter Second String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str2, ARRAY_SIZE, stdin);   // Input String
-    str2[strcspn(str2, "\n")] = '\0'; // Replace '\n' character with '\0' in str2
+    fgets(str2, ARRAY_SIZE, stdin);   // // Input String
+    str2[strcspn(str2, "\n")] = '\0'; // // Replace '\n' character with '\0' in str2
 
-    conactStrings(str1, str2); // Conact Two strings
+    conactStrings(str1, str2); // // Conact Two strings
 
     printf("\nStrings After Concatenation => %s", str1);
 
@@ -33,11 +33,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Calculate Length of String
+// // Function to Calculate Length of String
 int strLength(char str[])
 {
     int length = 0;
@@ -48,7 +48,7 @@ int strLength(char str[])
     return length;
 }
 
-// Function to Concat Two Strings
+// // Function to Concat Two Strings
 char *conactStrings(char str1[], char str2[])
 {
     int length = strLength(str1);
@@ -58,5 +58,5 @@ char *conactStrings(char str1[], char str2[])
     for (i = 0; str2[i]; i++)
         str1[i + length] = str2[i];
 
-    str1[i + length] = 0; // Add Null Character At End
+    str1[i + length] = 0; // // Add Null Character At End
 }

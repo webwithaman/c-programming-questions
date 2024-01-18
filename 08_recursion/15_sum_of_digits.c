@@ -1,14 +1,14 @@
-// Write a recursive function to calculate sum of digits of a given number.
+// // Write a recursive function to calculate sum of digits of a given number.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 int sumOfDigits(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;
@@ -21,11 +21,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Calculate Sum of Digits of A Number
+// // Recursive Function to Calculate Sum of Digits of A Number
 int sumOfDigits(int num)
 {
     if (num == 0)

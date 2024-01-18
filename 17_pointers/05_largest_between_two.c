@@ -1,15 +1,15 @@
-// Write a program to find the largest number between two numbers using pointers.
+// // Write a program to find the largest number between two numbers using pointers.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num1, num2, largest, *p, *q, *r;
 
-    // Assign addresses to pointers
+    // // Assign addresses to pointers
     p = &num1;
     q = &num2;
     r = &largest;
@@ -17,7 +17,7 @@ int main()
     printf("\nEnter Two Numbers to Find Largest => ");
     scanf("%d%d", p, q);
 
-    // Find Largest
+    // // Find Largest
     *r = *p > *q ? *p : *q;
 
     printf("\nLargest => %d", *r);
@@ -26,4 +26,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

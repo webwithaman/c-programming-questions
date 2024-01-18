@@ -1,13 +1,13 @@
-//  C program to check whether a given number is a Perfect number or Not
+// //  C program to check whether a given number is a Perfect number or Not
 
-// A perfect number is a positive integer which is equal to the sum of its positive factors (or divisor) excluding the number itself. Suppose the factors of the number 6 are 1, 2, 3 and 6. Now, 1 + 2 + 3 = 6, this satisfies the condition of being a perfect number
+// // A perfect number is a positive integer which is equal to the sum of its positive factors (or divisor) excluding the number itself. Suppose the factors of the number 6 are 1, 2, 3 and 6. Now, 1 + 2 + 3 = 6, this satisfies the condition of being a perfect number
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -16,7 +16,7 @@ int main()
     scanf("%d", &num);
     int copyNum = num;
 
-    // Handling Invalid Input
+    // // Handling Invalid Input
     if (num < 0)
     {
         printf("!!! Invalid Input...Please Enter Positive Number");
@@ -48,4 +48,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

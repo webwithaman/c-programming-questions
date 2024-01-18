@@ -1,13 +1,13 @@
-// Write a function to display employee data. [ Refer structure from question 1 ]
+// // Write a function to display employee data. [ Refer structure from question 1 ]
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define MAX_CHAR_NAME 31
 
-// Define Structure
+// // Define Structure
 struct Employee
 {
     int id;
@@ -15,21 +15,21 @@ struct Employee
     double salary;
 };
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
-    // create variable of structure Employee
+    // // create variable of structure Employee
     struct Employee emp1;
 
-    // Input Employee Data
+    // // Input Employee Data
     puts("\n>>>>>> Enter Employee's Data <<<<<<<");
     inputEmployee(&emp1);
 
-    // Display Employee Data
+    // // Display Employee Data
     puts("\n>>>>>> Employee Data <<<<<<<");
     displayEmployee(emp1);
 
@@ -37,9 +37,9 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function to Input Employee data
+// // Function to Input Employee data
 void inputEmployee(struct Employee *emp)
 {
     printf("\nEnter Employee's Id => ");
@@ -47,14 +47,14 @@ void inputEmployee(struct Employee *emp)
 
     printf("Enter Employee's Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
-    fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
-    emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
+    fgets(emp->name, MAX_CHAR_NAME, stdin);     // // Input String
+    emp->name[strcspn(emp->name, "\n")] = '\0'; // // Replace '\n' character with '\0'
 
     printf("Enter Employee's Salary => ");
     scanf("%lf", &emp->salary);
 }
 
-// Function to Display Employee data
+// // Function to Display Employee data
 void displayEmployee(struct Employee emp)
 {
     puts("\n=========================================");

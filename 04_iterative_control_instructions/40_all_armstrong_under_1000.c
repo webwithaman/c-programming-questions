@@ -1,12 +1,12 @@
-//  C program to print all Armstrong numbers under 1000
+// //  C program to print all Armstrong numbers under 1000
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -22,7 +22,7 @@ int main()
         numOfDigits = 0;
         sum = 0;
 
-        // count digits in number
+        // // count digits in number
         while (copyNum)
         {
             numOfDigits++;
@@ -44,4 +44,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

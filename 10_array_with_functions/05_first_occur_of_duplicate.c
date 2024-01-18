@@ -1,41 +1,41 @@
-// Write a function to find the first occurrence of adjacent duplicate values in the array. Function has to return the value of the element.
+// // Write a function to find the first occurrence of adjacent duplicate values in the array. Function has to return the value of the element.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 void printArray(int[], int);
 void inputArray(int[], int);
 int firstOccurOfAdjDup(int[], int, int *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
     printf("\nHow Many Elements You Want to Enter => ");
     scanf("%d", &ARRAY_SIZE);
 
-    // Check for Invalid Array Size
+    // // Check for Invalid Array Size
     if (ARRAY_SIZE < 1)
     {
         puts("\n!!! Invalid Input, Plz Correctly Specify Number of Elements...");
         exit(0);
     }
 
-    // Declare Array of Variable size
+    // // Declare Array of Variable size
     int arr[ARRAY_SIZE], isAdjDupPresent;
 
-    // Input Elements
+    // // Input Elements
     printf("\nEnter %d Elements => ", ARRAY_SIZE);
     inputArray(arr, ARRAY_SIZE);
 
-    // Print Array
+    // // Print Array
     puts("\n\n>>>>>>>> Entered Elements <<<<<<<<<");
     printArray(arr, ARRAY_SIZE);
 
-    // find first occurrence of adjacent duplicate
+    // // find first occurrence of adjacent duplicate
     int value = firstOccurOfAdjDup(arr, ARRAY_SIZE, &isAdjDupPresent);
 
     if (isAdjDupPresent)
@@ -47,29 +47,29 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Functions Definitions 👇👇
+// // Functions Definitions 👇👇
 
-// Function to Display Array Elements
+// // Function to Display Array Elements
 void printArray(int arr[], int size)
 {
-    putch('\n'); // Add new line
+    putch('\n'); // // Add new line
 
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
 
-    putch('\n'); // Add new line
+    putch('\n'); // // Add new line
 }
 
-// Function to Input Array Elements
+// // Function to Input Array Elements
 void inputArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
         scanf("%d", &arr[i]);
 }
 
-// Function to Find the First Occurrence of Adjacent Duplicate Values
+// // Function to Find the First Occurrence of Adjacent Duplicate Values
 int firstOccurOfAdjDup(int arr[], int size, int *isAdjDupPresent)
 {
     *isAdjDupPresent = 0;

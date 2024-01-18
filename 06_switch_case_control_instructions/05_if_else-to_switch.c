@@ -1,19 +1,19 @@
-// Convert the following if - else - if construct into switch case:
+// // Convert the following if - else - if construct into switch case:
 
-// if (var == 1)
-//     printf("good");
-// else if (var == 2)
-//     printf("better");
-// else if (var == 3)
-//     printlf("best");
-// else
-//     printf("invalid");
+// // if (var == 1)
+// //     printf("good");
+// // else if (var == 2)
+// //     printf("better");
+// // else if (var == 3)
+// //     printlf("best");
+// // else
+// //     printf("invalid");
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -41,4 +41,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

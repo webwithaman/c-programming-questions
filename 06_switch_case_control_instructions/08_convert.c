@@ -1,10 +1,10 @@
-// Program to convert a positive number into a negative number and negative number into a positive number using a switch statement
+// // Program to convert a positive number into a negative number and negative number into a positive number using a switch statement
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num, result;
@@ -25,4 +25,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

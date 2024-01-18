@@ -1,6 +1,6 @@
-// Write a program to enter the marks of 5 students in Chemistry, Mathematics and Physics (each out of 100) using a structure named Student having elements roll, name, chem_marks, math_marks, phy_marks, total_scored_marks and percentage and then display the percentage of each student.
+// // Write a program to enter the marks of 5 students in Chemistry, Mathematics and Physics (each out of 100) using a structure named Student having elements roll, name, chem_marks, math_marks, phy_marks, total_scored_marks and percentage and then display the percentage of each student.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -13,7 +13,7 @@
 #define TOTAL_OUT_OF_MARKS SUB_OUT_OF_MARKS *NUM_OF_SUBS
 #define MAX_STUDENTS 50
 
-// Define Structure
+// // Define Structure
 struct Student
 {
     int roll;
@@ -25,11 +25,11 @@ struct Student
     float percentage;
 };
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 void inputStudent(struct Student *);
 void displayStudent(struct Student);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int NUM__OF_STUDENTS;
@@ -37,17 +37,17 @@ int main()
     printf("\nEnter Number of Students (MAX STUDENTS %d) => ", MAX_STUDENTS);
     scanf("%d", &NUM__OF_STUDENTS);
 
-    // Validate Number of Students
+    // // Validate Number of Students
     if (NUM__OF_STUDENTS < 1 || NUM__OF_STUDENTS > MAX_STUDENTS)
     {
         puts("\n!!! Invalid Number of Students...\n");
         exit(0);
     }
 
-    // create variable of structure Student of variable length
+    // // create variable of structure Student of variable length
     struct Student students[NUM__OF_STUDENTS];
 
-    // Input Students Data
+    // // Input Students Data
     printf("\n>>>>>> Enter Data of %d Students <<<<<<<\n", NUM__OF_STUDENTS);
     for (int i = 0; i < NUM__OF_STUDENTS; i++)
     {
@@ -55,7 +55,7 @@ int main()
         inputStudent(&students[i]);
     }
 
-    // Display Students Data
+    // // Display Students Data
     printf("\n>>>>>> Data of %d Students <<<<<<<\n", NUM__OF_STUDENTS);
     for (int i = 0; i < NUM__OF_STUDENTS; i++)
     {
@@ -67,9 +67,9 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function to Input Student data
+// // Function to Input Student data
 void inputStudent(struct Student *student)
 {
     printf("\nEnter Student's Roll Number => ");
@@ -77,13 +77,13 @@ void inputStudent(struct Student *student)
 
     printf("Enter Student's Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
-    fgets(student->name, MAX_CHAR_NAME, stdin);         // Input String
-    student->name[strcspn(student->name, "\n")] = '\0'; // Replace '\n' character with '\0'
+    fgets(student->name, MAX_CHAR_NAME, stdin);         // // Input String
+    student->name[strcspn(student->name, "\n")] = '\0'; // // Replace '\n' character with '\0'
 
     printf("Enter Student's Marks in Chemistry Out of %d => ", SUB_OUT_OF_MARKS);
     scanf("%f", &student->chem_marks);
 
-    // Validate Marks
+    // // Validate Marks
     if (student->chem_marks < 0 || student->chem_marks > SUB_OUT_OF_MARKS)
     {
         puts("\n!!! Invalid Marks...\n");
@@ -93,7 +93,7 @@ void inputStudent(struct Student *student)
     printf("Enter Student's Marks in Mathematics Out of %d => ", SUB_OUT_OF_MARKS);
     scanf("%f", &student->math_marks);
 
-    // Validate Marks
+    // // Validate Marks
     if (student->math_marks < 0 || student->math_marks > SUB_OUT_OF_MARKS)
     {
         puts("\n!!! Invalid Marks...\n");
@@ -103,21 +103,21 @@ void inputStudent(struct Student *student)
     printf("Enter Student's Marks in Physics Out of %d => ", SUB_OUT_OF_MARKS);
     scanf("%f", &student->phy_marks);
 
-    // Validate Marks
+    // // Validate Marks
     if (student->phy_marks < 0 || student->phy_marks > SUB_OUT_OF_MARKS)
     {
         puts("\n!!! Invalid Marks...\n");
         exit(0);
     }
 
-    // Calculate Total Scored Marks
+    // // Calculate Total Scored Marks
     student->total_scored_marks = student->chem_marks + student->math_marks + student->phy_marks;
 
-    // Calculate Percentage
+    // // Calculate Percentage
     student->percentage = student->total_scored_marks / (TOTAL_OUT_OF_MARKS) * 100;
 }
 
-// Function to Display Student data
+// // Function to Display Student data
 void displayStudent(struct Student student)
 {
     puts("\n=========================================");

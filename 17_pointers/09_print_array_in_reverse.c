@@ -1,11 +1,11 @@
-// Write a program to print the elements of an array in reverse order using a pointer.
+// // Write a program to print the elements of an array in reverse order using a pointer.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -18,23 +18,23 @@ int main()
         exit(0);
     }
 
-    // Declare Array of Variable size
+    // // Declare Array of Variable size
     int *ptr, nums[ARRAY_SIZE];
 
-    // Assign address to pointer
+    // // Assign address to pointer
     ptr = nums;
 
-    // Input Numbers
+    // // Input Numbers
     printf("\nEnter %d Numbers => ", ARRAY_SIZE);
     for (int i = 0; i < ARRAY_SIZE; i++)
         scanf("%d", ptr + i);
 
-    // Print Numbers In Normal Order
+    // // Print Numbers In Normal Order
     puts("\n>>>>>>>> Numbers In Normal Order <<<<<<<<<");
     for (int i = 0; i < ARRAY_SIZE; i++)
         printf("%d ", *(ptr + i));
 
-    // Print Numbers In Reverse Order
+    // // Print Numbers In Reverse Order
     puts("\n\n>>>>>>>> Numbers In Reverse Order <<<<<<<<<");
     for (int i = ARRAY_SIZE - 1; i >= 0; i--)
         printf("%d ", *(ptr + i));
@@ -43,4 +43,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

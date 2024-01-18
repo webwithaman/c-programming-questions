@@ -1,13 +1,13 @@
-// Write a program in C to count the digits of a given number using recursion.
+// // Write a program in C to count the digits of a given number using recursion.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 int countDigits(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;
@@ -20,11 +20,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Count the Digits of number
+// // Recursive Function to Count the Digits of number
 int countDigits(int num)
 {
     if (num)

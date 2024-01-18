@@ -1,16 +1,16 @@
-// Write a function in C to Reverse an Array
+// // Write a function in C to Reverse an Array
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 void printArray(int[], int);
 void inputArray(int[], int);
 void reverseArray(int[], int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     const int ARRAY_SIZE;
@@ -23,21 +23,21 @@ int main()
         exit(0);
     }
 
-    // Declare Array of Variable size
+    // // Declare Array of Variable size
     int nums[ARRAY_SIZE];
 
-    // Input Numbers
+    // // Input Numbers
     printf("\nEnter %d Numbers => ", ARRAY_SIZE);
     inputArray(nums, ARRAY_SIZE);
 
-    // Print Numbers In Normal Order
+    // // Print Numbers In Normal Order
     puts("\n>>>>>>>> Numbers In Normal Order <<<<<<<<<");
     printArray(nums, ARRAY_SIZE);
 
-    // Reverse Array
+    // // Reverse Array
     reverseArray(nums, ARRAY_SIZE);
 
-    // Print Numbers In Reverse Order
+    // // Print Numbers In Reverse Order
     puts("\n\n>>>>>>>> Numbers In Reverse Order <<<<<<<<<");
     printArray(nums, ARRAY_SIZE);
 
@@ -45,33 +45,33 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Functions Definitions 👇👇
+// // Functions Definitions 👇👇
 
-// Function to Display Array Numbers
+// // Function to Display Array Numbers
 void printArray(int nums[], int size)
 {
-    putch('\n'); // Add new line
+    putch('\n'); // // Add new line
 
     for (int i = 0; i < size; i++)
         printf("%d ", nums[i]);
 
-    putch('\n'); // Add new line
+    putch('\n'); // // Add new line
 }
 
-// Function to Input Array Numbers
+// // Function to Input Array Numbers
 void inputArray(int nums[], int size)
 {
     for (int i = 0; i < size; i++)
         scanf("%d", &nums[i]);
 }
 
-// Function to Reverse Array
+// // Function to Reverse Array
 void reverseArray(int nums[], int size)
 {
 
-    // 1st Approach
+    // // 1st Approach
     int beg = 0, end = size - 1, temp;
     while (beg < end)
     {
@@ -82,12 +82,12 @@ void reverseArray(int nums[], int size)
         end--;
     }
 
-    // 2nd Approach
-    // int temp;
-    // for (int i = 0; i < size / 2; i++)
-    // {
-    //     temp = nums[i];
-    //     nums[i] = nums[size - 1 - i];
-    //     nums[size - 1 - i] = temp;
-    // }
+    // // 2nd Approach
+    // // int temp;
+    // // for (int i = 0; i < size / 2; i++)
+    // // {
+    // //     temp = nums[i];
+    // //     nums[i] = nums[size - 1 - i];
+    // //     nums[size - 1 - i] = temp;
+    // // }
 }

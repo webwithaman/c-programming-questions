@@ -1,12 +1,12 @@
-// WAP to Take A Number And A Digit From User And Then Append The Digit in the Number - Number = 635 and Digit = 8 Then Make it => 6358
-// 👉 Output => Number => 635 and Digit => 8. Result After Appending 7 to 635 => 6358
+// // WAP to Take A Number And A Digit From User And Then Append The Digit in the Number - Number = 635 and Digit = 8 Then Make it => 6358
+// // 👉 Output => Number => 635 and Digit => 8. Result After Appending 7 to 635 => 6358
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num, digit, result;
@@ -25,4 +25,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

@@ -1,12 +1,12 @@
-//  C program to to check whether a given number is an Armstrong number or not
+// //  C program to to check whether a given number is an Armstrong number or not
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -14,7 +14,7 @@ int main()
     printf("\nEnter A Number to Check Whether It is Armstrong or Not => ");
     scanf("%d", &num);
 
-    // Handling Invalid Input
+    // // Handling Invalid Input
     if (num < 0)
     {
         printf("!!! Invalid Input .....");
@@ -24,7 +24,7 @@ int main()
     int copyNum = num, numOfDigits = 0;
     float sum = 0;
 
-    // count digits in number
+    // // count digits in number
     while (copyNum)
     {
         numOfDigits++;
@@ -47,4 +47,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

@@ -1,23 +1,23 @@
-// Write a program to calculate the length of the string without using built-in method.
+// // Write a program to calculate the length of the string without using built-in method.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char name[ARRAY_SIZE];
     int length = 0;
 
     printf("\nEnter Your Name (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(name, ARRAY_SIZE, stdin);   // Input String
-    name[strcspn(name, "\n")] = '\0'; // Replace '\n' character with '\0' in name
+    fgets(name, ARRAY_SIZE, stdin);   // // Input String
+    name[strcspn(name, "\n")] = '\0'; // // Replace '\n' character with '\0' in name
 
-    // Find Length
+    // // Find Length
     while (name[length])
         length++;
 
@@ -27,4 +27,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

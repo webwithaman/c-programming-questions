@@ -1,15 +1,15 @@
-// Write a function to print first N prime numbers (TSRN)
+// // Write a function to print first N prime numbers (TSRN)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 int isPrime(int);
 void firstNPrimeNums(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -22,15 +22,15 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Check Whether A Number is Prime or Not
+// // Function to Check Whether A Number is Prime or Not
 int isPrime(int num)
 {
     if (num < 2)
-        return -1; // Invalid Input
+        return -1; // // Invalid Input
 
     for (int i = 2; i <= sqrt(num); i++)
     {
@@ -41,7 +41,7 @@ int isPrime(int num)
     return 1;
 }
 
-// Function to Print First N Prime Numbers
+// // Function to Print First N Prime Numbers
 void firstNPrimeNums(int n)
 {
     putch(10);

@@ -1,33 +1,33 @@
-// Write a program in C to Find the Frequency of Characters.
+// // Write a program in C to Find the Frequency of Characters.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], copyStr[ARRAY_SIZE], length = 0, count;
 
     printf("\nEnter Any String (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(str, ARRAY_SIZE, stdin);  // // Input String
+    str[strcspn(str, "\n")] = '\0'; // // Replace '\n' character with '\0' in str
 
-    // Find Length
+    // // Find Length
     while (str[length])
         length++;
 
-    // Copy str into copyStr
+    // // Copy str into copyStr
     int i = 0;
     for (i = 0; str[i]; i++)
         copyStr[i] = str[i];
 
-    copyStr[i] = '\0'; // Add Null Character at End
+    copyStr[i] = '\0'; // // Add Null Character at End
 
-    // Sort copyStr
+    // // Sort copyStr
     for (int i = 0; i < length - 1; i++)
     {
         for (int j = 0; j < length - 1 - i; j++)
@@ -41,7 +41,7 @@ int main()
         }
     }
 
-    // Find and Print Frequency of each character
+    // // Find and Print Frequency of each character
     for (int i = 0; i < length; i += count)
     {
         count = 1;
@@ -59,4 +59,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

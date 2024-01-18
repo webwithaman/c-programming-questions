@@ -1,4 +1,4 @@
-//  C program to Print Following Pattern
+// //  C program to Print Following Pattern
 
 /*
 
@@ -23,15 +23,15 @@
 
 */
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Prototype (Declaration)
+// // Function Prototype (Declaration)
 int fact(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -39,20 +39,20 @@ int main()
     printf("\nHow Many Rows => ");
     scanf("%d", &maxRows);
 
-    // Handling Invalid Input
+    // // Handling Invalid Input
     if (maxRows < 1)
     {
         printf("\n!!! Invalid Input,Plz Enter Positive Number....");
         exit(0);
     }
 
-    // Determine Number of Columns According to maxRows
+    // // Determine Number of Columns According to maxRows
     maxCols = maxRows * 2 - 1;
 
-    // Print Pattern
+    // // Print Pattern
     puts("\n--------------------------------------------\n");
 
-    // 1st Approach (Using 1st Formula)
+    // // 1st Approach (Using 1st Formula)
     int spacesInCurrentRow, element;
 
     for (int row = 0; row < maxRows; row++)
@@ -71,75 +71,75 @@ int main()
         printf("\n");
     }
 
-    // 2nd Approach (Using 1st Formula)
-    // int toggle, colno, element;
+    // // 2nd Approach (Using 1st Formula)
+    // // int toggle, colno, element;
 
-    // for (int row = 0; row < maxRows; row++)
-    // {
-    //     toggle = 1;
-    //     colno = 0;
+    // // for (int row = 0; row < maxRows; row++)
+    // // {
+    // //     toggle = 1;
+    // //     colno = 0;
 
-    //     for (int col = 1; col <= maxCols; col++)
-    //     {
-    //         if (col >= maxRows - row && col <= maxRows + row && toggle)
-    //         {
-    //             element = fact(row) / (fact(colno) * (fact(row - colno)));
-    //             printf("%2d ", element);
-    //             toggle = 0;
-    //             colno++;
-    //         }
-    //         else
-    //         {
-    //             printf("   ");
-    //             toggle = 1;
-    //         }
-    //     }
+    // //     for (int col = 1; col <= maxCols; col++)
+    // //     {
+    // //         if (col >= maxRows - row && col <= maxRows + row && toggle)
+    // //         {
+    // //             element = fact(row) / (fact(colno) * (fact(row - colno)));
+    // //             printf("%2d ", element);
+    // //             toggle = 0;
+    // //             colno++;
+    // //         }
+    // //         else
+    // //         {
+    // //             printf("   ");
+    // //             toggle = 1;
+    // //         }
+    // //     }
 
-    //     printf("\n");
-    // }
+    // //     printf("\n");
+    // // }
 
-    // 3rd Approach (Using 2nd Formula)
-    // int colsInCurrentRow, spacesInCurrentRow, toggle, colno, n, element;
+    // // 3rd Approach (Using 2nd Formula)
+    // // int colsInCurrentRow, spacesInCurrentRow, toggle, colno, n, element;
 
-    // for (int row = 0; row < maxRows; row++)
-    // {
-    //     spacesInCurrentRow = (maxRows - row - 1) * 2;
-    //     colsInCurrentRow = maxCols - spacesInCurrentRow;
-    //     toggle = n = 1;
-    //     colno = 0;
+    // // for (int row = 0; row < maxRows; row++)
+    // // {
+    // //     spacesInCurrentRow = (maxRows - row - 1) * 2;
+    // //     colsInCurrentRow = maxCols - spacesInCurrentRow;
+    // //     toggle = n = 1;
+    // //     colno = 0;
 
-    //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
-    //         printf("   ");
+    // //     for (int space = 1; space <= spacesInCurrentRow / 2; space++)
+    // //         printf("   ");
 
-    //     for (int col = 1; col <= colsInCurrentRow; col++)
-    //     {
-    //         if (toggle)
-    //         {
-    //             printf("%2d ", n);
-    //             n = n * (row - colno) / (colno + 1);
-    //             colno++;
-    //         }
-    //         else
-    //         {
-    //             printf("   ");
-    //         }
-    //         toggle = !toggle;
-    //     }
+    // //     for (int col = 1; col <= colsInCurrentRow; col++)
+    // //     {
+    // //         if (toggle)
+    // //         {
+    // //             printf("%2d ", n);
+    // //             n = n * (row - colno) / (colno + 1);
+    // //             colno++;
+    // //         }
+    // //         else
+    // //         {
+    // //             printf("   ");
+    // //         }
+    // //         toggle = !toggle;
+    // //     }
 
-    //     printf("\n");
-    // }
+    // //     printf("\n");
+    // // }
 
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function to Find Factorial
+// // Function to Find Factorial
 int fact(int n)
 {
     int result = 1;
 
-    // loop from 2 to n to get the factorial
+    // // loop from 2 to n to get the factorial
     for (int i = 2; i <= n; i++)
     {
         result *= i;

@@ -1,10 +1,10 @@
-//  C program to demonstrate the use of sizeof() operator
+// //  C program to demonstrate the use of sizeof() operator
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char c;
@@ -16,13 +16,13 @@ int main()
     double dbl;
     long double ldbl;
 
-    // sizeof() operator provides the number of Bytes taken by the variable of any Data type.
-    // We can use following variants :-
-    // sizeof(data type)
-    // sizeof(variable)
-    // sizeof(expression)
+    // // sizeof() operator provides the number of Bytes taken by the variable of any Data type.
+    // // We can use following variants :-
+    // // sizeof(data type)
+    // // sizeof(variable)
+    // // sizeof(expression)
 
-    // Use of sizeof(Data type)
+    // // Use of sizeof(Data type)
     printf("\n>>>>>>>>>> Use of sizeof(data type) <<<<<<<<<<<<<<");
     printf("\nSize of sizeof(char)          => %d Byte", sizeof(char));
     printf("\nSize of sizeof(short int)     => %d Bytes", sizeof(short int));
@@ -33,7 +33,7 @@ int main()
     printf("\nSize of sizeof(double)        => %d Bytes", sizeof(double));
     printf("\nSize of sizeof(long double)   => %d Bytes", sizeof(long double));
 
-    // Use of sizeof(Varibale)
+    // // Use of sizeof(Varibale)
     printf("\n\n>>>>>>>>>> Use of sizeof(variable) <<<<<<<<<<<<<<");
     printf("\nSize of sizeof(c)     => %d Byte", sizeof(c));
     printf("\nSize of sizeof(sint)  => %d Bytes", sizeof(sint));
@@ -44,7 +44,7 @@ int main()
     printf("\nSize of sizeof(dbl)   => %d Bytes", sizeof(dbl));
     printf("\nSize of sizeof(ldbl)  => %d Bytes", sizeof(ldbl));
 
-    // Use of sizeof(expression)
+    // // Use of sizeof(expression)
     printf("\n\n>>>>>>>>>> Use of sizeof(expression) <<<<<<<<<<<<<<");
     printf("\nSize of sizeof('a')     => %d Byte", sizeof('a'));
     printf("\nSize of sizeof(4 + 8)   => %d Bytes", sizeof(4 + 8));
@@ -53,4 +53,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

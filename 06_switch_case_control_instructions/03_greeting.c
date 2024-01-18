@@ -1,10 +1,10 @@
-// WAP which takes the day number of a week and displays a unique greeting message for the day.
+// // WAP which takes the day number of a week and displays a unique greeting message for the day.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -43,4 +43,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

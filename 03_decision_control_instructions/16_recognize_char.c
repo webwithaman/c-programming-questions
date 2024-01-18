@@ -1,10 +1,10 @@
-//  C program to check whether a given character is an alphabet (uppercase), an alphabet (lower case), a digit or a special character
+// //  C program to check whether a given character is an alphabet (uppercase), an alphabet (lower case), a digit or a special character
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char ch;
@@ -24,4 +24,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

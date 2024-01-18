@@ -1,12 +1,12 @@
-// Write a program to calculate the average of numbers stored in an array of size 10. Take array values from the user.
+// // Write a program to calculate the average of numbers stored in an array of size 10. Take array values from the user.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
 #define ARRAY_SIZE 10
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int nums[ARRAY_SIZE], sum = 0;
@@ -14,14 +14,14 @@ int main()
 
     printf("\nEnter 10 Numbers to Calculate Average => ");
 
-    // Input Numbers and Add
+    // // Input Numbers and Add
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
         scanf("%d", &nums[i]);
         sum += nums[i];
     }
 
-    // Calculate Average
+    // // Calculate Average
     avg = sum / ARRAY_SIZE;
 
     printf("\nSum of Entered Numbers => %d", sum);
@@ -31,4 +31,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

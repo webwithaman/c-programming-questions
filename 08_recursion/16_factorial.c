@@ -1,13 +1,13 @@
-// Write a recursive function to calculate factorial of a number
+// // Write a recursive function to calculate factorial of a number
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double factorial(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;
@@ -20,11 +20,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Calculate Factorial 
+// // Recursive Function to Calculate Factorial 
 double factorial(int num)
 {
     if (num < 2)

@@ -1,11 +1,11 @@
-//  C program to find all Prime Factors of a given Number
+// //  C program to find all Prime Factors of a given Number
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -13,7 +13,7 @@ int main()
     printf("\nEnter A Number to Find Its Prime Factors => ");
     scanf("%d", &num);
 
-    // Handling Invalid Input
+    // // Handling Invalid Input
     if (num <= 0)
     {
         printf("!!! Invalid Input...Please Enter Positive Number");
@@ -40,4 +40,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

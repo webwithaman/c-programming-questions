@@ -1,13 +1,13 @@
-// Write a function to check whether a given number contains a given digit or not. (TSRS)
+// // Write a function to check whether a given number contains a given digit or not. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 int isContainsDigit(int, int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num, digit;
@@ -27,11 +27,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Calculate Factorial of A Number
+// // Function to Calculate Factorial of A Number
 int isContainsDigit(int num, int digit)
 {
     if (num == 0 && digit == 0)

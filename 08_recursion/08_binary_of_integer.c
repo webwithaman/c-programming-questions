@@ -1,14 +1,14 @@
-// Write a recursive function to print binary of a given Positive Integer
+// // Write a recursive function to print binary of a given Positive Integer
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 void binaryOfPositiveInteger(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;
@@ -28,11 +28,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Print Binary of A Positive Integer
+// // Recursive Function to Print Binary of A Positive Integer
 void binaryOfPositiveInteger(int num)
 {
     if (num > 0)

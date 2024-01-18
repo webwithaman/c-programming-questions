@@ -1,26 +1,26 @@
-// Write a program to compute the sum of all elements in an array using a pointer.
+// // Write a program to compute the sum of all elements in an array using a pointer.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
 #define ARRAY_SIZE 10
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int *ptr, nums[ARRAY_SIZE], sum = 0;
 
-    // Assign address to pointer
+    // // Assign address to pointer
     ptr = nums;
 
     printf("\nEnter 10 Numbers to Calculate Sum => ");
 
-    // Input Numbers using pointer
+    // // Input Numbers using pointer
     for (int i = 0; i < ARRAY_SIZE; i++)
         scanf("%d", ptr + i);
 
-    // Find Sum using pointer
+    // // Find Sum using pointer
     for (int i = 0; i < ARRAY_SIZE; i++)
         sum += *(ptr + i);
 
@@ -30,4 +30,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

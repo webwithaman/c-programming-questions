@@ -1,26 +1,26 @@
-// Write a function to reverse a string word wise. (For example if the given string is
-// “Programming is Love” then the resulting string should be “Love is Programming" )
+// // Write a function to reverse a string word wise. (For example if the given string is
+// // “Programming is Love” then the resulting string should be “Love is Programming" )
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Function Declarations
+// // Function Declarations
 int strLength(char[]);
 char *strReverse(char[]);
 char *strReverseWordWise(char[]);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE];
 
     printf("\nEnter Any String to Reverse it Word Wise (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(str, ARRAY_SIZE, stdin);  // // Input String
+    str[strcspn(str, "\n")] = '\0'; // // Replace '\n' character with '\0' in str
 
     printf("\nString Before Reversing => %s", str);
 
@@ -30,11 +30,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Calculate Length of String
+// // Function to Calculate Length of String
 int strLength(char str[])
 {
     int length = 0;
@@ -45,17 +45,17 @@ int strLength(char str[])
     return length;
 }
 
-// Function to Reverse a String
+// // Function to Reverse a String
 char *strReverse(char str[])
 {
     int length = strLength(str);
     char temp;
 
-    // Reverse str
+    // // Reverse str
     int beg = 0, end = length - 1;
     while (beg < end)
     {
-        // Swap str[beg] with str[end]
+        // // Swap str[beg] with str[end]
         temp = str[beg];
         str[beg] = str[end];
         str[end] = temp;
@@ -66,23 +66,23 @@ char *strReverse(char str[])
     return str;
 }
 
-// Function to Check Whether a Given String is Palindrome or Not
+// // Function to Check Whether a Given String is Palindrome or Not
 int isStrPalindrome(char str[])
 {
-    char copyStr[strLength(str) + 1]; // create a string to copy str
-    copyString(copyStr, str);         // copy str into copyStr
-    strReverse(copyStr);              // reverse copyStr
+    char copyStr[strLength(str) + 1]; // // create a string to copy str
+    copyString(copyStr, str);         // // copy str into copyStr
+    strReverse(copyStr);              // // reverse copyStr
 
     if (compareStrings(copyStr, str))
-        return 0; // String is not Palindrome
+        return 0; // // String is not Palindrome
 
-    return 1; // String is Palindrome
+    return 1; // // String is Palindrome
 }
 
-// Function to Reverse a String word wise
+// // Function to Reverse a String word wise
 char *strReverseWordWise(char str[])
 {
-    strReverse(str); // Reverse str
+    strReverse(str); // // Reverse str
 
     int index = 0, lock = 1;
 
@@ -99,7 +99,7 @@ char *strReverseWordWise(char str[])
             char temp;
             while (beg < end)
             {
-                // Swap str[beg] with str[end]
+                // // Swap str[beg] with str[end]
                 temp = str[beg];
                 str[beg] = str[end];
                 str[end] = temp;

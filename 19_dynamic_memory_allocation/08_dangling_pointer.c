@@ -1,4 +1,4 @@
-// Write a program to demonstrate dangling pointers in C.
+// // Write a program to demonstrate dangling pointers in C.
 
 /*
 
@@ -8,12 +8,12 @@ A pointer pointing to a memory location that has been deleted (or freed) is call
 
 */
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <malloc.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int *ptr;
@@ -25,12 +25,12 @@ int main()
 
     printf("\nNumber => %d\n", *ptr);
 
-    free(ptr); // Free dynamically allocated memory
+    free(ptr); // // Free dynamically allocated memory
 
-    // Now the pointer ptr is still pointing to the memory address which is now in free area that is deallocated. Therefore ptr is a Dangling pointer.
+    // // Now the pointer ptr is still pointing to the memory address which is now in free area that is deallocated. Therefore ptr is a Dangling pointer.
 
     putch('\n');
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

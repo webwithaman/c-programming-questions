@@ -1,6 +1,6 @@
-// Write a function to sort employees according to their salaries [ refer structure from question 1]
+// // Write a function to sort employees according to their salaries [ refer structure from question 1]
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -8,7 +8,7 @@
 #define MAX_CHAR_NAME 31
 #define MAX_EMP 10
 
-// Define Structure
+// // Define Structure
 struct Employee
 {
     int id;
@@ -16,19 +16,19 @@ struct Employee
     double salary;
 };
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 void inputEmployee(struct Employee *);
 void displayEmployee(struct Employee);
 struct Employee *sortEmpsAccordSal(struct Employee *, int);
 void swapEmp(struct Employee *, struct Employee *);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
-    // create variable of structure Employee
+    // // create variable of structure Employee
     struct Employee emps[MAX_EMP];
 
-    // Input Employees Data
+    // // Input Employees Data
     printf("\n>>>>>> Enter Data of %d Employees <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
@@ -36,7 +36,7 @@ int main()
         inputEmployee(&emps[i]);
     }
 
-    // Display Employees Data Before Sorting
+    // // Display Employees Data Before Sorting
     printf("\n>>>>>> Data of %d Employees Before Sorting <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
@@ -44,10 +44,10 @@ int main()
         displayEmployee(emps[i]);
     }
 
-    // Sort Employees according to their Salarie
+    // // Sort Employees according to their Salarie
     sortEmpsAccordSal(emps, MAX_EMP);
 
-    // Display Employees Data After Sorting
+    // // Display Employees Data After Sorting
     printf("\n>>>>>> Data of %d Employees After Sorting Accoding to Their Salaries <<<<<<<\n", MAX_EMP);
     for (int i = 0; i < MAX_EMP; i++)
     {
@@ -59,9 +59,9 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function to Input Employee data
+// // Function to Input Employee data
 void inputEmployee(struct Employee *emp)
 {
     printf("\nEnter Employee's Id => ");
@@ -69,14 +69,14 @@ void inputEmployee(struct Employee *emp)
 
     printf("Enter Employee's Name (MAX CHARACTERS %d) => ", MAX_CHAR_NAME - 1);
     fflush(stdin);
-    fgets(emp->name, MAX_CHAR_NAME, stdin);     // Input String
-    emp->name[strcspn(emp->name, "\n")] = '\0'; // Replace '\n' character with '\0'
+    fgets(emp->name, MAX_CHAR_NAME, stdin);     // // Input String
+    emp->name[strcspn(emp->name, "\n")] = '\0'; // // Replace '\n' character with '\0'
 
     printf("Enter Employee's Salary => ");
     scanf("%lf", &emp->salary);
 }
 
-// Function to Display Employee data
+// // Function to Display Employee data
 void displayEmployee(struct Employee emp)
 {
     puts("\n=========================================");
@@ -88,7 +88,7 @@ void displayEmployee(struct Employee emp)
     puts("\n=========================================");
 }
 
-// Function to Sort Employees according to their Salarie
+// // Function to Sort Employees according to their Salarie
 struct Employee *sortEmpsAccordSal(struct Employee *empPtr, int size)
 {
     for (int i = 0; i < size - 1; i++)
@@ -105,7 +105,7 @@ struct Employee *sortEmpsAccordSal(struct Employee *empPtr, int size)
     return empPtr;
 }
 
-// Function to Swap data of two Employees
+// // Function to Swap data of two Employees
 void swapEmp(struct Employee *emp1, struct Employee *emp2)
 {
     struct Employee temp = *emp1;

@@ -1,12 +1,12 @@
-// Define a structure Employee with member variables id, name, salary.
+// // Define a structure Employee with member variables id, name, salary.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
 #define MAX_CHAR_NAME 31
 
-// Define Structure
+// // Define Structure
 struct Employee
 {
     int id;
@@ -14,14 +14,14 @@ struct Employee
     double salary;
 };
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
-    // create variable of structure Employee
+    // // create variable of structure Employee
     struct Employee emp1;
 
     putch('\n');
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

@@ -1,11 +1,11 @@
-//  C program to take two numbers as input and print sum of the numbers in following format :-
-// 👉 Output => Sum of N and N => N
+// //  C program to take two numbers as input and print sum of the numbers in following format :-
+// // 👉 Output => Sum of N and N => N
 
-// Header files
+// // Header files
 #include <stdio.h>
 #include <conio.h>
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -18,4 +18,4 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End

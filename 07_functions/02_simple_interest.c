@@ -1,13 +1,13 @@
-// Write a function to calculate simple interest. (TSRS)
+// // Write a function to calculate simple interest. (TSRS)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 double simpleInterest(double, double, double);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     double principalAmount, rateOfInterest, time, si;
@@ -24,11 +24,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Function to Calculate Simple Interest
+// // Function to Calculate Simple Interest
 double simpleInterest(double principalAmount, double rateOfInterest, double time)
 {
     return principalAmount * rateOfInterest * time / 100;

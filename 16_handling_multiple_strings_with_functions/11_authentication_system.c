@@ -1,6 +1,6 @@
-// Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union. Use user-defined Functions to Perform these Tasks.
+// // Create an authentication system that can manage 10 users. It should be menu driven. Do not use Structure and Union. Use user-defined Functions to Perform these Tasks.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -9,7 +9,7 @@
 #define MAX_ROWS 10
 #define MAX_COLS 31
 
-// Functions Declarations (Prototypes)
+// // Functions Declarations (Prototypes)
 int compareStrings(char[], char[]);
 char *copyString(char[], char[]);
 int showOptsAndGetChoice();
@@ -27,12 +27,12 @@ int isValidPassword(char[]);
 char *getPasswordHiddenly(char[], int);
 void showOperationsAfterLoggedIn();
 
-// Global Variables
+// // Global Variables
 char usernames[MAX_ROWS][MAX_COLS],
     passwords[MAX_ROWS][MAX_COLS];
 int totalAccountCreated = 0;
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
 
@@ -46,7 +46,7 @@ int main()
 
         case 1:
         {
-            if (!signup()) // True means Failed to Signin
+            if (!signup()) // // True means Failed to Signin
                 break;
 
             puts("\n\nYou Have Successfully Created Your Account...");
@@ -56,12 +56,12 @@ int main()
         case 2:
         {
 
-            if (!login()) // True means Failed to login
+            if (!login()) // // True means Failed to login
                 break;
 
             printf("\n\nYou Have Successfully Logged In...");
 
-            // Display Options to Perform Mathematics Operations After Login
+            // // Display Options to Perform Mathematics Operations After Login
             showOperationsAfterLoggedIn();
         }
 
@@ -69,7 +69,7 @@ int main()
 
         case 3:
         {
-            if (!resetPassword()) // True means Failed to reset password
+            if (!resetPassword()) // // True means Failed to reset password
                 break;
 
             puts("\n\nYou Have Successfully Reset Your Account...\n");
@@ -79,7 +79,7 @@ int main()
 
         case 4:
         {
-            if (!deleteAccount()) // True means Failed to Delete Account
+            if (!deleteAccount()) // // True means Failed to Delete Account
                 break;
 
             puts("\n\nAccount Deleted Successfully...\n");
@@ -90,29 +90,29 @@ int main()
         default:
             puts("\n!!! Invalid Option, Plz Choose One of the Given Options...");
 
-        } // End of switch block
+        } // // End of switch block
 
         getch();
 
-    } // End of while block
+    } // // End of while block
 
     putch('\n');
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions
+// // Function Definitions
 
-// Function to show Options and get user's choice
+// // Function to show Options and get user's choice
 int showOptsAndGetChoice()
 {
     int userChoice;
 
-    // Clear console
+    // // Clear console
     system("cls");
 
-    // Display Options and get user's choice
+    // // Display Options and get user's choice
     puts(">>>>>>>>>>>>>> WELCOME TO MATHEMATICS MACHINE <<<<<<<<<<<<");
     printf("\n### Maximum %d Accounts Can be Created In This Machine ###", MAX_ROWS);
     printf("\n## There Are %d Accounts Already Created In This Machine ##", totalAccountCreated);
@@ -125,43 +125,43 @@ int showOptsAndGetChoice()
     puts("Press 4 : Delete Account");
     puts("--------------------------------------------");
 
-    printf("Enter You Choice => "); // Input User Choice
+    printf("Enter You Choice => "); // // Input User Choice
     scanf("%d", &userChoice);
 
     return userChoice;
 }
 
-// Function for Sign-up or Create New Account
+// // Function for Sign-up or Create New Account
 int signup()
 {
-    if (totalAccountCreated == MAX_ROWS - 1) // Check if Account Reached to Maximum Limit
+    if (totalAccountCreated == MAX_ROWS - 1) // // Check if Account Reached to Maximum Limit
     {
         printf("\nSorry... You Cannot Create a New Account, Because the Machine Reached its Maximum Account Limit that is %d\n", MAX_ROWS);
-        return 0; // Failed to Sign-up
+        return 0; // // Failed to Sign-up
     }
 
     puts("\n============== SIGN-UP ================");
 
-    // Input username for sign-up
+    // // Input username for sign-up
     char username[MAX_COLS];
     int isUsernameValid;
 
-    instructsForUsername(); // show instructions for username
+    instructsForUsername(); // // show instructions for username
 
-    // Terminate When Username is Valid
+    // // Terminate When Username is Valid
     do
     {
-        getUsername(username);                       // get username
-        isUsernameValid = isValidUsername(username); // Validate Username
+        getUsername(username);                       // // get username
+        isUsernameValid = isValidUsername(username); // // Validate Username
 
-        if (!isUsernameValid) // True, means username is invalid
+        if (!isUsernameValid) // // True, means username is invalid
         {
             puts("\n\n!!! Username is Invalid, Try Again...");
             getch();
         }
         else
         {
-            // Check if username is Already Taken
+            // // Check if username is Already Taken
             isUsernameValid = isUserExists(username);
             if (isUsernameValid != -1)
             {
@@ -171,42 +171,42 @@ int signup()
             }
         }
 
-    } while (!isUsernameValid); // Terminate When Username is Valid
+    } while (!isUsernameValid); // // Terminate When Username is Valid
 
-    // Reached Here Only if username is valid
+    // // Reached Here Only if username is valid
 
-    // Input Password for sign-up
+    // // Input Password for sign-up
     char password[MAX_COLS];
     int isPasswordValid = 1, minLengthOfPassword = 8, choiceForPass, choosedCorrect = 1;
 
-    instructsForPassword(); // show instructions for  password
+    instructsForPassword(); // // show instructions for  password
 
-    // Terminate When Password is Valid
+    // // Terminate When Password is Valid
     do
     {
-        getPassword(password); // get password
+        getPassword(password); // // get password
 
-        // Validate Password
+        // // Validate Password
         isPasswordValid = isValidPassword(password);
 
-        if (!isPasswordValid) // if Password is Invalid
+        if (!isPasswordValid) // // if Password is Invalid
         {
             puts("\n\n!!! Password is Invalid, Try Again...");
             getch();
         }
 
-    } while (!isPasswordValid); // Terminate When Password is Valid
+    } while (!isPasswordValid); // // Terminate When Password is Valid
 
-    // Reached Here Only if Both username and password is valid
+    // // Reached Here Only if Both username and password is valid
 
-    // When Both Username and Password Are valid then Create New User
+    // // When Both Username and Password Are valid then Create New User
     copyString(usernames[totalAccountCreated], username);
     copyString(passwords[totalAccountCreated++], password);
 
-    return 1; // Successfully Account Created
+    return 1; // // Successfully Account Created
 }
 
-// Function to Check Whether a Given String an Alphanumeric String or Not
+// // Function to Check Whether a Given String an Alphanumeric String or Not
 int compareStrings(char str1[], char str2[])
 {
     for (int i = 0; str1[i] || str2[i]; i++)
@@ -217,10 +217,10 @@ int compareStrings(char str1[], char str2[])
             return str1[i] - str2[i];
     }
 
-    return 0; // Strings are equal
+    return 0; // // Strings are equal
 }
 
-// Functtion to Show Instructions for username
+// // Functtion to Show Instructions for username
 void instructsForUsername()
 {
     int minLengthOfUsername = 6;
@@ -233,7 +233,7 @@ void instructsForUsername()
     puts("\n---------------------------------------");
 }
 
-// Function to Get Username
+// // Function to Get Username
 char *getUsername(char username[])
 {
     printf("\nEnter Username (MAX CHARACTERS %d) => ", MAX_COLS - 1);
@@ -244,60 +244,60 @@ char *getUsername(char username[])
     return username;
 }
 
-// Function to Validate Username
+// // Function to Validate Username
 int isValidUsername(char username[])
 {
     int minLengthOfUsername = 6;
 
-    // Validate Username
+    // // Validate Username
     if (strlen(username) < minLengthOfUsername)
-        return 0; // username is invalid
+        return 0; // // username is invalid
     else
     {
         for (int i = 0; username[i]; i++)
         {
             if ((username[i] < '0' || username[i] > '9') && (username[i] < 'A' || username[i] > 'Z') && (username[i] < 'a' || username[i] > 'z') && username[i] != '_')
-                return 0; // username is invalid
+                return 0; // // username is invalid
         }
     }
 
-    return 1; // username is valid
+    return 1; // // username is valid
 }
 
-// Function to check that user exists or not
+// // Function to check that user exists or not
 int isUserExists(char username[])
 {
     for (int i = 0; i < totalAccountCreated; i++)
     {
         if (compareStrings(usernames[i], username) == 0)
         {
-            return i; // user not exists
+            return i; // // user not exists
         }
     }
 
-    return -1; // user not exists
+    return -1; // // user not exists
 }
 
-// Function to Validate Password
+// // Function to Validate Password
 int isValidPassword(char password[])
 {
     int minLengthOfPassword = 8;
 
     if (strlen(password) < minLengthOfPassword)
-        return 0; // password is invalid
+        return 0; // // password is invalid
     else
     {
         for (int i = 0; password[i]; i++)
         {
             if (password[i] == ' ' || password[i] == '\t')
-                return 0; // password is invalid
+                return 0; // // password is invalid
         }
     }
 
-    return 1; // password is invalid
+    return 1; // // password is invalid
 }
 
-// Functtion to Show Instructions for password
+// // Functtion to Show Instructions for password
 void instructsForPassword()
 {
     int minLengthOfPassword = 8;
@@ -309,12 +309,12 @@ void instructsForPassword()
     puts("\n---------------------------------------");
 }
 
-// Functtion to get password
+// // Functtion to get password
 char *getPassword(char password[])
 {
     int choiceForPass, choosedCorrect = 1;
 
-    do // Terminate When user Enter Correct Choice for following
+    do // // Terminate When user Enter Correct Choice for following
     {
         choosedCorrect = 1;
         printf("\nPress 1 : For Enter Password Hiddenly");
@@ -323,7 +323,7 @@ char *getPassword(char password[])
         fflush(stdin);
         scanf("%d", &choiceForPass);
 
-        if (choiceForPass != 1 && choiceForPass != 2) // Invalid Choice
+        if (choiceForPass != 1 && choiceForPass != 2) // // Invalid Choice
         {
             puts("\nWrong Choice, Plz Select From Given Options. Try Again...");
             choosedCorrect = 0;
@@ -334,7 +334,7 @@ char *getPassword(char password[])
 
     printf("\nEnter Password (MAX CHARACTERS %d) => ", MAX_COLS - 1);
 
-    if (choiceForPass == 1) // get password hiddenly
+    if (choiceForPass == 1) // // get password hiddenly
         getPasswordHiddenly(password, MAX_COLS - 1);
     else
     {
@@ -346,45 +346,45 @@ char *getPassword(char password[])
     return password;
 }
 
-// Function to Get Password Hiddenly
+// // Function to Get Password Hiddenly
 char *getPasswordHiddenly(char password[], int maxLength)
 {
     char ch;
-    int i = 0; // for index of password[]
+    int i = 0; // // for index of password[]
 
-    while (1) // Read untill user press enter key
+    while (1) // // Read untill user press enter key
     {
-        fflush(stdin); // clear buffer
-        ch = getch();  // get character from user
+        fflush(stdin); // // clear buffer
+        ch = getch();  // // get character from user
 
-        if (ch == '\r' || ch == '\n') // if user press enter then stop taking input
+        if (ch == '\r' || ch == '\n') // // if user press enter then stop taking input
             break;
-        else if (ch == 8 && i > 0) // if user press backspace key
+        else if (ch == 8 && i > 0) // // if user press backspace key
         {
             putch('\b');
             putch(' ');
             putch('\b');
             i--;
         }
-        else if (ch >= 32 && ch <= 126) // if character is valid
+        else if (ch >= 32 && ch <= 126) // // if character is valid
         {
             putch('*');
             password[i++] = ch;
         }
 
-        if (i == maxLength - 1) // Password Reached At Max length
+        if (i == maxLength - 1) // // Password Reached At Max length
             break;
     }
 
-    password[i] = '\0'; // Terminate password with '\0'
+    password[i] = '\0'; // // Terminate password with '\0'
 
     return password;
 }
 
-// Function to Copy One String into Another
+// // Function to Copy One String into Another
 char *copyString(char des[], char src[])
 {
-    // Copy str into copy
+    // // Copy str into copy
     int i = 0;
     for (i = 0; src[i]; i++)
         des[i] = src[i];
@@ -394,46 +394,46 @@ char *copyString(char des[], char src[])
     return des;
 }
 
-// Function for Login
+// // Function for Login
 int login()
 {
     puts("\n============== LOGIN ================");
 
-    // Input Username for Login
+    // // Input Username for Login
     char username[MAX_COLS];
     int isUsernameValid = -1;
 
-    getUsername(username); // get username
+    getUsername(username); // // get username
 
-    // Check user exists or not
+    // // Check user exists or not
     isUsernameValid = isUserExists(username);
 
-    if (isUsernameValid == -1) // If username not exists
+    if (isUsernameValid == -1) // // If username not exists
     {
         puts("\n!!! Invalid Username, Try Again...");
         puts("Failed to Login...\n");
-        return 0; // Failed to Login
+        return 0; // // Failed to Login
     }
 
-    // Reached Here Only if username is valid
+    // // Reached Here Only if username is valid
 
-    // Input Password for Login
+    // // Input Password for Login
     char password[MAX_COLS];
 
-    getPassword(password); // get password
+    getPassword(password); // // get password
 
-    // Check that Password is valid or not
+    // // Check that Password is valid or not
     if (compareStrings(passwords[isUsernameValid], password) != 0)
     {
         puts("\n!!! Invalid Password, Try Again...");
         puts("Failed to Login...\n");
-        return 0; // Failed to Login
+        return 0; // // Failed to Login
     }
 
-    return 1; //  Successfully Logged In
+    return 1; // //  Successfully Logged In
 }
 
-// Function to Perform Operations after logged in
+// // Function to Perform Operations after logged in
 void showOperationsAfterLoggedIn()
 {
     while (1)
@@ -479,109 +479,109 @@ void showOperationsAfterLoggedIn()
             puts("\n!!! Invalid Choice...");
         }
 
-        if (choice == 'e') // Break loop If user press e
+        if (choice == 'e') // // Break loop If user press e
             break;
 
-    } // End of while block
+    } // // End of while block
 }
 
-// Function to Reset Password
+// // Function to Reset Password
 int resetPassword()
 {
     puts("\n============== RESET PASSWORD ================");
 
-    // Input Username for Reset Password
+    // // Input Username for Reset Password
     char username[MAX_COLS];
     int isUsernameValid = -1;
 
-    getUsername(username); // get username
+    getUsername(username); // // get username
 
-    isUsernameValid = isUserExists(username); // is user exists
+    isUsernameValid = isUserExists(username); // // is user exists
 
-    if (isUsernameValid == -1) // If username is invalid
+    if (isUsernameValid == -1) // // If username is invalid
     {
         puts("\n!!! Invalid Username, Try Again...");
         puts("Failed to Reset Password...\n");
-        return 0; // Failed to Reset Password
+        return 0; // // Failed to Reset Password
     }
 
-    // Reached Here Only if username is valid
+    // // Reached Here Only if username is valid
 
-    instructsForPassword(); // Instructions for password
+    instructsForPassword(); // // Instructions for password
 
     puts("\n>>>>>> Enter New Password <<<<<<<\n");
 
-    // Input New Password (Reset Password)
+    // // Input New Password (Reset Password)
     char password[MAX_COLS];
     int isPasswordValid;
 
     do
     {
-        getPassword(password); // get Password
+        getPassword(password); // // get Password
 
-        // Validate Password
+        // // Validate Password
         isPasswordValid = isValidPassword(password);
 
-        if (!isPasswordValid) // if Password is Invalid
+        if (!isPasswordValid) // // if Password is Invalid
         {
             puts("\n!!! Password is Invalid, Try Again...");
             getch();
         }
 
-    } while (!isPasswordValid); // Terminate When Password is Valid
+    } while (!isPasswordValid); // // Terminate When Password is Valid
 
-    // Reached Here if Both username and Password is valid
+    // // Reached Here if Both username and Password is valid
 
-    // Reset Password and Display Reset Password Successfully Message
+    // // Reset Password and Display Reset Password Successfully Message
     copyString(passwords[isUsernameValid], password);
 
-    return 1; // Successfully Reset Password
+    return 1; // // Successfully Reset Password
 }
 
-// Function to Delete Account
+// // Function to Delete Account
 int deleteAccount()
 {
-    if (totalAccountCreated == 0) // Check if there is any Account
+    if (totalAccountCreated == 0) // // Check if there is any Account
     {
         printf("\nThere is No Account in Machine to Delete...\n");
-        return 0; // No Account to Delete
+        return 0; // // No Account to Delete
     }
 
     puts("\n============== DELETE ACCOUNT ================");
 
-    // Input Username for Delete Account
+    // // Input Username for Delete Account
     char username[MAX_COLS];
     int isUsernameValid = -1;
 
-    getUsername(username); // get username
+    getUsername(username); // // get username
 
-    isUsernameValid = isUserExists(username); // is user exists
+    isUsernameValid = isUserExists(username); // // is user exists
 
-    if (isUsernameValid == -1) // If user not exists
+    if (isUsernameValid == -1) // // If user not exists
     {
         puts("\n!!! Invalid Username, Try Again...");
         puts("Failed to Delete Account...\n");
-        return 0; // Failed to Delete Account
+        return 0; // // Failed to Delete Account
     }
 
-    // Reached Here Only if username is valid
+    // // Reached Here Only if username is valid
 
-    // Input Password for Delete Account
+    // // Input Password for Delete Account
     char password[MAX_COLS];
     int isPasswordValid;
 
-    getPassword(password); // get password
+    getPassword(password); // // get password
 
     if (compareStrings(passwords[isUsernameValid], password) != 0)
     {
         puts("\n!!! Invalid Password, Try Again...");
         puts("Failed to Delete Account...\n");
-        return 0; // Failed to Delete Account
+        return 0; // // Failed to Delete Account
     }
 
-    // Reached Here if Both username and Password is valid
+    // // Reached Here if Both username and Password is valid
 
-    // Delete Account and Display Account Deleted Successfully Message
+    // // Delete Account and Display Account Deleted Successfully Message
     if (isUsernameValid == totalAccountCreated - 1)
     {
         copyString(usernames[totalAccountCreated - 1], "");
@@ -597,5 +597,5 @@ int deleteAccount()
         }
     }
 
-    return 1; //  Account Deleted Successfully
+    return 1; // //  Account Deleted Successfully
 }

@@ -1,14 +1,14 @@
-// Write a recursive function to print first N natural numbers.
+// // Write a recursive function to print first N natural numbers.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 void firstNNaturalNums(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int n;
@@ -28,11 +28,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Print First N Natural Numbers
+// // Recursive Function to Print First N Natural Numbers
 void firstNNaturalNums(int n)
 {
     if (n > 0)

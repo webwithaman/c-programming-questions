@@ -1,14 +1,14 @@
-// Write a recursive function to print reverse of a given number.
+// // Write a recursive function to print reverse of a given number.
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 
-// Function Declaration (Prototype)
+// // Function Declaration (Prototype)
 void printReverse(int);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     int num;
@@ -22,11 +22,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definition 👇👇
+// // Function Definition 👇👇
 
-// Recursive Function to Print Reverse of A Number
+// // Recursive Function to Print Reverse of A Number
 void printReverse(int num)
 {
     if (num)

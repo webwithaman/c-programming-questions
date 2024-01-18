@@ -1,24 +1,24 @@
-// Write a function to check whether a given string is an alphanumeric string or not.
-// (Alphanumeric string must contain at least one alphabet and one digit)
+// // Write a function to check whether a given string is an alphanumeric string or not.
+// // (Alphanumeric string must contain at least one alphabet and one digit)
 
-// Header Files
+// // Header Files
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
 
 #define ARRAY_SIZE 31
 
-// Function Declarations
+// // Function Declarations
 int isAnAlphanumericStr(char []);
 
-// Main Function Start
+// // Main Function Start
 int main()
 {
     char str[ARRAY_SIZE], length;
 
     printf("\nEnter Any String to Check Whether It is an Alphanumeric String or Not (MAX CHARACTERS %d) => ", ARRAY_SIZE - 1);
-    fgets(str, ARRAY_SIZE, stdin);  // Input String
-    str[strcspn(str, "\n")] = '\0'; // Replace '\n' character with '\0' in str
+    fgets(str, ARRAY_SIZE, stdin);  // // Input String
+    str[strcspn(str, "\n")] = '\0'; // // Replace '\n' character with '\0' in str
 
     if (isAnAlphanumericStr(str))
         printf("\nYes, \"%s\" is an Alphanumeric String", str);
@@ -29,11 +29,11 @@ int main()
     getch();
     return 0;
 }
-// Main Function End
+// // Main Function End
 
-// Function Definitions 👇👇
+// // Function Definitions 👇👇
 
-// Function to Check Whether a Given String an Alphanumeric String or Not
+// // Function to Check Whether a Given String an Alphanumeric String or Not
 int isAnAlphanumericStr(char str[])
 {
     int lock1 = 1, lock2 = 1;
@@ -46,8 +46,8 @@ int isAnAlphanumericStr(char str[])
             lock2 = 0;
 
         if (!lock1 && !lock2)
-            return 1; // Yes, String is Alphanumeric
+            return 1; // // Yes, String is Alphanumeric
     }
 
-    return 0; // No, String is Not Alphanumeric
+    return 0; // // No, String is Not Alphanumeric
 }
