@@ -23,3 +23,5 @@
 order.
 
 10. Write a function in C to count the frequency of each element of an array.
+
+11. Write a c program to perform various operations on arrays. use functions to perform all the operations.
