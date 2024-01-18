@@ -25,6 +25,7 @@ The repository is structured based on different topics, with each topic having i
 - /17_pointers
 - /18_structure
 - /19_dynamic_memory_allocation
+- /20_miscellaneous_programs
 
 ## Clone this Repository
 
