@@ -12,7 +12,7 @@ int main()
     scanf("%d", &num);
     int copyNum = num;
 
-    //// 1st Approach
+    // // 1st Approach
     // if (copyNum)
     // {
     //     while (!(num & 1))
@@ -26,7 +26,7 @@ int main()
     // else
     //     printf("\nThere is No 1 in the Binary of 0\n");
 
-    //// 2nd Approach
+    // // 2nd Approach
     while (num)
     {
         if (num & 1)

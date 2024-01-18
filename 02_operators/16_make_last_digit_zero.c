@@ -12,10 +12,10 @@ int main()
     printf("\nEnter An Integer => ");
     scanf("%d", &num);
 
-    //// 1st Approach
+    // // 1st Approach
     result = num / 10 * 10;
 
-    //// 2nd Approach
+    // // 2nd Approach
     // result = num - num % 10;
 
     printf("\nResult After Converting Last Digit of %d into 0 => %d", num, result);
