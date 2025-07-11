@@ -1,5 +1,5 @@
 // // WAP to Take A Number And A Digit From User And Then Append The Digit in the Number - Number = 635 and Digit = 8 Then Make it => 6358
-// // 👉 Output => Number => 635 and Digit => 8. Result After Appending 7 to 635 => 6358
+// // 👉 Output => Number => 635 and Digit => 8. Result After Appending 8 to 635 => 6358
 
 // // Header Files
 #include <stdio.h>
