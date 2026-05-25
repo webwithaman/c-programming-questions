@@ -48,11 +48,3 @@ git clone https://github.com/webwithaman/c-programming-questions.git
 1. Navigate to the root directory of the project.
 2. Run the command `make run` to start the program.
 3. Follow the on-screen instructions to answer the questions.
-
-## Contributing
-
-If you find a bug or have a feature request, please open an issue on GitHub. If you'd like to contribute code, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
